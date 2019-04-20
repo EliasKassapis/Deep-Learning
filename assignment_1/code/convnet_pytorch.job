@@ -20,6 +20,8 @@ cd /home/lgpu0417/deep-learning/assignment_1/code/
 echo " ------ Job mlp_pytorch is started ------- "
 echo " "
 
+source activate dl
+
 srun python3 train_convnet_pytorch.py
 
 echo " "
