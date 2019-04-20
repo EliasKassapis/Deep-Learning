@@ -55,7 +55,7 @@ def accuracy(predictions, targets):
   #######################
 
 
-  accuracy = (predictions.argmax(axis=1) == targets.argmax(axis=1)).type(dtype).mean()
+  accuracy = (predictions.argmax(dim=1) == targets.argmax(dim=1)).type(dtype).mean()
 
   accuracy = accuracy.detach().data.cpu().item()
 
