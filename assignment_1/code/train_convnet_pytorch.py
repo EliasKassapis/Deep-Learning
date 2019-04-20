@@ -191,11 +191,10 @@ def train():
                 xlabel='Epochs')
 
   #save results:
-  path = "./results/ConvNet results/results"
-  np.save(path, train_loss)
-  np.save(path, train_acc)
-  np.save(path, test_loss)
-  np.save(path, test_acc)
+  np.save('train_loss', train_loss)
+  np.save('train_acc', train_acc)
+  np.save('test_loss', test_loss)
+  np.save('test_acc', test_acc)
 
 
   # raise NotImplementedError
