@@ -1,0 +1,14 @@
+WARNING: cuDNN/7.0.5-CUDA-9.0.176 cannot be loaded due to a conflict.
+HINT: Might try "module unload cuDNN" first.
+/var/spool/slurm-llnl/slurmd/job2166844/slurm_script: line 18: cd: /home/lgpu0417/deep-learning/assignment_1/code/: Permission denied
+ ------ Job mlp_pytorch is started ------- 
+ 
+Traceback (most recent call last):
+  File "train_convnet_pytorch.py", line 12, in <module>
+    from convnet_pytorch import ConvNet
+  File "/home/lgpu0293/Deep-Learning/assignment_1/code/convnet_pytorch.py", line 9, in <module>
+    import torch.nn as nn
+ModuleNotFoundError: No module named 'torch'
+srun: error: r30n5: task 0: Exited with exit code 1
+ 
+ ------ Job mlp_pytorch is finished -------

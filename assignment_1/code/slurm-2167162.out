@@ -1,0 +1,23 @@
+WARNING: cuDNN/7.0.5-CUDA-9.0.176 cannot be loaded due to a conflict.
+HINT: Might try "module unload cuDNN" first.
+/var/spool/slurm-llnl/slurmd/job2167162/slurm_script: line 18: cd: /home/lgpu0417/deep-learning/assignment_1/code/: Permission denied
+ ------ Job mlp_pytorch is started ------- 
+ 
+learning_rate : 0.0001
+max_steps : 5000
+batch_size : 32
+eval_freq : 500
+data_dir : ./cifar10/cifar-10-batches-py
+Traceback (most recent call last):
+  File "train_convnet_pytorch.py", line 261, in <module>
+    main()
+  File "train_convnet_pytorch.py", line 244, in main
+    train()
+  File "train_convnet_pytorch.py", line 133, in train
+    current_train_acc = accuracy(pred, y)
+  File "train_convnet_pytorch.py", line 57, in accuracy
+    predictions = predictions.detach().numpy()
+TypeError: can't convert CUDA tensor to numpy. Use Tensor.cpu() to copy the tensor to host memory first.
+srun: error: r30n5: task 0: Exited with exit code 1
+ 
+ ------ Job mlp_pytorch is finished -------

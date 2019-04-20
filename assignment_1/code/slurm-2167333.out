@@ -1,0 +1,73 @@
+WARNING: cuDNN/7.0.5-CUDA-9.0.176 cannot be loaded due to a conflict.
+HINT: Might try "module unload cuDNN" first.
+/var/spool/slurm-llnl/slurmd/job2167333/slurm_script: line 18: cd: /home/lgpu0417/deep-learning/assignment_1/code/: Permission denied
+ ------ Job mlp_pytorch is started ------- 
+ 
+learning_rate : 0.0001
+max_steps : 5000
+batch_size : 32
+eval_freq : 500
+data_dir : ./cifar10/cifar-10-batches-py
+
+Epoch  0 
+------------
+Training Loss =  2.4365 , Train Accuracy =  0.03125 
+Test Loss =  2.2801 , Test Accuracy =  0.1443
+
+Epoch  500 
+------------
+Training Loss =  1.3968 , Train Accuracy =  0.5625 
+Test Loss =  1.1647 , Test Accuracy =  0.5861
+
+Epoch  1000 
+------------
+Training Loss =  1.2036 , Train Accuracy =  0.6875 
+Test Loss =  1.0035 , Test Accuracy =  0.6503
+
+Epoch  1500 
+------------
+Training Loss =  1.5835 , Train Accuracy =  0.46875 
+Test Loss =  0.9479 , Test Accuracy =  0.6667
+
+Epoch  2000 
+------------
+Training Loss =  0.672 , Train Accuracy =  0.75 
+Test Loss =  0.8444 , Test Accuracy =  0.7089
+
+Epoch  2500 
+------------
+Training Loss =  0.9388 , Train Accuracy =  0.6875 
+Test Loss =  0.7974 , Test Accuracy =  0.7254
+
+Epoch  3000 
+------------
+Training Loss =  0.673 , Train Accuracy =  0.75 
+Test Loss =  0.7468 , Test Accuracy =  0.7409
+
+Epoch  3500 
+------------
+Training Loss =  0.714 , Train Accuracy =  0.75 
+Test Loss =  0.7238 , Test Accuracy =  0.7516
+
+Epoch  4000 
+------------
+Training Loss =  0.6741 , Train Accuracy =  0.8125 
+Test Loss =  0.6873 , Test Accuracy =  0.7679
+
+Epoch  4500 
+------------
+Training Loss =  0.4845 , Train Accuracy =  0.8125 
+Test Loss =  0.6742 , Test Accuracy =  0.7743
+Traceback (most recent call last):
+  File "train_convnet_pytorch.py", line 262, in <module>
+    main()
+  File "train_convnet_pytorch.py", line 245, in main
+    train()
+  File "train_convnet_pytorch.py", line 195, in train
+    np.save(path, train_loss)
+  File "/home/lgpu0293/.conda/envs/dl/lib/python3.7/site-packages/numpy/lib/npyio.py", line 517, in save
+    fid = open(file, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: './results/ConvNet results/results.npy'
+srun: error: r31n4: task 0: Exited with exit code 1
+ 
+ ------ Job mlp_pytorch is finished -------

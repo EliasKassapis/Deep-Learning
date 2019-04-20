@@ -1,0 +1,23 @@
+WARNING: cuDNN/7.0.5-CUDA-9.0.176 cannot be loaded due to a conflict.
+HINT: Might try "module unload cuDNN" first.
+/var/spool/slurm-llnl/slurmd/job2167323/slurm_script: line 18: cd: /home/lgpu0417/deep-learning/assignment_1/code/: Permission denied
+ ------ Job mlp_pytorch is started ------- 
+ 
+learning_rate : 0.0001
+max_steps : 5000
+batch_size : 32
+eval_freq : 500
+data_dir : ./cifar10/cifar-10-batches-py
+Traceback (most recent call last):
+  File "train_convnet_pytorch.py", line 262, in <module>
+    main()
+  File "train_convnet_pytorch.py", line 245, in main
+    train()
+  File "train_convnet_pytorch.py", line 134, in train
+    current_train_acc = accuracy(pred, y)
+  File "train_convnet_pytorch.py", line 58, in accuracy
+    accuracy = (predictions.argmax(axis=1) == targets.argmax(axis=1)).type(dtype).mean()
+TypeError: argmax() got an unexpected keyword argument 'axis'
+srun: error: r31n4: task 0: Exited with exit code 1
+ 
+ ------ Job mlp_pytorch is finished -------
