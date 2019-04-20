@@ -33,11 +33,12 @@ class LinearModule(object):
 
     mu = 0
     sigma = 0.0001
-    p_w = np.random.normal(mu, sigma, self.in_features)
-    g_w = np.zeros(self.in_features)
-    p = np.zeros(self.in_features)
 
-    self.params = {'weight': w, 'bias': b}
+    p_w = np.random.normal(mu, sigma, (self.out_features, self.in_features))
+    g_w = np.zeros((self.out_features, self.in_features))
+    b = np.zeros((self.out_features,1))
+
+    self.params = {'weight': p_w, 'bias': b}
     self.grads = {'weight': g_w, 'bias': b}
 
     # raise NotImplementedError
@@ -64,7 +65,11 @@ class LinearModule(object):
     # PUT YOUR CODE HERE  #
     #######################
 
-    out = self.params['weight'] @ x + self.params['bias']
+    out = ((self.params['weight'] @ x.T) + self.params['bias']).T
+
+    self.x = x
+
+
 
     # raise NotImplementedError
     ########################
@@ -91,7 +96,11 @@ class LinearModule(object):
     # PUT YOUR CODE HERE  #
     #######################
 
+
     dx = dout @ self.params['weight']
+    self.grads['weight'] = (dout.T.dot(self.x))
+    # self.grads['bias'] = np.diag(dout.dot(np.identity(np.size(self.params['bias'])))).reshape(self.out_features,1)
+    self.grads['bias'] = np.mean(dout, axis=0).reshape(self.out_features,1)
 
     # raise NotImplementedError
     ########################
@@ -122,7 +131,12 @@ class ReLUModule(object):
     ########################
     # PUT YOUR CODE HERE  #
     #######################
-    raise NotImplementedError
+
+    out = np.maximum(x,0)
+
+    self.x = x
+
+    # raise NotImplementedError
     ########################
     # END OF YOUR CODE    #
     #######################
@@ -145,7 +159,18 @@ class ReLUModule(object):
     ########################
     # PUT YOUR CODE HERE  #
     #######################
-    raise NotImplementedError
+
+    R = self.x.copy()
+    R[R<0] = 0
+    R[R>0] = 1
+
+
+    dx = np.multiply(dout, R)
+
+
+
+
+    # raise NotImplementedError
     ########################
     # END OF YOUR CODE    #
     #######################    
@@ -174,7 +199,15 @@ class SoftMaxModule(object):
     ########################
     # PUT YOUR CODE HERE  #
     #######################
-    raise NotImplementedError
+
+    b_dim = np.size(x,0)
+
+    a = np.max(x,axis=1).reshape(b_dim,1)
+    y = np.exp(x - a)
+    out = y / np.sum(y, axis=1).reshape(b_dim,1)
+    self.out = out
+
+    # raise NotImplementedError
     ########################
     # END OF YOUR CODE    #
     #######################
@@ -186,7 +219,7 @@ class SoftMaxModule(object):
     Backward pass.
 
     Args:
-      dout: gradients of the previous modul
+      dout: gradients of the previous module
     Returns:
       dx: gradients with respect to the input of the module
     
@@ -197,7 +230,24 @@ class SoftMaxModule(object):
     ########################
     # PUT YOUR CODE HERE  #
     #######################
-    raise NotImplementedError
+
+    # print('x shape = ', np.shape(self.x))
+    # print('dout shape = ', np.shape(dout))
+
+    b_dim = np.size(self.out,0)
+    x_dim = np.size(self.out,1)
+
+    D = np.zeros([b_dim,x_dim,x_dim])
+
+    index = np.arange(x_dim)
+
+    D[:,index,index] = self.out
+
+    d_x = D - np.multiply(self.out[:, :, None], self.out[:, None, :])
+    dx = (dout[:, None, :] @ d_x).squeeze()
+
+
+    # raise NotImplementedError##############################################
     ########################
     # END OF YOUR CODE    #
     #######################
@@ -225,7 +275,13 @@ class CrossEntropyModule(object):
     ########################
     # PUT YOUR CODE HERE  #
     #######################
-    raise NotImplementedError
+
+    x = -np.log(x)
+    D = x.dot(y.T)
+
+    out = np.diag(D).mean()
+
+    # raise NotImplementedError
     ########################
     # END OF YOUR CODE    #
     #######################
@@ -249,7 +305,11 @@ class CrossEntropyModule(object):
     ########################
     # PUT YOUR CODE HERE  #
     #######################
-    raise NotImplementedError
+
+    dx = np.divide(-y,x)/len(y)
+
+
+    # raise NotImplementedError
     ########################
     # END OF YOUR CODE    #
     #######################

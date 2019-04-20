@@ -2,6 +2,9 @@ import numpy as np
 import torch
 import torch.nn as nn
 
+dtype = torch.float
+device = torch.device("cpu")
+
 """
 The modules/function here implement custom versions of batch normalization in PyTorch.
 In contrast to more advanced implementations no use of a running mean/variance is made.
@@ -37,7 +40,13 @@ class CustomBatchNormAutograd(nn.Module):
     ########################
     # PUT YOUR CODE HERE  #
     #######################
-    raise NotImplementedError
+
+    self.n_neurons = n_neurons
+    self.eps = eps
+    self.gamma = nn.Parameter(torch.ones(n_neurons))
+    self.beta = nn.Parameter(torch.zeros(n_neurons))
+
+    # raise NotImplementedError
     ########################
     # END OF YOUR CODE    #
     #######################
@@ -60,7 +69,19 @@ class CustomBatchNormAutograd(nn.Module):
     ########################
     # PUT YOUR CODE HERE  #
     #######################
-    raise NotImplementedError
+
+    assert input.size(dim=1) == self.n_neurons, 'Shape of input is not correct'
+
+    mu = input.mean(dim=0)
+
+    var = torch.var(input, dim=0, unbiased=False)
+
+    x_s = (input-mu)/torch.sqrt(var + self.eps)
+
+    out = self.gamma*x_s + self.beta
+
+
+    # raise NotImplementedError
     ########################
     # END OF YOUR CODE    #
     #######################
@@ -114,7 +135,19 @@ class CustomBatchNormManualFunction(torch.autograd.Function):
     ########################
     # PUT YOUR CODE HERE  #
     #######################
-    raise NotImplementedError
+
+    mu = input.mean(dim=0)
+    var = torch.var(input, dim=0, unbiased=False)
+
+    x_center = (input-mu)
+    x_uvar = torch.sqrt(var + eps)
+    x_hat = x_center/x_uvar
+
+    out = gamma*x_hat + beta
+
+    ctx.save_for_backward(x_center, x_uvar, gamma, beta)
+
+    # raise NotImplementedError
     ########################
     # END OF YOUR CODE    #
     #######################
@@ -142,7 +175,28 @@ class CustomBatchNormManualFunction(torch.autograd.Function):
     ########################
     # PUT YOUR CODE HERE  #
     #######################
-    raise NotImplementedError
+
+    b_size = grad_output.size(dim=0)
+
+    x_center, x_uvar, gamma, beta = ctx.saved_tensors
+
+    x_hat = x_center/x_uvar
+
+    if ctx.needs_input_grad[0]:
+      dx_hat = grad_output * gamma
+      grad_input = (1/b_size) * (1/x_uvar)*(b_size*dx_hat - torch.sum(dx_hat, dim=0)- x_hat*torch.sum(dx_hat*x_hat, dim=0))
+    else:
+      grad_input = None
+
+    if ctx.needs_input_grad[1]:
+      grad_gamma = torch.sum(x_hat*grad_output, dim=0)
+
+    if ctx.needs_input_grad[2]:
+      grad_beta = torch.sum(grad_output, dim=0)
+    else:
+      grad_beta = None
+
+    # raise NotImplementedError
     ########################
     # END OF YOUR CODE    #
     #######################
@@ -180,7 +234,13 @@ class CustomBatchNormManualModule(nn.Module):
     ########################
     # PUT YOUR CODE HERE  #
     #######################
-    raise NotImplementedError
+
+    self.n_neurons = n_neurons
+    self.eps = eps
+    self.gamma = nn.Parameter(torch.ones(self.n_neurons, dtype= dtype))
+    self.beta = nn.Parameter(torch.zeros(self.n_neurons, dtype= dtype))
+
+    # raise NotImplementedError
     ########################
     # END OF YOUR CODE    #
     #######################
@@ -203,9 +263,14 @@ class CustomBatchNormManualModule(nn.Module):
     ########################
     # PUT YOUR CODE HERE  #
     #######################
-    raise NotImplementedError
+    assert input.size(dim=1) == self.n_neurons, 'Shape of input is not correct'
+
+    b_norm = CustomBatchNormManualFunction()
+    out = b_norm.apply(input, self.gamma, self.beta, self.eps)
+    # raise NotImplementedError
     ########################
     # END OF YOUR CODE    #
     #######################
 
     return out
+

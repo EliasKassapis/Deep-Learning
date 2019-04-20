@@ -6,6 +6,8 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
+import torch.nn as nn
+
 class MLP(nn.Module):
   """
   This class implements a Multi-layer Perceptron in PyTorch.
@@ -34,7 +36,24 @@ class MLP(nn.Module):
     ########################
     # PUT YOUR CODE HERE  #
     #######################
-    raise NotImplementedError
+
+
+    super(MLP,self).__init__()
+
+    n_layers = n_hidden.copy()
+    n_layers.insert(0,n_inputs)
+    n_layers.append(n_classes)
+    self.layers = []
+    #
+    for l in range(len(n_layers)-1):
+      self.layers.append(nn.Linear(n_layers[l], n_layers[l+1]))
+      if l != (len(n_hidden)):
+        self.layers.append(nn.ReLU())
+
+    self.model = nn.Sequential(*self.layers)
+
+
+    # raise NotImplementedError
     ########################
     # END OF YOUR CODE    #
     #######################
@@ -56,7 +75,11 @@ class MLP(nn.Module):
     ########################
     # PUT YOUR CODE HERE  #
     #######################
-    raise NotImplementedError
+
+    out = self.model(x)
+
+
+    # raise NotImplementedError
     ########################
     # END OF YOUR CODE    #
     #######################

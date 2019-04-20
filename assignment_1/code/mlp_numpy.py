@@ -36,7 +36,32 @@ class MLP(object):
     ########################
     # PUT YOUR CODE HERE  #
     #######################
-    raise NotImplementedError
+    self.n_hidden = n_hidden
+
+    #initialize input layer
+    a_0 = LinearModule(n_inputs,n_hidden[0])
+    z_0 = ReLUModule()
+
+    self.layers = [a_0]
+    self.layer_out = [z_0]
+
+    #initialize hidden_layers
+    for l in range(len(n_hidden)-1):
+      current_a = LinearModule(n_hidden[l],n_hidden[l + 1])
+      current_z = ReLUModule()
+
+      self.layers.append(current_a)
+      self.layer_out.append(current_z)
+
+    #initialize last layer
+    a_N = LinearModule(n_hidden[-1],n_classes)
+    z_N = SoftMaxModule()
+
+    self.layers.append(a_N)
+    self.layer_out.append(z_N)
+
+
+    # raise NotImplementedError
     ########################
     # END OF YOUR CODE    #
     #######################
@@ -58,12 +83,18 @@ class MLP(object):
     ########################
     # PUT YOUR CODE HERE  #
     #######################
-    raise NotImplementedError
+
+    #forward pass
+    for i in range(len(self.n_hidden)+1):
+      x = self.layers[i].forward(x)
+      x = self.layer_out[i].forward(x)
+
+    # raise NotImplementedError
     ########################
     # END OF YOUR CODE    #
     #######################
 
-    return out
+    return x
 
   def backward(self, dout):
     """
@@ -75,11 +106,16 @@ class MLP(object):
     TODO:
     Implement backward pass of the network.
     """
-    
     ########################
     # PUT YOUR CODE HERE  #
     #######################
-    raise NotImplementedError
+
+    for i in range(len(self.n_hidden), -1, -1):
+        dout = self.layer_out[i].backward(dout)
+        dout = self.layers[i].backward(dout)
+
+
+    # raise NotImplementedError
     ########################
     # END OF YOUR CODE    #
     #######################

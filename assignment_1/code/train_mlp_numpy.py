@@ -12,6 +12,7 @@ import os
 from mlp_numpy import MLP
 from modules import CrossEntropyModule
 import cifar10_utils
+import matplotlib.pyplot as plt
 
 # Default constants
 DNN_HIDDEN_UNITS_DEFAULT = '100'
@@ -46,12 +47,20 @@ def accuracy(predictions, targets):
   ########################
   # PUT YOUR CODE HERE  #
   #######################
-  raise NotImplementedError
+
+  # print(predictions)
+  accuracy = (predictions.argmax(axis=1) == targets.argmax(axis=1)).mean()
+
+
+  # raise NotImplementedError
   ########################
   # END OF YOUR CODE    #
   #######################
 
   return accuracy
+
+
+
 
 def train():
   """
@@ -76,7 +85,100 @@ def train():
   ########################
   # PUT YOUR CODE HERE  #
   #######################
-  raise NotImplementedError
+
+  #load data
+  cifar10 = cifar10_utils.get_cifar10(FLAGS.data_dir)
+
+  #hyperparameters
+  eta = FLAGS.learning_rate
+  eps = 1e-6 # convergence criterion
+  max_steps = FLAGS.max_steps
+  b_size = FLAGS.batch_size
+
+
+  #load test data
+  x_test = cifar10["test"].images
+  y_test = cifar10["test"].labels
+
+
+  n_inputs = np.size(x_test,0)
+  n_classes = np.size(y_test,1)
+  v_size = np.size(x_test,1) * np.size(x_test,2) * np.size(x_test,3)
+
+  x_test = x_test.reshape((n_inputs, v_size))
+
+  #initialize the MLP model
+  model = MLP(n_inputs = v_size, n_hidden = dnn_hidden_units, n_classes = n_classes)
+  get_loss = CrossEntropyModule()
+
+  train_loss = []
+  test_loss = []
+  train_acc = []
+  test_acc = []
+
+  for epoch in range(max_steps):
+
+    #get batch
+    x, y = cifar10['train'].next_batch(b_size)
+
+    #stretch input images into vectors
+    x = x.reshape(b_size, v_size)
+
+    #forward pass
+    pred = model.forward(x)
+
+    #get loss
+    current_loss = get_loss.forward(pred,y)
+
+    #get loss gradient
+    current_loss_grad = get_loss.backward(pred,y)
+
+    #backpropagation
+    model.backward(current_loss_grad)
+
+
+    # #SGD
+    for l in model.layers:
+      l.params["weight"] -= eta*l.grads["weight"]
+      l.params["bias"] -= eta*l.grads["bias"]
+
+    if (epoch % FLAGS.eval_freq) == 0:
+      train_loss.append(current_loss)
+      current_train_acc = accuracy(pred, y)
+      train_acc.append(current_train_acc)
+
+      test_pred = model.forward(x_test)
+      current_test_loss = get_loss.forward(test_pred, y_test)
+      test_loss.append(current_test_loss)
+      current_test_acc = accuracy(test_pred, y_test)
+      test_acc.append(current_test_acc)
+
+      print('\nEpoch ',epoch, '\n------------\nTraining Loss = ', current_loss, ', Train Accuracy = ', current_train_acc, '\nTest Loss = ', current_test_loss, ', Test Accuracy = ', current_test_acc)
+
+      if epoch > 0 and abs(train_loss[(int(epoch/100))] - train_loss[int(epoch/100)-1]) < eps:
+                break
+
+  plot_graphs(train_loss, 'Training Loss', 'orange',
+                test_loss, 'Test Loss', 'blue',
+                title='Stochastic gradient descent',
+                ylabel='Loss',
+                xlabel='Epochs')
+
+  plot_graphs(train_acc, 'Training Accuracy', 'darkorange',
+                test_acc, 'Test Accuracy', 'darkred',
+                title='Stochastic gradient descent',
+                ylabel='Accuracy',
+                xlabel='Epochs')
+
+  #save results:
+  path = "./results/numpy results/results"
+  np.save(path, train_loss)
+  np.save(path, train_acc)
+  np.save(path, test_loss)
+  np.save(path, test_acc)
+
+
+  # raise NotImplementedError
   ########################
   # END OF YOUR CODE    #
   #######################
@@ -87,6 +189,27 @@ def print_flags():
   """
   for key, value in vars(FLAGS).items():
     print(key + ' : ' + str(value))
+
+def plot_graphs(*args, title=None, ylabel=None, xlabel=None):
+    y = args[0::3]
+    legends = args[1::3]
+    colors = args[2::3]
+
+    if title != None:
+        plt.title(title)
+
+    if xlabel != None:
+        plt.xlabel(xlabel)
+
+    if ylabel != None:
+        plt.ylabel(ylabel)
+
+    for i, current_y in enumerate(y):
+        plt.plot(current_y, label=legends[i], color=colors[i])
+
+    plt.legend()
+    plt.show()
+
 
 def main():
   """
@@ -119,3 +242,6 @@ if __name__ == '__main__':
   FLAGS, unparsed = parser.parse_known_args()
 
   main()
+
+
+
