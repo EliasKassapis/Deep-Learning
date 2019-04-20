@@ -54,9 +54,10 @@ def accuracy(predictions, targets):
   # PUT YOUR CODE HERE  #
   #######################
 
-  predictions = predictions.items()
-  targets = targets.items()
-  accuracy = (predictions.argmax(axis=1) == targets.argmax(axis=1)).mean()
+
+  accuracy = (predictions.argmax(axis=1) == targets.argmax(axis=1)).type(dtype).mean()
+
+  accuracy = accuracy.detach().data.cpu().item()
 
   # raise NotImplementedError
   ########################
