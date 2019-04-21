@@ -56,7 +56,6 @@ def accuracy(predictions, targets):
 
 
   accuracy = (predictions.argmax(dim=1) == targets.argmax(dim=1)).type(dtype).mean()
-
   accuracy = accuracy.detach().data.cpu().item()
 
   # raise NotImplementedError
@@ -82,7 +81,7 @@ def train():
   # PUT YOUR CODE HERE  #
   #######################
 
-    #load data
+  #load data
   cifar10 = cifar10_utils.get_cifar10(FLAGS.data_dir)
 
   #hyperparameters
@@ -113,21 +112,21 @@ def train():
   train_acc = []
   test_acc = []
 
-  for epoch in range(max_steps):
+  for step in range(max_steps):
     #get batch
-    x, y = cifar10['train'].next_batch(b_size) # NEED TO MAKE THEM TENSORS
+    x, y = cifar10['train'].next_batch(b_size)
     x = torch.tensor(x).type(dtype).to(device)
-    y = torch.tensor(y).type(dtype).to(device) ############ Check removing grad=!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    y = torch.tensor(y).type(dtype).to(device)
 
 
     #forward pass
     pred = model.forward(x)
 
-    #get loss
-    current_loss = get_loss(pred,y.argmax(dim=1)) # check this again 1!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    #get training loss
+    current_loss = get_loss(pred,y.argmax(dim=1))
     optimizer.zero_grad()
 
-    #get loss gradient
+    #get training loss gradient
     current_loss.backward()
 
     #get training accuracy
@@ -135,12 +134,13 @@ def train():
 
     optimizer.step()
 
+    #free memory up
     pred.detach()
     x.detach()
     y.detach()
 
-
-    if (epoch % FLAGS.eval_freq) == 0:
+    #select evaluation step
+    if (step % FLAGS.eval_freq) == 0:
 
         c_loss = current_loss.data.item()
         train_loss.append(c_loss)
@@ -149,46 +149,48 @@ def train():
         c_test_loss = 0
         current_test_acc = 0
 
+        #loop through test set in batches
         for test_batch in range(n_batches):
           #load test data
           x_test, y_test = cifar10['test'].next_batch(b_size)
-          x_test = torch.tensor(x_test, requires_grad=False).type(dtype).to(device) #################################################################################
-          y_test = torch.tensor(y_test, requires_grad=False).type(dtype).to(device) #################################################################################
+          x_test = torch.tensor(x_test, requires_grad=False).type(dtype).to(device)
+          y_test = torch.tensor(y_test, requires_grad=False).type(dtype).to(device)
 
+          #get test batch results
           test_pred = model.forward(x_test)
           current_test_loss = get_loss(test_pred, y_test.argmax(dim=1))
-
 
           c_test_loss += current_test_loss.data.item()
           current_test_acc += accuracy(test_pred, y_test)
 
-          test_pred.detach() ###################################
-          x_test.detach() #######################################
-          y_test.detach() #######################################
+          #free memory up
+          test_pred.detach()
+          x_test.detach()
+          y_test.detach()
 
-
+        #get full test set results
         c_test_loss = c_test_loss/n_batches
         current_test_acc = current_test_acc/n_batches
         test_loss.append(c_test_loss)
         test_acc.append(current_test_acc)
 
-        print('\nEpoch ',epoch, '\n------------\nTraining Loss = ', round(c_loss,4), ', Train Accuracy = ', current_train_acc, '\nTest Loss = ', round(c_test_loss,4), ', Test Accuracy = ', round(current_test_acc,4))
+        print('\nStep ',step, '\n------------\nTraining Loss = ', round(c_loss,4), ', Train Accuracy = ', current_train_acc, '\nTest Loss = ', round(c_test_loss,4), ', Test Accuracy = ', round(current_test_acc,4))
 
-        if epoch > 0 and abs(train_loss[(int(epoch/FLAGS.eval_freq))] - train_loss[int(epoch/FLAGS.eval_freq)-1]) < eps:
+        if step > 0 and abs(test_loss[(int(step/FLAGS.eval_freq))] - test_loss[int(step/FLAGS.eval_freq)-1]) < eps:
                 break
 
 
   plot_graphs(train_loss, 'Training Loss', 'orange',
                 test_loss, 'Test Loss', 'blue',
-                title='Stochastic gradient descent',
+                title='Adams optimization',
                 ylabel='Loss',
-                xlabel='Epochs')
+                xlabel='Steps')
 
   plot_graphs(train_acc, 'Training Accuracy', 'darkorange',
                 test_acc, 'Test Accuracy', 'darkred',
-                title='Stochastic gradient descent',
+                title='Adamns optimization',
                 ylabel='Accuracy',
-                xlabel='Epochs')
+                xlabel='Steps')
 
   #save results:
   np.save('train_loss', train_loss)

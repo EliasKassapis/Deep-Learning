@@ -17,8 +17,8 @@ import matplotlib.pyplot as plt
 
 
 dtype = torch.float
-device = torch.device("cpu")
-# device = torch.device("cuda:0") # Uncomment this to run on GPU
+# device = torch.device("cpu")
+device = torch.device("cuda:0") # Uncomment this to run on GPU
 
 # Default constants
 DNN_HIDDEN_UNITS_DEFAULT = '100'
@@ -54,11 +54,9 @@ def accuracy(predictions, targets):
   # PUT YOUR CODE HERE  #
   #######################
 
-  predictions = predictions.detach().numpy()
-  targets = targets.detach().numpy()
-  accuracy = (predictions.argmax(axis=1) == targets.argmax(axis=1)).mean()
+  accuracy = (predictions.argmax(dim=1) == targets.argmax(dim=1)).type(dtype).mean()
+  accuracy = accuracy.detach().data.cpu().item()
 
-  # raise NotImplementedError
   ########################
   # END OF YOUR CODE    #
   #######################
@@ -99,10 +97,13 @@ def train():
   b_size = FLAGS.batch_size
 
 
+
   #load test data
   x_test = cifar10["test"].images
   y_test = cifar10["test"].labels
-  y_test = torch.tensor(y_test, requires_grad=False).type(dtype).to(device) ################################################################################
+  y_test = torch.tensor(y_test, requires_grad=False).type(dtype).to(device)
+
+
 
 
   n_inputs = np.size(x_test,0)
@@ -110,25 +111,36 @@ def train():
   v_size = np.size(x_test,1) * np.size(x_test,2) * np.size(x_test,3)
 
   x_test = x_test.reshape((n_inputs, v_size))
-  x_test = torch.tensor(x_test, requires_grad=False).type(dtype).to(device) #################################################################################
+  x_test = torch.tensor(x_test, requires_grad=False).type(dtype).to(device)
+
+
+  # #load whole train data ############################################################
+  # x_train = cifar10["train"].images
+  # x_train = x_train.reshape((np.size(x_train,0), v_size))
+  # x_train = torch.tensor(x_train, requires_grad=False).type(dtype).to(device)
+  # y_train = cifar10["train"].labels
+  # y_train = torch.tensor(y_train, requires_grad=False).type(dtype).to(device)
+
 
   #initialize the MLP model
   model = MLP(n_inputs = v_size, n_hidden = dnn_hidden_units, n_classes = n_classes)
   get_loss = torch.nn.CrossEntropyLoss()
-  optimizer = torch.optim.SGD(model.parameters(), lr=eta)
-  # optimizer = torch.optim.Adam(model.parameters(), lr=eta)
 
+  if FLAGS.optimizer == "adam":
+      optimizer = torch.optim.Adam(model.parameters(), lr=eta)
+  elif FLAGS.optimizer == "sgd":
+    optimizer = torch.optim.SGD(model.parameters(), lr=eta)
 
   train_loss = []
   test_loss = []
   train_acc = []
   test_acc = []
 
-  for epoch in range(max_steps):
+  for step in range(max_steps):
 
     #get batch
-    x, y = cifar10['train'].next_batch(b_size) # NEED TO MAKE THEM TENSORS
-    y = torch.tensor(y).type(dtype).to(device) ############ Check removing grad=!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    x, y = cifar10['train'].next_batch(b_size)
+    y = torch.tensor(y).type(dtype).to(device)
 
     #stretch input images into vectors
     x = x.reshape(b_size, v_size)
@@ -137,17 +149,17 @@ def train():
     #forward pass
     pred = model.forward(x)
 
-    #get loss
-    current_loss = get_loss(pred,y.argmax(dim=1)) # check this again 1!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    #get training loss
+    current_loss = get_loss(pred,y.argmax(dim=1))
     optimizer.zero_grad()
 
-    #get loss gradient
+    #get training loss gradient
     current_loss.backward()
 
     optimizer.step()
 
-
-    if (epoch % FLAGS.eval_freq) == 0:
+    #select evaluation steps
+    if (step % FLAGS.eval_freq) == 0:
 
         c_loss = current_loss.data.item()
         train_loss.append(c_loss)
@@ -155,38 +167,55 @@ def train():
         current_train_acc = accuracy(pred, y)
         train_acc.append(current_train_acc)
 
+
+        # #get train set results
+        # train_pred = model.forward(x_train)
+        # current_loss = get_loss(train_pred, y_train.argmax(dim=1))
+        #
+        # c_loss = current_loss.data.item()
+        # train_loss.append(c_loss)
+        #
+        # current_train_acc = accuracy(train_pred, y_train)
+        # train_acc.append(current_train_acc)
+
+
+        #get test set results
         test_pred = model.forward(x_test)
         current_test_loss = get_loss(test_pred, y_test.argmax(dim=1))
+
         c_test_loss = current_test_loss.data.item()
         test_loss.append(c_test_loss)
+
         current_test_acc = accuracy(test_pred, y_test)
         test_acc.append(current_test_acc)
 
-        print('\nEpoch ',epoch, '\n------------\nTraining Loss = ', round(c_loss,4), ', Train Accuracy = ', current_train_acc, '\nTest Loss = ', round(c_test_loss,4), ', Test Accuracy = ', current_test_acc)
+        if FLAGS.optimize == False:
+            print('\nStep ',step, '\n------------\nTraining Loss = ', round(c_loss,4), ', Train Accuracy = ', current_train_acc, '\nTest Loss = ', round(c_test_loss,4), ', Test Accuracy = ', current_test_acc)
 
-        if epoch > 0 and abs(train_loss[(int(epoch/FLAGS.eval_freq))] - train_loss[int(epoch/FLAGS.eval_freq)-1]) < eps:
+        if step > 0 and abs(test_loss[(int(step/FLAGS.eval_freq))] - test_loss[int(step/FLAGS.eval_freq)-1]) < eps:
                 break
 
+  # if FLAGS.optimize == False:
+  #     plot_graphs(train_loss, 'Training Loss', 'orange',
+  #                   test_loss, 'Test Loss', 'blue',
+  #                   title='Stochastic gradient descent',
+  #                   ylabel='Loss',
+  #                   xlabel='Steps')
+  #
+  #     plot_graphs(train_acc, 'Training Accuracy', 'darkorange',
+  #                   test_acc, 'Test Accuracy', 'darkred',
+  #                   title='Stochastic gradient descent',
+  #                   ylabel='Accuracy',
+  #                   xlabel='Steps')
+  #
+  #     #save results:
+  #     path = "./results/pytorch results/"
+  #     np.save(path + 'train_loss', train_loss)
+  #     np.save(path + 'train_acc', train_acc)
+  #     np.save(path + 'test_loss', test_loss)
+  #     np.save(path + 'test_acc', test_acc)
 
-  plot_graphs(train_loss, 'Training Loss', 'orange',
-                test_loss, 'Test Loss', 'blue',
-                title='Stochastic gradient descent',
-                ylabel='Loss',
-                xlabel='Epochs')
-
-  plot_graphs(train_acc, 'Training Accuracy', 'darkorange',
-                test_acc, 'Test Accuracy', 'darkred',
-                title='Stochastic gradient descent',
-                ylabel='Accuracy',
-                xlabel='Epochs')
-
-  #save results:
-  path = "./results/pytorch results/results"
-  np.save(path, train_loss)
-  np.save(path, train_acc)
-  np.save(path, test_loss)
-  np.save(path, test_acc)
-
+  return train_loss, test_loss, train_acc, test_acc
 
   # raise NotImplementedError
   ########################
@@ -250,4 +279,81 @@ if __name__ == '__main__':
                       help='Directory for storing input data')
   FLAGS, unparsed = parser.parse_known_args()
 
+  FLAGS.optimizer = 'sgd'
+
+  FLAGS.optimize = False
+
   main()
+
+
+
+def get_setups():
+
+
+    l_size_options = np.linspace(100,1000,10).astype(int).astype(str)
+    etas = np.linspace(1e-8, 1e-5, 4)
+    opts = ["adam", "sgd"]
+    batch_size = np.linspace(32,128, 4).astype(int)
+    n_hlayers = np.linspace(1,4,4).astype(int)
+
+    setups = []
+
+    #create all combos
+    for i in range(3):
+        for n in n_hlayers:
+            n_hidden = ''
+            for layer in range(n):
+                l_size = np.random.choice(l_size_options)
+                if layer != (n-1):
+                    n_hidden += l_size + ','
+                else:
+                    n_hidden += l_size
+            for b_size in batch_size:
+                for eta in etas:
+                    for opt in opts:
+                        setups.append([n_hidden, b_size, eta, opt])
+
+    return setups
+
+setups = get_setups()
+
+def get_best_setup(setups):
+
+    FLAGS.optimize = True
+    setup_acc = []
+    for i,setup in enumerate(setups):
+        FLAGS.dnn_hidden_units = setup[0]
+        FLAGS.batch_size = setup[1]
+        FLAGS.learning_rate = setup[2]
+        FLAGS.optimizer = setup[3]
+        print('\nCurrent Setup hyperparameters (setup ',i,' of ',len(setups),'):\n----------------------\ndnn_hidden_units = ',FLAGS.dnn_hidden_units,'\nBatch size = ', FLAGS.batch_size,'\nTraining rate = ', FLAGS.learning_rate, '\nOptimizer = ', FLAGS.optimizer)
+
+        train_loss, test_loss, train_acc, test_acc = train()
+
+        setup_acc.append(test_acc[-1])
+        print('\nTraining Loss = ', round(train_loss[-1],4), ', Train Accuracy = ', round(train_acc[-1],4), '\nTest Loss = ', round(test_loss[-1],4), ', Test Accuracy = ', round(test_acc[-1],4))
+
+    best_setup_idx = np.argmax(setup_acc)
+
+    #Get best setup parameters
+    FLAGS.dnn_hidden_units = setups[best_setup_idx][0]
+    FLAGS.batch_size = setups[best_setup_idx][1]
+    FLAGS.learning_rate = setups[best_setup_idx][2]
+    FLAGS.optimizer = setups[best_setup_idx][3]
+
+    #Get results of best setup
+    train_loss, test_loss, train_acc, test_acc = train()
+
+    print('\nBest Setup hyperparameters:\n----------------------\ndnn_hidden_units = ', FLAGS.dnn_hidden_units, '\nBatch size = ', FLAGS.batch_size, '\nTraining rate = ', FLAGS.learning_rate, '\nOptimizer = ', FLAGS.optimizer)
+
+    #save results of best setup
+    np.save('Best dnn_hidden_units', FLAGS.dnn_hidden_units)
+    np.save('Best b_size', FLAGS.batch_size)
+    np.save('Best eta', FLAGS.learning_rate)
+    np.save('Best opt', FLAGS.optimizer)
+    np.save('Best train_loss', train_loss)
+    np.save('Best train_acc', train_acc)
+    np.save('Best test_loss', test_loss)
+    np.save('Best test_acc', test_acc)
+
+n_hidden, b_size, eta, opt = get_best_setup(setups)

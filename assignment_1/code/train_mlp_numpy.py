@@ -116,7 +116,7 @@ def train():
   train_acc = []
   test_acc = []
 
-  for epoch in range(max_steps):
+  for step in range(max_steps):
 
     #get batch
     x, y = cifar10['train'].next_batch(b_size)
@@ -142,7 +142,7 @@ def train():
       l.params["weight"] -= eta*l.grads["weight"]
       l.params["bias"] -= eta*l.grads["bias"]
 
-    if (epoch % FLAGS.eval_freq) == 0:
+    if (step % FLAGS.eval_freq) == 0:
       train_loss.append(current_loss)
       current_train_acc = accuracy(pred, y)
       train_acc.append(current_train_acc)
@@ -153,29 +153,29 @@ def train():
       current_test_acc = accuracy(test_pred, y_test)
       test_acc.append(current_test_acc)
 
-      print('\nEpoch ',epoch, '\n------------\nTraining Loss = ', current_loss, ', Train Accuracy = ', current_train_acc, '\nTest Loss = ', current_test_loss, ', Test Accuracy = ', current_test_acc)
+      print('\nStep ',step, '\n------------\nTraining Loss = ', current_loss, ', Train Accuracy = ', current_train_acc, '\nTest Loss = ', current_test_loss, ', Test Accuracy = ', current_test_acc)
 
-      if epoch > 0 and abs(train_loss[(int(epoch/100))] - train_loss[int(epoch/100)-1]) < eps:
+      if step > 0 and abs(test_loss[(int(step/100))] - test_loss[int(step/100)-1]) < eps:
                 break
 
   plot_graphs(train_loss, 'Training Loss', 'orange',
                 test_loss, 'Test Loss', 'blue',
                 title='Stochastic gradient descent',
                 ylabel='Loss',
-                xlabel='Epochs')
+                xlabel='Steps')
 
   plot_graphs(train_acc, 'Training Accuracy', 'darkorange',
                 test_acc, 'Test Accuracy', 'darkred',
                 title='Stochastic gradient descent',
                 ylabel='Accuracy',
-                xlabel='Epochs')
+                xlabel='Steps')
 
   #save results:
-  path = "./results/numpy results/results"
-  np.save(path, train_loss)
-  np.save(path, train_acc)
-  np.save(path, test_loss)
-  np.save(path, test_acc)
+  path = "./results/numpy results/"
+  np.save(path + 'train_loss', train_loss)
+  np.save(path + 'train_acc', train_acc)
+  np.save(path + 'test_loss', test_loss)
+  np.save(path + 'test_acc', test_acc)
 
 
   # raise NotImplementedError
