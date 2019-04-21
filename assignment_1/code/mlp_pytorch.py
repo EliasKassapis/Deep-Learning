@@ -15,7 +15,7 @@ class MLP(nn.Module):
   Once initialized an MLP object can perform forward.
   """
 
-  def __init__(self, n_inputs, n_hidden, n_classes):
+  def __init__(self, n_inputs, n_hidden, n_classes, b_norm = None): ####Added batch_norm
     """
     Initializes MLP object. 
     
@@ -47,8 +47,11 @@ class MLP(nn.Module):
     #
     for l in range(len(n_layers)-1):
       self.layers.append(nn.Linear(n_layers[l], n_layers[l+1]))
+      if b_norm != None:
+        self.layers.append(nn.BatchNorm1d(num_features=n_layers[l+1])) ##### batch normalization
       if l != (len(n_hidden)):
         self.layers.append(nn.ReLU())
+
 
     self.model = nn.Sequential(*self.layers)
 

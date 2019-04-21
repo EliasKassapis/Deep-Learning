@@ -121,7 +121,7 @@ def train():
 
 
   #initialize the MLP model
-  model = MLP(n_inputs = v_size, n_hidden = dnn_hidden_units, n_classes = n_classes)
+  model = MLP(n_inputs = v_size, n_hidden = dnn_hidden_units, n_classes = n_classes, b_norm=FLAGS.b_norm)
   get_loss = torch.nn.CrossEntropyLoss()
 
   if FLAGS.optimizer == "adam":
@@ -297,6 +297,8 @@ if __name__ == '__main__':
 
   FLAGS.optimize = False
 
+  FLAGS.b_norm = False
+
   main()
 
 
@@ -304,32 +306,36 @@ if __name__ == '__main__':
 def get_setups():
 
 
-    l_size_options = np.linspace(100,1000,10).astype(int).astype(str)
-    etas = np.linspace(1e-8, 1e-5, 4)
+    l_size_options = np.linspace(128,512,4).astype(int).astype(str)
+    etas = np.linspace(1e-7, 1e-5, 3)
     opts = ["adam", "sgd"]
-    batch_size = np.linspace(32,128, 4).astype(int)
-    n_hlayers = np.linspace(1,4,4).astype(int)
+    batch_size = np.linspace(128, 384, 3).astype(int)
+    n_hlayers = np.linspace(1,5,2).astype(int)
+    b_norm = [True, False]
 
     setups = []
 
     #create all combos
     for i in range(3):
-        for n in n_hlayers:
-            n_hidden = ''
-            for layer in range(n):
-                l_size = np.random.choice(l_size_options)
-                if layer != (n-1):
-                    n_hidden += l_size + ','
-                else:
-                    n_hidden += l_size
-            for b_size in batch_size:
-                for eta in etas:
-                    for opt in opts:
-                        setups.append([n_hidden, b_size, eta, opt])
+        for norm in b_norm:
+            for n in n_hlayers:
+                n_hidden = ''
+                for layer in range(n):
+                    l_size = np.random.choice(l_size_options)
+                    if layer != (n-1):
+                        n_hidden += l_size + ','
+                    else:
+                        n_hidden += l_size
+                for b_size in batch_size:
+                    for eta in etas:
+                        for opt in opts:
+                            setups.append([n_hidden, b_size, eta, opt,norm])
 
     return setups
 
 setups = get_setups()
+
+print('No of setups: ', len(setups))
 
 def get_best_setup(setups):
 
@@ -340,31 +346,49 @@ def get_best_setup(setups):
         FLAGS.batch_size = setup[1]
         FLAGS.learning_rate = setup[2]
         FLAGS.optimizer = setup[3]
-        print('\nCurrent Setup hyperparameters (setup ',i,' of ',len(setups),'):\n----------------------\ndnn_hidden_units = ',FLAGS.dnn_hidden_units,'\nBatch size = ', FLAGS.batch_size,'\nTraining rate = ', FLAGS.learning_rate, '\nOptimizer = ', FLAGS.optimizer)
+        FLAGS.b_norm = setup[4]
+        print('\nCurrent Setup hyperparameters (setup ',i,' of ',len(setups),'):\n----------------------\ndnn_hidden_units = ',FLAGS.dnn_hidden_units,
+              '\nBatch size = ', FLAGS.batch_size,'\nTraining rate = ', FLAGS.learning_rate,
+              '\nOptimizer = ', FLAGS.optimizer, '\nBatch Normalization =', FLAGS.b_norm)
 
         train_loss, test_loss, train_acc, test_acc = train()
 
         setup_acc.append(test_acc[-1])
-        print('\nTraining Loss = ', round(train_loss[-1],4), ', Train Accuracy = ', round(train_acc[-1],4), '\nTest Loss = ', round(test_loss[-1],4), ', Test Accuracy = ', round(test_acc[-1],4))
 
-    best_setup_idx = np.argmax(setup_acc)
+        print('\nTraining Loss = ', round(train_loss[-1],4), ', Train Accuracy = ', round(train_acc[-1],4),
+              '\nTest Loss = ', round(test_loss[-1],4), ', Test Accuracy = ', round(test_acc[-1],4))
 
-    #Get best setup parameters
-    FLAGS.dnn_hidden_units = setups[best_setup_idx][0]
-    FLAGS.batch_size = setups[best_setup_idx][1]
-    FLAGS.learning_rate = setups[best_setup_idx][2]
-    FLAGS.optimizer = setups[best_setup_idx][3]
+        current_best = np.argmax(setup_acc)
+
+        #Get current best setup parameters
+        FLAGS.dnn_hidden_units = setups[current_best][0]
+        FLAGS.batch_size = setups[current_best][1]
+        FLAGS.learning_rate = setups[current_best][2]
+        FLAGS.optimizer = setups[current_best][3]
+        FLAGS.b_norm = setups[current_best][4]
+        print('\nCurrent best = setup', current_best)
+
+    # best_setup_idx = np.argmax(setup_acc)
+    #
+    # #Get best setup parameters
+    # FLAGS.dnn_hidden_units = setups[best_setup_idx][0]
+    # FLAGS.batch_size = setups[best_setup_idx][1]
+    # FLAGS.learning_rate = setups[best_setup_idx][2]
+    # FLAGS.optimizer = setups[best_setup_idx][3]
 
     #Get results of best setup
     train_loss, test_loss, train_acc, test_acc = train()
 
-    print('\nBest Setup hyperparameters:\n----------------------\ndnn_hidden_units = ', FLAGS.dnn_hidden_units, '\nBatch size = ', FLAGS.batch_size, '\nTraining rate = ', FLAGS.learning_rate, '\nOptimizer = ', FLAGS.optimizer)
+    print('\nBest Setup hyperparameters:\n----------------------\ndnn_hidden_units = ', FLAGS.dnn_hidden_units,
+          '\nBatch size = ', FLAGS.batch_size, '\nTraining rate = ', FLAGS.learning_rate,
+          '\nOptimizer = ', FLAGS.optimizer, '\nBatch Normalization =', FLAGS.b_norm)
 
     #save results of best setup
     np.save('Best dnn_hidden_units', FLAGS.dnn_hidden_units)
     np.save('Best b_size', FLAGS.batch_size)
     np.save('Best eta', FLAGS.learning_rate)
     np.save('Best opt', FLAGS.optimizer)
+    np.save('Best b_norm', FLAGS.b_norm)
     np.save('Best train_loss', train_loss)
     np.save('Best train_acc', train_acc)
     np.save('Best test_loss', test_loss)
