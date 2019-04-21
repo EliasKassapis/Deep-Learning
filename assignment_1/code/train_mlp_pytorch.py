@@ -366,7 +366,7 @@ def get_best_setup(setups):
         FLAGS.learning_rate = setups[current_best][2]
         FLAGS.optimizer = setups[current_best][3]
         FLAGS.b_norm = setups[current_best][4]
-        print('\nCurrent best = setup', current_best)
+        print('\nCurrent best = setup', current_best, ', Test accuracy = ', round(setup_acc[current_best],4))
 
     # best_setup_idx = np.argmax(setup_acc)
     #

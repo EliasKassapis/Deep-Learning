@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afccb041-8e84-40d7-b95e-a65c6ee9cc54" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/mlp_pytorch.py" beforeDir="false" afterPath="$PROJECT_DIR$/mlp_pytorch.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/train_mlp_pytorch.py" beforeDir="false" afterPath="$PROJECT_DIR$/train_mlp_pytorch.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,8 +39,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/train_mlp_pytorch.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="312" column="33" selection-start-line="312" selection-start-column="33" selection-end-line="312" selection-end-column="33" />
+            <state relative-caret-position="315">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="e#144#182#0" expanded="true" />
               </folding>
@@ -309,6 +308,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24972677" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -465,8 +465,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/train_mlp_pytorch.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="312" column="33" selection-start-line="312" selection-start-column="33" selection-end-line="312" selection-end-column="33" />
+        <state relative-caret-position="315">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="e#144#182#0" expanded="true" />
           </folding>
