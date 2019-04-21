@@ -2,11 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afccb041-8e84-40d7-b95e-a65c6ee9cc54" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mlp_pytorch.py" beforeDir="false" afterPath="$PROJECT_DIR$/mlp_pytorch.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/train_convnet_pytorch.py" beforeDir="false" afterPath="$PROJECT_DIR$/train_convnet_pytorch.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/train_mlp_pytorch.py" beforeDir="false" afterPath="$PROJECT_DIR$/train_mlp_pytorch.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Best b_norm.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Best b_size.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Best dnn_hidden_units.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Best eta.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Best opt.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Best test_acc.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Best test_loss.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Best train_acc.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Best train_loss.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slurm-2170331.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slurm-2170406.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slurm-2170665.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slurm-2170884.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slurm-2171007.out" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,8 +52,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/train_convnet_pytorch.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="24" lean-forward="true" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+            <state relative-caret-position="2687">
+              <caret line="278" column="30" lean-forward="true" selection-start-line="278" selection-start-column="30" selection-end-line="278" selection-end-column="30" />
               <folding>
                 <element signature="e#150#188#0" expanded="true" />
               </folding>
@@ -448,8 +457,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/train_convnet_pytorch.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="24" lean-forward="true" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+        <state relative-caret-position="2687">
+          <caret line="278" column="30" lean-forward="true" selection-start-line="278" selection-start-column="30" selection-end-line="278" selection-end-column="30" />
           <folding>
             <element signature="e#150#188#0" expanded="true" />
           </folding>

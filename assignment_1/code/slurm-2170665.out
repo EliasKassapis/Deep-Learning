@@ -1,0 +1,2744 @@
+/var/spool/slurm-llnl/slurmd/job2170665/slurm_script: line 19: cd: /home/lgpu0417/deep-learning/assignment_1/code/: Permission denied
+ ------ Job mlp_pytorch is started ------- 
+ 
+dnn_hidden_units : 100
+learning_rate : 0.002
+max_steps : 1500
+batch_size : 200
+eval_freq : 100
+data_dir : ./cifar10/cifar-10-batches-py
+optimizer : sgd
+optimize : False
+b_norm : False
+
+Step  0 
+------------
+Training Loss =  2.4555 , Train Accuracy =  0.11999999731779099 
+Test Loss =  2.4474 , Test Accuracy =  0.10469999983906746
+
+Step  100 
+------------
+Training Loss =  2.036 , Train Accuracy =  0.2549999952316284 
+Test Loss =  2.0114 , Test Accuracy =  0.2893999993801117
+
+Step  200 
+------------
+Training Loss =  1.9685 , Train Accuracy =  0.3050000071525574 
+Test Loss =  1.9576 , Test Accuracy =  0.3217999994754791
+
+Step  300 
+------------
+Training Loss =  1.9277 , Train Accuracy =  0.3149999976158142 
+Test Loss =  1.9296 , Test Accuracy =  0.3393000018596649
+
+Step  400 
+------------
+Training Loss =  1.8693 , Train Accuracy =  0.3400000035762787 
+Test Loss =  1.9083 , Test Accuracy =  0.3487000000476837
+
+Step  500 
+------------
+Training Loss =  1.9436 , Train Accuracy =  0.29499998688697815 
+Test Loss =  1.8899 , Test Accuracy =  0.36219999969005584
+
+Step  600 
+------------
+Training Loss =  1.8133 , Train Accuracy =  0.4099999964237213 
+Test Loss =  1.874 , Test Accuracy =  0.3713000011444092
+
+Step  700 
+------------
+Training Loss =  1.8911 , Train Accuracy =  0.35499998927116394 
+Test Loss =  1.8615 , Test Accuracy =  0.38309999883174894
+
+Step  800 
+------------
+Training Loss =  1.8811 , Train Accuracy =  0.3499999940395355 
+Test Loss =  1.8472 , Test Accuracy =  0.3876000016927719
+
+Step  900 
+------------
+Training Loss =  1.862 , Train Accuracy =  0.41499999165534973 
+Test Loss =  1.8354 , Test Accuracy =  0.38920000195503235
+
+Step  1000 
+------------
+Training Loss =  1.7422 , Train Accuracy =  0.4699999988079071 
+Test Loss =  1.8211 , Test Accuracy =  0.3979999989271164
+
+Step  1100 
+------------
+Training Loss =  1.8153 , Train Accuracy =  0.38499999046325684 
+Test Loss =  1.8083 , Test Accuracy =  0.40610000014305114
+
+Step  1200 
+------------
+Training Loss =  1.7645 , Train Accuracy =  0.38999998569488525 
+Test Loss =  1.8008 , Test Accuracy =  0.4067999994754791
+
+Step  1300 
+------------
+Training Loss =  1.7836 , Train Accuracy =  0.4350000023841858 
+Test Loss =  1.7912 , Test Accuracy =  0.41079999804496764
+
+Step  1400 
+------------
+Training Loss =  1.8087 , Train Accuracy =  0.36500000953674316 
+Test Loss =  1.7796 , Test Accuracy =  0.41879999816417696
+No of setups:  216
+
+Current Setup hyperparameters (setup  0  of  216 ):
+----------------------
+dnn_hidden_units =  256 
+Batch size =  128 
+Training rate =  1e-07 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  2.2967 , Train Accuracy =  0.1328 
+Test Loss =  2.3024 , Test Accuracy =  0.1528
+
+Current best = setup 0 , Test accuracy =  0.1528
+
+Current Setup hyperparameters (setup  1  of  216 ):
+----------------------
+dnn_hidden_units =  256 
+Batch size =  128 
+Training rate =  1e-07 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.6896 , Train Accuracy =  0.0312 
+Test Loss =  2.6241 , Test Accuracy =  0.0657
+
+Current best = setup 0 , Test accuracy =  0.1528
+
+Current Setup hyperparameters (setup  2  of  216 ):
+----------------------
+dnn_hidden_units =  256 
+Batch size =  128 
+Training rate =  5.05e-06 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  1.818 , Train Accuracy =  0.4297 
+Test Loss =  1.8849 , Test Accuracy =  0.3782
+
+Current best = setup 2 , Test accuracy =  0.3782
+
+Current Setup hyperparameters (setup  3  of  216 ):
+----------------------
+dnn_hidden_units =  256 
+Batch size =  128 
+Training rate =  5.05e-06 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.3251 , Train Accuracy =  0.1406 
+Test Loss =  2.3341 , Test Accuracy =  0.1473
+
+Current best = setup 2 , Test accuracy =  0.3782
+
+Current Setup hyperparameters (setup  4  of  216 ):
+----------------------
+dnn_hidden_units =  256 
+Batch size =  128 
+Training rate =  1e-05 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  1.9101 , Train Accuracy =  0.375 
+Test Loss =  1.9161 , Test Accuracy =  0.3715
+
+Current best = setup 2 , Test accuracy =  0.3782
+
+Current Setup hyperparameters (setup  5  of  216 ):
+----------------------
+dnn_hidden_units =  256 
+Batch size =  128 
+Training rate =  1e-05 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.253 , Train Accuracy =  0.1641 
+Test Loss =  2.2665 , Test Accuracy =  0.176
+
+Current best = setup 2 , Test accuracy =  0.3782
+
+Current Setup hyperparameters (setup  6  of  216 ):
+----------------------
+dnn_hidden_units =  256 
+Batch size =  256 
+Training rate =  1e-07 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  2.2079 , Train Accuracy =  0.1758 
+Test Loss =  2.2285 , Test Accuracy =  0.1753
+
+Current best = setup 2 , Test accuracy =  0.3782
+
+Current Setup hyperparameters (setup  7  of  216 ):
+----------------------
+dnn_hidden_units =  256 
+Batch size =  256 
+Training rate =  1e-07 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.5237 , Train Accuracy =  0.1094 
+Test Loss =  2.5569 , Test Accuracy =  0.1087
+
+Current best = setup 2 , Test accuracy =  0.3782
+
+Current Setup hyperparameters (setup  8  of  216 ):
+----------------------
+dnn_hidden_units =  256 
+Batch size =  256 
+Training rate =  5.05e-06 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  1.8742 , Train Accuracy =  0.3633 
+Test Loss =  1.9162 , Test Accuracy =  0.3685
+
+Current best = setup 2 , Test accuracy =  0.3782
+
+Current Setup hyperparameters (setup  9  of  216 ):
+----------------------
+dnn_hidden_units =  256 
+Batch size =  256 
+Training rate =  5.05e-06 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.3153 , Train Accuracy =  0.168 
+Test Loss =  2.3499 , Test Accuracy =  0.1393
+
+Current best = setup 2 , Test accuracy =  0.3782
+
+Current Setup hyperparameters (setup  10  of  216 ):
+----------------------
+dnn_hidden_units =  256 
+Batch size =  256 
+Training rate =  1e-05 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  1.8755 , Train Accuracy =  0.3867 
+Test Loss =  1.8901 , Test Accuracy =  0.375
+
+Current best = setup 2 , Test accuracy =  0.3782
+
+Current Setup hyperparameters (setup  11  of  216 ):
+----------------------
+dnn_hidden_units =  256 
+Batch size =  256 
+Training rate =  1e-05 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.2991 , Train Accuracy =  0.1406 
+Test Loss =  2.2803 , Test Accuracy =  0.1714
+
+Current best = setup 2 , Test accuracy =  0.3782
+
+Current Setup hyperparameters (setup  12  of  216 ):
+----------------------
+dnn_hidden_units =  256 
+Batch size =  384 
+Training rate =  1e-07 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  2.2625 , Train Accuracy =  0.1745 
+Test Loss =  2.2641 , Test Accuracy =  0.161
+
+Current best = setup 2 , Test accuracy =  0.3782
+
+Current Setup hyperparameters (setup  13  of  216 ):
+----------------------
+dnn_hidden_units =  256 
+Batch size =  384 
+Training rate =  1e-07 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.4257 , Train Accuracy =  0.1068 
+Test Loss =  2.4346 , Test Accuracy =  0.085
+
+Current best = setup 2 , Test accuracy =  0.3782
+
+Current Setup hyperparameters (setup  14  of  216 ):
+----------------------
+dnn_hidden_units =  256 
+Batch size =  384 
+Training rate =  5.05e-06 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  1.7998 , Train Accuracy =  0.3906 
+Test Loss =  1.8365 , Test Accuracy =  0.366
+
+Current best = setup 2 , Test accuracy =  0.3782
+
+Current Setup hyperparameters (setup  15  of  216 ):
+----------------------
+dnn_hidden_units =  256 
+Batch size =  384 
+Training rate =  5.05e-06 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.4645 , Train Accuracy =  0.1016 
+Test Loss =  2.3969 , Test Accuracy =  0.1376
+
+Current best = setup 2 , Test accuracy =  0.3782
+
+Current Setup hyperparameters (setup  16  of  216 ):
+----------------------
+dnn_hidden_units =  256 
+Batch size =  384 
+Training rate =  1e-05 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  1.8352 , Train Accuracy =  0.4193 
+Test Loss =  1.8897 , Test Accuracy =  0.4159
+
+Current best = setup 16 , Test accuracy =  0.4159
+
+Current Setup hyperparameters (setup  17  of  216 ):
+----------------------
+dnn_hidden_units =  256 
+Batch size =  384 
+Training rate =  1e-05 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.3036 , Train Accuracy =  0.1745 
+Test Loss =  2.3156 , Test Accuracy =  0.148
+
+Current best = setup 16 , Test accuracy =  0.4159
+
+Current Setup hyperparameters (setup  18  of  216 ):
+----------------------
+dnn_hidden_units =  128,512,128,512,384 
+Batch size =  128 
+Training rate =  1e-07 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  2.4346 , Train Accuracy =  0.1094 
+Test Loss =  2.401 , Test Accuracy =  0.1202
+
+Current best = setup 16 , Test accuracy =  0.4159
+
+Current Setup hyperparameters (setup  19  of  216 ):
+----------------------
+dnn_hidden_units =  128,512,128,512,384 
+Batch size =  128 
+Training rate =  1e-07 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.4449 , Train Accuracy =  0.1094 
+Test Loss =  2.4585 , Test Accuracy =  0.0925
+
+Current best = setup 16 , Test accuracy =  0.4159
+
+Current Setup hyperparameters (setup  20  of  216 ):
+----------------------
+dnn_hidden_units =  128,512,128,512,384 
+Batch size =  128 
+Training rate =  5.05e-06 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  1.9696 , Train Accuracy =  0.3281 
+Test Loss =  2.0147 , Test Accuracy =  0.3034
+
+Current best = setup 16 , Test accuracy =  0.4159
+
+Current Setup hyperparameters (setup  21  of  216 ):
+----------------------
+dnn_hidden_units =  128,512,128,512,384 
+Batch size =  128 
+Training rate =  5.05e-06 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.3923 , Train Accuracy =  0.125 
+Test Loss =  2.3891 , Test Accuracy =  0.125
+
+Current best = setup 16 , Test accuracy =  0.4159
+
+Current Setup hyperparameters (setup  22  of  216 ):
+----------------------
+dnn_hidden_units =  128,512,128,512,384 
+Batch size =  128 
+Training rate =  1e-05 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  1.8582 , Train Accuracy =  0.375 
+Test Loss =  1.9634 , Test Accuracy =  0.3445
+
+Current best = setup 16 , Test accuracy =  0.4159
+
+Current Setup hyperparameters (setup  23  of  216 ):
+----------------------
+dnn_hidden_units =  128,512,128,512,384 
+Batch size =  128 
+Training rate =  1e-05 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.4024 , Train Accuracy =  0.1172 
+Test Loss =  2.3706 , Test Accuracy =  0.1243
+
+Current best = setup 16 , Test accuracy =  0.4159
+
+Current Setup hyperparameters (setup  24  of  216 ):
+----------------------
+dnn_hidden_units =  128,512,128,512,384 
+Batch size =  256 
+Training rate =  1e-07 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  2.4254 , Train Accuracy =  0.1055 
+Test Loss =  2.423 , Test Accuracy =  0.128
+
+Current best = setup 16 , Test accuracy =  0.4159
+
+Current Setup hyperparameters (setup  25  of  216 ):
+----------------------
+dnn_hidden_units =  128,512,128,512,384 
+Batch size =  256 
+Training rate =  1e-07 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.3445 , Train Accuracy =  0.1602 
+Test Loss =  2.4306 , Test Accuracy =  0.0951
+
+Current best = setup 16 , Test accuracy =  0.4159
+
+Current Setup hyperparameters (setup  26  of  216 ):
+----------------------
+dnn_hidden_units =  128,512,128,512,384 
+Batch size =  256 
+Training rate =  5.05e-06 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  1.8737 , Train Accuracy =  0.375 
+Test Loss =  1.917 , Test Accuracy =  0.3531
+
+Current best = setup 16 , Test accuracy =  0.4159
+
+Current Setup hyperparameters (setup  27  of  216 ):
+----------------------
+dnn_hidden_units =  128,512,128,512,384 
+Batch size =  256 
+Training rate =  5.05e-06 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.3837 , Train Accuracy =  0.125 
+Test Loss =  2.3855 , Test Accuracy =  0.1234
+
+Current best = setup 16 , Test accuracy =  0.4159
+
+Current Setup hyperparameters (setup  28  of  216 ):
+----------------------
+dnn_hidden_units =  128,512,128,512,384 
+Batch size =  256 
+Training rate =  1e-05 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  1.8813 , Train Accuracy =  0.4297 
+Test Loss =  1.9485 , Test Accuracy =  0.381
+
+Current best = setup 16 , Test accuracy =  0.4159
+
+Current Setup hyperparameters (setup  29  of  216 ):
+----------------------
+dnn_hidden_units =  128,512,128,512,384 
+Batch size =  256 
+Training rate =  1e-05 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.287 , Train Accuracy =  0.1758 
+Test Loss =  2.3419 , Test Accuracy =  0.135
+
+Current best = setup 16 , Test accuracy =  0.4159
+
+Current Setup hyperparameters (setup  30  of  216 ):
+----------------------
+dnn_hidden_units =  128,512,128,512,384 
+Batch size =  384 
+Training rate =  1e-07 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  2.4484 , Train Accuracy =  0.0781 
+Test Loss =  2.4021 , Test Accuracy =  0.1131
+
+Current best = setup 16 , Test accuracy =  0.4159
+
+Current Setup hyperparameters (setup  31  of  216 ):
+----------------------
+dnn_hidden_units =  128,512,128,512,384 
+Batch size =  384 
+Training rate =  1e-07 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.4571 , Train Accuracy =  0.0781 
+Test Loss =  2.4456 , Test Accuracy =  0.1014
+
+Current best = setup 16 , Test accuracy =  0.4159
+
+Current Setup hyperparameters (setup  32  of  216 ):
+----------------------
+dnn_hidden_units =  128,512,128,512,384 
+Batch size =  384 
+Training rate =  5.05e-06 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  1.9775 , Train Accuracy =  0.3333 
+Test Loss =  2.0132 , Test Accuracy =  0.3268
+
+Current best = setup 16 , Test accuracy =  0.4159
+
+Current Setup hyperparameters (setup  33  of  216 ):
+----------------------
+dnn_hidden_units =  128,512,128,512,384 
+Batch size =  384 
+Training rate =  5.05e-06 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.3607 , Train Accuracy =  0.1276 
+Test Loss =  2.4021 , Test Accuracy =  0.1203
+
+Current best = setup 16 , Test accuracy =  0.4159
+
+Current Setup hyperparameters (setup  34  of  216 ):
+----------------------
+dnn_hidden_units =  128,512,128,512,384 
+Batch size =  384 
+Training rate =  1e-05 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  1.6864 , Train Accuracy =  0.4557 
+Test Loss =  1.7818 , Test Accuracy =  0.4037
+
+Current best = setup 16 , Test accuracy =  0.4159
+
+Current Setup hyperparameters (setup  35  of  216 ):
+----------------------
+dnn_hidden_units =  128,512,128,512,384 
+Batch size =  384 
+Training rate =  1e-05 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.3138 , Train Accuracy =  0.1068 
+Test Loss =  2.3146 , Test Accuracy =  0.1041
+
+Current best = setup 16 , Test accuracy =  0.4159
+
+Current Setup hyperparameters (setup  36  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  128 
+Training rate =  1e-07 
+Optimizer =  adam 
+Batch Normalization = False
+
+Training Loss =  2.2453 , Train Accuracy =  0.1641 
+Test Loss =  2.2613 , Test Accuracy =  0.1898
+
+Current best = setup 16 , Test accuracy =  0.4159
+
+Current Setup hyperparameters (setup  37  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  128 
+Training rate =  1e-07 
+Optimizer =  sgd 
+Batch Normalization = False
+
+Training Loss =  2.3811 , Train Accuracy =  0.1016 
+Test Loss =  2.3577 , Test Accuracy =  0.1217
+
+Current best = setup 16 , Test accuracy =  0.4159
+
+Current Setup hyperparameters (setup  38  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  128 
+Training rate =  5.05e-06 
+Optimizer =  adam 
+Batch Normalization = False
+
+Training Loss =  1.8765 , Train Accuracy =  0.4375 
+Test Loss =  1.9194 , Test Accuracy =  0.361
+
+Current best = setup 16 , Test accuracy =  0.4159
+
+Current Setup hyperparameters (setup  39  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  128 
+Training rate =  5.05e-06 
+Optimizer =  sgd 
+Batch Normalization = False
+
+Training Loss =  2.3142 , Train Accuracy =  0.125 
+Test Loss =  2.3062 , Test Accuracy =  0.1407
+
+Current best = setup 16 , Test accuracy =  0.4159
+
+Current Setup hyperparameters (setup  40  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  128 
+Training rate =  1e-05 
+Optimizer =  adam 
+Batch Normalization = False
+
+Training Loss =  1.6992 , Train Accuracy =  0.4922 
+Test Loss =  1.7954 , Test Accuracy =  0.422
+
+Current best = setup 40 , Test accuracy =  0.422
+
+Current Setup hyperparameters (setup  41  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  128 
+Training rate =  1e-05 
+Optimizer =  sgd 
+Batch Normalization = False
+
+Training Loss =  2.2761 , Train Accuracy =  0.1797 
+Test Loss =  2.2557 , Test Accuracy =  0.1852
+
+Current best = setup 40 , Test accuracy =  0.422
+
+Current Setup hyperparameters (setup  42  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  256 
+Training rate =  1e-07 
+Optimizer =  adam 
+Batch Normalization = False
+
+Training Loss =  2.218 , Train Accuracy =  0.2148 
+Test Loss =  2.2488 , Test Accuracy =  0.1802
+
+Current best = setup 40 , Test accuracy =  0.422
+
+Current Setup hyperparameters (setup  43  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  256 
+Training rate =  1e-07 
+Optimizer =  sgd 
+Batch Normalization = False
+
+Training Loss =  2.5607 , Train Accuracy =  0.0859 
+Test Loss =  2.498 , Test Accuracy =  0.0872
+
+Current best = setup 40 , Test accuracy =  0.422
+
+Current Setup hyperparameters (setup  44  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  256 
+Training rate =  5.05e-06 
+Optimizer =  adam 
+Batch Normalization = False
+
+Training Loss =  1.8288 , Train Accuracy =  0.3984 
+Test Loss =  1.8763 , Test Accuracy =  0.3927
+
+Current best = setup 40 , Test accuracy =  0.422
+
+Current Setup hyperparameters (setup  45  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  256 
+Training rate =  5.05e-06 
+Optimizer =  sgd 
+Batch Normalization = False
+
+Training Loss =  2.3824 , Train Accuracy =  0.1367 
+Test Loss =  2.3434 , Test Accuracy =  0.1283
+
+Current best = setup 40 , Test accuracy =  0.422
+
+Current Setup hyperparameters (setup  46  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  256 
+Training rate =  1e-05 
+Optimizer =  adam 
+Batch Normalization = False
+
+Training Loss =  1.7506 , Train Accuracy =  0.4609 
+Test Loss =  1.8556 , Test Accuracy =  0.3919
+
+Current best = setup 40 , Test accuracy =  0.422
+
+Current Setup hyperparameters (setup  47  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  256 
+Training rate =  1e-05 
+Optimizer =  sgd 
+Batch Normalization = False
+
+Training Loss =  2.2133 , Train Accuracy =  0.2031 
+Test Loss =  2.2599 , Test Accuracy =  0.1771
+
+Current best = setup 40 , Test accuracy =  0.422
+
+Current Setup hyperparameters (setup  48  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  384 
+Training rate =  1e-07 
+Optimizer =  adam 
+Batch Normalization = False
+
+Training Loss =  2.1557 , Train Accuracy =  0.2344 
+Test Loss =  2.2017 , Test Accuracy =  0.2003
+
+Current best = setup 40 , Test accuracy =  0.422
+
+Current Setup hyperparameters (setup  49  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  384 
+Training rate =  1e-07 
+Optimizer =  sgd 
+Batch Normalization = False
+
+Training Loss =  2.4405 , Train Accuracy =  0.0833 
+Test Loss =  2.5016 , Test Accuracy =  0.0809
+
+Current best = setup 40 , Test accuracy =  0.422
+
+Current Setup hyperparameters (setup  50  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  384 
+Training rate =  5.05e-06 
+Optimizer =  adam 
+Batch Normalization = False
+
+Training Loss =  1.701 , Train Accuracy =  0.4427 
+Test Loss =  1.7671 , Test Accuracy =  0.4261
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  51  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  384 
+Training rate =  5.05e-06 
+Optimizer =  sgd 
+Batch Normalization = False
+
+Training Loss =  2.3726 , Train Accuracy =  0.0964 
+Test Loss =  2.3564 , Test Accuracy =  0.1339
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  52  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  384 
+Training rate =  1e-05 
+Optimizer =  adam 
+Batch Normalization = False
+
+Training Loss =  1.7816 , Train Accuracy =  0.4349 
+Test Loss =  1.8439 , Test Accuracy =  0.4032
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  53  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  384 
+Training rate =  1e-05 
+Optimizer =  sgd 
+Batch Normalization = False
+
+Training Loss =  2.2334 , Train Accuracy =  0.1927 
+Test Loss =  2.2829 , Test Accuracy =  0.1584
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  54  of  216 ):
+----------------------
+dnn_hidden_units =  128,512,512,128,384 
+Batch size =  128 
+Training rate =  1e-07 
+Optimizer =  adam 
+Batch Normalization = False
+
+Training Loss =  2.4079 , Train Accuracy =  0.1016 
+Test Loss =  2.3802 , Test Accuracy =  0.1175
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  55  of  216 ):
+----------------------
+dnn_hidden_units =  128,512,512,128,384 
+Batch size =  128 
+Training rate =  1e-07 
+Optimizer =  sgd 
+Batch Normalization = False
+
+Training Loss =  2.4298 , Train Accuracy =  0.0859 
+Test Loss =  2.4631 , Test Accuracy =  0.1025
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  56  of  216 ):
+----------------------
+dnn_hidden_units =  128,512,512,128,384 
+Batch size =  128 
+Training rate =  5.05e-06 
+Optimizer =  adam 
+Batch Normalization = False
+
+Training Loss =  1.8947 , Train Accuracy =  0.3203 
+Test Loss =  1.9451 , Test Accuracy =  0.3206
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  57  of  216 ):
+----------------------
+dnn_hidden_units =  128,512,512,128,384 
+Batch size =  128 
+Training rate =  5.05e-06 
+Optimizer =  sgd 
+Batch Normalization = False
+
+Training Loss =  2.3688 , Train Accuracy =  0.125 
+Test Loss =  2.402 , Test Accuracy =  0.1148
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  58  of  216 ):
+----------------------
+dnn_hidden_units =  128,512,512,128,384 
+Batch size =  128 
+Training rate =  1e-05 
+Optimizer =  adam 
+Batch Normalization = False
+
+Training Loss =  1.8693 , Train Accuracy =  0.3594 
+Test Loss =  1.8762 , Test Accuracy =  0.3474
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  59  of  216 ):
+----------------------
+dnn_hidden_units =  128,512,512,128,384 
+Batch size =  128 
+Training rate =  1e-05 
+Optimizer =  sgd 
+Batch Normalization = False
+
+Training Loss =  2.3352 , Train Accuracy =  0.1641 
+Test Loss =  2.3207 , Test Accuracy =  0.1547
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  60  of  216 ):
+----------------------
+dnn_hidden_units =  128,512,512,128,384 
+Batch size =  256 
+Training rate =  1e-07 
+Optimizer =  adam 
+Batch Normalization = False
+
+Training Loss =  2.4483 , Train Accuracy =  0.1211 
+Test Loss =  2.3777 , Test Accuracy =  0.1211
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  61  of  216 ):
+----------------------
+dnn_hidden_units =  128,512,512,128,384 
+Batch size =  256 
+Training rate =  1e-07 
+Optimizer =  sgd 
+Batch Normalization = False
+
+Training Loss =  2.3905 , Train Accuracy =  0.1172 
+Test Loss =  2.3795 , Test Accuracy =  0.0889
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  62  of  216 ):
+----------------------
+dnn_hidden_units =  128,512,512,128,384 
+Batch size =  256 
+Training rate =  5.05e-06 
+Optimizer =  adam 
+Batch Normalization = False
+
+Training Loss =  1.8436 , Train Accuracy =  0.4062 
+Test Loss =  1.9201 , Test Accuracy =  0.3505
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  63  of  216 ):
+----------------------
+dnn_hidden_units =  128,512,512,128,384 
+Batch size =  256 
+Training rate =  5.05e-06 
+Optimizer =  sgd 
+Batch Normalization = False
+
+Training Loss =  2.3927 , Train Accuracy =  0.1211 
+Test Loss =  2.4062 , Test Accuracy =  0.1235
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  64  of  216 ):
+----------------------
+dnn_hidden_units =  128,512,512,128,384 
+Batch size =  256 
+Training rate =  1e-05 
+Optimizer =  adam 
+Batch Normalization = False
+
+Training Loss =  1.8947 , Train Accuracy =  0.4141 
+Test Loss =  1.9191 , Test Accuracy =  0.3772
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  65  of  216 ):
+----------------------
+dnn_hidden_units =  128,512,512,128,384 
+Batch size =  256 
+Training rate =  1e-05 
+Optimizer =  sgd 
+Batch Normalization = False
+
+Training Loss =  2.2819 , Train Accuracy =  0.1523 
+Test Loss =  2.3028 , Test Accuracy =  0.1536
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  66  of  216 ):
+----------------------
+dnn_hidden_units =  128,512,512,128,384 
+Batch size =  384 
+Training rate =  1e-07 
+Optimizer =  adam 
+Batch Normalization = False
+
+Training Loss =  2.4164 , Train Accuracy =  0.1432 
+Test Loss =  2.4105 , Test Accuracy =  0.1272
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  67  of  216 ):
+----------------------
+dnn_hidden_units =  128,512,512,128,384 
+Batch size =  384 
+Training rate =  1e-07 
+Optimizer =  sgd 
+Batch Normalization = False
+
+Training Loss =  2.4284 , Train Accuracy =  0.0885 
+Test Loss =  2.4336 , Test Accuracy =  0.0842
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  68  of  216 ):
+----------------------
+dnn_hidden_units =  128,512,512,128,384 
+Batch size =  384 
+Training rate =  5.05e-06 
+Optimizer =  adam 
+Batch Normalization = False
+
+Training Loss =  1.8674 , Train Accuracy =  0.375 
+Test Loss =  1.9149 , Test Accuracy =  0.3492
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  69  of  216 ):
+----------------------
+dnn_hidden_units =  128,512,512,128,384 
+Batch size =  384 
+Training rate =  5.05e-06 
+Optimizer =  sgd 
+Batch Normalization = False
+
+Training Loss =  2.4222 , Train Accuracy =  0.1094 
+Test Loss =  2.4093 , Test Accuracy =  0.1096
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  70  of  216 ):
+----------------------
+dnn_hidden_units =  128,512,512,128,384 
+Batch size =  384 
+Training rate =  1e-05 
+Optimizer =  adam 
+Batch Normalization = False
+
+Training Loss =  1.8297 , Train Accuracy =  0.4115 
+Test Loss =  1.9046 , Test Accuracy =  0.3531
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  71  of  216 ):
+----------------------
+dnn_hidden_units =  128,512,512,128,384 
+Batch size =  384 
+Training rate =  1e-05 
+Optimizer =  sgd 
+Batch Normalization = False
+
+Training Loss =  2.3268 , Train Accuracy =  0.1615 
+Test Loss =  2.3497 , Test Accuracy =  0.1463
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  72  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  128 
+Training rate =  1e-07 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  2.2896 , Train Accuracy =  0.1797 
+Test Loss =  2.2671 , Test Accuracy =  0.1625
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  73  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  128 
+Training rate =  1e-07 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.3481 , Train Accuracy =  0.1719 
+Test Loss =  2.4268 , Test Accuracy =  0.117
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  74  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  128 
+Training rate =  5.05e-06 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  1.9209 , Train Accuracy =  0.3359 
+Test Loss =  1.9415 , Test Accuracy =  0.3746
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  75  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  128 
+Training rate =  5.05e-06 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.3715 , Train Accuracy =  0.0938 
+Test Loss =  2.3617 , Test Accuracy =  0.125
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  76  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  128 
+Training rate =  1e-05 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  1.8458 , Train Accuracy =  0.4297 
+Test Loss =  1.8731 , Test Accuracy =  0.4077
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  77  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  128 
+Training rate =  1e-05 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.4012 , Train Accuracy =  0.1328 
+Test Loss =  2.3289 , Test Accuracy =  0.1488
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  78  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  256 
+Training rate =  1e-07 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  2.1856 , Train Accuracy =  0.207 
+Test Loss =  2.2328 , Test Accuracy =  0.1847
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  79  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  256 
+Training rate =  1e-07 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.5443 , Train Accuracy =  0.043 
+Test Loss =  2.5076 , Test Accuracy =  0.0827
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  80  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  256 
+Training rate =  5.05e-06 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  1.7752 , Train Accuracy =  0.4492 
+Test Loss =  1.8136 , Test Accuracy =  0.4117
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  81  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  256 
+Training rate =  5.05e-06 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.3108 , Train Accuracy =  0.168 
+Test Loss =  2.3646 , Test Accuracy =  0.1237
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  82  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  256 
+Training rate =  1e-05 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  1.6851 , Train Accuracy =  0.4727 
+Test Loss =  1.807 , Test Accuracy =  0.395
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  83  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  256 
+Training rate =  1e-05 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.2622 , Train Accuracy =  0.1172 
+Test Loss =  2.2437 , Test Accuracy =  0.1668
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  84  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  384 
+Training rate =  1e-07 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  2.2934 , Train Accuracy =  0.1562 
+Test Loss =  2.2622 , Test Accuracy =  0.1742
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  85  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  384 
+Training rate =  1e-07 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.4413 , Train Accuracy =  0.0625 
+Test Loss =  2.409 , Test Accuracy =  0.0999
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  86  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  384 
+Training rate =  5.05e-06 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  1.7649 , Train Accuracy =  0.4583 
+Test Loss =  1.8303 , Test Accuracy =  0.4062
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  87  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  384 
+Training rate =  5.05e-06 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.4349 , Train Accuracy =  0.112 
+Test Loss =  2.4259 , Test Accuracy =  0.1259
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  88  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  384 
+Training rate =  1e-05 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  1.7904 , Train Accuracy =  0.4245 
+Test Loss =  1.8389 , Test Accuracy =  0.415
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  89  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  384 
+Training rate =  1e-05 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.2612 , Train Accuracy =  0.1719 
+Test Loss =  2.2902 , Test Accuracy =  0.153
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  90  of  216 ):
+----------------------
+dnn_hidden_units =  128,256,256,128,512 
+Batch size =  128 
+Training rate =  1e-07 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  2.5619 , Train Accuracy =  0.0938 
+Test Loss =  2.4908 , Test Accuracy =  0.1074
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  91  of  216 ):
+----------------------
+dnn_hidden_units =  128,256,256,128,512 
+Batch size =  128 
+Training rate =  1e-07 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.4212 , Train Accuracy =  0.1094 
+Test Loss =  2.4088 , Test Accuracy =  0.097
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  92  of  216 ):
+----------------------
+dnn_hidden_units =  128,256,256,128,512 
+Batch size =  128 
+Training rate =  5.05e-06 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  1.9752 , Train Accuracy =  0.3828 
+Test Loss =  2.0207 , Test Accuracy =  0.318
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  93  of  216 ):
+----------------------
+dnn_hidden_units =  128,256,256,128,512 
+Batch size =  128 
+Training rate =  5.05e-06 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.341 , Train Accuracy =  0.0938 
+Test Loss =  2.3637 , Test Accuracy =  0.1298
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  94  of  216 ):
+----------------------
+dnn_hidden_units =  128,256,256,128,512 
+Batch size =  128 
+Training rate =  1e-05 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  1.9366 , Train Accuracy =  0.3672 
+Test Loss =  1.9451 , Test Accuracy =  0.3383
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  95  of  216 ):
+----------------------
+dnn_hidden_units =  128,256,256,128,512 
+Batch size =  128 
+Training rate =  1e-05 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.332 , Train Accuracy =  0.1328 
+Test Loss =  2.3448 , Test Accuracy =  0.1361
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  96  of  216 ):
+----------------------
+dnn_hidden_units =  128,256,256,128,512 
+Batch size =  256 
+Training rate =  1e-07 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  2.423 , Train Accuracy =  0.1055 
+Test Loss =  2.4145 , Test Accuracy =  0.1231
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  97  of  216 ):
+----------------------
+dnn_hidden_units =  128,256,256,128,512 
+Batch size =  256 
+Training rate =  1e-07 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.4344 , Train Accuracy =  0.1289 
+Test Loss =  2.4631 , Test Accuracy =  0.1046
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  98  of  216 ):
+----------------------
+dnn_hidden_units =  128,256,256,128,512 
+Batch size =  256 
+Training rate =  5.05e-06 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  1.8644 , Train Accuracy =  0.3867 
+Test Loss =  1.9228 , Test Accuracy =  0.3392
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  99  of  216 ):
+----------------------
+dnn_hidden_units =  128,256,256,128,512 
+Batch size =  256 
+Training rate =  5.05e-06 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.4498 , Train Accuracy =  0.1211 
+Test Loss =  2.4239 , Test Accuracy =  0.1148
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  100  of  216 ):
+----------------------
+dnn_hidden_units =  128,256,256,128,512 
+Batch size =  256 
+Training rate =  1e-05 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  1.7629 , Train Accuracy =  0.4336 
+Test Loss =  1.8588 , Test Accuracy =  0.3704
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  101  of  216 ):
+----------------------
+dnn_hidden_units =  128,256,256,128,512 
+Batch size =  256 
+Training rate =  1e-05 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.2554 , Train Accuracy =  0.207 
+Test Loss =  2.3385 , Test Accuracy =  0.1638
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  102  of  216 ):
+----------------------
+dnn_hidden_units =  128,256,256,128,512 
+Batch size =  384 
+Training rate =  1e-07 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  2.3821 , Train Accuracy =  0.1146 
+Test Loss =  2.3465 , Test Accuracy =  0.1375
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  103  of  216 ):
+----------------------
+dnn_hidden_units =  128,256,256,128,512 
+Batch size =  384 
+Training rate =  1e-07 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.4367 , Train Accuracy =  0.0911 
+Test Loss =  2.4137 , Test Accuracy =  0.1073
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  104  of  216 ):
+----------------------
+dnn_hidden_units =  128,256,256,128,512 
+Batch size =  384 
+Training rate =  5.05e-06 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  1.9327 , Train Accuracy =  0.3542 
+Test Loss =  1.8981 , Test Accuracy =  0.3596
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  105  of  216 ):
+----------------------
+dnn_hidden_units =  128,256,256,128,512 
+Batch size =  384 
+Training rate =  5.05e-06 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.4839 , Train Accuracy =  0.1042 
+Test Loss =  2.4299 , Test Accuracy =  0.1163
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  106  of  216 ):
+----------------------
+dnn_hidden_units =  128,256,256,128,512 
+Batch size =  384 
+Training rate =  1e-05 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  1.769 , Train Accuracy =  0.4271 
+Test Loss =  1.8501 , Test Accuracy =  0.3763
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  107  of  216 ):
+----------------------
+dnn_hidden_units =  128,256,256,128,512 
+Batch size =  384 
+Training rate =  1e-05 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.3496 , Train Accuracy =  0.1484 
+Test Loss =  2.3898 , Test Accuracy =  0.1529
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  108  of  216 ):
+----------------------
+dnn_hidden_units =  128 
+Batch size =  128 
+Training rate =  1e-07 
+Optimizer =  adam 
+Batch Normalization = False
+
+Training Loss =  2.4009 , Train Accuracy =  0.1094 
+Test Loss =  2.3915 , Test Accuracy =  0.123
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  109  of  216 ):
+----------------------
+dnn_hidden_units =  128 
+Batch size =  128 
+Training rate =  1e-07 
+Optimizer =  sgd 
+Batch Normalization = False
+
+Training Loss =  2.3918 , Train Accuracy =  0.1484 
+Test Loss =  2.4354 , Test Accuracy =  0.1145
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  110  of  216 ):
+----------------------
+dnn_hidden_units =  128 
+Batch size =  128 
+Training rate =  5.05e-06 
+Optimizer =  adam 
+Batch Normalization = False
+
+Training Loss =  1.8152 , Train Accuracy =  0.4688 
+Test Loss =  1.8836 , Test Accuracy =  0.3745
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  111  of  216 ):
+----------------------
+dnn_hidden_units =  128 
+Batch size =  128 
+Training rate =  5.05e-06 
+Optimizer =  sgd 
+Batch Normalization = False
+
+Training Loss =  2.4414 , Train Accuracy =  0.0625 
+Test Loss =  2.3719 , Test Accuracy =  0.1302
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  112  of  216 ):
+----------------------
+dnn_hidden_units =  128 
+Batch size =  128 
+Training rate =  1e-05 
+Optimizer =  adam 
+Batch Normalization = False
+
+Training Loss =  1.9123 , Train Accuracy =  0.3516 
+Test Loss =  1.9206 , Test Accuracy =  0.3614
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  113  of  216 ):
+----------------------
+dnn_hidden_units =  128 
+Batch size =  128 
+Training rate =  1e-05 
+Optimizer =  sgd 
+Batch Normalization = False
+
+Training Loss =  2.2521 , Train Accuracy =  0.2109 
+Test Loss =  2.3221 , Test Accuracy =  0.1584
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  114  of  216 ):
+----------------------
+dnn_hidden_units =  128 
+Batch size =  256 
+Training rate =  1e-07 
+Optimizer =  adam 
+Batch Normalization = False
+
+Training Loss =  2.2988 , Train Accuracy =  0.1445 
+Test Loss =  2.2575 , Test Accuracy =  0.1661
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  115  of  216 ):
+----------------------
+dnn_hidden_units =  128 
+Batch size =  256 
+Training rate =  1e-07 
+Optimizer =  sgd 
+Batch Normalization = False
+
+Training Loss =  2.4151 , Train Accuracy =  0.0781 
+Test Loss =  2.4222 , Test Accuracy =  0.1018
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  116  of  216 ):
+----------------------
+dnn_hidden_units =  128 
+Batch size =  256 
+Training rate =  5.05e-06 
+Optimizer =  adam 
+Batch Normalization = False
+
+Training Loss =  1.9913 , Train Accuracy =  0.3398 
+Test Loss =  2.0162 , Test Accuracy =  0.3231
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  117  of  216 ):
+----------------------
+dnn_hidden_units =  128 
+Batch size =  256 
+Training rate =  5.05e-06 
+Optimizer =  sgd 
+Batch Normalization = False
+
+Training Loss =  2.3344 , Train Accuracy =  0.1484 
+Test Loss =  2.3535 , Test Accuracy =  0.1442
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  118  of  216 ):
+----------------------
+dnn_hidden_units =  128 
+Batch size =  256 
+Training rate =  1e-05 
+Optimizer =  adam 
+Batch Normalization = False
+
+Training Loss =  1.7244 , Train Accuracy =  0.457 
+Test Loss =  1.763 , Test Accuracy =  0.4194
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  119  of  216 ):
+----------------------
+dnn_hidden_units =  128 
+Batch size =  256 
+Training rate =  1e-05 
+Optimizer =  sgd 
+Batch Normalization = False
+
+Training Loss =  2.2876 , Train Accuracy =  0.1602 
+Test Loss =  2.332 , Test Accuracy =  0.1511
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  120  of  216 ):
+----------------------
+dnn_hidden_units =  128 
+Batch size =  384 
+Training rate =  1e-07 
+Optimizer =  adam 
+Batch Normalization = False
+
+Training Loss =  2.412 , Train Accuracy =  0.0911 
+Test Loss =  2.3688 , Test Accuracy =  0.1036
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  121  of  216 ):
+----------------------
+dnn_hidden_units =  128 
+Batch size =  384 
+Training rate =  1e-07 
+Optimizer =  sgd 
+Batch Normalization = False
+
+Training Loss =  2.4669 , Train Accuracy =  0.0755 
+Test Loss =  2.4442 , Test Accuracy =  0.0838
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  122  of  216 ):
+----------------------
+dnn_hidden_units =  128 
+Batch size =  384 
+Training rate =  5.05e-06 
+Optimizer =  adam 
+Batch Normalization = False
+
+Training Loss =  1.9259 , Train Accuracy =  0.3594 
+Test Loss =  1.9621 , Test Accuracy =  0.3356
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  123  of  216 ):
+----------------------
+dnn_hidden_units =  128 
+Batch size =  384 
+Training rate =  5.05e-06 
+Optimizer =  sgd 
+Batch Normalization = False
+
+Training Loss =  2.3622 , Train Accuracy =  0.1354 
+Test Loss =  2.3341 , Test Accuracy =  0.1363
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  124  of  216 ):
+----------------------
+dnn_hidden_units =  128 
+Batch size =  384 
+Training rate =  1e-05 
+Optimizer =  adam 
+Batch Normalization = False
+
+Training Loss =  1.7396 , Train Accuracy =  0.4609 
+Test Loss =  1.7816 , Test Accuracy =  0.4205
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  125  of  216 ):
+----------------------
+dnn_hidden_units =  128 
+Batch size =  384 
+Training rate =  1e-05 
+Optimizer =  sgd 
+Batch Normalization = False
+
+Training Loss =  2.307 , Train Accuracy =  0.1823 
+Test Loss =  2.2829 , Test Accuracy =  0.1696
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  126  of  216 ):
+----------------------
+dnn_hidden_units =  512,512,256,512,128 
+Batch size =  128 
+Training rate =  1e-07 
+Optimizer =  adam 
+Batch Normalization = False
+
+Training Loss =  2.3491 , Train Accuracy =  0.1562 
+Test Loss =  2.4033 , Test Accuracy =  0.1265
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  127  of  216 ):
+----------------------
+dnn_hidden_units =  512,512,256,512,128 
+Batch size =  128 
+Training rate =  1e-07 
+Optimizer =  sgd 
+Batch Normalization = False
+
+Training Loss =  2.4933 , Train Accuracy =  0.1016 
+Test Loss =  2.4901 , Test Accuracy =  0.0861
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  128  of  216 ):
+----------------------
+dnn_hidden_units =  512,512,256,512,128 
+Batch size =  128 
+Training rate =  5.05e-06 
+Optimizer =  adam 
+Batch Normalization = False
+
+Training Loss =  1.712 , Train Accuracy =  0.4531 
+Test Loss =  1.8808 , Test Accuracy =  0.36
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  129  of  216 ):
+----------------------
+dnn_hidden_units =  512,512,256,512,128 
+Batch size =  128 
+Training rate =  5.05e-06 
+Optimizer =  sgd 
+Batch Normalization = False
+
+Training Loss =  2.3279 , Train Accuracy =  0.1484 
+Test Loss =  2.443 , Test Accuracy =  0.1305
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  130  of  216 ):
+----------------------
+dnn_hidden_units =  512,512,256,512,128 
+Batch size =  128 
+Training rate =  1e-05 
+Optimizer =  adam 
+Batch Normalization = False
+
+Training Loss =  1.78 , Train Accuracy =  0.4141 
+Test Loss =  1.8088 , Test Accuracy =  0.3957
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  131  of  216 ):
+----------------------
+dnn_hidden_units =  512,512,256,512,128 
+Batch size =  128 
+Training rate =  1e-05 
+Optimizer =  sgd 
+Batch Normalization = False
+
+Training Loss =  2.3147 , Train Accuracy =  0.1172 
+Test Loss =  2.3366 , Test Accuracy =  0.106
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  132  of  216 ):
+----------------------
+dnn_hidden_units =  512,512,256,512,128 
+Batch size =  256 
+Training rate =  1e-07 
+Optimizer =  adam 
+Batch Normalization = False
+
+Training Loss =  2.3734 , Train Accuracy =  0.1367 
+Test Loss =  2.3613 , Test Accuracy =  0.1295
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  133  of  216 ):
+----------------------
+dnn_hidden_units =  512,512,256,512,128 
+Batch size =  256 
+Training rate =  1e-07 
+Optimizer =  sgd 
+Batch Normalization = False
+
+Training Loss =  2.2961 , Train Accuracy =  0.1523 
+Test Loss =  2.3963 , Test Accuracy =  0.0957
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  134  of  216 ):
+----------------------
+dnn_hidden_units =  512,512,256,512,128 
+Batch size =  256 
+Training rate =  5.05e-06 
+Optimizer =  adam 
+Batch Normalization = False
+
+Training Loss =  1.878 , Train Accuracy =  0.3828 
+Test Loss =  1.9009 , Test Accuracy =  0.3529
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  135  of  216 ):
+----------------------
+dnn_hidden_units =  512,512,256,512,128 
+Batch size =  256 
+Training rate =  5.05e-06 
+Optimizer =  sgd 
+Batch Normalization = False
+
+Training Loss =  2.3485 , Train Accuracy =  0.1367 
+Test Loss =  2.3944 , Test Accuracy =  0.1129
+
+Current best = setup 50 , Test accuracy =  0.4261
+
+Current Setup hyperparameters (setup  136  of  216 ):
+----------------------
+dnn_hidden_units =  512,512,256,512,128 
+Batch size =  256 
+Training rate =  1e-05 
+Optimizer =  adam 
+Batch Normalization = False
+
+Training Loss =  1.6884 , Train Accuracy =  0.4727 
+Test Loss =  1.7836 , Test Accuracy =  0.4286
+
+Current best = setup 136 , Test accuracy =  0.4286
+
+Current Setup hyperparameters (setup  137  of  216 ):
+----------------------
+dnn_hidden_units =  512,512,256,512,128 
+Batch size =  256 
+Training rate =  1e-05 
+Optimizer =  sgd 
+Batch Normalization = False
+
+Training Loss =  2.2167 , Train Accuracy =  0.1836 
+Test Loss =  2.2598 , Test Accuracy =  0.163
+
+Current best = setup 136 , Test accuracy =  0.4286
+
+Current Setup hyperparameters (setup  138  of  216 ):
+----------------------
+dnn_hidden_units =  512,512,256,512,128 
+Batch size =  384 
+Training rate =  1e-07 
+Optimizer =  adam 
+Batch Normalization = False
+
+Training Loss =  2.461 , Train Accuracy =  0.151 
+Test Loss =  2.392 , Test Accuracy =  0.1467
+
+Current best = setup 136 , Test accuracy =  0.4286
+
+Current Setup hyperparameters (setup  139  of  216 ):
+----------------------
+dnn_hidden_units =  512,512,256,512,128 
+Batch size =  384 
+Training rate =  1e-07 
+Optimizer =  sgd 
+Batch Normalization = False
+
+Training Loss =  2.4641 , Train Accuracy =  0.1354 
+Test Loss =  2.4864 , Test Accuracy =  0.1106
+
+Current best = setup 136 , Test accuracy =  0.4286
+
+Current Setup hyperparameters (setup  140  of  216 ):
+----------------------
+dnn_hidden_units =  512,512,256,512,128 
+Batch size =  384 
+Training rate =  5.05e-06 
+Optimizer =  adam 
+Batch Normalization = False
+
+Training Loss =  1.8438 , Train Accuracy =  0.4427 
+Test Loss =  1.9268 , Test Accuracy =  0.3758
+
+Current best = setup 136 , Test accuracy =  0.4286
+
+Current Setup hyperparameters (setup  141  of  216 ):
+----------------------
+dnn_hidden_units =  512,512,256,512,128 
+Batch size =  384 
+Training rate =  5.05e-06 
+Optimizer =  sgd 
+Batch Normalization = False
+
+Training Loss =  2.4166 , Train Accuracy =  0.0964 
+Test Loss =  2.4114 , Test Accuracy =  0.1046
+
+Current best = setup 136 , Test accuracy =  0.4286
+
+Current Setup hyperparameters (setup  142  of  216 ):
+----------------------
+dnn_hidden_units =  512,512,256,512,128 
+Batch size =  384 
+Training rate =  1e-05 
+Optimizer =  adam 
+Batch Normalization = False
+
+Training Loss =  1.7054 , Train Accuracy =  0.4922 
+Test Loss =  1.849 , Test Accuracy =  0.4053
+
+Current best = setup 136 , Test accuracy =  0.4286
+
+Current Setup hyperparameters (setup  143  of  216 ):
+----------------------
+dnn_hidden_units =  512,512,256,512,128 
+Batch size =  384 
+Training rate =  1e-05 
+Optimizer =  sgd 
+Batch Normalization = False
+
+Training Loss =  2.3488 , Train Accuracy =  0.1693 
+Test Loss =  2.3761 , Test Accuracy =  0.1419
+
+Current best = setup 136 , Test accuracy =  0.4286
+
+Current Setup hyperparameters (setup  144  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  128 
+Training rate =  1e-07 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  2.2927 , Train Accuracy =  0.1953 
+Test Loss =  2.2756 , Test Accuracy =  0.1682
+
+Current best = setup 136 , Test accuracy =  0.4286
+
+Current Setup hyperparameters (setup  145  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  128 
+Training rate =  1e-07 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.3894 , Train Accuracy =  0.0859 
+Test Loss =  2.4368 , Test Accuracy =  0.0915
+
+Current best = setup 136 , Test accuracy =  0.4286
+
+Current Setup hyperparameters (setup  146  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  128 
+Training rate =  5.05e-06 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  1.9069 , Train Accuracy =  0.3828 
+Test Loss =  1.9094 , Test Accuracy =  0.3737
+
+Current best = setup 136 , Test accuracy =  0.4286
+
+Current Setup hyperparameters (setup  147  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  128 
+Training rate =  5.05e-06 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.3435 , Train Accuracy =  0.1719 
+Test Loss =  2.3131 , Test Accuracy =  0.1472
+
+Current best = setup 136 , Test accuracy =  0.4286
+
+Current Setup hyperparameters (setup  148  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  128 
+Training rate =  1e-05 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  1.841 , Train Accuracy =  0.4531 
+Test Loss =  1.8811 , Test Accuracy =  0.405
+
+Current best = setup 136 , Test accuracy =  0.4286
+
+Current Setup hyperparameters (setup  149  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  128 
+Training rate =  1e-05 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.3696 , Train Accuracy =  0.1641 
+Test Loss =  2.298 , Test Accuracy =  0.1609
+
+Current best = setup 136 , Test accuracy =  0.4286
+
+Current Setup hyperparameters (setup  150  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  256 
+Training rate =  1e-07 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  2.171 , Train Accuracy =  0.1914 
+Test Loss =  2.1944 , Test Accuracy =  0.1948
+
+Current best = setup 136 , Test accuracy =  0.4286
+
+Current Setup hyperparameters (setup  151  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  256 
+Training rate =  1e-07 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.5274 , Train Accuracy =  0.0938 
+Test Loss =  2.4797 , Test Accuracy =  0.0967
+
+Current best = setup 136 , Test accuracy =  0.4286
+
+Current Setup hyperparameters (setup  152  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  256 
+Training rate =  5.05e-06 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  1.7573 , Train Accuracy =  0.4727 
+Test Loss =  1.851 , Test Accuracy =  0.397
+
+Current best = setup 136 , Test accuracy =  0.4286
+
+Current Setup hyperparameters (setup  153  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  256 
+Training rate =  5.05e-06 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.3764 , Train Accuracy =  0.1289 
+Test Loss =  2.3667 , Test Accuracy =  0.1312
+
+Current best = setup 136 , Test accuracy =  0.4286
+
+Current Setup hyperparameters (setup  154  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  256 
+Training rate =  1e-05 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  1.654 , Train Accuracy =  0.5078 
+Test Loss =  1.7414 , Test Accuracy =  0.4476
+
+Current best = setup 154 , Test accuracy =  0.4476
+
+Current Setup hyperparameters (setup  155  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  256 
+Training rate =  1e-05 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.2376 , Train Accuracy =  0.1367 
+Test Loss =  2.2857 , Test Accuracy =  0.1363
+
+Current best = setup 154 , Test accuracy =  0.4476
+
+Current Setup hyperparameters (setup  156  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  384 
+Training rate =  1e-07 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  2.1995 , Train Accuracy =  0.2161 
+Test Loss =  2.195 , Test Accuracy =  0.203
+
+Current best = setup 154 , Test accuracy =  0.4476
+
+Current Setup hyperparameters (setup  157  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  384 
+Training rate =  1e-07 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.3639 , Train Accuracy =  0.0964 
+Test Loss =  2.3797 , Test Accuracy =  0.0997
+
+Current best = setup 154 , Test accuracy =  0.4476
+
+Current Setup hyperparameters (setup  158  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  384 
+Training rate =  5.05e-06 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  1.6821 , Train Accuracy =  0.4531 
+Test Loss =  1.7441 , Test Accuracy =  0.436
+
+Current best = setup 154 , Test accuracy =  0.4476
+
+Current Setup hyperparameters (setup  159  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  384 
+Training rate =  5.05e-06 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.3884 , Train Accuracy =  0.1302 
+Test Loss =  2.3677 , Test Accuracy =  0.1387
+
+Current best = setup 154 , Test accuracy =  0.4476
+
+Current Setup hyperparameters (setup  160  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  384 
+Training rate =  1e-05 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  1.7578 , Train Accuracy =  0.4531 
+Test Loss =  1.8012 , Test Accuracy =  0.4396
+
+Current best = setup 154 , Test accuracy =  0.4476
+
+Current Setup hyperparameters (setup  161  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  384 
+Training rate =  1e-05 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.2567 , Train Accuracy =  0.1823 
+Test Loss =  2.2443 , Test Accuracy =  0.1769
+
+Current best = setup 154 , Test accuracy =  0.4476
+
+Current Setup hyperparameters (setup  162  of  216 ):
+----------------------
+dnn_hidden_units =  512,256,384,256,512 
+Batch size =  128 
+Training rate =  1e-07 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  2.4799 , Train Accuracy =  0.1016 
+Test Loss =  2.4164 , Test Accuracy =  0.1276
+
+Current best = setup 154 , Test accuracy =  0.4476
+
+Current Setup hyperparameters (setup  163  of  216 ):
+----------------------
+dnn_hidden_units =  512,256,384,256,512 
+Batch size =  128 
+Training rate =  1e-07 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.4902 , Train Accuracy =  0.0938 
+Test Loss =  2.4482 , Test Accuracy =  0.112
+
+Current best = setup 154 , Test accuracy =  0.4476
+
+Current Setup hyperparameters (setup  164  of  216 ):
+----------------------
+dnn_hidden_units =  512,256,384,256,512 
+Batch size =  128 
+Training rate =  5.05e-06 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  1.8975 , Train Accuracy =  0.4062 
+Test Loss =  1.9423 , Test Accuracy =  0.341
+
+Current best = setup 154 , Test accuracy =  0.4476
+
+Current Setup hyperparameters (setup  165  of  216 ):
+----------------------
+dnn_hidden_units =  512,256,384,256,512 
+Batch size =  128 
+Training rate =  5.05e-06 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.4067 , Train Accuracy =  0.125 
+Test Loss =  2.4207 , Test Accuracy =  0.1335
+
+Current best = setup 154 , Test accuracy =  0.4476
+
+Current Setup hyperparameters (setup  166  of  216 ):
+----------------------
+dnn_hidden_units =  512,256,384,256,512 
+Batch size =  128 
+Training rate =  1e-05 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  1.6924 , Train Accuracy =  0.4531 
+Test Loss =  1.7935 , Test Accuracy =  0.4085
+
+Current best = setup 154 , Test accuracy =  0.4476
+
+Current Setup hyperparameters (setup  167  of  216 ):
+----------------------
+dnn_hidden_units =  512,256,384,256,512 
+Batch size =  128 
+Training rate =  1e-05 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.3098 , Train Accuracy =  0.1172 
+Test Loss =  2.3373 , Test Accuracy =  0.1486
+
+Current best = setup 154 , Test accuracy =  0.4476
+
+Current Setup hyperparameters (setup  168  of  216 ):
+----------------------
+dnn_hidden_units =  512,256,384,256,512 
+Batch size =  256 
+Training rate =  1e-07 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  2.3297 , Train Accuracy =  0.1641 
+Test Loss =  2.3172 , Test Accuracy =  0.151
+
+Current best = setup 154 , Test accuracy =  0.4476
+
+Current Setup hyperparameters (setup  169  of  216 ):
+----------------------
+dnn_hidden_units =  512,256,384,256,512 
+Batch size =  256 
+Training rate =  1e-07 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.5247 , Train Accuracy =  0.0781 
+Test Loss =  2.5049 , Test Accuracy =  0.0874
+
+Current best = setup 154 , Test accuracy =  0.4476
+
+Current Setup hyperparameters (setup  170  of  216 ):
+----------------------
+dnn_hidden_units =  512,256,384,256,512 
+Batch size =  256 
+Training rate =  5.05e-06 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  1.8282 , Train Accuracy =  0.4102 
+Test Loss =  1.9346 , Test Accuracy =  0.3332
+
+Current best = setup 154 , Test accuracy =  0.4476
+
+Current Setup hyperparameters (setup  171  of  216 ):
+----------------------
+dnn_hidden_units =  512,256,384,256,512 
+Batch size =  256 
+Training rate =  5.05e-06 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.3711 , Train Accuracy =  0.1406 
+Test Loss =  2.3693 , Test Accuracy =  0.1353
+
+Current best = setup 154 , Test accuracy =  0.4476
+
+Current Setup hyperparameters (setup  172  of  216 ):
+----------------------
+dnn_hidden_units =  512,256,384,256,512 
+Batch size =  256 
+Training rate =  1e-05 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  1.6692 , Train Accuracy =  0.4922 
+Test Loss =  1.8019 , Test Accuracy =  0.424
+
+Current best = setup 154 , Test accuracy =  0.4476
+
+Current Setup hyperparameters (setup  173  of  216 ):
+----------------------
+dnn_hidden_units =  512,256,384,256,512 
+Batch size =  256 
+Training rate =  1e-05 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.3299 , Train Accuracy =  0.1523 
+Test Loss =  2.3597 , Test Accuracy =  0.1481
+
+Current best = setup 154 , Test accuracy =  0.4476
+
+Current Setup hyperparameters (setup  174  of  216 ):
+----------------------
+dnn_hidden_units =  512,256,384,256,512 
+Batch size =  384 
+Training rate =  1e-07 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  2.2707 , Train Accuracy =  0.1589 
+Test Loss =  2.2816 , Test Accuracy =  0.1395
+
+Current best = setup 154 , Test accuracy =  0.4476
+
+Current Setup hyperparameters (setup  175  of  216 ):
+----------------------
+dnn_hidden_units =  512,256,384,256,512 
+Batch size =  384 
+Training rate =  1e-07 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.4895 , Train Accuracy =  0.0781 
+Test Loss =  2.4518 , Test Accuracy =  0.0927
+
+Current best = setup 154 , Test accuracy =  0.4476
+
+Current Setup hyperparameters (setup  176  of  216 ):
+----------------------
+dnn_hidden_units =  512,256,384,256,512 
+Batch size =  384 
+Training rate =  5.05e-06 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  1.7167 , Train Accuracy =  0.4427 
+Test Loss =  1.8164 , Test Accuracy =  0.3957
+
+Current best = setup 154 , Test accuracy =  0.4476
+
+Current Setup hyperparameters (setup  177  of  216 ):
+----------------------
+dnn_hidden_units =  512,256,384,256,512 
+Batch size =  384 
+Training rate =  5.05e-06 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.3744 , Train Accuracy =  0.1094 
+Test Loss =  2.3949 , Test Accuracy =  0.1141
+
+Current best = setup 154 , Test accuracy =  0.4476
+
+Current Setup hyperparameters (setup  178  of  216 ):
+----------------------
+dnn_hidden_units =  512,256,384,256,512 
+Batch size =  384 
+Training rate =  1e-05 
+Optimizer =  adam 
+Batch Normalization = True
+
+Training Loss =  1.6833 , Train Accuracy =  0.5 
+Test Loss =  1.8981 , Test Accuracy =  0.3653
+
+Current best = setup 154 , Test accuracy =  0.4476
+
+Current Setup hyperparameters (setup  179  of  216 ):
+----------------------
+dnn_hidden_units =  512,256,384,256,512 
+Batch size =  384 
+Training rate =  1e-05 
+Optimizer =  sgd 
+Batch Normalization = True
+
+Training Loss =  2.3481 , Train Accuracy =  0.125 
+Test Loss =  2.3447 , Test Accuracy =  0.1328
+
+Current best = setup 154 , Test accuracy =  0.4476
+
+Current Setup hyperparameters (setup  180  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  128 
+Training rate =  1e-07 
+Optimizer =  adam 
+Batch Normalization = False
+
+Training Loss =  2.305 , Train Accuracy =  0.1797 
+Test Loss =  2.2615 , Test Accuracy =  0.1697
+
+Current best = setup 154 , Test accuracy =  0.4476
+
+Current Setup hyperparameters (setup  181  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  128 
+Training rate =  1e-07 
+Optimizer =  sgd 
+Batch Normalization = False
+
+Training Loss =  2.3378 , Train Accuracy =  0.1406 
+Test Loss =  2.4086 , Test Accuracy =  0.1201
+
+Current best = setup 154 , Test accuracy =  0.4476
+
+Current Setup hyperparameters (setup  182  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  128 
+Training rate =  5.05e-06 
+Optimizer =  adam 
+Batch Normalization = False
+
+Training Loss =  1.8288 , Train Accuracy =  0.4141 
+Test Loss =  1.8876 , Test Accuracy =  0.3771
+
+Current best = setup 154 , Test accuracy =  0.4476
+
+Current Setup hyperparameters (setup  183  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  128 
+Training rate =  5.05e-06 
+Optimizer =  sgd 
+Batch Normalization = False
+
+Training Loss =  2.5247 , Train Accuracy =  0.1094 
+Test Loss =  2.3543 , Test Accuracy =  0.1317
+
+Current best = setup 154 , Test accuracy =  0.4476
+
+Current Setup hyperparameters (setup  184  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  128 
+Training rate =  1e-05 
+Optimizer =  adam 
+Batch Normalization = False
+
+Training Loss =  1.6839 , Train Accuracy =  0.5 
+Test Loss =  1.8099 , Test Accuracy =  0.4294
+
+Current best = setup 154 , Test accuracy =  0.4476
+
+Current Setup hyperparameters (setup  185  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  128 
+Training rate =  1e-05 
+Optimizer =  sgd 
+Batch Normalization = False
+
+Training Loss =  2.3516 , Train Accuracy =  0.1641 
+Test Loss =  2.3058 , Test Accuracy =  0.1483
+
+Current best = setup 154 , Test accuracy =  0.4476
+
+Current Setup hyperparameters (setup  186  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  256 
+Training rate =  1e-07 
+Optimizer =  adam 
+Batch Normalization = False
+
+Training Loss =  2.2624 , Train Accuracy =  0.1875 
+Test Loss =  2.2587 , Test Accuracy =  0.1796
+
+Current best = setup 154 , Test accuracy =  0.4476
+
+Current Setup hyperparameters (setup  187  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  256 
+Training rate =  1e-07 
+Optimizer =  sgd 
+Batch Normalization = False
+
+Training Loss =  2.4453 , Train Accuracy =  0.1289 
+Test Loss =  2.4222 , Test Accuracy =  0.1124
+
+Current best = setup 154 , Test accuracy =  0.4476
+
+Current Setup hyperparameters (setup  188  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  256 
+Training rate =  5.05e-06 
+Optimizer =  adam 
+Batch Normalization = False
+
+Training Loss =  1.8166 , Train Accuracy =  0.4531 
+Test Loss =  1.884 , Test Accuracy =  0.3996
+
+Current best = setup 154 , Test accuracy =  0.4476
+
+Current Setup hyperparameters (setup  189  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  256 
+Training rate =  5.05e-06 
+Optimizer =  sgd 
+Batch Normalization = False
+
+Training Loss =  2.3187 , Train Accuracy =  0.125 
+Test Loss =  2.3345 , Test Accuracy =  0.1318
+
+Current best = setup 154 , Test accuracy =  0.4476
+
+Current Setup hyperparameters (setup  190  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  256 
+Training rate =  1e-05 
+Optimizer =  adam 
+Batch Normalization = False
+
+Training Loss =  1.9112 , Train Accuracy =  0.4414 
+Test Loss =  1.9236 , Test Accuracy =  0.4067
+
+Current best = setup 154 , Test accuracy =  0.4476
+
+Current Setup hyperparameters (setup  191  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  256 
+Training rate =  1e-05 
+Optimizer =  sgd 
+Batch Normalization = False
+
+Training Loss =  2.2298 , Train Accuracy =  0.168 
+Test Loss =  2.2471 , Test Accuracy =  0.175
+
+Current best = setup 154 , Test accuracy =  0.4476
+
+Current Setup hyperparameters (setup  192  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  384 
+Training rate =  1e-07 
+Optimizer =  adam 
+Batch Normalization = False
+
+Training Loss =  2.1984 , Train Accuracy =  0.1745 
+Test Loss =  2.2181 , Test Accuracy =  0.1997
+
+Current best = setup 154 , Test accuracy =  0.4476
+
+Current Setup hyperparameters (setup  193  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  384 
+Training rate =  1e-07 
+Optimizer =  sgd 
+Batch Normalization = False
+
+Training Loss =  2.418 , Train Accuracy =  0.1042 
+Test Loss =  2.4476 , Test Accuracy =  0.1011
+
+Current best = setup 154 , Test accuracy =  0.4476
+
+Current Setup hyperparameters (setup  194  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  384 
+Training rate =  5.05e-06 
+Optimizer =  adam 
+Batch Normalization = False
+
+Training Loss =  1.7207 , Train Accuracy =  0.4193 
+Test Loss =  1.7597 , Test Accuracy =  0.4229
+
+Current best = setup 154 , Test accuracy =  0.4476
+
+Current Setup hyperparameters (setup  195  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  384 
+Training rate =  5.05e-06 
+Optimizer =  sgd 
+Batch Normalization = False
+
+Training Loss =  2.2856 , Train Accuracy =  0.1198 
+Test Loss =  2.2793 , Test Accuracy =  0.1469
+
+Current best = setup 154 , Test accuracy =  0.4476
+
+Current Setup hyperparameters (setup  196  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  384 
+Training rate =  1e-05 
+Optimizer =  adam 
+Batch Normalization = False
+
+Training Loss =  1.7813 , Train Accuracy =  0.4375 
+Test Loss =  1.8669 , Test Accuracy =  0.4027
+
+Current best = setup 154 , Test accuracy =  0.4476
+
+Current Setup hyperparameters (setup  197  of  216 ):
+----------------------
+dnn_hidden_units =  512 
+Batch size =  384 
+Training rate =  1e-05 
+Optimizer =  sgd 
+Batch Normalization = False
+
+Training Loss =  2.2612 , Train Accuracy =  0.1771 
+Test Loss =  2.2445 , Test Accuracy =  0.1913
+
+Current best = setup 154 , Test accuracy =  0.4476
+
+Current Setup hyperparameters (setup  198  of  216 ):
+----------------------
+dnn_hidden_units =  512,384,128,384,256 
+Batch size =  128 
+Training rate =  1e-07 
+Optimizer =  adam 
+Batch Normalization = False
+
+Training Loss =  2.4273 , Train Accuracy =  0.1016 
+Test Loss =  2.3328 , Test Accuracy =  0.1355
+
+Current best = setup 154 , Test accuracy =  0.4476
+
+Current Setup hyperparameters (setup  199  of  216 ):
+----------------------
+dnn_hidden_units =  512,384,128,384,256 
+Batch size =  128 
+Training rate =  1e-07 
+Optimizer =  sgd 
+Batch Normalization = False
+
+Training Loss =  2.4654 , Train Accuracy =  0.0703 
+Test Loss =  2.4112 , Test Accuracy =  0.1047
+
+Current best = setup 154 , Test accuracy =  0.4476
+
+Current Setup hyperparameters (setup  200  of  216 ):
+----------------------
+dnn_hidden_units =  512,384,128,384,256 
+Batch size =  128 
+Training rate =  5.05e-06 
+Optimizer =  adam 
+Batch Normalization = False
+
+Training Loss =  1.8748 , Train Accuracy =  0.3906 
+Test Loss =  1.9126 , Test Accuracy =  0.355
+
+Current best = setup 154 , Test accuracy =  0.4476
+
+Current Setup hyperparameters (setup  201  of  216 ):
+----------------------
+dnn_hidden_units =  512,384,128,384,256 
+Batch size =  128 
+Training rate =  5.05e-06 
+Optimizer =  sgd 
+Batch Normalization = False
+
+Training Loss =  2.4536 , Train Accuracy =  0.1094 
+Test Loss =  2.3936 , Test Accuracy =  0.1128
+
+Current best = setup 154 , Test accuracy =  0.4476
+
+Current Setup hyperparameters (setup  202  of  216 ):
+----------------------
+dnn_hidden_units =  512,384,128,384,256 
+Batch size =  128 
+Training rate =  1e-05 
+Optimizer =  adam 
+Batch Normalization = False
+
+Training Loss =  1.5773 , Train Accuracy =  0.5312 
+Test Loss =  1.7155 , Test Accuracy =  0.4105
+
+Current best = setup 154 , Test accuracy =  0.4476
+
+Current Setup hyperparameters (setup  203  of  216 ):
+----------------------
+dnn_hidden_units =  512,384,128,384,256 
+Batch size =  128 
+Training rate =  1e-05 
+Optimizer =  sgd 
+Batch Normalization = False
+
+Training Loss =  2.1961 , Train Accuracy =  0.2031 
+Test Loss =  2.3271 , Test Accuracy =  0.1485
+
+Current best = setup 154 , Test accuracy =  0.4476
+
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 2170665 ON r31n6 CANCELLED AT 2019-04-21T15:34:02 DUE TO TIME LIMIT ***
+slurmstepd: error: *** STEP 2170665.0 ON r31n6 CANCELLED AT 2019-04-21T15:34:02 DUE TO TIME LIMIT ***
