@@ -94,9 +94,15 @@ def train():
   x_test = cifar10["test"].images
   y_test = cifar10["test"].labels
 
+  #get usefull dimensions
   n_channels = np.size(x_test,1)
   n_classes = np.size(y_test,1)
   n_batches = np.size(x_test,0)//b_size
+
+  #load whole train data ############################################################
+  x_train = cifar10["train"].images
+  x_train = torch.tensor(x_train, requires_grad=False).type(dtype).to(device)
+  n_train_batches = np.size(x_train,0)//b_size
 
 
   #initialize the ConvNet model
@@ -142,12 +148,34 @@ def train():
     #select evaluation step
     if (step % FLAGS.eval_freq) == 0:
 
-        c_loss = current_loss.data.item()
-        train_loss.append(c_loss)
-        train_acc.append(current_train_acc)
+        # c_train_loss = current_loss.data.item()
+        # train_loss.append(c_train_loss)
+        # train_acc.append(current_train_acc)
+
+        c_train_loss = 0
+        current_train_acc = 0
 
         c_test_loss = 0
         current_test_acc = 0
+
+        #loop through train set in batches ######################################################
+        for test_batch in range(n_train_batches):
+          #load test data
+          x_train, y_train = cifar10['train'].next_batch(b_size)
+          x_train = torch.tensor(x_train, requires_grad=False).type(dtype).to(device)
+          y_train = torch.tensor(y_train, requires_grad=False).type(dtype).to(device)
+
+          #get test batch results
+          train_pred = model.forward(x_train)
+          current_train_loss = get_loss(train_pred, y_train.argmax(dim=1))
+
+          c_train_loss += current_train_loss.data.item()
+          current_train_acc += accuracy(train_pred, y_train)
+
+          #free memory up
+          train_pred.detach()
+          x_train.detach()
+          y_train.detach()
 
         #loop through test set in batches
         for test_batch in range(n_batches):
@@ -168,13 +196,19 @@ def train():
           x_test.detach()
           y_test.detach()
 
+        #get full training set results #########################################################
+        c_train_loss = c_train_loss/n_train_batches
+        current_train_acc = current_train_acc/n_train_batches
+        train_loss.append(c_train_loss)
+        train_acc.append(current_train_acc)
+
         #get full test set results
         c_test_loss = c_test_loss/n_batches
         current_test_acc = current_test_acc/n_batches
         test_loss.append(c_test_loss)
         test_acc.append(current_test_acc)
 
-        print('\nStep ',step, '\n------------\nTraining Loss = ', round(c_loss,4), ', Train Accuracy = ', current_train_acc, '\nTest Loss = ', round(c_test_loss,4), ', Test Accuracy = ', round(current_test_acc,4))
+        print('\nStep ',step, '\n------------\nTraining Loss = ', round(c_train_loss,4), ', Train Accuracy = ', current_train_acc, '\nTest Loss = ', round(c_test_loss,4), ', Test Accuracy = ', round(current_test_acc,4))
 
         if step > 0 and abs(test_loss[(int(step/FLAGS.eval_freq))] - test_loss[int(step/FLAGS.eval_freq)-1]) < eps:
                 break

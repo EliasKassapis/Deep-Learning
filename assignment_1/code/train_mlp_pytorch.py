@@ -17,8 +17,8 @@ import matplotlib.pyplot as plt
 
 
 dtype = torch.FloatTensor
-# device = torch.device("cpu")
-device = torch.device("cuda:0") # Uncomment this to run on GPU
+device = torch.device("cpu")
+# device = torch.device("cuda:0") # Uncomment this to run on GPU
 
 # Default constants
 DNN_HIDDEN_UNITS_DEFAULT = '100'
@@ -103,22 +103,23 @@ def train():
   y_test = cifar10["test"].labels
   y_test = torch.tensor(y_test, requires_grad=False).type(dtype).to(device)
 
+  #get usefull dimensions
   n_inputs = np.size(x_test,0)
   n_classes = np.size(y_test,1)
   v_size = np.size(x_test,1) * np.size(x_test,2) * np.size(x_test,3)
-  n_batches = np.size(x_test,0)//b_size
+  n_test_batches = np.size(x_test,0)//b_size
 
-  x_test = x_test.reshape((n_inputs, v_size))
-  x_test = torch.tensor(x_test, requires_grad=False).type(dtype).to(device)
+  # x_test = x_test.reshape((n_inputs, v_size))
+  # x_test = torch.tensor(x_test, requires_grad=False).type(dtype).to(device)
 
 
-  # #load whole train data ############################################################
-  # x_train = cifar10["train"].images
-  # x_train = x_train.reshape((np.size(x_train,0), v_size))
-  # x_train = torch.tensor(x_train, requires_grad=False).type(dtype).to(device)
+  #load whole train data ############################################################
+  x_train = cifar10["train"].images
+  x_train = x_train.reshape((np.size(x_train,0), v_size))
+  x_train = torch.tensor(x_train, requires_grad=False).type(dtype).to(device)
   # y_train = cifar10["train"].labels
   # y_train = torch.tensor(y_train, requires_grad=False).type(dtype).to(device)
-
+  n_train_batches = np.size(x_train,0)//b_size
 
   #initialize the MLP model
   model = MLP(n_inputs = v_size, n_hidden = dnn_hidden_units, n_classes = n_classes, b_norm=FLAGS.b_norm)
@@ -155,8 +156,8 @@ def train():
     #get training loss gradient
     current_loss.backward()
 
-    #get training accuracy
-    current_train_acc = accuracy(pred, y)
+    # #get training accuracy
+    # current_train_acc = accuracy(pred, y)
 
     optimizer.step()
 
@@ -168,15 +169,40 @@ def train():
     #select evaluation step
     if (step % FLAGS.eval_freq) == 0:
 
-        c_loss = current_loss.data.item()
-        train_loss.append(c_loss)
-        train_acc.append(current_train_acc)
+        # c_train_loss = current_loss.data.item()
+        # train_loss.append(c_train_loss)
+        # train_acc.append(current_train_acc)
+        #
+        c_train_loss = 0
+        current_train_acc = 0
 
         c_test_loss = 0
         current_test_acc = 0
 
-        #loop through test set in batches
-        for test_batch in range(n_batches):
+        #loop through train set in batches ######################################################
+        for test_batch in range(n_train_batches):
+          #load test data
+          x_train, y_train = cifar10['train'].next_batch(b_size)
+          y_train = torch.tensor(y_train, requires_grad=False).type(dtype).to(device)
+
+          #stretch input images into vectors
+          x_train = x_train.reshape(b_size, v_size)
+          x_train = torch.tensor(x_train, requires_grad=False).type(dtype).to(device)
+
+          #get test batch results
+          train_pred = model.forward(x_train)
+          current_train_loss = get_loss(train_pred, y_train.argmax(dim=1))
+
+          c_train_loss += current_train_loss.data.item()
+          current_train_acc += accuracy(train_pred, y_train)
+
+          #free memory up
+          train_pred.detach()
+          x_train.detach()
+          y_train.detach()
+
+        #loop through entire test set in batches
+        for test_batch in range(n_test_batches):
           #load test data
           x_test, y_test = cifar10['test'].next_batch(b_size)
           y_test = torch.tensor(y_test, requires_grad=False).type(dtype).to(device)
@@ -197,30 +223,36 @@ def train():
           x_test.detach()
           y_test.detach()
 
+        #get full training set results #########################################################
+        c_train_loss = c_train_loss/n_train_batches
+        current_train_acc = current_train_acc/n_train_batches
+        train_loss.append(c_train_loss)
+        train_acc.append(current_train_acc)
+
         #get full test set results
-        c_test_loss = c_test_loss/n_batches
-        current_test_acc = current_test_acc/n_batches
+        c_test_loss = c_test_loss/n_test_batches
+        current_test_acc = current_test_acc/n_test_batches
         test_loss.append(c_test_loss)
         test_acc.append(current_test_acc)
 
         if FLAGS.optimize == False:
-            print('\nStep ',step, '\n------------\nTraining Loss = ', round(c_loss,4), ', Train Accuracy = ', current_train_acc, '\nTest Loss = ', round(c_test_loss,4), ', Test Accuracy = ', current_test_acc)
+            print('\nStep ',step, '\n------------\nTraining Loss = ', round(c_train_loss,4), ', Train Accuracy = ', current_train_acc, '\nTest Loss = ', round(c_test_loss,4), ', Test Accuracy = ', current_test_acc)
 
         if step > 0 and abs(test_loss[(int(step/FLAGS.eval_freq))] - test_loss[int(step/FLAGS.eval_freq)-1]) < eps:
                 break
 
-  # if FLAGS.optimize == False:
-  #     plot_graphs(train_loss, 'Training Loss', 'orange',
-  #                   test_loss, 'Test Loss', 'blue',
-  #                   title='Stochastic gradient descent',
-  #                   ylabel='Loss',
-  #                   xlabel='Steps')
-  #
-  #     plot_graphs(train_acc, 'Training Accuracy', 'darkorange',
-  #                   test_acc, 'Test Accuracy', 'darkred',
-  #                   title='Stochastic gradient descent',
-  #                   ylabel='Accuracy',
-  #                   xlabel='Steps')
+  if FLAGS.optimize == False:
+      plot_graphs(train_loss, 'Training Loss', 'orange',
+                    test_loss, 'Test Loss', 'blue',
+                    title='Stochastic gradient descent',
+                    ylabel='Loss',
+                    xlabel='Steps')
+
+      plot_graphs(train_acc, 'Training Accuracy', 'darkorange',
+                    test_acc, 'Test Accuracy', 'darkred',
+                    title='Stochastic gradient descent',
+                    ylabel='Accuracy',
+                    xlabel='Steps')
   #
   #     #save results:
   #     path = "./results/pytorch results/"
@@ -293,15 +325,24 @@ if __name__ == '__main__':
                       help='Directory for storing input data')
   FLAGS, unparsed = parser.parse_known_args()
 
-  FLAGS.optimizer = 'sgd'
-
+  # FLAGS.optimizer = 'sgd'
+  # FLAGS.b_norm = False
+  # FLAGS.dropout = False
   FLAGS.optimize = False
 
-  FLAGS.b_norm = False
+  ################################# DETECTED OPTIMAL PARAMETERS
+  FLAGS.max_steps = 5000
+  FLAGS.dnn_hidden_units = '512,128,384'
+  FLAGS.batch_size = 384
+  FLAGS.learning_rate = 1e-5
+  FLAGS.optimizer = 'adam'
+  FLAGS.b_norm = True
+  FLAGS.dropout = True
 
   main()
 
 
+#Code for Question 2.2
 
 def get_setups():
 
@@ -333,9 +374,9 @@ def get_setups():
 
     return setups
 
-setups = get_setups()
+# setups = get_setups()
 
-print('No of setups: ', len(setups))
+# print('No of setups: ', len(setups))
 
 def get_best_setup(setups):
 
@@ -394,4 +435,4 @@ def get_best_setup(setups):
     np.save('Best test_loss', test_loss)
     np.save('Best test_acc', test_acc)
 
-n_hidden, b_size, eta, opt = get_best_setup(setups)
+# n_hidden, b_size, eta, opt = get_best_setup(setups)
