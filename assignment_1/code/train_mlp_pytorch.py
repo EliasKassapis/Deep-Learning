@@ -17,8 +17,8 @@ import matplotlib.pyplot as plt
 
 
 dtype = torch.FloatTensor
-device = torch.device("cpu")
-# device = torch.device("cuda:0") # Uncomment this to run on GPU
+# device = torch.device("cpu")
+device = torch.device("cuda:0") # Uncomment this to run on GPU
 
 # Default constants
 DNN_HIDDEN_UNITS_DEFAULT = '100'
@@ -209,25 +209,25 @@ def train():
         if step > 0 and abs(test_loss[(int(step/FLAGS.eval_freq))] - test_loss[int(step/FLAGS.eval_freq)-1]) < eps:
                 break
 
-  if FLAGS.optimize == False:
-      plot_graphs(train_loss, 'Training Loss', 'orange',
-                    test_loss, 'Test Loss', 'blue',
-                    title='Stochastic gradient descent',
-                    ylabel='Loss',
-                    xlabel='Steps')
-
-      plot_graphs(train_acc, 'Training Accuracy', 'darkorange',
-                    test_acc, 'Test Accuracy', 'darkred',
-                    title='Stochastic gradient descent',
-                    ylabel='Accuracy',
-                    xlabel='Steps')
-
-      #save results:
-      path = "./results/pytorch results/"
-      np.save(path + 'train_loss', train_loss)
-      np.save(path + 'train_acc', train_acc)
-      np.save(path + 'test_loss', test_loss)
-      np.save(path + 'test_acc', test_acc)
+  # if FLAGS.optimize == False:
+  #     plot_graphs(train_loss, 'Training Loss', 'orange',
+  #                   test_loss, 'Test Loss', 'blue',
+  #                   title='Stochastic gradient descent',
+  #                   ylabel='Loss',
+  #                   xlabel='Steps')
+  #
+  #     plot_graphs(train_acc, 'Training Accuracy', 'darkorange',
+  #                   test_acc, 'Test Accuracy', 'darkred',
+  #                   title='Stochastic gradient descent',
+  #                   ylabel='Accuracy',
+  #                   xlabel='Steps')
+  #
+  #     #save results:
+  #     path = "./results/pytorch results/"
+  #     np.save(path + 'train_loss', train_loss)
+  #     np.save(path + 'train_acc', train_acc)
+  #     np.save(path + 'test_loss', test_loss)
+  #     np.save(path + 'test_acc', test_acc)
 
   return train_loss, test_loss, train_acc, test_acc
 
