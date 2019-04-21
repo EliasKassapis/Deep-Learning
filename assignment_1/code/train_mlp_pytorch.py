@@ -16,7 +16,7 @@ import matplotlib.pyplot as plt
 
 
 
-dtype = torch.float
+dtype = torch.FloatTensor
 # device = torch.device("cpu")
 device = torch.device("cuda:0") # Uncomment this to run on GPU
 
@@ -109,6 +109,7 @@ def train():
   n_inputs = np.size(x_test,0)
   n_classes = np.size(y_test,1)
   v_size = np.size(x_test,1) * np.size(x_test,2) * np.size(x_test,3)
+  n_batches = np.size(x_test,0)//b_size
 
   x_test = x_test.reshape((n_inputs, v_size))
   x_test = torch.tensor(x_test, requires_grad=False).type(dtype).to(device)
@@ -136,8 +137,68 @@ def train():
   train_acc = []
   test_acc = []
 
-  for step in range(max_steps):
+  # for step in range(max_steps):
+  #
+  #   #get batch
+  #   x, y = cifar10['train'].next_batch(b_size)
+  #   y = torch.tensor(y).type(dtype).to(device)
+  #
+  #   #stretch input images into vectors
+  #   x = x.reshape(b_size, v_size)
+  #   x = torch.tensor(x).type(dtype).to(device)
+  #
+  #   #forward pass
+  #   pred = model.forward(x)
+  #
+  #   #get training loss
+  #   current_loss = get_loss(pred,y.argmax(dim=1))
+  #   optimizer.zero_grad()
+  #
+  #   #get training loss gradient
+  #   current_loss.backward()
+  #
+  #   optimizer.step()
+  #
+  #   #select evaluation steps
+  #   if (step % FLAGS.eval_freq) == 0:
+  #
+  #       c_loss = current_loss.data.item()
+  #       train_loss.append(c_loss)
+  #
+  #       current_train_acc = accuracy(pred, y)
+  #       train_acc.append(current_train_acc)
+  #
+  #
+  #       # #get train set results
+  #       # train_pred = model.forward(x_train)
+  #       # current_loss = get_loss(train_pred, y_train.argmax(dim=1))
+  #       #
+  #       # c_loss = current_loss.data.item()
+  #       # train_loss.append(c_loss)
+  #       #
+  #       # current_train_acc = accuracy(train_pred, y_train)
+  #       # train_acc.append(current_train_acc)
+  #
+  #
+  #       #get test set results
+  #       test_pred = model.forward(x_test)
+  #       current_test_loss = get_loss(test_pred, y_test.argmax(dim=1))
+  #
+  #       c_test_loss = current_test_loss.data.item()
+  #       test_loss.append(c_test_loss)
+  #
+  #       current_test_acc = accuracy(test_pred, y_test)
+  #       test_acc.append(current_test_acc)
+  #
+  #       if FLAGS.optimize == False:
+  #           print('\nStep ',step, '\n------------\nTraining Loss = ', round(c_loss,4), ', Train Accuracy = ', current_train_acc, '\nTest Loss = ', round(c_test_loss,4), ', Test Accuracy = ', current_test_acc)
+  #
+  #       if step > 0 and abs(test_loss[(int(step/FLAGS.eval_freq))] - test_loss[int(step/FLAGS.eval_freq)-1]) < eps:
+  #               break
 
+
+
+  for step in range(max_steps):
     #get batch
     x, y = cifar10['train'].next_batch(b_size)
     y = torch.tensor(y).type(dtype).to(device)
@@ -156,37 +217,52 @@ def train():
     #get training loss gradient
     current_loss.backward()
 
+    #get training accuracy
+    current_train_acc = accuracy(pred, y)
+
     optimizer.step()
 
-    #select evaluation steps
+    #free memory up
+    pred.detach()
+    x.detach()
+    y.detach()
+
+    #select evaluation step
     if (step % FLAGS.eval_freq) == 0:
 
         c_loss = current_loss.data.item()
         train_loss.append(c_loss)
-
-        current_train_acc = accuracy(pred, y)
         train_acc.append(current_train_acc)
 
+        c_test_loss = 0
+        current_test_acc = 0
 
-        # #get train set results
-        # train_pred = model.forward(x_train)
-        # current_loss = get_loss(train_pred, y_train.argmax(dim=1))
-        #
-        # c_loss = current_loss.data.item()
-        # train_loss.append(c_loss)
-        #
-        # current_train_acc = accuracy(train_pred, y_train)
-        # train_acc.append(current_train_acc)
+        #loop through test set in batches
+        for test_batch in range(n_batches):
+          #load test data
+          x_test, y_test = cifar10['test'].next_batch(b_size)
+          y_test = torch.tensor(y_test, requires_grad=False).type(dtype).to(device)
 
+          #stretch input images into vectors
+          x_test = x_test.reshape(b_size, v_size)
+          x_test = torch.tensor(x_test).type(dtype).to(device)
 
-        #get test set results
-        test_pred = model.forward(x_test)
-        current_test_loss = get_loss(test_pred, y_test.argmax(dim=1))
+          #get test batch results
+          test_pred = model.forward(x_test)
+          current_test_loss = get_loss(test_pred, y_test.argmax(dim=1))
 
-        c_test_loss = current_test_loss.data.item()
+          c_test_loss += current_test_loss.data.item()
+          current_test_acc += accuracy(test_pred, y_test)
+
+          #free memory up
+          test_pred.detach()
+          x_test.detach()
+          y_test.detach()
+
+        #get full test set results
+        c_test_loss = c_test_loss/n_batches
+        current_test_acc = current_test_acc/n_batches
         test_loss.append(c_test_loss)
-
-        current_test_acc = accuracy(test_pred, y_test)
         test_acc.append(current_test_acc)
 
         if FLAGS.optimize == False:
@@ -194,6 +270,30 @@ def train():
 
         if step > 0 and abs(test_loss[(int(step/FLAGS.eval_freq))] - test_loss[int(step/FLAGS.eval_freq)-1]) < eps:
                 break
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   # if FLAGS.optimize == False:
   #     plot_graphs(train_loss, 'Training Loss', 'orange',
