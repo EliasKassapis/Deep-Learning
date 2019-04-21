@@ -17,8 +17,8 @@ import matplotlib.pyplot as plt
 
 
 dtype = torch.FloatTensor
-device = torch.device("cpu")
-# device = torch.device("cuda:0") # Uncomment this to run on GPU
+# device = torch.device("cpu")
+device = torch.device("cuda:0") # Uncomment this to run on GPU
 
 # Default constants
 DNN_HIDDEN_UNITS_DEFAULT = '100'
