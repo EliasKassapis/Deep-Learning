@@ -1,0 +1,62 @@
+WARNING: cuDNN/7.0.5-CUDA-9.0.176 cannot be loaded due to a conflict.
+HINT: Might try "module unload cuDNN" first.
+/var/spool/slurm-llnl/slurmd/job2171748/slurm_script: line 18: cd: /home/lgpu0417/deep-learning/assignment_1/code/: Permission denied
+ ------ Job mlp_pytorch is started ------- 
+ 
+learning_rate : 0.0001
+max_steps : 5000
+batch_size : 32
+eval_freq : 500
+data_dir : ./cifar10/cifar-10-batches-py
+
+Step  0 
+------------
+Training Loss =  2.3262 , Train Accuracy =  0.12039852752880922 
+Test Loss =  2.325 , Test Accuracy =  0.1226
+
+Step  500 
+------------
+Training Loss =  1.1732 , Train Accuracy =  0.5796854993597952 
+Test Loss =  1.1822 , Test Accuracy =  0.5798
+
+Step  1000 
+------------
+Training Loss =  0.9709 , Train Accuracy =  0.6609715108834827 
+Test Loss =  1.0171 , Test Accuracy =  0.6425
+
+Step  1500 
+------------
+Training Loss =  0.832 , Train Accuracy =  0.7072063060179258 
+Test Loss =  0.9062 , Test Accuracy =  0.6806
+
+Step  2000 
+------------
+Training Loss =  0.7826 , Train Accuracy =  0.728973271446863 
+Test Loss =  0.8525 , Test Accuracy =  0.7054
+
+Step  2500 
+------------
+Training Loss =  0.6885 , Train Accuracy =  0.7611035531370038 
+Test Loss =  0.7979 , Test Accuracy =  0.7268
+
+Step  3000 
+------------
+Training Loss =  0.5799 , Train Accuracy =  0.8018565941101152 
+Test Loss =  0.7408 , Test Accuracy =  0.7423
+
+Step  3500 
+------------
+Training Loss =  0.6278 , Train Accuracy =  0.7839308578745199 
+Test Loss =  0.7808 , Test Accuracy =  0.7352
+
+Step  4000 
+------------
+Training Loss =  0.5147 , Train Accuracy =  0.8229433418693982 
+Test Loss =  0.7076 , Test Accuracy =  0.7584
+
+Step  4500 
+------------
+Training Loss =  0.4759 , Train Accuracy =  0.8399687900128041 
+Test Loss =  0.706 , Test Accuracy =  0.7586
+ 
+ ------ Job mlp_pytorch is finished -------
