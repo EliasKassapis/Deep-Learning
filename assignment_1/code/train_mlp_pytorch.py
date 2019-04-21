@@ -17,8 +17,8 @@ import matplotlib.pyplot as plt
 
 
 dtype = torch.FloatTensor
-# device = torch.device("cpu")
-device = torch.device("cuda:0") # Uncomment this to run on GPU
+device = torch.device("cpu")
+# device = torch.device("cuda:0") # Uncomment this to run on GPU
 
 # Default constants
 DNN_HIDDEN_UNITS_DEFAULT = '100'
@@ -310,8 +310,8 @@ def get_setups():
     etas = np.linspace(1e-7, 1e-5, 3)
     opts = ["adam", "sgd"]
     batch_size = np.linspace(128, 384, 3).astype(int)
-    n_hlayers = np.linspace(1,5,2).astype(int)
-    b_norm = [True, False]
+    n_hlayers = np.linspace(1,3,3).astype(int)
+    b_norm = [True]
 
     setups = []
 
