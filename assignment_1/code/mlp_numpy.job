@@ -1,0 +1,29 @@
+#!/bin/bash
+#Set job requirements
+#SBATCH --job-name=mlp_numpy
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=3
+#SBATCH --ntasks-per-node=1
+#SBATCH --time=1:30:00
+#SBATCH --mem=60000M
+#SBATCH --partition=gpu_shared_course
+#SBATCH --gres=gpu:1
+
+#Loading modules
+module load Miniconda3/4.3.27
+module load CUDA/9.0.176
+module load cuDNN/7.3.1-CUDA-9.0.176
+
+export LD_LIBRARY_PATH=/hpc/eb/Debian9/cuDNN/7.1-CUDA-8.0.44-GCCcore-5.4.0/lib6$
+
+cd /home/lgpu0417/deep-learning/assignment_1/code/
+
+echo " ------ Job mlp_pytorch is started ------- "
+echo " "
+
+source activate dl
+
+srun python3 train_mlp_numpy.py
+
+echo " "
+echo " ------ Job mlp_pytorch is finished -------"
