@@ -83,4 +83,4 @@ def get_graphs(model):
                 )
 
 
-get_graphs(4)
+get_graphs(2)

@@ -190,7 +190,7 @@ def train():
   # np.save(path + 'test_loss', test_loss)
   # np.save(path + 'test_acc', test_acc)
 
-  
+
   np.save('train_loss', train_loss)
   np.save('train_acc', train_acc)
   np.save('test_loss', test_loss)

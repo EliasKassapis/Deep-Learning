@@ -3,27 +3,30 @@
   <component name="ChangeListManager">
     <list default="true" id="afccb041-8e84-40d7-b95e-a65c6ee9cc54" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Best b_norm.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Best b_size.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Best dnn_hidden_units.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Best eta.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Best opt.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Best test_acc.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Best test_loss.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Best train_acc.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Best train_loss.npy" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/graphs.py" beforeDir="false" afterPath="$PROJECT_DIR$/graphs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/convnet results/PyTorch ConvNet - Accuracy.png" beforeDir="false" afterPath="$PROJECT_DIR$/results/convnet results/PyTorch ConvNet - Accuracy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/convnet results/PyTorch ConvNet - Loss.png" beforeDir="false" afterPath="$PROJECT_DIR$/results/convnet results/PyTorch ConvNet - Loss.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/convnet results/test_acc.npy" beforeDir="false" afterPath="$PROJECT_DIR$/results/convnet results/test_acc.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/convnet results/test_loss.npy" beforeDir="false" afterPath="$PROJECT_DIR$/results/convnet results/test_loss.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/convnet results/train_acc.npy" beforeDir="false" afterPath="$PROJECT_DIR$/results/convnet results/train_acc.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/convnet results/train_loss.npy" beforeDir="false" afterPath="$PROJECT_DIR$/results/convnet results/train_loss.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/numpy results/Numpy MLP - Accuracy.png" beforeDir="false" afterPath="$PROJECT_DIR$/results/numpy results/Numpy MLP - Accuracy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/numpy results/Numpy MLP - Loss.png" beforeDir="false" afterPath="$PROJECT_DIR$/results/numpy results/Numpy MLP - Loss.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/numpy results/test_loss.npy" beforeDir="false" afterPath="$PROJECT_DIR$/results/numpy results/test_loss.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/numpy results/train_acc.npy" beforeDir="false" afterPath="$PROJECT_DIR$/results/numpy results/train_acc.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/numpy results/train_loss.npy" beforeDir="false" afterPath="$PROJECT_DIR$/results/numpy results/train_loss.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/pytorch results/PyTorch MLP - Accuracy.png" beforeDir="false" afterPath="$PROJECT_DIR$/results/pytorch results/PyTorch MLP - Accuracy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/pytorch results/PyTorch MLP - Loss.png" beforeDir="false" afterPath="$PROJECT_DIR$/results/pytorch results/PyTorch MLP - Loss.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/results/pytorch results/test_acc.npy" beforeDir="false" afterPath="$PROJECT_DIR$/results/pytorch results/test_acc.npy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/results/pytorch results/test_loss.npy" beforeDir="false" afterPath="$PROJECT_DIR$/results/pytorch results/test_loss.npy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/results/pytorch results/train_acc.npy" beforeDir="false" afterPath="$PROJECT_DIR$/results/pytorch results/train_acc.npy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/results/pytorch results/train_loss.npy" beforeDir="false" afterPath="$PROJECT_DIR$/results/pytorch results/train_loss.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slurm-2167350.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slurm-2170331.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slurm-2170406.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slurm-2170665.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slurm-2170884.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slurm-2171681.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_acc.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_loss.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train_acc.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train_loss.npy" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/train_mlp_numpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/train_mlp_numpy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/train_mlp_pytorch.py" beforeDir="false" afterPath="$PROJECT_DIR$/train_mlp_pytorch.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +63,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/train_convnet_pytorch.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
+            <state relative-caret-position="1157">
               <caret line="278" column="30" selection-start-line="278" selection-start-column="30" selection-end-line="278" selection-end-column="30" />
               <folding>
                 <element signature="e#150#188#0" expanded="true" />
@@ -72,8 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/train_mlp_pytorch.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="115" selection-start-line="115" selection-end-line="119" selection-end-column="46" />
+            <state relative-caret-position="150">
+              <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
               <folding>
                 <element signature="e#144#182#0" expanded="true" />
               </folding>
@@ -81,20 +84,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/graphs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="586">
+            <state relative-caret-position="1185">
               <caret line="85" column="12" selection-start-line="85" selection-start-column="12" selection-end-line="85" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/train_mlp_numpy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="192" column="2" lean-forward="true" selection-start-line="192" selection-start-column="2" selection-end-line="192" selection-end-column="2" />
+            <state relative-caret-position="1202">
+              <caret line="182" column="34" selection-start-line="182" selection-start-column="34" selection-end-line="182" selection-end-column="34" />
               <folding>
                 <element signature="e#142#180#0" expanded="true" />
               </folding>
@@ -140,9 +143,9 @@
         <option value="$PROJECT_DIR$/opt_params.py" />
         <option value="$PROJECT_DIR$/mlp_pytorch.py" />
         <option value="$PROJECT_DIR$/train_convnet_pytorch.py" />
-        <option value="$PROJECT_DIR$/train_mlp_pytorch.py" />
-        <option value="$PROJECT_DIR$/graphs.py" />
         <option value="$PROJECT_DIR$/train_mlp_numpy.py" />
+        <option value="$PROJECT_DIR$/graphs.py" />
+        <option value="$PROJECT_DIR$/train_mlp_pytorch.py" />
       </list>
     </option>
   </component>
@@ -187,7 +190,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.train_mlp_numpy">
+  <component name="RunManager" selected="Python.graphs">
     <configuration name="graphs" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="code" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -295,9 +298,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.train_mlp_numpy" />
         <item itemvalue="Python.graphs" />
         <item itemvalue="Python.train_mlp_pytorch" />
+        <item itemvalue="Python.train_mlp_numpy" />
         <item itemvalue="Python.train_convnet_pytorch" />
         <item itemvalue="Python.opt_params" />
       </list>
@@ -340,13 +343,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24972677" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.221174" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.221174" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -461,7 +463,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/train_convnet_pytorch.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
+        <state relative-caret-position="1157">
           <caret line="278" column="30" selection-start-line="278" selection-start-column="30" selection-end-line="278" selection-end-column="30" />
           <folding>
             <element signature="e#150#188#0" expanded="true" />
@@ -469,30 +471,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/graphs.py">
+    <entry file="file://$PROJECT_DIR$/train_mlp_numpy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="586">
-          <caret line="85" column="12" selection-start-line="85" selection-start-column="12" selection-end-line="85" selection-end-column="12" />
+        <state relative-caret-position="1202">
+          <caret line="182" column="34" selection-start-line="182" selection-start-column="34" selection-end-line="182" selection-end-column="34" />
+          <folding>
+            <element signature="e#142#180#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/train_mlp_pytorch.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="115" selection-start-line="115" selection-end-line="119" selection-end-column="46" />
+        <state relative-caret-position="150">
+          <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
           <folding>
             <element signature="e#144#182#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/train_mlp_numpy.py">
+    <entry file="file://$PROJECT_DIR$/graphs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="192" column="2" lean-forward="true" selection-start-line="192" selection-start-column="2" selection-end-line="192" selection-end-column="2" />
-          <folding>
-            <element signature="e#142#180#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1185">
+          <caret line="85" column="12" selection-start-line="85" selection-start-column="12" selection-end-line="85" selection-end-column="12" />
         </state>
       </provider>
     </entry>
