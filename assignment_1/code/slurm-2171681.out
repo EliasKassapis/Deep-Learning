@@ -1,0 +1,8 @@
+WARNING: cuDNN/7.0.5-CUDA-9.0.176 cannot be loaded due to a conflict.
+HINT: Might try "module unload cuDNN" first.
+/var/spool/slurm-llnl/slurmd/job2171681/slurm_script: line 18: cd: /home/lgpu0417/deep-learning/assignment_1/code/: Permission denied
+ ------ Job mlp_pytorch is started ------- 
+ 
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 2171681 ON r31n6 CANCELLED AT 2019-04-21T19:45:55 ***
+slurmstepd: error: *** STEP 2171681.0 ON r31n6 CANCELLED AT 2019-04-21T19:45:55 ***

@@ -1,0 +1,86 @@
+/var/spool/slurm-llnl/slurmd/job2171680/slurm_script: line 19: cd: /home/lgpu0417/deep-learning/assignment_1/code/: Permission denied
+ ------ Job mlp_pytorch is started ------- 
+ 
+dnn_hidden_units : 100
+learning_rate : 0.002
+max_steps : 1500
+batch_size : 200
+eval_freq : 100
+data_dir : ./cifar10/cifar-10-batches-py
+
+Step  0 
+------------
+Training Loss =  2.3025026747042916 , Train Accuracy =  0.139 
+Test Loss =  2.3025016855628753 , Test Accuracy =  0.1444
+
+Step  100 
+------------
+Training Loss =  1.7617381850897602 , Train Accuracy =  0.37012 
+Test Loss =  1.7591318792021746 , Test Accuracy =  0.3699
+
+Step  200 
+------------
+Training Loss =  1.6500667657993988 , Train Accuracy =  0.41604 
+Test Loss =  1.6599125145211113 , Test Accuracy =  0.4113
+
+Step  300 
+------------
+Training Loss =  1.6262077133857276 , Train Accuracy =  0.4236 
+Test Loss =  1.6483981472022537 , Test Accuracy =  0.4174
+
+Step  400 
+------------
+Training Loss =  1.5518833374205965 , Train Accuracy =  0.44988 
+Test Loss =  1.5843577128617192 , Test Accuracy =  0.4349
+
+Step  500 
+------------
+Training Loss =  1.5767181270275046 , Train Accuracy =  0.4437 
+Test Loss =  1.6216195009080332 , Test Accuracy =  0.4312
+
+Step  600 
+------------
+Training Loss =  1.5242710965275634 , Train Accuracy =  0.44952 
+Test Loss =  1.5886119100050742 , Test Accuracy =  0.431
+
+Step  700 
+------------
+Training Loss =  1.681778391703962 , Train Accuracy =  0.42732 
+Test Loss =  1.7672511803621884 , Test Accuracy =  0.3949
+
+Step  800 
+------------
+Training Loss =  1.5502958448279713 , Train Accuracy =  0.45812 
+Test Loss =  1.641862424252046 , Test Accuracy =  0.4298
+
+Step  900 
+------------
+Training Loss =  1.405967184528753 , Train Accuracy =  0.50486 
+Test Loss =  1.505112404626806 , Test Accuracy =  0.467
+
+Step  1000 
+------------
+Training Loss =  1.389990792452059 , Train Accuracy =  0.50122 
+Test Loss =  1.5021972587370882 , Test Accuracy =  0.4747
+
+Step  1100 
+------------
+Training Loss =  1.4199241050609115 , Train Accuracy =  0.5013 
+Test Loss =  1.5411692053716128 , Test Accuracy =  0.4653
+
+Step  1200 
+------------
+Training Loss =  1.601231319657215 , Train Accuracy =  0.4647 
+Test Loss =  1.745557309330992 , Test Accuracy =  0.4175
+
+Step  1300 
+------------
+Training Loss =  1.4400642042506298 , Train Accuracy =  0.496 
+Test Loss =  1.5913067420713614 , Test Accuracy =  0.453
+
+Step  1400 
+------------
+Training Loss =  1.379704797825487 , Train Accuracy =  0.51552 
+Test Loss =  1.547120325891949 , Test Accuracy =  0.4594
+ 
+ ------ Job mlp_pytorch is finished -------
