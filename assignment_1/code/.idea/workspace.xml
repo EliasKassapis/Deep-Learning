@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="afccb041-8e84-40d7-b95e-a65c6ee9cc54" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/graphs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opt_params.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.slurm-2167333.out.swp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/numpy results/results.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/pytorch results/results.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slurm-2166065.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slurm-2166844.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slurm-2167162.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slurm-2167318.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slurm-2167323.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slurm-2167333.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_acc.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_loss.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/train_acc.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/train_convnet_pytorch.py" beforeDir="false" afterPath="$PROJECT_DIR$/train_convnet_pytorch.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/train_loss.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/train_mlp_numpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/train_mlp_numpy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/train_mlp_pytorch.py" beforeDir="false" afterPath="$PROJECT_DIR$/train_mlp_pytorch.py" afterDir="false" />
-    </list>
+    <list default="true" id="afccb041-8e84-40d7-b95e-a65c6ee9cc54" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/train_mlp_pytorch.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5250">
-              <caret line="356" column="38" selection-start-line="356" selection-start-column="38" selection-end-line="356" selection-end-column="38" />
+            <state relative-caret-position="315">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="e#144#182#0" expanded="true" />
               </folding>
@@ -461,8 +441,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/train_mlp_pytorch.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5250">
-          <caret line="356" column="38" selection-start-line="356" selection-start-column="38" selection-end-line="356" selection-end-column="38" />
+        <state relative-caret-position="315">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="e#144#182#0" expanded="true" />
           </folding>
