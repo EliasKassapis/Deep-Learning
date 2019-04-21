@@ -117,8 +117,6 @@ def train():
   x_train = cifar10["train"].images
   x_train = x_train.reshape((np.size(x_train,0), v_size))
   x_train = torch.tensor(x_train, requires_grad=False).type(dtype).to(device)
-  # y_train = cifar10["train"].labels
-  # y_train = torch.tensor(y_train, requires_grad=False).type(dtype).to(device)
   n_train_batches = np.size(x_train,0)//b_size
 
   #initialize the MLP model
@@ -253,13 +251,13 @@ def train():
                     title='Stochastic gradient descent',
                     ylabel='Accuracy',
                     xlabel='Steps')
-  #
-  #     #save results:
-  #     path = "./results/pytorch results/"
-  #     np.save(path + 'train_loss', train_loss)
-  #     np.save(path + 'train_acc', train_acc)
-  #     np.save(path + 'test_loss', test_loss)
-  #     np.save(path + 'test_acc', test_acc)
+
+      #save results:
+      path = "./results/pytorch results/"
+      np.save(path + 'train_loss', train_loss)
+      np.save(path + 'train_acc', train_acc)
+      np.save(path + 'test_loss', test_loss)
+      np.save(path + 'test_acc', test_acc)
 
   return train_loss, test_loss, train_acc, test_acc
 
@@ -325,19 +323,19 @@ if __name__ == '__main__':
                       help='Directory for storing input data')
   FLAGS, unparsed = parser.parse_known_args()
 
-  # FLAGS.optimizer = 'sgd'
-  # FLAGS.b_norm = False
-  # FLAGS.dropout = False
+  FLAGS.optimizer = 'sgd'
+  FLAGS.b_norm = False
+  FLAGS.dropout = False
   FLAGS.optimize = False
 
-  ################################# DETECTED OPTIMAL PARAMETERS
-  FLAGS.max_steps = 5000
-  FLAGS.dnn_hidden_units = '512,128,384'
-  FLAGS.batch_size = 384
-  FLAGS.learning_rate = 1e-5
-  FLAGS.optimizer = 'adam'
-  FLAGS.b_norm = True
-  FLAGS.dropout = True
+  # ################################# DETECTED OPTIMAL PARAMETERS
+  # FLAGS.max_steps = 5000
+  # FLAGS.dnn_hidden_units = '512,128,384'
+  # FLAGS.batch_size = 384
+  # FLAGS.learning_rate = 1e-5
+  # FLAGS.optimizer = 'adam'
+  # FLAGS.b_norm = True
+  # FLAGS.dropout = True
 
   main()
 
@@ -409,14 +407,6 @@ def get_best_setup(setups):
         FLAGS.b_norm = setups[current_best][4]
         print('\nCurrent best = setup', current_best, ', Test accuracy = ', round(setup_acc[current_best],4))
 
-    # best_setup_idx = np.argmax(setup_acc)
-    #
-    # #Get best setup parameters
-    # FLAGS.dnn_hidden_units = setups[best_setup_idx][0]
-    # FLAGS.batch_size = setups[best_setup_idx][1]
-    # FLAGS.learning_rate = setups[best_setup_idx][2]
-    # FLAGS.optimizer = setups[best_setup_idx][3]
-
     #Get results of best setup
     train_loss, test_loss, train_acc, test_acc = train()
 
@@ -436,3 +426,25 @@ def get_best_setup(setups):
     np.save('Best test_acc', test_acc)
 
 # n_hidden, b_size, eta, opt = get_best_setup(setups)
+
+#Load best parameters from setup search
+
+FLAGS.dnn_hidden_units = str(np.load('./results/opt pytorch results/Best dnn_hidden_units.npy'))
+FLAGS.batch_size = int(np.load('./results/opt pytorch results/Best b_size.npy'))
+FLAGS.learning_rate = np.load('./results/opt pytorch results/Best eta.npy').item()
+FLAGS.optimizer = str(np.load('./results/opt pytorch results/Best opt.npy'))
+FLAGS.b_norm = np.load('./results/opt pytorch results/Best b_norm.npy')
+
+#Add dropout and increase training step iterations
+FLAGS.max_steps = 5000
+FLAGS.dropout = True
+
+#Get stats of best model
+train_loss, test_loss, train_acc, test_acc = train()
+
+#save stats of best model
+path = "./results/opt pytorch results/optimal/"
+np.save(path + 'train_loss', train_loss)
+np.save(path + 'train_acc', train_acc)
+np.save(path + 'test_loss', test_loss)
+np.save(path + 'test_acc', test_acc)

@@ -51,6 +51,11 @@ def get_graphs(model):
         m = 'PyTorch ConvNet'
         step_size = 500
 
+    elif model == 4:
+        path = './results/opt pytorch results/optimal/'
+        m = 'Best PyTorch MLP'
+        step_size = 100
+
     train_loss = np.load(path + 'train_loss.npy')
     train_acc = np.load(path + 'train_acc.npy')
     test_loss = np.load(path + 'test_loss.npy')
@@ -78,4 +83,4 @@ def get_graphs(model):
                 )
 
 
-get_graphs(1)
+get_graphs(4)

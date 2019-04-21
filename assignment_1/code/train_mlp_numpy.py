@@ -107,6 +107,11 @@ def train():
 
   x_test = x_test.reshape((n_inputs, v_size))
 
+  #load whole train data ############################################################
+  x_train = cifar10["train"].images
+  x_train = x_train.reshape((np.size(x_train,0), v_size))
+  y_train = cifar10["train"].labels
+
   #initialize the MLP model
   model = MLP(n_inputs = v_size, n_hidden = dnn_hidden_units, n_classes = n_classes)
   get_loss = CrossEntropyModule()
@@ -128,7 +133,7 @@ def train():
     pred = model.forward(x)
 
     #get loss
-    current_loss = get_loss.forward(pred,y)
+    current_train_loss = get_loss.forward(pred,y)
 
     #get loss gradient
     current_loss_grad = get_loss.backward(pred,y)
@@ -143,17 +148,25 @@ def train():
       l.params["bias"] -= eta*l.grads["bias"]
 
     if (step % FLAGS.eval_freq) == 0:
-      train_loss.append(current_loss)
-      current_train_acc = accuracy(pred, y)
+      # train_loss.append(current_train_loss)
+      # current_train_acc = accuracy(pred, y)
+      # train_acc.append(current_train_acc)
+      
+      train_pred = model.forward(x_train)
+
+      current_train_loss = get_loss.forward(train_pred, y_train)
+      train_loss.append(current_train_loss)
+      current_train_acc = accuracy(train_pred, y_train)
       train_acc.append(current_train_acc)
 
       test_pred = model.forward(x_test)
+
       current_test_loss = get_loss.forward(test_pred, y_test)
       test_loss.append(current_test_loss)
       current_test_acc = accuracy(test_pred, y_test)
       test_acc.append(current_test_acc)
 
-      print('\nStep ',step, '\n------------\nTraining Loss = ', current_loss, ', Train Accuracy = ', current_train_acc, '\nTest Loss = ', current_test_loss, ', Test Accuracy = ', current_test_acc)
+      print('\nStep ',step, '\n------------\nTraining Loss = ', current_train_loss, ', Train Accuracy = ', current_train_acc, '\nTest Loss = ', current_test_loss, ', Test Accuracy = ', current_test_acc)
 
       if step > 0 and abs(test_loss[(int(step/100))] - test_loss[int(step/100)-1]) < eps:
                 break
@@ -170,12 +183,18 @@ def train():
                 ylabel='Accuracy',
                 xlabel='Steps')
 
-  #save results:
-  path = "./results/numpy results/"
-  np.save(path + 'train_loss', train_loss)
-  np.save(path + 'train_acc', train_acc)
-  np.save(path + 'test_loss', test_loss)
-  np.save(path + 'test_acc', test_acc)
+  # #save results:
+  # path = "./results/numpy results/"
+  # np.save(path + 'train_loss', train_loss)
+  # np.save(path + 'train_acc', train_acc)
+  # np.save(path + 'test_loss', test_loss)
+  # np.save(path + 'test_acc', test_acc)
+
+  
+  np.save('train_loss', train_loss)
+  np.save('train_acc', train_acc)
+  np.save('test_loss', test_loss)
+  np.save('test_acc', test_acc)
 
 
   # raise NotImplementedError
