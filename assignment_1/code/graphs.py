@@ -61,6 +61,8 @@ def get_graphs(model):
     test_loss = np.load(path + 'test_loss.npy')
     test_acc = np.load(path + 'test_acc.npy')
 
+    print('Final train accuracy: ', max(train_acc), '\nFinal test accuracy: ', max(test_acc),
+          '\nFinal train loss: ', train_loss[-1], '\nFinal test loss: ', test_loss[-1])
 
     plot_graphs(train_loss, 'Train', 'darkorange',
                 test_loss, 'Test', 'darkblue',
@@ -83,4 +85,4 @@ def get_graphs(model):
                 )
 
 
-get_graphs(2)
+get_graphs(3)
