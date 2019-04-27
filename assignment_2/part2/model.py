@@ -18,6 +18,7 @@ from __future__ import division
 from __future__ import print_function
 
 import torch.nn as nn
+import torch
 
 
 class TextGenerationModel(nn.Module):
@@ -28,6 +29,28 @@ class TextGenerationModel(nn.Module):
         super(TextGenerationModel, self).__init__()
         # Initialization here...
 
-    def forward(self, x):
+        #Save parameters
+        self.batch_size = batch_size
+        self.seq_length = seq_length
+        self.vocabulary_size = vocabulary_size
+        self.lstm_num_hidden = lstm_num_hidden
+        self.lstm_num_layers = lstm_num_layers
+        self.device = device
+
+        #Initialize LSTM layers
+        self.lstm = nn.LSTM(self.vocabulary_size, self.lstm_num_hidden, self.lstm_num_layers) # may need to add batch size
+
+        #Initialize linear output layer
+        self.linear = nn.Linear(self.lstm_num_hidden, self.vocabulary_size)
+
+
+    def forward(self, x, previous_states=None):
         # Implementation here...
-        pass
+
+        #get the output of the LSTM cells
+        lstm_out, hc = self.lstm(x, previous_states) # hc is a tuple of (h_final,c_final)
+
+        #get output from linear layer
+        out = self.linear(lstm_out)
+
+        return out.transpose(2,1), hc

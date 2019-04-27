@@ -65,11 +65,11 @@ def train(config):
     assert config.model_type in ('RNN', 'LSTM')
 
     # Initialize the device which to run the model on
-    # device = torch.device(config.device)
+    device = torch.device(config.device)
 
     #########################################################################
     torch.set_default_tensor_type('torch.FloatTensor')
-    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    # device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 
     config.input_length = 10
@@ -100,12 +100,15 @@ def train(config):
 
     for step, (batch_inputs, batch_targets) in enumerate(data_loader):
 
+        # Clear stored gradient
+        model.zero_grad()
+
         # Only for time measurement of step through network
         t1 = time.time()
 
         # Add more code here ...
 
-        #Convert inputs into tensors
+        #Convert inputs and labels into tensors
         x = torch.tensor(batch_inputs, device=device)
         y = torch.tensor(batch_targets,device=device)
 
@@ -176,7 +179,7 @@ if __name__ == "__main__":
     parser.add_argument('--learning_rate', type=float, default=0.001, help='Learning rate')
     parser.add_argument('--train_steps', type=int, default=10000, help='Number of training steps')
     parser.add_argument('--max_norm', type=float, default=10.0)
-    parser.add_argument('--device', type=str, default="cuda:0", help="Training device 'cpu' or 'cuda:0'")
+    parser.add_argument('--device', type=str, default=('cuda' if torch.cuda.is_available() else 'cpu'), help="Training device 'cpu' or 'cuda:0'")
 
     config = parser.parse_args()
 
