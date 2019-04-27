@@ -35,23 +35,68 @@ from part1.lstm import LSTM
 
 ################################################################################
 
+
+def get_accuracy(predictions, targets, batch_size):
+  """
+  Computes the prediction accuracy, i.e. the average of correct predictions
+  of the network.
+
+  Args:
+    predictions: 2D float array of size [batch_size, n_classes]
+    labels: 2D int array of size [batch_size, n_classes]
+            with one-hot encoding. Ground truth labels for
+            each sample in the batch
+  Returns:
+    accuracy: scalar float, the accuracy of predictions,
+              i.e. the average correct predictions over the whole batch
+
+  TODO:
+  Implement accuracy computation.
+  """
+
+  acc = torch.sum(predictions.argmax(dim=1) == targets).to(torch.float) /batch_size
+
+  return acc
+
+
+
 def train(config):
 
     assert config.model_type in ('RNN', 'LSTM')
 
     # Initialize the device which to run the model on
-    device = torch.device(config.device)
+    # device = torch.device(config.device)
+
+    #########################################################################
+    torch.set_default_tensor_type('torch.FloatTensor')
+    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+
+
+    config.input_length = 10
+    config.model_type = 'LSTM'
+    #########################################################################
 
     # Initialize the model that we are going to use
-    model = None  # fixme
+    if config.model_type == 'RNN':
+        model = VanillaRNN(config.input_length, config.input_dim, config.num_hidden, config.num_classes, config.batch_size, device=device)
+    elif config.model_type == 'LSTM':
+        model = LSTM(config.input_length, config.input_dim, config.num_hidden, config.num_classes, config.batch_size, device=device)
+
 
     # Initialize the dataset and data loader (note the +1)
     dataset = PalindromeDataset(config.input_length+1)
     data_loader = DataLoader(dataset, config.batch_size, num_workers=1)
 
     # Setup the loss and optimizer
-    criterion = None  # fixme
-    optimizer = None  # fixme
+    criterion = torch.nn.CrossEntropyLoss()
+    optimizer = torch.optim.RMSprop(model.parameters(), lr=config.learning_rate)
+
+    model.to(device)
+
+    train_loss = [] ##########################
+    test_loss = []
+    train_acc = []
+    test_acc = []
 
     for step, (batch_inputs, batch_targets) in enumerate(data_loader):
 
@@ -60,16 +105,36 @@ def train(config):
 
         # Add more code here ...
 
+        #Convert inputs into tensors
+        x = torch.tensor(batch_inputs, device=device)
+        y = torch.tensor(batch_targets,device=device)
+
+
+        #Forward pass
+        pred = model.forward(x)
+        loss = criterion(pred, y)
+        optimizer.zero_grad()
+
+        #Backward pass
+        loss.backward()
+
         ############################################################################
         # QUESTION: what happens here and why?
+
+        # ANSWER : the function torch.nn.utils.clip_grad_norm() is used to prevent
+        # exploding gradients by ‘clipping’ the norm of the gradients, to restrain
+        # the gradient values to a certain threshold. This essentially acts as a
+        # limit to the size of the updates of the parameters of every layer, ensuring
+        # that the parameter values don't change too much from their previous values.
+
         ############################################################################
         torch.nn.utils.clip_grad_norm(model.parameters(), max_norm=config.max_norm)
         ############################################################################
 
         # Add more code here ...
 
-        loss = np.inf   # fixme
-        accuracy = 0.0  # fixme
+        optimizer.step()
+        accuracy = get_accuracy(pred,y, config.batch_size)
 
         # Just for time measurement
         t2 = time.time()
@@ -83,6 +148,7 @@ def train(config):
                     config.train_steps, config.batch_size, examples_per_second,
                     accuracy, loss
             ))
+            # print(f"x: {x[0,:]}, pred: {pred[0,:].argmax()}, y: {y[0]}") #######################################################################
 
         if step == config.train_steps:
             # If you receive a PyTorch data-loader error, check this bug report:

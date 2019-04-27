@@ -18,9 +18,12 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
+# from dataset import PalindromeDataset ####
+
 import torch
 import torch.nn as nn
 
+torch.set_default_tensor_type('torch.FloatTensor')
 ################################################################################
 
 class VanillaRNN(nn.Module):
@@ -29,6 +32,44 @@ class VanillaRNN(nn.Module):
         super(VanillaRNN, self).__init__()
         # Initialization here ...
 
+
+        #Save parameters
+        self.seq_length = seq_length
+        self.input_dim = input_dim
+        self.num_hidden = num_hidden
+        self.num_classes = num_classes
+        self.batch_size = batch_size
+        self.device = device
+
+
+        #initialize Weight matrices and biases
+        self.Whx = nn.Parameter(torch.randn(num_hidden,input_dim))
+        self.Whh = nn.Parameter(torch.randn(num_hidden,num_hidden))
+        self.Wph = nn.Parameter(torch.randn(num_classes,num_hidden))
+        self.bh = nn.Parameter(torch.randn(num_hidden))
+        self.bh = nn.Parameter(torch.randn(num_hidden))
+        self.bp = nn.Parameter(torch.randn(num_hidden))
+
+
     def forward(self, x):
         # Implementation here ...
-        pass
+
+        #initialize first hidden state
+        self.h = torch.zeros(self.batch_size, self.num_hidden, device=self.device)
+
+        #forward through all timesteps
+        for t in range(self.seq_length):
+            #get current input
+            current_x = x[:,t].view(-1, self.input_dim)
+            #get current h
+            self.h = torch.tanh(self.Whx @ current_x.t() + self.Whh @ self.h + self.bh)
+
+        #get output from final layer
+        out = self.Wph @ self.h + self.bp
+
+        return out.t()
+
+
+# data = PalindromeDataset(3)
+#
+# palindrome = data.generate_palindrome()
