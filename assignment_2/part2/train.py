@@ -29,8 +29,8 @@ import torch.optim as optim
 from torch.utils.data import DataLoader
 import torch.nn.functional as F
 
-from part2.dataset import TextDataset
-from part2.model import TextGenerationModel
+from dataset import TextDataset
+from model import TextGenerationModel
 
 #Set default tensor type
 torch.set_default_tensor_type('torch.FloatTensor')
@@ -203,7 +203,7 @@ def train(config):
             if step % 5000 == 0:
                 if step != 0:
                     #save model in each iteration just in case
-                    torch.save(model, "step_",step,"_model")
+                    torch.save(model, "step_" + str(step) +"_model")
 
         if step > 0 and abs(train_loss[step] - train_loss[step-1]) < eps:
             break
