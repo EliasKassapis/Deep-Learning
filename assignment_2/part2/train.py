@@ -100,7 +100,7 @@ def get_next_char(char, model, hc, temperature, sampling="greedy"):  #input is (
 
 def text_gen(model, s_length, vocab_size, temperature, sampling="greedy"):
     #get random first character in one-hot vector form
-    char = torch.randint(0, vocab_size, (1,1))
+    char = torch.randint(0, vocab_size, (1,1)).to(config.device)
     chars = [char.item()]
     char = idx_2_onehot(char, vocab_size)
 
@@ -200,10 +200,10 @@ def train(config):
                 # https://github.com/pytorch/pytorch/pull/9655
                 break
 
-            if step % 5000 == 0:
+            if epoch != 0 and step % 500000 == 0:
                 if step != 0:
-                    #save model in each iteration just in case
-                    torch.save(model, "step_" + str(step) +"_model")
+                    #save current model
+                    torch.save(model, "final_model")
 
         if step > 0 and abs(train_loss[step] - train_loss[step-1]) < eps:
             break
@@ -212,6 +212,8 @@ def train(config):
 
     print('Done training.')
 
+    #save final model
+    torch.save(model, "step_" + str(step) +"_model")
 
 
  ################################################################################
