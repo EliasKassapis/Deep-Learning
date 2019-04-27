@@ -74,27 +74,28 @@ def idx_2_onehot(input, vocab_size):
 
 def get_next_char(char, model, hc, temperature, sampling="greedy"):  #input is (sentence length, batch_size, one_hot vec(char))
 
-    #get model output
-    pred, hc = model(char, hc) #pred = (sentence length, score of each char ,batch_size)
+    with torch.no_grad():
 
-    #get char distributions
-    p = F.softmax(pred.squeeze().to(torch.float)/temperature, dim=0)
+        #get model output
+        pred, hc = model(char, hc) #pred = (sentence length, score of each char ,batch_size)
 
-    #sort characters according to probability mass
-    p, idx = torch.sort(p)
+        #get char distributions
+        p = F.softmax(pred.squeeze().to(torch.float)/temperature, dim=0)
 
-    #sample one character
-    if sampling == 'greedy':
-        #get top character
-        top_ch = idx[-1]
-    elif sampling == 'egreedy':
-        #get randomly one of top 3 characters
-        top_ch = idx[-np.random.choice(range(3))]
+        #sort characters according to probability mass
+        p, idx = torch.sort(p)
 
-    elif sampling == 'random':
-        top_ch = torch.multinomial(pred.squeeze(),1).item()
+        #sample one character
+        if sampling == 'greedy':
+            #get top character
+            top_ch = idx[-1]
+        elif sampling == 'egreedy':
+            #get randomly one of top 3 characters
+            top_ch = idx[-np.random.choice(range(3))]
 
-    # print(top_ch)
+        elif sampling == 'random':
+            top_ch = torch.multinomial(pred.squeeze(),1).item()
+
     return top_ch.view(1,1), hc
 
 
@@ -190,10 +191,10 @@ def train(config):
             if step % config.sample_every == 0:
                 # Generate some sentences by sampling from the model
                 #get text in int format
-                text = text_gen(model, config.seq_length, dataset.vocab_size, 0.5, sampling='egreedy')
+                text = text_gen(model, config.seq_length, dataset.vocab_size, 0.5, sampling='greedy')
                 #convert text to string
                 text = dataset.convert_to_string(text)
-                print('\nEpoch ',epoch+1,'/ 20, Training Step ',step,'/',int(config.train_steps),', Training Accuracy = ', accuracy.item(),'\n-----------------------------------------------\nGenerated text: ',text)
+                print('\nEpoch ',epoch+1,'/ 100, Training Step ',step,'/',int(config.train_steps),', Training Accuracy = ', accuracy.item(),'\n-----------------------------------------------\nGenerated text: ',text)
 
             if step == config.train_steps:
                 # If you receive a PyTorch data-loader error, check this bug report:

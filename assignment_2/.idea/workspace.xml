@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94cce1d8-5104-4df1-83e7-6ca60e99eff8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment_1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment_1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/part2/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/part2/train.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/part2/train.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="559">
-              <caret line="104" column="23" selection-start-line="104" selection-start-column="11" selection-end-line="104" selection-end-column="23" />
+            <state relative-caret-position="229">
+              <caret line="193" column="93" selection-start-line="193" selection-start-column="93" selection-end-line="193" selection-end-column="93" />
               <folding>
                 <element signature="e#634#672#0" expanded="true" />
               </folding>
@@ -312,8 +312,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/part2/train.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="104" column="23" selection-start-line="104" selection-start-column="11" selection-end-line="104" selection-end-column="23" />
+        <state relative-caret-position="229">
+          <caret line="193" column="93" selection-start-line="193" selection-start-column="93" selection-end-line="193" selection-end-column="93" />
           <folding>
             <element signature="e#634#672#0" expanded="true" />
           </folding>
