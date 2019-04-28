@@ -223,8 +223,8 @@ def train(config):
                     torch.save(train_loss, "epoch_" + str(epoch-1) +"_loss")
                     torch.save(texts, "epoch_" + str(epoch-1) +"_texts")
 
-        if step > 0 and abs(train_loss[step] - train_loss[step-1]) < eps:
-            break
+        # if step > 0 and abs(train_loss[step] - train_loss[step-1]) < eps:
+        #     break
 
 
 
