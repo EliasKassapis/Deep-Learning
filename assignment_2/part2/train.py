@@ -36,11 +36,6 @@ from model import TextGenerationModel
 torch.set_default_tensor_type('torch.FloatTensor')
 
 
-# Just to check char encoding in surfsara
-import sys
-sys.getdefaultencoding()
-
-
 ################################################################################
 def get_accuracy(predictions, targets, batch_size, seq_len):
   """
