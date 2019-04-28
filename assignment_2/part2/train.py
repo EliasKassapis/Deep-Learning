@@ -89,7 +89,7 @@ def get_next_char(char, model, hc, temperature=None):
 
         else:
             #get char distribution
-            p = F.softmax(pred.squeeze()/temperature, dim=0)
+            p = F.softmax(pred.squeeze()*temperature, dim=0)
             #sample character
             top_ch = torch.multinomial(p,1)
 
@@ -121,7 +121,6 @@ def train(config):
     # Initialize the dataset and data loader (note the +1)
     dataset = TextDataset(config.txt_file, config.seq_length)
     data_loader = DataLoader(dataset, config.batch_size, num_workers=1)
-    print(config.txt_file)
 
     # Initialize the model that we are going to use
     model = TextGenerationModel(config.batch_size, config.seq_length, dataset.vocab_size, config.dropout_prob, config.lstm_num_hidden,
@@ -135,11 +134,12 @@ def train(config):
 
     train_loss = []
     train_acc = []
+    texts = []
 
     #Convergence criterion
     eps = 1e-3
 
-    for epoch in range(50):
+    for epoch in range(20):
 
         for step, (batch_inputs, batch_targets) in enumerate(data_loader):
 
@@ -169,7 +169,7 @@ def train(config):
             #Forward pass
             pred, _ = model.forward(x) #pred = (sentence length, score of each char ,batch_size)
             loss = criterion(pred, y)
-            train_loss.append(loss.item())
+            # train_loss.append(loss.item())
             optimizer.zero_grad()
 
 
@@ -178,7 +178,7 @@ def train(config):
             optimizer.step()
 
             accuracy = get_accuracy(pred,y, config.batch_size, config.seq_length)
-            train_acc.append(accuracy.item())
+            # train_acc.append(accuracy.item())
 
             # Just for time measurement
             t2 = time.time()
@@ -201,8 +201,12 @@ def train(config):
                 text = text_gen(model, config.seq_length, dataset.vocab_size, temperature=None) ######################################
                 #convert text to string
                 text = dataset.convert_to_string(text)
-                print('\nEpoch ',epoch+1,'/ 100, Training Step ',step,'/',int(config.train_steps),', Training Accuracy = ', accuracy.item(),
+                print('\nEpoch ',epoch+1,'/ 20, Training Step ',step,'/',int(config.train_steps),', Training Accuracy = ', accuracy.item(),
                       ', Training Loss = ', loss.item(),'\n-----------------------------------------------\nGenerated text: ',text)
+                train_loss.append(loss.item())
+                train_acc.append(accuracy.item())
+                texts.append(text)
+
 
             if step == config.train_steps:
                 # If you receive a PyTorch data-loader error, check this bug report:
@@ -213,6 +217,11 @@ def train(config):
                 if step == 0:
                     #save current model at the start of every epoch
                     torch.save(model, "epoch_" + str(epoch-1) +"_model")
+
+                    #save current train accuracy, loss and text
+                    torch.save(train_acc, "epoch_" + str(epoch-1) +"_accuracy")
+                    torch.save(train_loss, "epoch_" + str(epoch-1) +"_loss")
+                    torch.save(texts, "epoch_" + str(epoch-1) +"_texts")
 
         if step > 0 and abs(train_loss[step] - train_loss[step-1]) < eps:
             break
@@ -265,24 +274,24 @@ if __name__ == "__main__":
     train(config)
 
 
+def test(config):
 
-# # Initialize the device which to run the model on
-# device = torch.device(config.device)
-#
-# print(config.txt_file)
-#
-# # Initialize the dataset and data loader (note the +1)
-# dataset = TextDataset(config.txt_file, config.seq_length)
-#
-# # Initialize the model that we are going to use
-# model = torch.load('epoch_22_model', map_location='cpu')
-#
-# model.to(device)
-#
-# #get text in idx format
-# text = text_gen(model, config.seq_length, dataset.vocab_size, temperature=None) ######################################
-# #convert text to string
-# text = dataset.convert_to_string(text)
-#
-# print(text)
+    # Initialize the device which to run the model on
+    device = torch.device(config.device)
+
+    # Initialize the dataset and data loader (note the +1)
+    dataset = TextDataset(config.txt_file, config.seq_length)
+
+    # Load the trained model
+    model = torch.load('epoch_22_model', map_location='cpu')
+    model.to(device)
+
+    temperature = [0.5, 1.0, 2.0]
+
+    for t in temperature:
+        #get text in idx format
+        text = text_gen(model, config.seq_length, dataset.vocab_size, temperature=t)
+        #convert text to string
+        text = dataset.convert_to_string(text)
+        print('\nTemperature = ',t,'\n----------------\nGenerated text: ',text)
 

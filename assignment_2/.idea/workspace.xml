@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94cce1d8-5104-4df1-83e7-6ca60e99eff8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/part2/dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/part2/dataset.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/part2/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/part2/train.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,7 +16,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/part2/model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
+            <state relative-caret-position="930">
               <caret line="62" column="21" lean-forward="true" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
               <folding>
                 <element signature="e#634#672#0" expanded="true" />
@@ -27,8 +28,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/part2/train.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="38" column="2" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="2" />
+            <state relative-caret-position="303">
+              <caret line="223" column="72" lean-forward="true" selection-start-line="223" selection-start-column="72" selection-end-line="223" selection-end-column="72" />
               <folding>
                 <element signature="e#634#672#0" expanded="true" />
               </folding>
@@ -39,20 +40,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/part2/dataset.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="90">
+              <caret line="30" column="54" lean-forward="true" selection-start-line="30" selection-start-column="54" selection-end-line="30" selection-end-column="54" />
               <folding>
                 <element signature="e#634#672#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/part1/vanilla_rnn.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -272,13 +264,6 @@
     <entry file="file://$PROJECT_DIR$/part2/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/part1/vanilla_rnn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/part1/lstm.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="930">
@@ -296,20 +281,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/part2/dataset.py">
+    <entry file="file://$PROJECT_DIR$/part2/model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="930">
+          <caret line="62" column="21" lean-forward="true" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
           <folding>
             <element signature="e#634#672#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/part2/model.py">
+    <entry file="file://$PROJECT_DIR$/part1/vanilla_rnn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="62" column="21" lean-forward="true" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
+        <state relative-caret-position="270">
+          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/part2/dataset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="30" column="54" lean-forward="true" selection-start-line="30" selection-start-column="54" selection-end-line="30" selection-end-column="54" />
           <folding>
             <element signature="e#634#672#0" expanded="true" />
           </folding>
@@ -318,8 +310,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/part2/train.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="38" column="2" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="2" />
+        <state relative-caret-position="303">
+          <caret line="223" column="72" lean-forward="true" selection-start-line="223" selection-start-column="72" selection-end-line="223" selection-end-column="72" />
           <folding>
             <element signature="e#634#672#0" expanded="true" />
           </folding>
