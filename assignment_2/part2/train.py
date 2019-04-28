@@ -71,34 +71,31 @@ def idx_2_onehot(input, vocab_size):
     return one_hot
 
 
-def get_next_char(char, model, hc, temperature, sampling="greedy"):  #input is (sentence length, batch_size, one_hot vec(char))
+def get_next_char(char, model, hc, temperature=None):
 
     with torch.no_grad():
 
         #get model output
-        pred, hc = model(char, hc) #pred = (sentence length, score of each char ,batch_size)
+        pred, hc = model(char, hc)
 
         #get char distributions
-        p = F.softmax(pred.squeeze().to(torch.float)/temperature, dim=0)
-
-        #sort characters according to probability mass
-        p, idx = torch.sort(p)
+        p = F.softmax(pred.squeeze().to(torch.float), dim=0)
 
         #sample one character
-        if sampling == 'greedy':
+        if temperature == None:
             #get top character
-            top_ch = idx[-1]
-        elif sampling == 'egreedy':
-            #get randomly one of top 3 characters
-            top_ch = idx[-np.random.choice(range(3))]
+            top_ch = p.argmax()
 
-        elif sampling == 'random':
-            top_ch = torch.multinomial(p,1).item()
+        else:
+            p = p/temperature
+            #get top character
+            top_ch = p.argmax()
+            # top_ch = torch.multinomial(p,1) ###############################################
 
     return top_ch.view(1,1), hc
 
 
-def text_gen(model, s_length, vocab_size, temperature, sampling="greedy"):
+def text_gen(model, s_length, vocab_size, temperature=None):
     #get random first character in one-hot vector form
     char = torch.randint(0, vocab_size, (1,1)).to(config.device)
     chars = [char.item()]
@@ -107,7 +104,7 @@ def text_gen(model, s_length, vocab_size, temperature, sampling="greedy"):
     hc = None
 
     for i in range(s_length):
-        next_char, hc = get_next_char(char, model, hc, temperature, sampling)
+        next_char, hc = get_next_char(char, model, hc, temperature)
         chars.append(next_char.item())
         char = idx_2_onehot(next_char, vocab_size)
 
@@ -144,12 +141,6 @@ def train(config):
 
         for step, (batch_inputs, batch_targets) in enumerate(data_loader):
 
-
-            # x = batch_inputs.to(device)
-            # y = batch_targets.to(device)
-
-            # print(x.shape)
-
             # Clear stored gradient
             model.zero_grad()
 
@@ -160,8 +151,13 @@ def train(config):
             # Add more code here ...
 
             # #Convert list of tensors into one tensor for inputs and labels
-            x = torch.stack(batch_inputs).to(device)
-            y = torch.stack(batch_targets).to(device)
+            # x = torch.stack(batch_inputs).to(device)
+            # y = torch.stack(batch_targets).to(device)
+            #
+            # print(x.shape)
+
+            x = (batch_inputs.to(device)).t() #############################
+            y = (batch_targets.to(device)).t()
 
             # print(x.shape)
 
@@ -200,10 +196,11 @@ def train(config):
             if step % config.sample_every == 0:
                 # Generate some sentences by sampling from the model
                 #get text in int format
-                text = text_gen(model, config.seq_length, dataset.vocab_size, 0.5, sampling='greedy')
+                text = text_gen(model, config.seq_length, dataset.vocab_size, temperature=0.5) ######################################
                 #convert text to string
                 text = dataset.convert_to_string(text)
-                print('\nEpoch ',epoch+1,'/ 100, Training Step ',step,'/',int(config.train_steps),', Training Accuracy = ', accuracy.item(),'\n-----------------------------------------------\nGenerated text: ',text)
+                print('\nEpoch ',epoch+1,'/ 100, Training Step ',step,'/',int(config.train_steps),', Training Accuracy = ', accuracy.item(),
+                      ', Training Loss = ', loss.item(),'\n-----------------------------------------------\nGenerated text: ',text)
 
             if step == config.train_steps:
                 # If you receive a PyTorch data-loader error, check this bug report:
