@@ -232,8 +232,6 @@ def train(config):
         if step > 0 and abs(t_loss[-1] - t_loss[-2]) < eps:
             break
 
-
-
     print('Done training.')
 
     #save final model
