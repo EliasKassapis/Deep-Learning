@@ -1,0 +1,899 @@
+/var/spool/slurm-llnl/slurmd/job2215422/slurm_script: line 20: cd: /home/lgpu0417/deep-learning/assignment_2/part2/: Permission denied
+ ------ Job mlp_pytorch is started ------- 
+ 
+Initialize dataset with 550591 characters, 91 unique.
+./Grim.txt
+
+Epoch  1 / 100, Training Step  0 / 1000000 , Training Accuracy =  0.05677083507180214 , Training Loss =  4.517101764678955 
+-----------------------------------------------
+Generated text:  ,a                             
+
+Epoch  1 / 100, Training Step  100 / 1000000 , Training Accuracy =  0.17500001192092896 , Training Loss =  3.1004958152770996 
+-----------------------------------------------
+Generated text:  4                              
+
+Epoch  1 / 100, Training Step  200 / 1000000 , Training Accuracy =  0.35989585518836975 , Training Loss =  2.3640406131744385 
+-----------------------------------------------
+Generated text:  N the the the the the the the t
+
+Epoch  1 / 100, Training Step  300 / 1000000 , Training Accuracy =  0.41875001788139343 , Training Loss =  2.052199363708496 
+-----------------------------------------------
+Generated text:  U he the the the the the the th
+
+Epoch  1 / 100, Training Step  400 / 1000000 , Training Accuracy =  0.43697917461395264 , Training Loss =  1.9618133306503296 
+-----------------------------------------------
+Generated text:  ?â Then the said the said the
+
+Epoch  1 / 100, Training Step  500 / 1000000 , Training Accuracy =  0.45625001192092896 , Training Loss =  1.896567940711975 
+-----------------------------------------------
+Generated text:  re the was the was the was the 
+
+Epoch  1 / 100, Training Step  600 / 1000000 , Training Accuracy =  0.4880208671092987 , Training Loss =  1.7752137184143066 
+-----------------------------------------------
+Generated text:  1 and the store the was the was
+
+Epoch  1 / 100, Training Step  700 / 1000000 , Training Accuracy =  0.5072916746139526 , Training Loss =  1.6779628992080688 
+-----------------------------------------------
+Generated text:  » the was the was the was the w
+
+Epoch  1 / 100, Training Step  800 / 1000000 , Training Accuracy =  0.5067708492279053 , Training Loss =  1.7069118022918701 
+-----------------------------------------------
+Generated text:  Hand and said the grow and said
+
+Epoch  1 / 100, Training Step  900 / 1000000 , Training Accuracy =  0.5375000238418579 , Training Loss =  1.582096815109253 
+-----------------------------------------------
+Generated text:  E The was the word to the word 
+
+Epoch  1 / 100, Training Step  1000 / 1000000 , Training Accuracy =  0.5171875357627869 , Training Loss =  1.6053637266159058 
+-----------------------------------------------
+Generated text:  Ver the bear the cook the could
+
+Epoch  1 / 100, Training Step  1100 / 1000000 , Training Accuracy =  0.5479167103767395 , Training Loss =  1.5186933279037476 
+-----------------------------------------------
+Generated text:  When the water, and said, âI 
+
+Epoch  1 / 100, Training Step  1200 / 1000000 , Training Accuracy =  0.550000011920929 , Training Loss =  1.5194071531295776 
+-----------------------------------------------
+Generated text:  very a little took the should b
+
+Epoch  1 / 100, Training Step  1300 / 1000000 , Training Accuracy =  0.5406250357627869 , Training Loss =  1.5268547534942627 
+-----------------------------------------------
+Generated text:  No the foor and said: âI will
+
+Epoch  1 / 100, Training Step  1400 / 1000000 , Training Accuracy =  0.5395833849906921 , Training Loss =  1.5570451021194458 
+-----------------------------------------------
+Generated text:  -the work and said to the work 
+
+Epoch  1 / 100, Training Step  1500 / 1000000 , Training Accuracy =  0.5682291984558105 , Training Loss =  1.4555250406265259 
+-----------------------------------------------
+Generated text:  Go the forest the sprancess tha
+
+Epoch  1 / 100, Training Step  1600 / 1000000 , Training Accuracy =  0.5692708492279053 , Training Loss =  1.3913277387619019 
+-----------------------------------------------
+Generated text:  ; and the sears was a great day
+
+Epoch  1 / 100, Training Step  1700 / 1000000 , Training Accuracy =  0.5645833611488342 , Training Loss =  1.4123427867889404 
+-----------------------------------------------
+Generated text:  zed the work of the work of the
+
+Epoch  1 / 100, Training Step  1800 / 1000000 , Training Accuracy =  0.5697916746139526 , Training Loss =  1.4473215341567993 
+-----------------------------------------------
+Generated text:  Zout the third was a little thi
+
+Epoch  1 / 100, Training Step  1900 / 1000000 , Training Accuracy =  0.5614583492279053 , Training Loss =  1.4480029344558716 
+-----------------------------------------------
+Generated text:  @ the world of the world, and t
+
+Epoch  1 / 100, Training Step  2000 / 1000000 , Training Accuracy =  0.5687500238418579 , Training Loss =  1.425390362739563 
+-----------------------------------------------
+Generated text:  All the wolf was stone and said
+
+Epoch  1 / 100, Training Step  2100 / 1000000 , Training Accuracy =  0.5885416865348816 , Training Loss =  1.3533437252044678 
+-----------------------------------------------
+Generated text:   said the forest the wolf was 
+
+Epoch  1 / 100, Training Step  2200 / 1000000 , Training Accuracy =  0.557812511920929 , Training Loss =  1.408385992050171 
+-----------------------------------------------
+Generated text:  * The prince stood the starrow 
+
+Epoch  1 / 100, Training Step  2300 / 1000000 , Training Accuracy =  0.5723958611488342 , Training Loss =  1.3636871576309204 
+-----------------------------------------------
+Generated text:  nd as he was so many and said, 
+
+Epoch  1 / 100, Training Step  2400 / 1000000 , Training Accuracy =  0.5937500596046448 , Training Loss =  1.3197216987609863 
+-----------------------------------------------
+Generated text:  Very morning the search of the 
+
+Epoch  1 / 100, Training Step  2500 / 1000000 , Training Accuracy =  0.6015625596046448 , Training Loss =  1.3707518577575684 
+-----------------------------------------------
+Generated text:  f the strange was a great cloth
+
+Epoch  1 / 100, Training Step  2600 / 1000000 , Training Accuracy =  0.5614583492279053 , Training Loss =  1.4181686639785767 
+-----------------------------------------------
+Generated text:  1.  If you are you a fine to th
+
+Epoch  1 / 100, Training Step  2700 / 1000000 , Training Accuracy =  0.5932291746139526 , Training Loss =  1.2995319366455078 
+-----------------------------------------------
+Generated text:  quite morning the second could 
+
+Epoch  1 / 100, Training Step  2800 / 1000000 , Training Accuracy =  0.6031250357627869 , Training Loss =  1.2991576194763184 
+-----------------------------------------------
+Generated text:  For the window, and the strengt
+
+Epoch  1 / 100, Training Step  2900 / 1000000 , Training Accuracy =  0.6104167103767395 , Training Loss =  1.3098185062408447 
+-----------------------------------------------
+Generated text:  Ver the golden came to the cast
+
+Epoch  1 / 100, Training Step  3000 / 1000000 , Training Accuracy =  0.6130208373069763 , Training Loss =  1.271846890449524 
+-----------------------------------------------
+Generated text:  RENTHENS OF CHANTICLALIN AND TH
+
+Epoch  1 / 100, Training Step  3100 / 1000000 , Training Accuracy =  0.5989583730697632 , Training Loss =  1.2827074527740479 
+-----------------------------------------------
+Generated text:  When he was to go and said: â
+
+Epoch  1 / 100, Training Step  3200 / 1000000 , Training Accuracy =  0.6031250357627869 , Training Loss =  1.282373309135437 
+-----------------------------------------------
+Generated text:  0 the sear, and the second stra
+
+Epoch  1 / 100, Training Step  3300 / 1000000 , Training Accuracy =  0.5838541984558105 , Training Loss =  1.3263514041900635 
+-----------------------------------------------
+Generated text:  !â said the first stood a lit
+
+Epoch  1 / 100, Training Step  3400 / 1000000 , Training Accuracy =  0.620312511920929 , Training Loss =  1.2485690116882324 
+-----------------------------------------------
+Generated text:  6 the mountains were still and 
+
+Epoch  1 / 100, Training Step  3500 / 1000000 , Training Accuracy =  0.6119791865348816 , Training Loss =  1.2729592323303223 
+-----------------------------------------------
+Generated text:  Gretel came to the beautiful be
+
+Epoch  1 / 100, Training Step  3600 / 1000000 , Training Accuracy =  0.620312511920929 , Training Loss =  1.234300136566162 
+-----------------------------------------------
+Generated text:  Hans seen the stream to the wor
+
+Epoch  1 / 100, Training Step  3700 / 1000000 , Training Accuracy =  0.6119791865348816 , Training Loss =  1.2388604879379272 
+-----------------------------------------------
+Generated text:  ; and the stared to the court s
+
+Epoch  1 / 100, Training Step  3800 / 1000000 , Training Accuracy =  0.5906250476837158 , Training Loss =  1.301371693611145 
+-----------------------------------------------
+Generated text:  Project Gutenberg-tm electronic
+
+Epoch  1 / 100, Training Step  3900 / 1000000 , Training Accuracy =  0.620312511920929 , Training Loss =  1.2504487037658691 
+-----------------------------------------------
+Generated text:  E THE FOUR CLAND LANS      THE 
+
+Epoch  1 / 100, Training Step  4000 / 1000000 , Training Accuracy =  0.6197916865348816 , Training Loss =  1.2353718280792236 
+-----------------------------------------------
+Generated text:  /locks where they were the stre
+
+Epoch  1 / 100, Training Step  4100 / 1000000 , Training Accuracy =  0.6208333373069763 , Training Loss =  1.2565579414367676 
+-----------------------------------------------
+Generated text:  Cat wood, I will give you a lit
+
+Epoch  1 / 100, Training Step  4200 / 1000000 , Training Accuracy =  0.6015625596046448 , Training Loss =  1.2657017707824707 
+-----------------------------------------------
+Generated text:  And the mother said, âI have 
+
+Epoch  1 / 100, Training Step  4300 / 1000000 , Training Accuracy =  0.6052083373069763 , Training Loss =  1.2535086870193481 
+-----------------------------------------------
+Generated text:  RES AND THE STORE
+
+There was on
+
+Epoch  1 / 100, Training Step  4400 / 1000000 , Training Accuracy =  0.6343750357627869 , Training Loss =  1.1572917699813843 
+-----------------------------------------------
+Generated text:  the stars, and the many went to
+
+Epoch  1 / 100, Training Step  4500 / 1000000 , Training Accuracy =  0.6291667222976685 , Training Loss =  1.2158786058425903 
+-----------------------------------------------
+Generated text:  me to the court had been a litt
+
+Epoch  1 / 100, Training Step  4600 / 1000000 , Training Accuracy =  0.6036458611488342 , Training Loss =  1.2145596742630005 
+-----------------------------------------------
+Generated text:  You must have seen the strange 
+
+Epoch  1 / 100, Training Step  4700 / 1000000 , Training Accuracy =  0.6333333849906921 , Training Loss =  1.1918941736221313 
+-----------------------------------------------
+Generated text:  ï the wolf said: âI will go t
+
+Epoch  1 / 100, Training Step  4800 / 1000000 , Training Accuracy =  0.6270833611488342 , Training Loss =  1.24582839012146 
+-----------------------------------------------
+Generated text:  ing the stream and said: âIf 
+
+Epoch  1 / 100, Training Step  4900 / 1000000 , Training Accuracy =  0.6255208849906921 , Training Loss =  1.221359372138977 
+-----------------------------------------------
+Generated text:  Cat the second time the second 
+
+Epoch  1 / 100, Training Step  5000 / 1000000 , Training Accuracy =  0.6104167103767395 , Training Loss =  1.2474106550216675 
+-----------------------------------------------
+Generated text:  I will give you that they were
+
+Epoch  1 / 100, Training Step  5100 / 1000000 , Training Accuracy =  0.6052083373069763 , Training Loss =  1.2660902738571167 
+-----------------------------------------------
+Generated text:  Now you shall see any longer, a
+
+Epoch  1 / 100, Training Step  5200 / 1000000 , Training Accuracy =  0.6197916865348816 , Training Loss =  1.2248817682266235 
+-----------------------------------------------
+Generated text:  x the work of the work of the w
+
+Epoch  1 / 100, Training Step  5300 / 1000000 , Training Accuracy =  0.635937511920929 , Training Loss =  1.198219656944275 
+-----------------------------------------------
+Generated text:  So the king said, âI will giv
+
+Epoch  1 / 100, Training Step  5400 / 1000000 , Training Accuracy =  0.6302083730697632 , Training Loss =  1.2019407749176025 
+-----------------------------------------------
+Generated text:  y with all his son, and said, â
+
+Epoch  1 / 100, Training Step  5500 / 1000000 , Training Accuracy =  0.6416667103767395 , Training Loss =  1.177836298942566 
+-----------------------------------------------
+Generated text:  x heard the second time the wor
+
+Epoch  1 / 100, Training Step  5600 / 1000000 , Training Accuracy =  0.6406250596046448 , Training Loss =  1.1545451879501343 
+-----------------------------------------------
+Generated text:  591.  Indercake was a good day 
+
+Epoch  1 / 100, Training Step  5700 / 1000000 , Training Accuracy =  0.6229166984558105 , Training Loss =  1.214208960533142 
+-----------------------------------------------
+Generated text:  for the second stream and said:
+
+Epoch  1 / 100, Training Step  5800 / 1000000 , Training Accuracy =  0.6260417103767395 , Training Loss =  1.1928038597106934 
+-----------------------------------------------
+Generated text:  f the sparrow and said, âI wi
+
+Epoch  1 / 100, Training Step  5900 / 1000000 , Training Accuracy =  0.6317708492279053 , Training Loss =  1.177911639213562 
+-----------------------------------------------
+Generated text:  ing the stream and the starrowe
+
+Epoch  1 / 100, Training Step  6000 / 1000000 , Training Accuracy =  0.6333333849906921 , Training Loss =  1.1776171922683716 
+-----------------------------------------------
+Generated text:  ked a little tailor was already
+
+Epoch  1 / 100, Training Step  6100 / 1000000 , Training Accuracy =  0.628125011920929 , Training Loss =  1.1956751346588135 
+-----------------------------------------------
+Generated text:  #deretting the stream. Then the
+
+Epoch  1 / 100, Training Step  6200 / 1000000 , Training Accuracy =  0.6484375596046448 , Training Loss =  1.1570556163787842 
+-----------------------------------------------
+Generated text:  $d to the world to the world wa
+
+Epoch  1 / 100, Training Step  6300 / 1000000 , Training Accuracy =  0.6494792103767395 , Training Loss =  1.1434075832366943 
+-----------------------------------------------
+Generated text:  For she went into the world had
+
+Epoch  1 / 100, Training Step  6400 / 1000000 , Training Accuracy =  0.6369792222976685 , Training Loss =  1.1470015048980713 
+-----------------------------------------------
+Generated text:  re the wind said: âIf you wil
+
+Epoch  1 / 100, Training Step  6500 / 1000000 , Training Accuracy =  0.6130208373069763 , Training Loss =  1.2547894716262817 
+-----------------------------------------------
+Generated text:  Zell in the wood and said, âI
+
+Epoch  1 / 100, Training Step  6600 / 1000000 , Training Accuracy =  0.6260417103767395 , Training Loss =  1.1938763856887817 
+-----------------------------------------------
+Generated text:  (â âI have a dearest came t
+
+Epoch  1 / 100, Training Step  6700 / 1000000 , Training Accuracy =  0.6302083730697632 , Training Loss =  1.1868764162063599 
+-----------------------------------------------
+Generated text:  VER THE SARATH
+
+There was once 
+
+Epoch  1 / 100, Training Step  6800 / 1000000 , Training Accuracy =  0.6375000476837158 , Training Loss =  1.1884827613830566 
+-----------------------------------------------
+Generated text:  6
+
+The next day the spindle of 
+
+Epoch  1 / 100, Training Step  6900 / 1000000 , Training Accuracy =  0.6489583849906921 , Training Loss =  1.1568734645843506 
+-----------------------------------------------
+Generated text:  x heard the wind was so much to
+
+Epoch  1 / 100, Training Step  7000 / 1000000 , Training Accuracy =  0.6088541746139526 , Training Loss =  1.2414487600326538 
+-----------------------------------------------
+Generated text:  Marleen said, âI will give yo
+
+Epoch  1 / 100, Training Step  7100 / 1000000 , Training Accuracy =  0.6541666984558105 , Training Loss =  1.1337651014328003 
+-----------------------------------------------
+Generated text:  come to the water, and the maid
+
+Epoch  1 / 100, Training Step  7200 / 1000000 , Training Accuracy =  0.6416667103767395 , Training Loss =  1.1434177160263062 
+-----------------------------------------------
+Generated text:  ï the same time the willow-wren
+
+Epoch  1 / 100, Training Step  7300 / 1000000 , Training Accuracy =  0.6447917222976685 , Training Loss =  1.1426684856414795 
+-----------------------------------------------
+Generated text:  : âI will see if you will see
+
+Epoch  1 / 100, Training Step  7400 / 1000000 , Training Accuracy =  0.6395833492279053 , Training Loss =  1.1847642660140991 
+-----------------------------------------------
+Generated text:  x heart the first stream, and s
+
+Epoch  1 / 100, Training Step  7500 / 1000000 , Training Accuracy =  0.6354166865348816 , Training Loss =  1.175191879272461 
+-----------------------------------------------
+Generated text:  Zearth he was so straight to th
+
+Epoch  1 / 100, Training Step  7600 / 1000000 , Training Accuracy =  0.6453125476837158 , Training Loss =  1.1301920413970947 
+-----------------------------------------------
+Generated text:  ) she was so straw in the world
+
+Epoch  1 / 100, Training Step  7700 / 1000000 , Training Accuracy =  0.6322916746139526 , Training Loss =  1.1572892665863037 
+-----------------------------------------------
+Generated text:  » the seven did not know what h
+
+Epoch  1 / 100, Training Step  7800 / 1000000 , Training Accuracy =  0.6458333730697632 , Training Loss =  1.1292002201080322 
+-----------------------------------------------
+Generated text:  . âI will give you to the tre
+
+Epoch  1 / 100, Training Step  7900 / 1000000 , Training Accuracy =  0.6661458611488342 , Training Loss =  1.098774790763855 
+-----------------------------------------------
+Generated text:   the stairs with his father and
+
+Epoch  1 / 100, Training Step  8000 / 1000000 , Training Accuracy =  0.6416667103767395 , Training Loss =  1.1664732694625854 
+-----------------------------------------------
+Generated text:   âI shall be a country that 
+
+Epoch  1 / 100, Training Step  8100 / 1000000 , Training Accuracy =  0.6223958730697632 , Training Loss =  1.1919724941253662 
+-----------------------------------------------
+Generated text:  Role and see where the girl wen
+
+Epoch  1 / 100, Training Step  8200 / 1000000 , Training Accuracy =  0.6421875357627869 , Training Loss =  1.1509240865707397 
+-----------------------------------------------
+Generated text:  â Then the fisherman went to 
+
+Epoch  1 / 100, Training Step  8300 / 1000000 , Training Accuracy =  0.6380208730697632 , Training Loss =  1.1385531425476074 
+-----------------------------------------------
+Generated text:  . Then the first day the fire w
+
+Epoch  1 / 100, Training Step  8400 / 1000000 , Training Accuracy =  0.6265625357627869 , Training Loss =  1.2151025533676147 
+-----------------------------------------------
+Generated text:  591]
+Reperth some clothes, and 
+
+Epoch  1 / 100, Training Step  8500 / 1000000 , Training Accuracy =  0.6291667222976685 , Training Loss =  1.1503701210021973 
+-----------------------------------------------
+Generated text:  ï the work and the third day th
+
+Epoch  1 / 100, Training Step  8600 / 1000000 , Training Accuracy =  0.6505208611488342 , Training Loss =  1.1238975524902344 
+-----------------------------------------------
+Generated text:  4. âWhat a clever Elsie shoul
+
+Epoch  2 / 100, Training Step  0 / 1000000 , Training Accuracy =  0.6296875476837158 , Training Loss =  1.1730921268463135 
+-----------------------------------------------
+Generated text:  VER HANS
+     THE SEVEN BIN AND
+
+Epoch  2 / 100, Training Step  100 / 1000000 , Training Accuracy =  0.6364583373069763 , Training Loss =  1.1720324754714966 
+-----------------------------------------------
+Generated text:  Now you must be a great man sto
+
+Epoch  2 / 100, Training Step  200 / 1000000 , Training Accuracy =  0.6489583849906921 , Training Loss =  1.1314256191253662 
+-----------------------------------------------
+Generated text:  3 the wood and the soldier said
+
+Epoch  2 / 100, Training Step  300 / 1000000 , Training Accuracy =  0.6432291865348816 , Training Loss =  1.1211520433425903 
+-----------------------------------------------
+Generated text:  quickly at the boy, and said: â
+
+Epoch  2 / 100, Training Step  400 / 1000000 , Training Accuracy =  0.6406250596046448 , Training Loss =  1.181287169456482 
+-----------------------------------------------
+Generated text:  For and the man was as the moth
+
+Epoch  2 / 100, Training Step  500 / 1000000 , Training Accuracy =  0.6395833492279053 , Training Loss =  1.141613483428955 
+-----------------------------------------------
+Generated text:  _ the wolf was already done, an
+
+Epoch  2 / 100, Training Step  600 / 1000000 , Training Accuracy =  0.6458333730697632 , Training Loss =  1.1368547677993774 
+-----------------------------------------------
+Generated text:  !â said the man, âit is to 
+
+Epoch  2 / 100, Training Step  700 / 1000000 , Training Accuracy =  0.6598958969116211 , Training Loss =  1.1038634777069092 
+-----------------------------------------------
+Generated text:  8
+
+The true the fisherman went 
+
+Epoch  2 / 100, Training Step  800 / 1000000 , Training Accuracy =  0.6385416984558105 , Training Loss =  1.1729868650436401 
+-----------------------------------------------
+Generated text:  #down and the man who was the b
+
+Epoch  2 / 100, Training Step  900 / 1000000 , Training Accuracy =  0.6786458492279053 , Training Loss =  1.0554713010787964 
+-----------------------------------------------
+Generated text:  % the wolf was so good from the
+
+Epoch  2 / 100, Training Step  1000 / 1000000 , Training Accuracy =  0.6390625238418579 , Training Loss =  1.1365926265716553 
+-----------------------------------------------
+Generated text:  Gretel came to the courtyard, a
+
+Epoch  2 / 100, Training Step  1100 / 1000000 , Training Accuracy =  0.6479166746139526 , Training Loss =  1.121124505996704 
+-----------------------------------------------
+Generated text:   I am sure to be king, and sai
+
+Epoch  2 / 100, Training Step  1200 / 1000000 , Training Accuracy =  0.6302083730697632 , Training Loss =  1.148168921470642 
+-----------------------------------------------
+Generated text:  re the stars, and the stars and
+
+Epoch  2 / 100, Training Step  1300 / 1000000 , Training Accuracy =  0.6406250596046448 , Training Loss =  1.1549838781356812 
+-----------------------------------------------
+Generated text:  Queen had seen the sea, and the
+
+Epoch  2 / 100, Training Step  1400 / 1000000 , Training Accuracy =  0.6458333730697632 , Training Loss =  1.1514248847961426 
+-----------------------------------------------
+Generated text:  3.  Information was to be marri
+
+Epoch  2 / 100, Training Step  1500 / 1000000 , Training Accuracy =  0.651562511920929 , Training Loss =  1.1077663898468018 
+-----------------------------------------------
+Generated text:  3.  Information are so long, an
+
+Epoch  2 / 100, Training Step  1600 / 1000000 , Training Accuracy =  0.6604167222976685 , Training Loss =  1.0799347162246704 
+-----------------------------------------------
+Generated text:  Good day, Gretel.â âGoodbye
+
+Epoch  2 / 100, Training Step  1700 / 1000000 , Training Accuracy =  0.6609375476837158 , Training Loss =  1.0761722326278687 
+-----------------------------------------------
+Generated text:  ï the window and the soldier wa
+
+Epoch  2 / 100, Training Step  1800 / 1000000 , Training Accuracy =  0.6385416984558105 , Training Loss =  1.160722017288208 
+-----------------------------------------------
+Generated text:  was so struck the tree, and the
+
+Epoch  2 / 100, Training Step  1900 / 1000000 , Training Accuracy =  0.6651042103767395 , Training Loss =  1.094423532485962 
+-----------------------------------------------
+Generated text:  . Then the woman was still all 
+
+Epoch  2 / 100, Training Step  2000 / 1000000 , Training Accuracy =  0.6510416865348816 , Training Loss =  1.1338218450546265 
+-----------------------------------------------
+Generated text:  ï the sparrow and said, âI wi
+
+Epoch  2 / 100, Training Step  2100 / 1000000 , Training Accuracy =  0.6421875357627869 , Training Loss =  1.1309599876403809 
+-----------------------------------------------
+Generated text:  ing the stars, and the man said
+
+Epoch  2 / 100, Training Step  2200 / 1000000 , Training Accuracy =  0.6390625238418579 , Training Loss =  1.145223617553711 
+-----------------------------------------------
+Generated text:  zel to be as you could but shud
+
+Epoch  2 / 100, Training Step  2300 / 1000000 , Training Accuracy =  0.6427083611488342 , Training Loss =  1.1156708002090454 
+-----------------------------------------------
+Generated text:  and said: âI will go out to t
+
+Epoch  2 / 100, Training Step  2400 / 1000000 , Training Accuracy =  0.6473958492279053 , Training Loss =  1.1095815896987915 
+-----------------------------------------------
+Generated text:  2591-xipe days and drank a door
+
+Epoch  2 / 100, Training Step  2500 / 1000000 , Training Accuracy =  0.6583333611488342 , Training Loss =  1.1398130655288696 
+-----------------------------------------------
+Generated text:  » the second time the dog stret
+
+Epoch  2 / 100, Training Step  2600 / 1000000 , Training Accuracy =  0.6343750357627869 , Training Loss =  1.159424901008606 
+-----------------------------------------------
+Generated text:  E THE SEVEN LITTLE KIDS
+
+There 
+
+Epoch  2 / 100, Training Step  2700 / 1000000 , Training Accuracy =  0.6598958969116211 , Training Loss =  1.0718238353729248 
+-----------------------------------------------
+Generated text:  X FREDERCHES WIS WENT TO THE SA
+
+Epoch  2 / 100, Training Step  2800 / 1000000 , Training Accuracy =  0.659375011920929 , Training Loss =  1.098354697227478 
+-----------------------------------------------
+Generated text:  VER HIS WIFE
+
+There was once a 
+
+Epoch  2 / 100, Training Step  2900 / 1000000 , Training Accuracy =  0.6489583849906921 , Training Loss =  1.1210383176803589 
+-----------------------------------------------
+Generated text:  Hans to me, and the cow was don
+
+Epoch  2 / 100, Training Step  3000 / 1000000 , Training Accuracy =  0.6598958969116211 , Training Loss =  1.0710467100143433 
+-----------------------------------------------
+Generated text:  X FRAD MAN BREACH
+OF CHANTICLEE
+
+Epoch  2 / 100, Training Step  3100 / 1000000 , Training Accuracy =  0.6536458730697632 , Training Loss =  1.0954357385635376 
+-----------------------------------------------
+Generated text:  , and said: âI will light a h
+
+Epoch  2 / 100, Training Step  3200 / 1000000 , Training Accuracy =  0.667187511920929 , Training Loss =  1.0601849555969238 
+-----------------------------------------------
+Generated text:  --he ran to the forest, and sai
+
+Epoch  2 / 100, Training Step  3300 / 1000000 , Training Accuracy =  0.6364583373069763 , Training Loss =  1.1203268766403198 
+-----------------------------------------------
+Generated text:  ) was a great castle was to be 
+
+Epoch  2 / 100, Training Step  3400 / 1000000 , Training Accuracy =  0.6614583730697632 , Training Loss =  1.0694622993469238 
+-----------------------------------------------
+Generated text:  0 days and said, âI will give
+
+Epoch  2 / 100, Training Step  3500 / 1000000 , Training Accuracy =  0.6635416746139526 , Training Loss =  1.094948649406433 
+-----------------------------------------------
+Generated text:  [E THE SEVEN LITTLE KIDS
+
+There
+
+Epoch  2 / 100, Training Step  3600 / 1000000 , Training Accuracy =  0.6598958969116211 , Training Loss =  1.0558713674545288 
+-----------------------------------------------
+Generated text:  ) should be the stairs and the 
+
+Epoch  2 / 100, Training Step  3700 / 1000000 , Training Accuracy =  0.6562500596046448 , Training Loss =  1.0860822200775146 
+-----------------------------------------------
+Generated text:  Oh, the cow was done to the tow
+
+Epoch  2 / 100, Training Step  3800 / 1000000 , Training Accuracy =  0.6432291865348816 , Training Loss =  1.1306804418563843 
+-----------------------------------------------
+Generated text:  3 the strange dwarf said, âI 
+
+Epoch  2 / 100, Training Step  3900 / 1000000 , Training Accuracy =  0.6588541865348816 , Training Loss =  1.1002384424209595 
+-----------------------------------------------
+Generated text:  zed and said: âIf you will no
+
+Epoch  2 / 100, Training Step  4000 / 1000000 , Training Accuracy =  0.659375011920929 , Training Loss =  1.0843077898025513 
+-----------------------------------------------
+Generated text:  3 the second time the woman sai
+
+Epoch  2 / 100, Training Step  4100 / 1000000 , Training Accuracy =  0.6640625596046448 , Training Loss =  1.093096137046814 
+-----------------------------------------------
+Generated text:  2591-0.zip
+****
+
+The tailor was
+
+Epoch  2 / 100, Training Step  4200 / 1000000 , Training Accuracy =  0.651562511920929 , Training Loss =  1.0796668529510498 
+-----------------------------------------------
+Generated text:  Role and see where the moon, an
+
+Epoch  2 / 100, Training Step  4300 / 1000000 , Training Accuracy =  0.6656250357627869 , Training Loss =  1.1009366512298584 
+-----------------------------------------------
+Generated text:  UNDENSEx DaN6GQEIND, EXPRESS OR
+
+Epoch  2 / 100, Training Step  4400 / 1000000 , Training Accuracy =  0.6729167103767395 , Training Loss =  1.0338624715805054 
+-----------------------------------------------
+Generated text:  On the man was as before, and s
+
+Epoch  2 / 100, Training Step  4500 / 1000000 , Training Accuracy =  0.6708333492279053 , Training Loss =  1.054249882698059 
+-----------------------------------------------
+Generated text:  I will give you a short time, 
+
+Epoch  2 / 100, Training Step  4600 / 1000000 , Training Accuracy =  0.6385416984558105 , Training Loss =  1.0953863859176636 
+-----------------------------------------------
+Generated text:  4, âI will go to the forest, 
+
+Epoch  2 / 100, Training Step  4700 / 1000000 , Training Accuracy =  0.6687500476837158 , Training Loss =  1.0500664710998535 
+-----------------------------------------------
+Generated text:  . âWhat did you take her?â 
+
+Epoch  2 / 100, Training Step  4800 / 1000000 , Training Accuracy =  0.6614583730697632 , Training Loss =  1.0963913202285767 
+-----------------------------------------------
+Generated text:  It do you stoppenty the stable
+
+Epoch  2 / 100, Training Step  4900 / 1000000 , Training Accuracy =  0.6708333492279053 , Training Loss =  1.0584882497787476 
+-----------------------------------------------
+Generated text:  Cat-skin had the stars, and the
+
+Epoch  2 / 100, Training Step  5000 / 1000000 , Training Accuracy =  0.6484375596046448 , Training Loss =  1.1167998313903809 
+-----------------------------------------------
+Generated text:  zed a little girl and the mayor
+
+Epoch  2 / 100, Training Step  5100 / 1000000 , Training Accuracy =  0.6479166746139526 , Training Loss =  1.1302599906921387 
+-----------------------------------------------
+Generated text:  X FORR CLEVER BROTHERS OF THE T
+
+Epoch  2 / 100, Training Step  5200 / 1000000 , Training Accuracy =  0.6541666984558105 , Training Loss =  1.1154836416244507 
+-----------------------------------------------
+Generated text:  nd the wolf was always left the
+
+Epoch  2 / 100, Training Step  5300 / 1000000 , Training Accuracy =  0.6703125238418579 , Training Loss =  1.0673766136169434 
+-----------------------------------------------
+Generated text:  » the second time after the sec
+
+Epoch  2 / 100, Training Step  5400 / 1000000 , Training Accuracy =  0.6713541746139526 , Training Loss =  1.0644991397857666 
+-----------------------------------------------
+Generated text:  ur princess dear child, and sai
+
+Epoch  2 / 100, Training Step  5500 / 1000000 , Training Accuracy =  0.6682292222976685 , Training Loss =  1.0647220611572266 
+-----------------------------------------------
+Generated text:  --the bride said, âI have bee
+
+Epoch  2 / 100, Training Step  5600 / 1000000 , Training Accuracy =  0.6692708730697632 , Training Loss =  1.029909372329712 
+-----------------------------------------------
+Generated text:  So the first two water and the 
+
+Epoch  2 / 100, Training Step  5700 / 1000000 , Training Accuracy =  0.6656250357627869 , Training Loss =  1.0925918817520142 
+-----------------------------------------------
+Generated text:  And the man said: âI am sure 
+
+Epoch  2 / 100, Training Step  5800 / 1000000 , Training Accuracy =  0.6588541865348816 , Training Loss =  1.0795460939407349 
+-----------------------------------------------
+Generated text:  Hans comes to the forest and sa
+
+Epoch  2 / 100, Training Step  5900 / 1000000 , Training Accuracy =  0.6692708730697632 , Training Loss =  1.0480009317398071 
+-----------------------------------------------
+Generated text:  $5.  She took the street of his
+
+Epoch  2 / 100, Training Step  6000 / 1000000 , Training Accuracy =  0.6640625596046448 , Training Loss =  1.066503643989563 
+-----------------------------------------------
+Generated text:  $5.  Geerrolicing was to be a s
+
+Epoch  2 / 100, Training Step  6100 / 1000000 , Training Accuracy =  0.6619791984558105 , Training Loss =  1.0953210592269897 
+-----------------------------------------------
+Generated text:  e the golden slipper. The king 
+
+Epoch  2 / 100, Training Step  6200 / 1000000 , Training Accuracy =  0.6755208969116211 , Training Loss =  1.0532805919647217 
+-----------------------------------------------
+Generated text:  just the work on the water in t
+
+Epoch  2 / 100, Training Step  6300 / 1000000 , Training Accuracy =  0.6666666865348816 , Training Loss =  1.0365281105041504 
+-----------------------------------------------
+Generated text:  8
+
+The next morning the soldier
+
+Epoch  2 / 100, Training Step  6400 / 1000000 , Training Accuracy =  0.667187511920929 , Training Loss =  1.0411385297775269 
+-----------------------------------------------
+Generated text:  1.  In the morning the wolf was
+
+Epoch  2 / 100, Training Step  6500 / 1000000 , Training Accuracy =  0.6411458849906921 , Training Loss =  1.129378080368042 
+-----------------------------------------------
+Generated text:  1.  If you do not see him, and 
+
+Epoch  2 / 100, Training Step  6600 / 1000000 , Training Accuracy =  0.6640625596046448 , Training Loss =  1.0889008045196533 
+-----------------------------------------------
+Generated text:  E THE STORY OF THE PISSNS- AND 
+
+Epoch  2 / 100, Training Step  6700 / 1000000 , Training Accuracy =  0.6572917103767395 , Training Loss =  1.0826696157455444 
+-----------------------------------------------
+Generated text:  Jorindel saw the servant was al
+
+Epoch  2 / 100, Training Step  6800 / 1000000 , Training Accuracy =  0.6567708849906921 , Training Loss =  1.0802022218704224 
+-----------------------------------------------
+Generated text:   the stream and said: âThe do
+
+Epoch  2 / 100, Training Step  6900 / 1000000 , Training Accuracy =  0.6765625476837158 , Training Loss =  1.0726113319396973 
+-----------------------------------------------
+Generated text:  ï the wind stopped to the brook
+
+Epoch  2 / 100, Training Step  7000 / 1000000 , Training Accuracy =  0.6364583373069763 , Training Loss =  1.1452562808990479 
+-----------------------------------------------
+Generated text:   The soldier was so strange t
+
+Epoch  2 / 100, Training Step  7100 / 1000000 , Training Accuracy =  0.682812511920929 , Training Loss =  1.021925449371338 
+-----------------------------------------------
+Generated text:  ZEL
+     THE THREE LANGUAGES
+  
+
+Epoch  2 / 100, Training Step  7200 / 1000000 , Training Accuracy =  0.6729167103767395 , Training Loss =  1.038000226020813 
+-----------------------------------------------
+Generated text:  USE
+
+There was once a short tim
+
+Epoch  2 / 100, Training Step  7300 / 1000000 , Training Accuracy =  0.6572917103767395 , Training Loss =  1.0742249488830566 
+-----------------------------------------------
+Generated text:  I will give you a wishing-sman
+
+Epoch  2 / 100, Training Step  7400 / 1000000 , Training Accuracy =  0.651562511920929 , Training Loss =  1.1042239665985107 
+-----------------------------------------------
+Generated text:  d the wood standing out to the 
+
+Epoch  2 / 100, Training Step  7500 / 1000000 , Training Accuracy =  0.6489583849906921 , Training Loss =  1.086694359779358 
+-----------------------------------------------
+Generated text:  beautiful bird am I!â
+
+And no
+
+Epoch  2 / 100, Training Step  7600 / 1000000 , Training Accuracy =  0.6802083849906921 , Training Loss =  1.0370906591415405 
+-----------------------------------------------
+Generated text:  ZEL
+
+There was once a man who h
+
+Epoch  2 / 100, Training Step  7700 / 1000000 , Training Accuracy =  0.6697916984558105 , Training Loss =  1.0564807653427124 
+-----------------------------------------------
+Generated text:  s the window, and the seventh s
+
+Epoch  2 / 100, Training Step  7800 / 1000000 , Training Accuracy =  0.6729167103767395 , Training Loss =  1.0286288261413574 
+-----------------------------------------------
+Generated text:   âWhat did Gretel give you 
+
+Epoch  2 / 100, Training Step  7900 / 1000000 , Training Accuracy =  0.6942708492279053 , Training Loss =  1.008789300918579 
+-----------------------------------------------
+Generated text:  y and the fire was a good the k
+
+Epoch  2 / 100, Training Step  8000 / 1000000 , Training Accuracy =  0.6682292222976685 , Training Loss =  1.065508246421814 
+-----------------------------------------------
+Generated text:  [Well,â said the father, â
+
+Epoch  2 / 100, Training Step  8100 / 1000000 , Training Accuracy =  0.6463541984558105 , Training Loss =  1.093274712562561 
+-----------------------------------------------
+Generated text:  _ the street cloak with the str
+
+Epoch  2 / 100, Training Step  8200 / 1000000 , Training Accuracy =  0.6677083969116211 , Training Loss =  1.0764020681381226 
+-----------------------------------------------
+Generated text:  /good things were all the tree 
+
+Epoch  2 / 100, Training Step  8300 / 1000000 , Training Accuracy =  0.6666666865348816 , Training Loss =  1.04315984249115 
+-----------------------------------------------
+Generated text:  3.  If you will not be able to 
+
+Epoch  2 / 100, Training Step  8400 / 1000000 , Training Accuracy =  0.6494792103767395 , Training Loss =  1.1259421110153198 
+-----------------------------------------------
+Generated text:  The cat runs so fat and said, â
+
+Epoch  2 / 100, Training Step  8500 / 1000000 , Training Accuracy =  0.6635416746139526 , Training Loss =  1.0565413236618042 
+-----------------------------------------------
+Generated text:  0
+
+There was once a man who had
+
+Epoch  2 / 100, Training Step  8600 / 1000000 , Training Accuracy =  0.6739583611488342 , Training Loss =  1.028363585472107 
+-----------------------------------------------
+Generated text:   said the fisherman went out a
+
+Epoch  3 / 100, Training Step  0 / 1000000 , Training Accuracy =  0.6479166746139526 , Training Loss =  1.1058417558670044 
+-----------------------------------------------
+Generated text:   the world where the boy and th
+
+Epoch  3 / 100, Training Step  100 / 1000000 , Training Accuracy =  0.6677083969116211 , Training Loss =  1.0754693746566772 
+-----------------------------------------------
+Generated text:  VER GRITEN
+
+There was once a ma
+
+Epoch  3 / 100, Training Step  200 / 1000000 , Training Accuracy =  0.6739583611488342 , Training Loss =  1.0565019845962524 
+-----------------------------------------------
+Generated text:  RIMBLES
+     THE WOLF AND THE S
+
+Epoch  3 / 100, Training Step  300 / 1000000 , Training Accuracy =  0.6614583730697632 , Training Loss =  1.0499229431152344 
+-----------------------------------------------
+Generated text:  9. The bear came out of the woo
+
+Epoch  3 / 100, Training Step  400 / 1000000 , Training Accuracy =  0.6541666984558105 , Training Loss =  1.1017696857452393 
+-----------------------------------------------
+Generated text:  Project Gutenberg-tm electronic
+
+Epoch  3 / 100, Training Step  500 / 1000000 , Training Accuracy =  0.6635416746139526 , Training Loss =  1.0766539573669434 
+-----------------------------------------------
+Generated text:  My daren the beautiful young la
+
+Epoch  3 / 100, Training Step  600 / 1000000 , Training Accuracy =  0.6630208492279053 , Training Loss =  1.0572974681854248 
+-----------------------------------------------
+Generated text:  I will be blow, I am so tired a
+
+Epoch  3 / 100, Training Step  700 / 1000000 , Training Accuracy =  0.6677083969116211 , Training Loss =  1.033583164215088 
+-----------------------------------------------
+Generated text:  ï the wolf was so strange to re
+
+Epoch  3 / 100, Training Step  800 / 1000000 , Training Accuracy =  0.6588541865348816 , Training Loss =  1.0871034860610962 
+-----------------------------------------------
+Generated text:   the stars in the morning the w
+
+Epoch  3 / 100, Training Step  900 / 1000000 , Training Accuracy =  0.6921875476837158 , Training Loss =  0.9857015013694763 
+-----------------------------------------------
+Generated text:  ut the wolf was to be a day and
+
+Epoch  3 / 100, Training Step  1000 / 1000000 , Training Accuracy =  0.6697916984558105 , Training Loss =  1.061130404472351 
+-----------------------------------------------
+Generated text:  be a countryman, âI am not th
+
+Epoch  3 / 100, Training Step  1100 / 1000000 , Training Accuracy =  0.6703125238418579 , Training Loss =  1.0623024702072144 
+-----------------------------------------------
+Generated text:  591]
+Rellow carry the same time
+
+Epoch  3 / 100, Training Step  1200 / 1000000 , Training Accuracy =  0.6562500596046448 , Training Loss =  1.0740621089935303 
+-----------------------------------------------
+Generated text:  Jorindel saw the second time an
+
+Epoch  3 / 100, Training Step  1300 / 1000000 , Training Accuracy =  0.6656250357627869 , Training Loss =  1.061087965965271 
+-----------------------------------------------
+Generated text:  X FOR THE BEAK
+
+I remain heart 
+
+Epoch  3 / 100, Training Step  1400 / 1000000 , Training Accuracy =  0.6619791984558105 , Training Loss =  1.0703171491622925 
+-----------------------------------------------
+Generated text:  he said to him, âI will give 
+
+Epoch  3 / 100, Training Step  1500 / 1000000 , Training Accuracy =  0.6656250357627869 , Training Loss =  1.0400913953781128 
+-----------------------------------------------
+Generated text:  ZEL
+
+There was once a man who h
+
+Epoch  3 / 100, Training Step  1600 / 1000000 , Training Accuracy =  0.6744791865348816 , Training Loss =  1.0174850225448608 
+-----------------------------------------------
+Generated text:  k the same time the sea, and sa
+
+Epoch  3 / 100, Training Step  1700 / 1000000 , Training Accuracy =  0.6755208969116211 , Training Loss =  1.0077286958694458 
+-----------------------------------------------
+Generated text:  ***
+
+
+The Brothers Grimm
+
+
+
+
+TH
+
+Epoch  3 / 100, Training Step  1800 / 1000000 , Training Accuracy =  0.6682292222976685 , Training Loss =  1.078704595565796 
+-----------------------------------------------
+Generated text:  y was all the tree where the bi
+
+Epoch  3 / 100, Training Step  1900 / 1000000 , Training Accuracy =  0.6885417103767395 , Training Loss =  1.0086636543273926 
+-----------------------------------------------
+Generated text:  Jorindel saw that the stars tha
+
+Epoch  3 / 100, Training Step  2000 / 1000000 , Training Accuracy =  0.667187511920929 , Training Loss =  1.0688551664352417 
+-----------------------------------------------
+Generated text:  I will allow you to the forest 
+
+Epoch  3 / 100, Training Step  2100 / 1000000 , Training Accuracy =  0.6614583730697632 , Training Loss =  1.0623520612716675 
+-----------------------------------------------
+Generated text:  ked at the water, and when the 
+
+Epoch  3 / 100, Training Step  2200 / 1000000 , Training Accuracy =  0.6588541865348816 , Training Loss =  1.063012719154358 
+-----------------------------------------------
+Generated text:  ing the wolf was very much for 
+
+Epoch  3 / 100, Training Step  2300 / 1000000 , Training Accuracy =  0.6630208492279053 , Training Loss =  1.0419918298721313 
+-----------------------------------------------
+Generated text:  @gggs which he had been the poo
+
+Epoch  3 / 100, Training Step  2400 / 1000000 , Training Accuracy =  0.6625000238418579 , Training Loss =  1.0412629842758179 
+-----------------------------------------------
+Generated text:  When the wolf was to be seen an
+
+Epoch  3 / 100, Training Step  2500 / 1000000 , Training Accuracy =  0.682812511920929 , Training Loss =  1.0798417329788208 
+-----------------------------------------------
+Generated text:  
+
+The third time the second sis
+
+Epoch  3 / 100, Training Step  2600 / 1000000 , Training Accuracy =  0.6625000238418579 , Training Loss =  1.0849806070327759 
+-----------------------------------------------
+Generated text:  ut the good spiteful to the gro
+
+Epoch  3 / 100, Training Step  2700 / 1000000 , Training Accuracy =  0.6776041984558105 , Training Loss =  1.0179015398025513 
+-----------------------------------------------
+Generated text:  3.  If you are so furrage, and 
+
+Epoch  3 / 100, Training Step  2800 / 1000000 , Training Accuracy =  0.667187511920929 , Training Loss =  1.0466691255569458 
+-----------------------------------------------
+Generated text:  ?â âThat was again for me.â
+
+Epoch  3 / 100, Training Step  2900 / 1000000 , Training Accuracy =  0.6635416746139526 , Training Loss =  1.0579297542572021 
+-----------------------------------------------
+Generated text:  f the wolf was as long as he co
+
+Epoch  3 / 100, Training Step  3000 / 1000000 , Training Accuracy =  0.6875000596046448 , Training Loss =  1.0041930675506592 
+-----------------------------------------------
+Generated text:  Hans, you should have had a son
+
+Epoch  3 / 100, Training Step  3100 / 1000000 , Training Accuracy =  0.6708333492279053 , Training Loss =  1.0423645973205566 
+-----------------------------------------------
+Generated text:  ?â âThat is the matter, you
+
+Epoch  3 / 100, Training Step  3200 / 1000000 , Training Accuracy =  0.6833333969116211 , Training Loss =  0.9987093806266785 
+-----------------------------------------------
+Generated text:  ked the soldiers and said: âT
+
+Epoch  3 / 100, Training Step  3300 / 1000000 , Training Accuracy =  0.6546875238418579 , Training Loss =  1.067153811454773 
+-----------------------------------------------
+Generated text:  ï the golden bird amment that t
+
+Epoch  3 / 100, Training Step  3400 / 1000000 , Training Accuracy =  0.6765625476837158 , Training Loss =  1.0181341171264648 
+-----------------------------------------------
+Generated text:  ke the great city, and the mani
+
+Epoch  3 / 100, Training Step  3500 / 1000000 , Training Accuracy =  0.6833333969116211 , Training Loss =  1.0320454835891724 
+-----------------------------------------------
+Generated text:  ?â said the man, âit is the
+
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 2215422.0 ON r30n4 CANCELLED AT 2019-04-28T14:39:51 ***
+slurmstepd: error: *** JOB 2215422 ON r30n4 CANCELLED AT 2019-04-28T14:39:51 ***
