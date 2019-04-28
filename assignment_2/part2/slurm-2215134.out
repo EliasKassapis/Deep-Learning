@@ -1,6 +1,0 @@
-/var/spool/slurm-llnl/slurmd/job2215134/slurm_script: line 19: cd: /home/lgpu0417/deep-learning/assignment_2/part2/: Permission denied
- ------ Job mlp_pytorch is started ------- 
- 
-srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** JOB 2215134 ON r31n3 CANCELLED AT 2019-04-28T08:47:15 ***
-slurmstepd: error: *** STEP 2215134.0 ON r31n3 CANCELLED AT 2019-04-28T08:47:15 ***

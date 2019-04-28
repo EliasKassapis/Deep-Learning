@@ -1,6 +1,0 @@
-/var/spool/slurm-llnl/slurmd/job2214920/slurm_script: line 19: cd: /home/lgpu0417/deep-learning/assignment_2/part2/: Permission denied
- ------ Job mlp_pytorch is started ------- 
- 
-Initialize dataset with 767175 characters, 148 unique.
-srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** JOB 2214920 ON r30n5 CANCELLED AT 2019-04-28T00:17:07 ***

@@ -261,3 +261,25 @@ if __name__ == "__main__":
 
     # Train the model
     train(config)
+
+
+
+# # Initialize the device which to run the model on
+# device = torch.device(config.device)
+#
+# print(config.txt_file)
+#
+# # Initialize the dataset and data loader (note the +1)
+# dataset = TextDataset(config.txt_file, config.seq_length)
+#
+# # Initialize the model that we are going to use
+# model = torch.load('epoch_22_model', map_location='cpu')
+#
+# model.to(device)
+#
+# #get text in idx format
+# text = text_gen(model, config.seq_length, dataset.vocab_size, temperature=None) ######################################
+# #convert text to string
+# text = dataset.convert_to_string(text)
+#
+# print(text)

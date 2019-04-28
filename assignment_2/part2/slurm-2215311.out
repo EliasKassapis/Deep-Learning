@@ -1,4 +1,0 @@
-/var/spool/slurm-llnl/slurmd/job2215311/slurm_script: line 19: cd: /home/lgpu0417/deep-learning/assignment_2/part2/: Permission denied
- ------ Job mlp_pytorch is started ------- 
- 
-Initialize dataset with 550591 characters, 91 unique.
