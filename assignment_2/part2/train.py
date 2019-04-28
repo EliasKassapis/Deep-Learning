@@ -139,7 +139,7 @@ def train(config):
     texts = []
 
     #Convergence criterion
-    eps = 1e-3
+    eps = 1e-6
 
     for epoch in range(20):
 
