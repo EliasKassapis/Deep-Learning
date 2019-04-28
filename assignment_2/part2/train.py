@@ -134,6 +134,8 @@ def train(config):
 
     train_loss = []
     train_acc = []
+    t_loss = []
+    t_acc = []
     texts = []
 
     #Convergence criterion
@@ -169,7 +171,7 @@ def train(config):
             #Forward pass
             pred, _ = model.forward(x) #pred = (sentence length, score of each char ,batch_size)
             loss = criterion(pred, y)
-            # train_loss.append(loss.item())
+            train_loss.append(loss.item())
             optimizer.zero_grad()
 
 
@@ -178,7 +180,7 @@ def train(config):
             optimizer.step()
 
             accuracy = get_accuracy(pred,y, config.batch_size, config.seq_length)
-            # train_acc.append(accuracy.item())
+            train_acc.append(accuracy.item())
 
             # Just for time measurement
             t2 = time.time()
@@ -203,8 +205,12 @@ def train(config):
                 text = dataset.convert_to_string(text)
                 print('\nEpoch ',epoch+1,'/ 20, Training Step ',step,'/',int(config.train_steps),', Training Accuracy = ', accuracy.item(),
                       ', Training Loss = ', loss.item(),'\n-----------------------------------------------\nGenerated text: ',text)
-                train_loss.append(loss.item())
-                train_acc.append(accuracy.item())
+
+                #Get loss and accuracy averages over 100 steps
+                t_loss.append(np.mean(train_loss))
+                t_acc.append(np.mean(train_acc))
+                train_loss = []
+                train_acc = []
                 texts.append(text)
 
 
@@ -219,12 +225,12 @@ def train(config):
                     torch.save(model, "epoch_" + str(epoch-1) +"_model")
 
                     #save current train accuracy, loss and text
-                    torch.save(train_acc, "epoch_" + str(epoch-1) +"_accuracy")
-                    torch.save(train_loss, "epoch_" + str(epoch-1) +"_loss")
+                    torch.save(t_acc, "epoch_" + str(epoch-1) +"_accuracy")
+                    torch.save(t_loss, "epoch_" + str(epoch-1) +"_loss")
                     torch.save(texts, "epoch_" + str(epoch-1) +"_texts")
 
-        # if step > 0 and abs(train_loss[step] - train_loss[step-1]) < eps:
-        #     break
+        if step > 0 and abs(t_loss[-1] - t_loss[-2]) < eps:
+            break
 
 
 

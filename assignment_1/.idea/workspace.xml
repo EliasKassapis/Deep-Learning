@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6027092a-420e-446e-a227-f192bd48ee59" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../assignment_2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment_2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment_2/part2/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment_2/part2/train.py" afterDir="false" />
-    </list>
+    <list default="true" id="6027092a-420e-446e-a227-f192bd48ee59" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,18 +21,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/train_convnet_pytorch.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="34" selection-start-line="34" selection-end-line="65" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/code/train_mlp_pytorch.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
+            <state relative-caret-position="-3026">
               <caret line="183" column="61" lean-forward="true" selection-start-line="183" selection-start-column="42" selection-end-line="183" selection-end-column="61" />
             </state>
           </provider>
@@ -49,6 +36,15 @@
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/code/train_convnet_pytorch.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="213" column="21" lean-forward="true" selection-start-line="213" selection-start-column="21" selection-end-line="213" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -136,9 +132,6 @@
     <entry file="file://$PROJECT_DIR$/code/mlp_pytorch.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/convnet_pytorch.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/custom_batchnorm.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -148,17 +141,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/train_convnet_pytorch.py">
+    <entry file="file://$PROJECT_DIR$/code/train_mlp_pytorch.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="34" selection-start-line="34" selection-end-line="65" selection-end-column="17" />
+        <state relative-caret-position="-3026">
+          <caret line="183" column="61" lean-forward="true" selection-start-line="183" selection-start-column="42" selection-end-line="183" selection-end-column="61" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/train_mlp_pytorch.py">
+    <entry file="file://$PROJECT_DIR$/code/convnet_pytorch.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/train_convnet_pytorch.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="183" column="61" lean-forward="true" selection-start-line="183" selection-start-column="42" selection-end-line="183" selection-end-column="61" />
+        <state relative-caret-position="180">
+          <caret line="213" column="21" lean-forward="true" selection-start-line="213" selection-start-column="21" selection-end-line="213" selection-end-column="21" />
         </state>
       </provider>
     </entry>
