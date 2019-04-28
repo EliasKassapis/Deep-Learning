@@ -2,6 +2,117 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94cce1d8-5104-4df1-83e7-6ca60e99eff8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/part2/graphs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment_1/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment_1/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment_1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment_1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_0_accuracy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_0_loss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_0_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_0_texts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_10_accuracy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_10_loss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_10_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_10_texts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_11_accuracy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_11_loss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_11_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_11_texts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_12_accuracy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_12_loss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_12_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_12_texts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_13_accuracy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_13_loss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_13_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_13_texts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_14_accuracy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_14_loss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_14_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_14_texts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_15_accuracy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_15_loss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_15_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_15_texts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_16_accuracy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_16_loss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_16_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_16_texts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_17_accuracy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_17_loss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_17_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_17_texts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_18_accuracy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_18_loss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_18_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_18_texts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_19_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_1_accuracy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_1_loss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_1_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_1_texts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_20_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_21_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_22_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_23_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_24_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_25_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_26_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_27_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_28_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_29_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_2_accuracy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_2_loss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_2_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_2_texts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_30_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_31_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_32_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_33_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_34_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_35_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_36_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_37_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_38_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_39_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_3_accuracy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_3_loss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_3_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_3_texts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_40_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_41_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_42_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_43_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_44_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_45_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_46_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_47_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_48_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_4_accuracy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_4_loss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_4_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_4_texts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_5_accuracy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_5_loss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_5_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_5_texts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_6_accuracy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_6_loss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_6_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_6_texts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_7_accuracy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_7_loss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_7_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_7_texts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_8_accuracy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_8_loss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_8_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_8_texts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_9_accuracy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_9_loss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_9_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/epoch_9_texts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/final_model" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/part2/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/part2/train.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,7 +127,7 @@
         <entry file="file://$PROJECT_DIR$/part2/model.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="930">
-              <caret line="62" column="21" lean-forward="true" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
+              <caret line="62" column="21" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
               <folding>
                 <element signature="e#634#672#0" expanded="true" />
               </folding>
@@ -27,10 +138,22 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/part2/train.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="141" column="14" selection-start-line="141" selection-start-column="14" selection-end-line="141" selection-end-column="14" />
+            <state relative-caret-position="1143">
+              <caret line="225" column="63" lean-forward="true" selection-start-line="225" selection-start-column="63" selection-end-line="225" selection-end-column="63" />
               <folding>
                 <element signature="e#634#672#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/part2/graphs.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="588">
+              <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -40,7 +163,7 @@
         <entry file="file://$PROJECT_DIR$/part2/dataset.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="30" column="54" lean-forward="true" selection-start-line="30" selection-start-column="54" selection-end-line="30" selection-end-column="54" />
+              <caret line="30" column="54" selection-start-line="30" selection-start-column="54" selection-end-line="30" selection-end-column="54" />
               <folding>
                 <element signature="e#634#672#0" expanded="true" />
               </folding>
@@ -58,6 +181,13 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -81,6 +211,7 @@
         <option value="$PROJECT_DIR$/part1/train.py" />
         <option value="$PROJECT_DIR$/part2/model.py" />
         <option value="$PROJECT_DIR$/part2/dataset.py" />
+        <option value="$PROJECT_DIR$/part2/graphs.py" />
         <option value="$PROJECT_DIR$/part2/train.py" />
       </list>
     </option>
@@ -133,6 +264,27 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.train (1)">
+    <configuration name="graphs" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="assignment_2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/part2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/part2/graphs.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="train (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="assignment_2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -199,6 +351,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.train (1)" />
+        <item itemvalue="Python.graphs" />
         <item itemvalue="Python.train" />
         <item itemvalue="Python.vanilla_rnn" />
       </list>
@@ -209,6 +362,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24972677" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -283,7 +437,7 @@
     <entry file="file://$PROJECT_DIR$/part2/model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="930">
-          <caret line="62" column="21" lean-forward="true" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
+          <caret line="62" column="21" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
           <folding>
             <element signature="e#634#672#0" expanded="true" />
           </folding>
@@ -300,17 +454,27 @@
     <entry file="file://$PROJECT_DIR$/part2/dataset.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="30" column="54" lean-forward="true" selection-start-line="30" selection-start-column="54" selection-end-line="30" selection-end-column="54" />
+          <caret line="30" column="54" selection-start-line="30" selection-start-column="54" selection-end-line="30" selection-end-column="54" />
           <folding>
             <element signature="e#634#672#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/part2/graphs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/part2/train.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="141" column="14" selection-start-line="141" selection-start-column="14" selection-end-line="141" selection-end-column="14" />
+        <state relative-caret-position="1143">
+          <caret line="225" column="63" lean-forward="true" selection-start-line="225" selection-start-column="63" selection-end-line="225" selection-end-column="63" />
           <folding>
             <element signature="e#634#672#0" expanded="true" />
           </folding>

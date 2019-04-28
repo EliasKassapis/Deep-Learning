@@ -196,11 +196,10 @@ def train(config):
                 # ))
 
 
-
             if step % config.sample_every == 0:
                 # Generate some sentences by sampling from the model
                 #get text in int format
-                text = text_gen(model, config.seq_length, dataset.vocab_size, temperature=None) ######################################
+                text = text_gen(model, config.seq_length, dataset.vocab_size, temperature=None)
                 #convert text to string
                 text = dataset.convert_to_string(text)
                 print('\nEpoch ',epoch+1,'/ 20, Training Step ',step,'/',int(config.train_steps),', Training Accuracy = ', accuracy.item(),
@@ -225,9 +224,9 @@ def train(config):
                     torch.save(model, "epoch_" + str(epoch-1) +"_model")
 
                     #save current train accuracy, loss and text
-                    torch.save(t_acc, "epoch_" + str(epoch-1) +"_accuracy")
-                    torch.save(t_loss, "epoch_" + str(epoch-1) +"_loss")
-                    torch.save(texts, "epoch_" + str(epoch-1) +"_texts")
+                    np.save("epoch_" + str(epoch+1) +"_accuracy", t_acc)
+                    np.save("epoch_" + str(epoch+1) +"_loss", t_loss)
+                    np.save("epoch_" + str(epoch+1) +"_texts", texts)
 
         if step > 0 and abs(t_loss[-1] - t_loss[-2]) < eps:
             break
@@ -235,7 +234,6 @@ def train(config):
     print('Done training.')
 
     #save final model
-    torch.save(model, "step_" + str(step) +"_model")
     torch.save(model, "final_model")
 
  ################################################################################
@@ -287,15 +285,19 @@ def test(config):
     dataset = TextDataset(config.txt_file, config.seq_length)
 
     # Load the trained model
-    model = torch.load('epoch_22_model', map_location='cpu')
+    model = torch.load('./Results/final_model', map_location='cpu')
     model.to(device)
 
     temperature = [0.5, 1.0, 2.0]
 
     for t in temperature:
-        #get text in idx format
-        text = text_gen(model, config.seq_length, dataset.vocab_size, temperature=t)
-        #convert text to string
-        text = dataset.convert_to_string(text)
-        print('\nTemperature = ',t,'\n----------------\nGenerated text: ',text)
+        print('\n----------------\nTemperature = ',t,'\n----------------\n\nGenerated sentences:')
+        for s in range(5):
+            #get text in idx format
+            text = text_gen(model, config.seq_length, dataset.vocab_size, temperature=t)
+            #convert text to string
+            text = dataset.convert_to_string(text)
+            print('\n(',str(s+1),') ',text)
 
+
+# test(config)
