@@ -120,6 +120,7 @@ def train(config):
     # Initialize the dataset and data loader (note the +1)
     dataset = TextDataset(config.txt_file, config.seq_length)
     data_loader = DataLoader(dataset, config.batch_size, num_workers=1)
+    print(config.txt_file)
 
     # Initialize the model that we are going to use
     model = TextGenerationModel(config.batch_size, config.seq_length, dataset.vocab_size, config.dropout_prob, config.lstm_num_hidden,

@@ -2,40 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94cce1d8-5104-4df1-83e7-6ca60e99eff8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part2/dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/part2/dataset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part2/epoch_0_model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part2/epoch_10_model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part2/epoch_11_model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part2/epoch_12_model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part2/epoch_13_model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part2/epoch_14_model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part2/epoch_15_model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part2/epoch_16_model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part2/epoch_17_model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part2/epoch_18_model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part2/epoch_19_model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part2/epoch_1_model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part2/epoch_20_model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part2/epoch_21_model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part2/epoch_2_model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part2/epoch_3_model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part2/epoch_4_model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part2/epoch_5_model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part2/epoch_6_model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part2/epoch_7_model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part2/epoch_8_model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part2/epoch_9_model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part2/slurm-2214807.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part2/slurm-2214835.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part2/slurm-2214873.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part2/slurm-2214920.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part2/slurm-2214921.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part2/slurm-2215134.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part2/slurm-2215135.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part2/slurm-2215232.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part2/slurm-2215259.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part2/slurm-2215311.out" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/part2/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/part2/train.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/part2/train.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="263" lean-forward="true" selection-start-line="263" selection-end-line="263" />
+            <state relative-caret-position="183">
+              <caret line="266" selection-start-line="266" selection-end-line="272" selection-end-column="57" />
               <folding>
                 <element signature="e#634#672#0" expanded="true" />
               </folding>
@@ -330,16 +296,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/part2/dataset.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
-          <folding>
-            <element signature="e#634#672#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/part2/model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
@@ -350,10 +306,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/part2/dataset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
+          <folding>
+            <element signature="e#634#672#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/part2/train.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="263" lean-forward="true" selection-start-line="263" selection-end-line="263" />
+        <state relative-caret-position="183">
+          <caret line="266" selection-start-line="266" selection-end-line="272" selection-end-column="57" />
           <folding>
             <element signature="e#634#672#0" expanded="true" />
           </folding>
