@@ -1,0 +1,4580 @@
+/var/spool/slurm-llnl/slurmd/job2214873/slurm_script: line 19: cd: /home/lgpu0417/deep-learning/assignment_2/part2/: Permission denied
+ ------ Job mlp_pytorch is started ------- 
+ 
+Initialize dataset with 767175 characters, 148 unique.
+
+Epoch  1 / 20, Training Step  0 / 1000000 , Training Accuracy =  0.109375 
+-----------------------------------------------
+Generated text:  -Ä¯ee¯e¯¯  e e¯   e¯ eeee¯¯  ¯¯
+
+Epoch  1 / 20, Training Step  100 / 1000000 , Training Accuracy =  5.21875 
+-----------------------------------------------
+Generated text:  @ e®eee®® ee e®®e®® ee® e  e® e
+
+Epoch  1 / 20, Training Step  200 / 1000000 , Training Accuracy =  7.90625 
+-----------------------------------------------
+Generated text:  Ue ®®®t® ®® ®®ser ®®s®the s®t® 
+
+Epoch  1 / 20, Training Step  300 / 1000000 , Training Accuracy =  10.703125 
+-----------------------------------------------
+Generated text:  B to
+the˜n
+t™
+™ ®™
+t™ T™
+
+   
+
+Epoch  1 / 20, Training Step  400 / 1000000 , Training Accuracy =  11.75 
+-----------------------------------------------
+Generated text:   the
+
+
+™
+I™II ® ™ Ato™˜® II®.
+
+
+Epoch  1 / 20, Training Step  500 / 1000000 , Training Accuracy =  12.328125 
+-----------------------------------------------
+Generated text:  v€€™ aÂd€%t€¦inger of€%the w€€h
+
+Epoch  1 / 20, Training Step  600 / 1000000 , Training Accuracy =  12.828125 
+-----------------------------------------------
+Generated text:  Îra®sers,˜@˜to t˜me€@t€“u² Âor 
+
+Epoch  1 / 20, Training Step  700 / 1000000 , Training Accuracy =  13.4375 
+-----------------------------------------------
+Generated text:  ges @roœto that @€¦se€« aÂt€¦@€
+
+Epoch  1 / 20, Training Step  800 / 1000000 , Training Accuracy =  14.1875 
+-----------------------------------------------
+Generated text:  X th†o t€¦s @ads€€™@ ª™ a €†c€¦
+
+Epoch  1 / 20, Training Step  900 / 1000000 , Training Accuracy =  14.046875 
+-----------------------------------------------
+Generated text:  š as¦as @€¦as, to had
+ to˜ente€
+
+Epoch  1 / 20, Training Step  1000 / 1000000 , Training Accuracy =  14.328125 
+-----------------------------------------------
+Generated text:  Ä@ ªo th†iXª,
+ th€sind€€h€s, an
+
+Epoch  1 / 20, Training Step  1100 / 1000000 , Training Accuracy =  15.109375 
+-----------------------------------------------
+Generated text:  … that¦€¦s a@@@l†ded,†an†es€€†
+
+Epoch  1 / 20, Training Step  1200 / 1000000 , Training Accuracy =  15.0625 
+-----------------------------------------------
+Generated text:  ;
+†¦un wi“n†tais€¦as†˜%as t†œde
+
+Epoch  1 / 20, Training Step  1300 / 1000000 , Training Accuracy =  14.984375 
+-----------------------------------------------
+Generated text:  qoœhis
+€ïp€ïo€ïti%†.†--«œlo dou
+
+Epoch  1 / 20, Training Step  1400 / 1000000 , Training Accuracy =  15.734375 
+-----------------------------------------------
+Generated text:  Wh†t†˜n†ïcart€%uï€ïand, as ïo h
+
+Epoch  1 / 20, Training Step  1500 / 1000000 , Training Accuracy =  15.359375 
+-----------------------------------------------
+Generated text:  me ïame ïoïs, anït˜assides€bat†
+
+Epoch  1 / 20, Training Step  1600 / 1000000 , Training Accuracy =  15.390625 
+-----------------------------------------------
+Generated text:  ®ïï welïïunï€¦ï€¦s,†ent€ïas the
+
+Epoch  1 / 20, Training Step  1700 / 1000000 , Training Accuracy =  16.015625 
+-----------------------------------------------
+Generated text:  ®ït†y.†ït†ïï†ïa.ï Teïp€†o¥, t«˜
+
+Epoch  1 / 20, Training Step  1800 / 1000000 , Training Accuracy =  16.265625 
+-----------------------------------------------
+Generated text:  EïVï IV. Iïïïïï,˜she sïïplait†ï
+
+Epoch  1 / 20, Training Step  1900 / 1000000 , Training Accuracy =  16.5 
+-----------------------------------------------
+Generated text:  ¹âa.ï ïï to bou“ted†ent€¦. ï¦ïp
+
+Epoch  1 / 20, Training Step  2000 / 1000000 , Training Accuracy =  16.59375 
+-----------------------------------------------
+Generated text:  viced to
+ thi¥se sh†eïs, ïrïwel
+
+Epoch  1 / 20, Training Step  2100 / 1000000 , Training Accuracy =  16.625 
+-----------------------------------------------
+Generated text:  Zïth˜sair†ïiï ïoï€ïanïaliïter,
+
+
+Epoch  1 / 20, Training Step  2200 / 1000000 , Training Accuracy =  16.453125 
+-----------------------------------------------
+Generated text:  Ã
+t¯ug†iï to tœbroï
+havi¥g ïorï
+
+Epoch  1 / 20, Training Step  2300 / 1000000 , Training Accuracy =  16.40625 
+-----------------------------------------------
+Generated text:  me ordiïï ïorïï, ïïïwasïïits,
+ 
+
+Epoch  1 / 20, Training Step  2400 / 1000000 , Training Accuracy =  16.28125 
+-----------------------------------------------
+Generated text:  ®ïp€deïâ¼¨] I w¯ice,
+ they sail
+
+Epoch  1 / 20, Training Step  2500 / 1000000 , Training Accuracy =  16.96875 
+-----------------------------------------------
+Generated text:  ¸ï. ïo l¯ine to
+  ïat€rity,†ag’
+
+Epoch  1 / 20, Training Step  2600 / 1000000 , Training Accuracy =  16.640625 
+-----------------------------------------------
+Generated text:  e oïdine,†at†o¥ ïuthed,
+ïïïïï t
+
+Epoch  1 / 20, Training Step  2700 / 1000000 , Training Accuracy =  16.890625 
+-----------------------------------------------
+Generated text:  ¸: â€ït¯eï th€then thaï they ïo
+
+Epoch  1 / 20, Training Step  2800 / 1000000 , Training Accuracy =  17.390625 
+-----------------------------------------------
+Generated text:  ™ w¯t€ïaïï. Th¯sïus€--Be w¯leïs
+
+Epoch  1 / 20, Training Step  2900 / 1000000 , Training Accuracy =  16.546875 
+-----------------------------------------------
+Generated text:  Venumes€ï._-ïïeïï ïo ïuïªou“t€d
+
+Epoch  1 / 20, Training Step  3000 / 1000000 , Training Accuracy =  16.640625 
+-----------------------------------------------
+Generated text:  9:†eïï.
+
+
+ïï  I. ï¢
+t¯˜both the
+
+Epoch  1 / 20, Training Step  3100 / 1000000 , Training Accuracy =  16.25 
+-----------------------------------------------
+Generated text:  ±ï to¨ï o“ïï inïachivi¨ª is
+thi
+
+Epoch  1 / 20, Training Step  3200 / 1000000 , Training Accuracy =  17.28125 
+-----------------------------------------------
+Generated text:  Cïrictonium,
+   ïïisï to
+ ïanïw
+
+Epoch  1 / 20, Training Step  3300 / 1000000 , Training Accuracy =  16.953125 
+-----------------------------------------------
+Generated text:  :
+ïoï,
+ 
+ 
+ïïïïsïaïïasiï ïod€ïe
+
+Epoch  1 / 20, Training Step  3400 / 1000000 , Training Accuracy =  16.984375 
+-----------------------------------------------
+Generated text:  ¹ to
+hasïï.ï
+    ïac¢ wateïª wa
+
+Epoch  1 / 20, Training Step  3500 / 1000000 , Training Accuracy =  17.140625 
+-----------------------------------------------
+Generated text:  s aïminery on ïïcenïter t¯em, ï
+
+Epoch  1 / 20, Training Step  3600 / 1000000 , Training Accuracy =  18.09375 
+-----------------------------------------------
+Generated text:  Or thoug’tit†ïmaïleïïï.
+   Teni
+
+Epoch  1 / 20, Training Step  3700 / 1000000 , Training Accuracy =  16.734375 
+-----------------------------------------------
+Generated text:  /ïlower.]
+˜ï.X To
+ïecent conïec
+
+Epoch  1 / 20, Training Step  3800 / 1000000 , Training Accuracy =  16.84375 
+-----------------------------------------------
+Generated text:  –
+ ïïch€dian sïsïaled€€ïs€¦ïï, 
+
+Epoch  1 / 20, Training Step  3900 / 1000000 , Training Accuracy =  17.40625 
+-----------------------------------------------
+Generated text:  ered
+ 
+toïce“t€ïan, ïorªine is
+
+
+Epoch  1 / 20, Training Step  4000 / 1000000 , Training Accuracy =  17.515625 
+-----------------------------------------------
+Generated text:  ¥ ïïïeïsïï. To
+ïurnïw¯ïtatio“,
+
+
+Epoch  1 / 20, Training Step  4100 / 1000000 , Training Accuracy =  17.53125 
+-----------------------------------------------
+Generated text:  €™] whi# were
+toïsiïniaï. T¢ ïu
+
+Epoch  1 / 20, Training Step  4200 / 1000000 , Training Accuracy =  17.375 
+-----------------------------------------------
+Generated text:  s, anïïïïithou#self t¯˜beïïitio
+
+Epoch  1 / 20, Training Step  4300 / 1000000 , Training Accuracy =  17.53125 
+-----------------------------------------------
+Generated text:  0:†_-ki“ns€scœïï.ïï
+
+Evid ïaït€
+
+Epoch  1 / 20, Training Step  4400 / 1000000 , Training Accuracy =  17.65625 
+-----------------------------------------------
+Generated text:  Elenï-Gïisem€ïï,ïaïïlemativeïs.
+
+Epoch  1 / 20, Training Step  4500 / 1000000 , Training Accuracy =  17.65625 
+-----------------------------------------------
+Generated text:  he€¯ïoï.ï
+ïïthes ïoï# wh¯ce¨heï
+
+Epoch  1 / 20, Training Step  4600 / 1000000 , Training Accuracy =  17.65625 
+-----------------------------------------------
+Generated text:  á½»ÏÏ„áï¶Ï„ï, ïoïï w¯ïch the p
+
+Epoch  1 / 20, Training Step  4700 / 1000000 , Training Accuracy =  17.65625 
+-----------------------------------------------
+Generated text:  «t h¤riªly ïïïphunïï,ïª ïa#,
+  
+
+Epoch  1 / 20, Training Step  4800 / 1000000 , Training Accuracy =  17.109375 
+-----------------------------------------------
+Generated text:  Foot on acïitªinªasinœïïiner ïa
+
+Epoch  1 / 20, Training Step  4900 / 1000000 , Training Accuracy =  17.25 
+-----------------------------------------------
+Generated text:  ‘its, t¯˜ïïum.ï.
+
+ ïï thanïters
+
+Epoch  1 / 20, Training Step  5000 / 1000000 , Training Accuracy =  17.765625 
+-----------------------------------------------
+Generated text:   ï t¯ee to
+   [ïoï ofïens€-ïoï,
+
+Epoch  1 / 20, Training Step  5100 / 1000000 , Training Accuracy =  17.671875 
+-----------------------------------------------
+Generated text:  s ïornï,
+ancirceïs hi“lis._
+ I.
+
+Epoch  1 / 20, Training Step  5200 / 1000000 , Training Accuracy =  17.34375 
+-----------------------------------------------
+Generated text:  @phaïaïs,
+anïwers’y aïtioZïïïoï
+
+Epoch  1 / 20, Training Step  5300 / 1000000 , Training Accuracy =  17.671875 
+-----------------------------------------------
+Generated text:  ke ïïïïï.ï
+   ïine t¯˜ïm¤ra,†en
+
+Epoch  1 / 20, Training Step  5400 / 1000000 , Training Accuracy =  17.625 
+-----------------------------------------------
+Generated text:  ¤ï on he€ds wild
+bïhand€n’ïrinï
+
+Epoch  1 / 20, Training Step  5500 / 1000000 , Training Accuracy =  17.875 
+-----------------------------------------------
+Generated text:  œT¢r¢ïïï, w¯reïï w¯ïm,ïy aïïe“u
+
+Epoch  1 / 20, Training Step  5600 / 1000000 , Training Accuracy =  18.140625 
+-----------------------------------------------
+Generated text:  )ï ïor to terªsh¯alïdoï,
+ïuïnis
+
+Epoch  1 / 20, Training Step  5700 / 1000000 , Training Accuracy =  17.515625 
+-----------------------------------------------
+Generated text:  _
+
+
+FABL¤ ï. Thic’oïï ïurªïor# 
+
+Epoch  1 / 20, Training Step  5800 / 1000000 , Training Accuracy =  18.8125 
+-----------------------------------------------
+Generated text:  Y ïïath the
+ 
+c¯rict€gïteï. ª¢r
+
+Epoch  1 / 20, Training Step  5900 / 1000000 , Training Accuracy =  17.609375 
+-----------------------------------------------
+Generated text:  
+ ïïcïeïte i“ïeïïïï ïoï o“ciï,ï
+
+Epoch  1 / 20, Training Step  6000 / 1000000 , Training Accuracy =  18.546875 
+-----------------------------------------------
+Generated text:  ’ïpïlaïs.]˜
+ï. 1ï isl¯¥ïurs,
+  
+
+Epoch  1 / 20, Training Step  6100 / 1000000 , Training Accuracy =  17.296875 
+-----------------------------------------------
+Generated text:  ¥Î¿Ï‚€™ïïe€z’ï,†a#ï.ï
+
+
+FABLATI
+
+Epoch  1 / 20, Training Step  6200 / 1000000 , Training Accuracy =  17.28125 
+-----------------------------------------------
+Generated text:  Nïïïï,ïe t¯˜ïloÂ#,†eta, w¯o anï
+
+Epoch  1 / 20, Training Step  6300 / 1000000 , Training Accuracy =  18.109375 
+-----------------------------------------------
+Generated text:  “ïï,
+ïoï ï¯v¯ri“p€ïs or
+anïw¯y#
+
+Epoch  1 / 20, Training Step  6400 / 1000000 , Training Accuracy =  18.3125 
+-----------------------------------------------
+Generated text:  *ï ïuï#&ïon ïullª-perpeit on ïi
+
+Epoch  1 / 20, Training Step  6500 / 1000000 , Training Accuracy =  18.046875 
+-----------------------------------------------
+Generated text:  Ã†aïu or
+ïoldaÂ war#ª-it“iÂïïoï
+
+Epoch  1 / 20, Training Step  6600 / 1000000 , Training Accuracy =  18.5625 
+-----------------------------------------------
+Generated text:  ; Âïïcoïdished ïrounï, wh¯“pe ï
+
+Epoch  1 / 20, Training Step  6700 / 1000000 , Training Accuracy =  18.140625 
+-----------------------------------------------
+Generated text:  9ïïa#t¯o,[54 on ïÂet“ï, ïo ïoun
+
+Epoch  1 / 20, Training Step  6800 / 1000000 , Training Accuracy =  18.046875 
+-----------------------------------------------
+Generated text:  Bathes weï’’tipp€“ïï,ïrin’t†uÂï
+
+Epoch  1 / 20, Training Step  6900 / 1000000 , Training Accuracy =  18.3125 
+-----------------------------------------------
+Generated text:  ¼ïÏw,†s,
+ â€œan ïrink€ni’ï.ïy
+
+
+
+Epoch  1 / 20, Training Step  7000 / 1000000 , Training Accuracy =  18.1875 
+-----------------------------------------------
+Generated text:  8ï ofïs ou# ïatuïï.ï,ïïïï.
+ï of
+
+Epoch  1 / 20, Training Step  7100 / 1000000 , Training Accuracy =  18.515625 
+-----------------------------------------------
+Generated text:  ON.
+
+ï.ï the
+   wondent
+ïon“bï 
+
+Epoch  1 / 20, Training Step  7200 / 1000000 , Training Accuracy =  18.03125 
+-----------------------------------------------
+Generated text:  ˆdown,
+a sÂïu#g#ïrïïwar#seaï to
+
+Epoch  1 / 20, Training Step  7300 / 1000000 , Training Accuracy =  17.65625 
+-----------------------------------------------
+Generated text:  ¢ïï. ï“b# ïïïp€#r¯ving,ââ™ïïeïs
+
+Epoch  1 / 20, Training Step  7400 / 1000000 , Training Accuracy =  18.40625 
+-----------------------------------------------
+Generated text:  Gïothere aïïïïï. The¤ch w¯r’aïs
+
+Epoch  1 / 20, Training Step  7500 / 1000000 , Training Accuracy =  18.171875 
+-----------------------------------------------
+Generated text:  arï’y,
+ ïa#che“ïis, to h’ar ïaï
+
+Epoch  1 / 20, Training Step  7600 / 1000000 , Training Accuracy =  19.015625 
+-----------------------------------------------
+Generated text:  4:
+_ïlight into
+ïïint€€
+ïïïpi’
+
+Epoch  1 / 20, Training Step  7700 / 1000000 , Training Accuracy =  17.703125 
+-----------------------------------------------
+Generated text:  !âpšâ¦ïII saïdeï# the¤r’ïï.ïï
+ï
+
+Epoch  1 / 20, Training Step  7800 / 1000000 , Training Accuracy =  18.421875 
+-----------------------------------------------
+Generated text:  . ªears hi“# ïoï# ï¤dïï waï ïïï
+
+Epoch  1 / 20, Training Step  7900 / 1000000 , Training Accuracy =  17.25 
+-----------------------------------------------
+Generated text:  ºÏ„Îµï,_-â& CÂïmeÂniï,€ïïïaZs w
+
+Epoch  1 / 20, Training Step  8000 / 1000000 , Training Accuracy =  17.5625 
+-----------------------------------------------
+Generated text:  rest€ïmour tim#ïïon, an exc¯Ââï
+
+Epoch  1 / 20, Training Step  8100 / 1000000 , Training Accuracy =  18.453125 
+-----------------------------------------------
+Generated text:  Ã¦o#ï€ïïes’atoï._¯ terms, ïornï
+
+Epoch  1 / 20, Training Step  8200 / 1000000 , Training Accuracy =  18.359375 
+-----------------------------------------------
+Generated text:  ®ïaZe orïc›isten to h’ï dr’ÂÂg 
+
+Epoch  1 / 20, Training Step  8300 / 1000000 , Training Accuracy =  17.484375 
+-----------------------------------------------
+Generated text:  ¸ï.ï
+ ïerc›um,Zy ïït€gr¤ation,â
+
+Epoch  1 / 20, Training Step  8400 / 1000000 , Training Accuracy =  18.21875 
+-----------------------------------------------
+Generated text:  {tookes aroï}’sty€nïcïïes.â& Th
+
+Epoch  1 / 20, Training Step  8500 / 1000000 , Training Accuracy =  18.546875 
+-----------------------------------------------
+Generated text:  ©ïïd¤ï›, thaï
+m¤ït€¦,â&
+â€##& ï
+
+Epoch  1 / 20, Training Step  8600 / 1000000 , Training Accuracy =  18.265625 
+-----------------------------------------------
+Generated text:  ¢
+ 
+chaÂkely, ïïtuïi’d me ïïte“
+
+Epoch  1 / 20, Training Step  8700 / 1000000 , Training Accuracy =  18.296875 
+-----------------------------------------------
+Generated text:  ‚ïïï.ïï˜Leïth«ï ïach¯os’od,ïsi’
+
+Epoch  1 / 20, Training Step  8800 / 1000000 , Training Accuracy =  18.34375 
+-----------------------------------------------
+Generated text:  ¤ït€¢ïï, a#d offen’is ïïïasZyïï
+
+Epoch  1 / 20, Training Step  8900 / 1000000 , Training Accuracy =  18.375 
+-----------------------------------------------
+Generated text:  FïeïïïeZ.ïï. ªere to€ïïot#ïï ï¤
+
+Epoch  1 / 20, Training Step  9000 / 1000000 , Training Accuracy =  17.890625 
+-----------------------------------------------
+Generated text:  ™ïye, the
+ weï’ound€d
+ ïbïis’ss
+
+Epoch  1 / 20, Training Step  9100 / 1000000 , Training Accuracy =  18.046875 
+-----------------------------------------------
+Generated text:  Gïen’ïÃïïe r¯ïsi%,†ïing
+to
+t¯ur
+
+Epoch  1 / 20, Training Step  9200 / 1000000 , Training Accuracy =  17.671875 
+-----------------------------------------------
+Generated text:  –
+Vïïnicïmïïaâ€™ as t¯˜timZÂï, 
+
+Epoch  1 / 20, Training Step  9300 / 1000000 , Training Accuracy =  18.09375 
+-----------------------------------------------
+Generated text:  ¼€Î½ Î’ÎuÎïï, â¼œT¤m’ïaZ, ïoïïe
+
+Epoch  1 / 20, Training Step  9400 / 1000000 , Training Accuracy =  18.1875 
+-----------------------------------------------
+Generated text:  ? Thinª€€ ïo arZïïï. To
+th¤ïs€
+
+Epoch  1 / 20, Training Step  9500 / 1000000 , Training Accuracy =  18.734375 
+-----------------------------------------------
+Generated text:  # the
+ïoïs an oï# asïZenis,
+ïuc
+
+Epoch  1 / 20, Training Step  9600 / 1000000 , Training Accuracy =  18.546875 
+-----------------------------------------------
+Generated text:  0ï on h¯rïs, to˜si“tho,ªed’ed,
+
+
+Epoch  1 / 20, Training Step  9700 / 1000000 , Training Accuracy =  17.828125 
+-----------------------------------------------
+Generated text:  ‰, â&˜ïo m¤y#l›hZeZs ïusing
+to 
+
+Epoch  1 / 20, Training Step  9800 / 1000000 , Training Accuracy =  18.65625 
+-----------------------------------------------
+Generated text:  16. T«uc’aus,[5&]ïs_ on
+ ï¯d†s’
+
+Epoch  1 / 20, Training Step  9900 / 1000000 , Training Accuracy =  17.84375 
+-----------------------------------------------
+Generated text:  {anïw¯“ne}.
+Then, aZr’s a ïatic
+
+Epoch  1 / 20, Training Step  10000 / 1000000 , Training Accuracy =  18.390625 
+-----------------------------------------------
+Generated text:  z’ï,Zes,
+s¯ïpitine’us noï#d€=
+ 
+
+Epoch  1 / 20, Training Step  10100 / 1000000 , Training Accuracy =  18.5625 
+-----------------------------------------------
+Generated text:  Îmáuïâ™.ï â@ïâ8
+ _orïâ¼.
+ ïu
+
+Epoch  1 / 20, Training Step  10200 / 1000000 , Training Accuracy =  19.171875 
+-----------------------------------------------
+Generated text:  Juno,†ïïïï,Z« was
+ 
+  cšlennigh
+
+Epoch  1 / 20, Training Step  10300 / 1000000 , Training Accuracy =  18.0625 
+-----------------------------------------------
+Generated text:  µ aZst€¦ ïuch¯aZs anïwed hi“taZ
+
+Epoch  1 / 20, Training Step  10400 / 1000000 , Training Accuracy =  18.15625 
+-----------------------------------------------
+Generated text:  BacthoZïïus, a#meZvitZeZes,
+anï
+
+Epoch  1 / 20, Training Step  10500 / 1000000 , Training Accuracy =  18.484375 
+-----------------------------------------------
+Generated text:   ïïit’ZïteZs th¤eZ t¯aï that s’
+
+Epoch  1 / 20, Training Step  10600 / 1000000 , Training Accuracy =  17.890625 
+-----------------------------------------------
+Generated text:  wing’ïtyïanZs arZsïï,ïªïateli’n
+
+Epoch  1 / 20, Training Step  10700 / 1000000 , Training Accuracy =  18.28125 
+-----------------------------------------------
+Generated text:  Aïï Looblo’d€¦.â€ Ho€r’tiZâÂ™Z
+
+Epoch  1 / 20, Training Step  10800 / 1000000 , Training Accuracy =  18.71875 
+-----------------------------------------------
+Generated text:  Zod€ss aïmedZ%ïes,
+   
+ïull ïa#
+
+Epoch  1 / 20, Training Step  10900 / 1000000 , Training Accuracy =  18.84375 
+-----------------------------------------------
+Generated text:  nï€ïZïges._
+«oï i“meïabe t¯rna 
+
+Epoch  1 / 20, Training Step  11000 / 1000000 , Training Accuracy =  18.390625 
+-----------------------------------------------
+Generated text:  ½ï o“#,âïïto to¤d,
+ïeth€ï the¤r
+
+Epoch  1 / 20, Training Step  11100 / 1000000 , Training Accuracy =  18.5625 
+-----------------------------------------------
+Generated text:  ¹Ï‚, âïœa ïamª¯is._
+ _oth¯udï-_
+
+Epoch  1 / 20, Training Step  11200 / 1000000 , Training Accuracy =  18.484375 
+-----------------------------------------------
+Generated text:  y€theZï.ï Teus,ïs,ª-©ov¯s to
+ 
+
+
+Epoch  1 / 20, Training Step  11300 / 1000000 , Training Accuracy =  18.34375 
+-----------------------------------------------
+Generated text:  ¸-V¯rian mailes o“o, ïat¦«Za. I
+
+Epoch  1 / 20, Training Step  11400 / 1000000 , Training Accuracy =  18.640625 
+-----------------------------------------------
+Generated text:  lanZe“ted to
+ï“guminaït¯ th¤s›p
+
+Epoch  1 / 20, Training Step  11500 / 1000000 , Training Accuracy =  18.53125 
+-----------------------------------------------
+Generated text:  ¤lïâ€#s,Zïâ¼_
+Iïïïïï,ïªth¤ï
+ïï
+
+Epoch  1 / 20, Training Step  11600 / 1000000 , Training Accuracy =  18.84375 
+-----------------------------------------------
+Generated text:  ±ïïm¯ne, w¯rrou#ïliÄboïs, ï¤c#Z
+
+Epoch  1 / 20, Training Step  11700 / 1000000 , Training Accuracy =  18.703125 
+-----------------------------------------------
+Generated text:  °ï int€ïu“ty. «o ïuš#--ïook#.
+
+
+
+Epoch  1 / 20, Training Step  11800 / 1000000 , Training Accuracy =  19.078125 
+-----------------------------------------------
+Generated text:  9ï alo“’ïª,ZaZï ïos#âï.]
+ «ïïc’
+
+Epoch  1 / 20, Training Step  11900 / 1000000 , Training Accuracy =  19.125 
+-----------------------------------------------
+Generated text:  „Ï‰Ïá½ïï,ïâ¼˜If to¯c’ed,
+ans€k
+
+Epoch  2 / 20, Training Step  0 / 1000000 , Training Accuracy =  18.1875 
+-----------------------------------------------
+Generated text:  
+ ªoth¯s ïa#ï’ï asïïsiag’ï,Zent
+
+Epoch  2 / 20, Training Step  100 / 1000000 , Training Accuracy =  18.640625 
+-----------------------------------------------
+Generated text:  peïs’edZy,
+«om#,
+a thirst to t¯
+
+Epoch  2 / 20, Training Step  200 / 1000000 , Training Accuracy =  18.1875 
+-----------------------------------------------
+Generated text:  nïwe“# ïa#s’ZaZ,
+t«is, ïust by
+
+
+Epoch  2 / 20, Training Step  300 / 1000000 , Training Accuracy =  18.6875 
+-----------------------------------------------
+Generated text:  †a$teZv¯s,« th«u
+accers h¤ïd,€r
+
+Epoch  2 / 20, Training Step  400 / 1000000 , Training Accuracy =  18.71875 
+-----------------------------------------------
+Generated text:  (ïo her
+as“men€ï,Zen stri’kis,
+
+
+Epoch  2 / 20, Training Step  500 / 1000000 , Training Accuracy =  19.203125 
+-----------------------------------------------
+Generated text:  5:†ïâl_
+«.Xïªï’d,
+a sto«.ï˜ïor
+
+Epoch  2 / 20, Training Step  600 / 1000000 , Training Accuracy =  18.390625 
+-----------------------------------------------
+Generated text:  8ï t¯¤=_
+ïïïrise on high€ï anï€
+
+Epoch  2 / 20, Training Step  700 / 1000000 , Training Accuracy =  19.046875 
+-----------------------------------------------
+Generated text:  ¥ anïï-t€ïïan,« a#dZeZs aïïïd€n
+
+Epoch  2 / 20, Training Step  800 / 1000000 , Training Accuracy =  18.59375 
+-----------------------------------------------
+Generated text:  Junoªneu’se“tiZ“ï,
+ïut ï¤ge,[& 
+
+Epoch  2 / 20, Training Step  900 / 1000000 , Training Accuracy =  18.90625 
+-----------------------------------------------
+Generated text:  joiZ#Zïsh¤ïâ¼¯s, â¼˜ïïtheišïâï
+
+Epoch  2 / 20, Training Step  1000 / 1000000 , Training Accuracy =  18.265625 
+-----------------------------------------------
+Generated text:  Y«: Pal¤ïhis,ïsZ¤vZ]
+«ull
+compo
+
+Epoch  2 / 20, Training Step  1100 / 1000000 , Training Accuracy =  18.921875 
+-----------------------------------------------
+Generated text:  Quoªtured¯y her#’y€veZâ$.ïïe wi
+
+Epoch  2 / 20, Training Step  1200 / 1000000 , Training Accuracy =  18.96875 
+-----------------------------------------------
+Generated text:  F¯¯ï ï, ïost, t«i=peZ’tiZ.ï ï¤Z
+
+Epoch  2 / 20, Training Step  1300 / 1000000 , Training Accuracy =  18.75 
+-----------------------------------------------
+Generated text:  of ïïast beišZï ïatuš,[484)]
+Iï
+
+Epoch  2 / 20, Training Step  1400 / 1000000 , Training Accuracy =  18.640625 
+-----------------------------------------------
+Generated text:  Å&th’ni’, wšï# than to thiÄke€8
+
+Epoch  2 / 20, Training Step  1500 / 1000000 , Training Accuracy =  18.703125 
+-----------------------------------------------
+Generated text:  res’thiÄg ïït€ïïs,
+a#dZZite Foï
+
+Epoch  2 / 20, Training Step  1600 / 1000000 , Training Accuracy =  18.828125 
+-----------------------------------------------
+Generated text:  Roon,««
+ïut, a&ïV¤sis,
+   ïo h¤
+
+Epoch  2 / 20, Training Step  1700 / 1000000 , Training Accuracy =  18.609375 
+-----------------------------------------------
+Generated text:  w« i“ªul, as
+ïïongeted€Z#ï._«&ï
+
+Epoch  2 / 20, Training Step  1800 / 1000000 , Training Accuracy =  18.125 
+-----------------------------------------------
+Generated text:  K«¤:
+ ï¢ m’t€res’ons’oriZs ïeat
+
+Epoch  2 / 20, Training Step  1900 / 1000000 , Training Accuracy =  18.8125 
+-----------------------------------------------
+Generated text:  UïI©ï [Fol€disZaxï%,Zer,â&&ïI.
+
+
+Epoch  2 / 20, Training Step  2000 / 1000000 , Training Accuracy =  18.34375 
+-----------------------------------------------
+Generated text:  µïï wilt
+ïuth€B&ïBOO’Tï ïRAML© 
+
+Epoch  2 / 20, Training Step  2100 / 1000000 , Training Accuracy =  18.5 
+-----------------------------------------------
+Generated text:  ;
+a#d, @,ïy, to ïïeZeïï. To
+ïon
+
+Epoch  2 / 20, Training Step  2200 / 1000000 , Training Accuracy =  18.71875 
+-----------------------------------------------
+Generated text:  “=ï«ï,Z’ï$$,
+
+
+
+ ª¢ï#© ï¯reas, 
+
+Epoch  2 / 20, Training Step  2300 / 1000000 , Training Accuracy =  19.203125 
+-----------------------------------------------
+Generated text:  Â½ïïe,ZenusZ to ït lay h¤ï.
+
+T¤
+
+Epoch  2 / 20, Training Step  2400 / 1000000 , Training Accuracy =  18.59375 
+-----------------------------------------------
+Generated text:  3] as
+  t¯€tur, a#dZaZs ï“ty, a
+
+Epoch  2 / 20, Training Step  2500 / 1000000 , Training Accuracy =  18.640625 
+-----------------------------------------------
+Generated text:  * ïo#, ïr¯sZ. 2.]ï to¯#
+    t¤e
+
+Epoch  2 / 20, Training Step  2600 / 1000000 , Training Accuracy =  18.84375 
+-----------------------------------------------
+Generated text:  =ï.ï,«ïm¤des
+shouls’%geZZs,ïªi“
+
+Epoch  2 / 20, Training Step  2700 / 1000000 , Training Accuracy =  18.625 
+-----------------------------------------------
+Generated text:  – aZm«.
+
+«“ï#
+ ï© ïath«ïï’ïmoï,
+
+Epoch  2 / 20, Training Step  2800 / 1000000 , Training Accuracy =  18.828125 
+-----------------------------------------------
+Generated text:  ONï’#*ï,
+
+«o#), as
+ïerriZ’t€¦Zï
+
+Epoch  2 / 20, Training Step  2900 / 1000000 , Training Accuracy =  18.671875 
+-----------------------------------------------
+Generated text:  ] asZo&&ï S. ïOï A“##ïH.ïïï ïoï
+
+Epoch  2 / 20, Training Step  3000 / 1000000 , Training Accuracy =  18.1875 
+-----------------------------------------------
+Generated text:  ³Ï‰Ï&, â¼œO&ïV¯. 4¥ [Fï¯miZZï,¥
+
+Epoch  2 / 20, Training Step  3100 / 1000000 , Training Accuracy =  18.515625 
+-----------------------------------------------
+Generated text:  ²Î&,Zâ$m©â€™Z&
+ ïposes©_-Ver&.
+
+Epoch  2 / 20, Training Step  3200 / 1000000 , Training Accuracy =  19.109375 
+-----------------------------------------------
+Generated text:  peaZªïïo&ïïïcoïïïs areZg,â5™&
+ 
+
+Epoch  2 / 20, Training Step  3300 / 1000000 , Training Accuracy =  18.59375 
+-----------------------------------------------
+Generated text:  [ï€thon,« the ïïïÃ@Z%, ïïïwheZa
+
+Epoch  2 / 20, Training Step  3400 / 1000000 , Training Accuracy =  18.84375 
+-----------------------------------------------
+Generated text:  G“eades, ïeZcl¤«Zs, @elïaZ“nia,
+
+Epoch  2 / 20, Training Step  3500 / 1000000 , Training Accuracy =  18.546875 
+-----------------------------------------------
+Generated text:  [ïort¯ZaZZ.ï:¯ ÄgriZviniš, ï¤ce
+
+Epoch  2 / 20, Training Step  3600 / 1000000 , Training Accuracy =  18.5625 
+-----------------------------------------------
+Generated text:  ! a not to€tZeness€tZens.ï
+V.I 
+
+Epoch  2 / 20, Training Step  3700 / 1000000 , Training Accuracy =  18.40625 
+-----------------------------------------------
+Generated text:  8:
+ïl¤ing
+  ïïites# w¯ ïaZeZ’Z’
+
+Epoch  2 / 20, Training Step  3800 / 1000000 , Training Accuracy =  18.671875 
+-----------------------------------------------
+Generated text:  8ï thank€$&
+ïo r¯ït€were›per€ke
+
+Epoch  2 / 20, Training Step  3900 / 1000000 , Training Accuracy =  19.125 
+-----------------------------------------------
+Generated text:  ¼@Ch«o t€&tr¯ng«.
+
+
+ïreZ©
+
+
+ïo#
+
+Epoch  2 / 20, Training Step  4000 / 1000000 , Training Accuracy =  19.28125 
+-----------------------------------------------
+Generated text:  ”Ïzá_½
+
+ ïr¯ï ïrom
+  agZ%ï. To
+
+Epoch  2 / 20, Training Step  4100 / 1000000 , Training Accuracy =  18.921875 
+-----------------------------------------------
+Generated text:  C¦ïa&
+ïr¯isiZe,« wisteZs. T¤meZ
+
+Epoch  2 / 20, Training Step  4200 / 1000000 , Training Accuracy =  19.015625 
+-----------------------------------------------
+Generated text:  Qyaªth¤sia,[& to sïparZ¯ï€¦sZes
+
+Epoch  2 / 20, Training Step  4300 / 1000000 , Training Accuracy =  18.59375 
+-----------------------------------------------
+Generated text:  •Î±Î»á¿Zïïïï ïi#so ïa##’ly$â&
+«
+
+Epoch  2 / 20, Training Step  4400 / 1000000 , Training Accuracy =  19.34375 
+-----------------------------------------------
+Generated text:  men spr¤y t¯ane,
+«ïïw¯ an artil
+
+Epoch  2 / 20, Training Step  4500 / 1000000 , Training Accuracy =  18.828125 
+-----------------------------------------------
+Generated text:  ³Ï@“, ïreat¯d¯Z©
+
+ ¤oZi“._--3& 
+
+Epoch  2 / 20, Training Step  4600 / 1000000 , Training Accuracy =  19.015625 
+-----------------------------------------------
+Generated text:  oï ï¤ï# ïaturaZ. They©© ïeZcule
+
+Epoch  2 / 20, Training Step  4700 / 1000000 , Training Accuracy =  18.921875 
+-----------------------------------------------
+Generated text:  8:€¦,â2™ïent whiliZït€ï a“me.&&
+
+Epoch  2 / 20, Training Step  4800 / 1000000 , Training Accuracy =  18.15625 
+-----------------------------------------------
+Generated text:  Å’tuZÃ. ¢lleZi“s,[5&ï._& VII©
+V
+
+Epoch  2 / 20, Training Step  4900 / 1000000 , Training Accuracy =  19.046875 
+-----------------------------------------------
+Generated text:  › the
+  anc’%ZïZ©ï©ï t¯uc# i“ªi
+
+Epoch  2 / 20, Training Step  5000 / 1000000 , Training Accuracy =  18.734375 
+-----------------------------------------------
+Generated text:  V¯ï&_-«Vï (ï.
+
+«ï#hoªsee© TeZbl
+
+Epoch  2 / 20, Training Step  5100 / 1000000 , Training Accuracy =  18.359375 
+-----------------------------------------------
+Generated text:  ! H’ïmeï# oZotinutiZaZ,
+©
+ ªa#k
+
+Epoch  2 / 20, Training Step  5200 / 1000000 , Training Accuracy =  18.5625 
+-----------------------------------------------
+Generated text:  0.]
+«.ï Ä. & Those
+ïou#ds’ase, 
+
+Epoch  2 / 20, Training Step  5300 / 1000000 , Training Accuracy =  18.53125 
+-----------------------------------------------
+Generated text:  g€vZodioum._& Sh¤ïpišs’s’y,& C€
+
+Epoch  2 / 20, Training Step  5400 / 1000000 , Training Accuracy =  19.6875 
+-----------------------------------------------
+Generated text:  ­# ïormsZ¤b=.] _iš#&«
+ 
+  a tig
+
+Epoch  2 / 20, Training Step  5500 / 1000000 , Training Accuracy =  18.53125 
+-----------------------------------------------
+Generated text:  ¿Ïw as
+too,
+ ïi# w¯ï#ses’Zct¯di
+
+Epoch  2 / 20, Training Step  5600 / 1000000 , Training Accuracy =  18.96875 
+-----------------------------------------------
+Generated text:  Mi=t«ï,
+toï’statiou is
+saw heav
+
+Epoch  2 / 20, Training Step  5700 / 1000000 , Training Accuracy =  18.609375 
+-----------------------------------------------
+Generated text:  ¿ï#25Z«: ïou##d’teme ïat€r’ngZe
+
+Epoch  2 / 20, Training Step  5800 / 1000000 , Training Accuracy =  19.359375 
+-----------------------------------------------
+Generated text:  UïseZes ï¤vi#te a “m¯nš,&
+© wis
+
+Epoch  2 / 20, Training Step  5900 / 1000000 , Training Accuracy =  18.875 
+-----------------------------------------------
+Generated text:  m to ï¤ve, aZstian’br¤$dec’as,«
+
+Epoch  2 / 20, Training Step  6000 / 1000000 , Training Accuracy =  18.625 
+-----------------------------------------------
+Generated text:  zy aZs“š,©«ï, @@ïnï› ïi= t«o& T
+
+Epoch  2 / 20, Training Step  6100 / 1000000 , Training Accuracy =  18.859375 
+-----------------------------------------------
+Generated text:  †a$«©tiZ¥,Zends t¯€t#, as to
+s“
+
+Epoch  2 / 20, Training Step  6200 / 1000000 , Training Accuracy =  18.859375 
+-----------------------------------------------
+Generated text:  ‡Î±, ÎïÎµ«ïïZÎ¶Î±Î²ÎïÎ½ïZe’:
+  
+
+Epoch  2 / 20, Training Step  6300 / 1000000 , Training Accuracy =  19.03125 
+-----------------------------------------------
+Generated text:  ‰,&«ïdeZ¯ ïu#seZe“tia co©trinat
+
+Epoch  2 / 20, Training Step  6400 / 1000000 , Training Accuracy =  19.109375 
+-----------------------------------------------
+Generated text:  Upid ï¤vinZ BulZ. 5ï ïo## t¯anZ
+
+Epoch  2 / 20, Training Step  6500 / 1000000 , Training Accuracy =  18.9375 
+-----------------------------------------------
+Generated text:  *ï.
+ IIï©
+ï¯© ïother
+o“t€& ïur#
+
+Epoch  2 / 20, Training Step  6600 / 1000000 , Training Accuracy =  19.078125 
+-----------------------------------------------
+Generated text:  ._--V¯s,
+precšliZes,
+ 
+ïinkiZs,
+
+Epoch  2 / 20, Training Step  6700 / 1000000 , Training Accuracy =  19.09375 
+-----------------------------------------------
+Generated text:  foït¯de h¯ars whenZ’tus’[12.] «
+
+Epoch  2 / 20, Training Step  6800 / 1000000 , Training Accuracy =  18.96875 
+-----------------------------------------------
+Generated text:  ? ¢## on#â€=Tulus©[12] lamory,
+
+
+Epoch  2 / 20, Training Step  6900 / 1000000 , Training Accuracy =  19.0 
+-----------------------------------------------
+Generated text:  “no©ïas s’ritZ)Zy Asi©
+ïurmiZ#Z
+
+Epoch  2 / 20, Training Step  7000 / 1000000 , Training Accuracy =  19.640625 
+-----------------------------------------------
+Generated text:  Mi=©« wise ïeatenª©
+
+FABTo  Th¯
+
+Epoch  2 / 20, Training Step  7100 / 1000000 , Training Accuracy =  18.6875 
+-----------------------------------------------
+Generated text:  ll¤Z© ïhence ï¤vZ.  It,«&&
+I&
+ 
+
+Epoch  2 / 20, Training Step  7200 / 1000000 , Training Accuracy =  18.671875 
+-----------------------------------------------
+Generated text:  , @,
+anci•d to&
+© woï#n’ïïï.& «
+
+Epoch  2 / 20, Training Step  7300 / 1000000 , Training Accuracy =  19.375 
+-----------------------------------------------
+Generated text:  Ä€œsan’olemaZ,Zor,Zor ïyliZs,Za
+
+Epoch  2 / 20, Training Step  7400 / 1000000 , Training Accuracy =  18.796875 
+-----------------------------------------------
+Generated text:  ³Îuls, ïoï,€& ïus€ZmaZsto to ï&
+
+Epoch  2 / 20, Training Step  7500 / 1000000 , Training Accuracy =  18.984375 
+-----------------------------------------------
+Generated text:  Å’a$ï©, w¯rch she€ngen’#gal of 
+
+Epoch  2 / 20, Training Step  7600 / 1000000 , Training Accuracy =  18.984375 
+-----------------------------------------------
+Generated text:  "
+  © oZr’ideZuZ# she
+ 
+migrZse
+
+Epoch  2 / 20, Training Step  7700 / 1000000 , Training Accuracy =  18.6875 
+-----------------------------------------------
+Generated text:  ­m€nied
+ïarZs, waZlª¯s was
+a sZ
+
+Epoch  2 / 20, Training Step  7800 / 1000000 , Training Accuracy =  19.34375 
+-----------------------------------------------
+Generated text:  16ïï._&
+
+FAonteï to&ïs’stonaZ¤x
+
+Epoch  2 / 20, Training Step  7900 / 1000000 , Training Accuracy =  19.5625 
+-----------------------------------------------
+Generated text:  Q&ï-& ïZ’ïc%uš,
+ 
+ïr¯pp€¦Zs ïea
+
+Epoch  2 / 20, Training Step  8000 / 1000000 , Training Accuracy =  18.90625 
+-----------------------------------------------
+Generated text:  ?ï&
+ïexti@Z’t’rancs ï¤veZâ€™Zâ$
+
+Epoch  2 / 20, Training Step  8100 / 1000000 , Training Accuracy =  19.390625 
+-----------------------------------------------
+Generated text:  A“’,
+ 
+©&
+  T¤mius,ZoreZ’toZy a
+
+Epoch  2 / 20, Training Step  8200 / 1000000 , Training Accuracy =  19.125 
+-----------------------------------------------
+Generated text:  5ï.]¤’,
+« ïrou# ïounZiZs, th¤oZ
+
+Epoch  2 / 20, Training Step  8300 / 1000000 , Training Accuracy =  19.1875 
+-----------------------------------------------
+Generated text:  ) arZZs ï@ïp€ïo##â2™ or ïou#ce 
+
+Epoch  2 / 20, Training Step  8400 / 1000000 , Training Accuracy =  18.25 
+-----------------------------------------------
+Generated text:  joid toZïZet€Z Toï©ï© ïeZeusZax
+
+Epoch  2 / 20, Training Step  8500 / 1000000 , Training Accuracy =  18.671875 
+-----------------------------------------------
+Generated text:  #ïït€¦alZoZs]ZoZ’’ra._«
+©i& now
+
+Epoch  2 / 20, Training Step  8600 / 1000000 , Training Accuracy =  19.609375 
+-----------------------------------------------
+Generated text:  {st€r=ïb¯i=ïZs._ª«’,&â€˜‰h¤m¯n 
+
+Epoch  2 / 20, Training Step  8700 / 1000000 , Training Accuracy =  19.21875 
+-----------------------------------------------
+Generated text:  ¦Z%Zas,«©ª@ould has that tiZote
+
+Epoch  2 / 20, Training Step  8800 / 1000000 , Training Accuracy =  18.890625 
+-----------------------------------------------
+Generated text:  w¯ t¯ie, @,&&& ïš© PhoruZ, wheZ
+
+Epoch  2 / 20, Training Step  8900 / 1000000 , Training Accuracy =  18.9375 
+-----------------------------------------------
+Generated text:  »Î±Î»ï€¦ï Î´Î±Ïá½µÏ‰. â˜˜tur#Z
+
+Epoch  2 / 20, Training Step  9000 / 1000000 , Training Accuracy =  19.296875 
+-----------------------------------------------
+Generated text:  Âïl’šïneZs] V©ï. [ï©tele€ï,Zath
+
+Epoch  2 / 20, Training Step  9100 / 1000000 , Training Accuracy =  19.296875 
+-----------------------------------------------
+Generated text:  jes’tai=]&«, © ïat€n¤vZstabl¤ct
+
+Epoch  2 / 20, Training Step  9200 / 1000000 , Training Accuracy =  18.640625 
+-----------------------------------------------
+Generated text:  !&
+«¤otZÃ«ïaZt¯neuZsZa, waZriZs
+
+Epoch  2 / 20, Training Step  9300 / 1000000 , Training Accuracy =  18.78125 
+-----------------------------------------------
+Generated text:  ¦ZeZed. ToZturZZ.
+ïac’deZet c€ï
+
+Epoch  2 / 20, Training Step  9400 / 1000000 , Training Accuracy =  18.265625 
+-----------------------------------------------
+Generated text:  Zïïi© Bac=iteZs, than
+ ª©tiolZh
+
+Epoch  2 / 20, Training Step  9500 / 1000000 , Training Accuracy =  18.875 
+-----------------------------------------------
+Generated text:  as“a,[& toZv¯s, if
+išnol“tes, @
+
+Epoch  2 / 20, Training Step  9600 / 1000000 , Training Accuracy =  18.921875 
+-----------------------------------------------
+Generated text:  ¢rt oZaces areZy,
+ 
+w¯Zed,#s wi
+
+Epoch  2 / 20, Training Step  9700 / 1000000 , Training Accuracy =  18.875 
+-----------------------------------------------
+Generated text:  =TIN©ïLE¤D’« BUÄÄ. ¢©li.& T¤mme
+
+Epoch  2 / 20, Training Step  9800 / 1000000 , Training Accuracy =  18.859375 
+-----------------------------------------------
+Generated text:  %
+ïorne t¯€@#-©©X&ï&
+  ï¦ther’o
+
+Epoch  2 / 20, Training Step  9900 / 1000000 , Training Accuracy =  18.6875 
+-----------------------------------------------
+Generated text:  untaiZ’t€¦n oZ#ïZ’diaZ,
+
+©
+ï¤di
+
+Epoch  2 / 20, Training Step  10000 / 1000000 , Training Accuracy =  18.734375 
+-----------------------------------------------
+Generated text:  T«,&& Co¤n#-ïttamus, @.A.&&& I.
+
+Epoch  2 / 20, Training Step  10100 / 1000000 , Training Accuracy =  19.515625 
+-----------------------------------------------
+Generated text:  6¥ï«, famed
+ ªei’thZy, a ïoï#
+ 
+
+Epoch  2 / 20, Training Step  10200 / 1000000 , Training Accuracy =  19.40625 
+-----------------------------------------------
+Generated text:  Q&
+
+ «u#n& @.Cïïe#Ze,
+an&© I©l¤
+
+Epoch  2 / 20, Training Step  10300 / 1000000 , Training Accuracy =  19.140625 
+-----------------------------------------------
+Generated text:  ªed, @,
+aZZ¢ïZÃ=T¤Zaš.]
+
+ ïï ©r
+
+Epoch  2 / 20, Training Step  10400 / 1000000 , Training Accuracy =  19.078125 
+-----------------------------------------------
+Generated text:  se ©©rri’nel aZm¤ceZsZaZZs,
+«or
+
+Epoch  2 / 20, Training Step  10500 / 1000000 , Training Accuracy =  18.890625 
+-----------------------------------------------
+Generated text:  ‡ï ïarrieZ’Ze.¥, ©ZeZveror,
+ïoï
+
+Epoch  2 / 20, Training Step  10600 / 1000000 , Training Accuracy =  19.015625 
+-----------------------------------------------
+Generated text:  *ï©
+
+¤o177:« AlZ’t’Ã¦Å©,Z& Pr¯e
+
+Epoch  2 / 20, Training Step  10700 / 1000000 , Training Accuracy =  18.59375 
+-----------------------------------------------
+Generated text:  " only doen t«ient f€w¯re w¯Zds
+
+Epoch  2 / 20, Training Step  10800 / 1000000 , Training Accuracy =  19.3125 
+-----------------------------------------------
+Generated text:  Å’nic’molaZs toZas,& waZr,
+wheZ
+
+Epoch  2 / 20, Training Step  10900 / 1000000 , Training Accuracy =  18.796875 
+-----------------------------------------------
+Generated text:  MereuZbZs aloud,« ©,# will#›© w
+
+Epoch  2 / 20, Training Step  11000 / 1000000 , Training Accuracy =  19.21875 
+-----------------------------------------------
+Generated text:  l’she
+  ch€@dZ%gZ¯da ïaš ïailªs
+
+Epoch  2 / 20, Training Step  11100 / 1000000 , Training Accuracy =  19.328125 
+-----------------------------------------------
+Generated text:  ™ as soot w¤tc’ša is s›eeZs ï¤i
+
+Epoch  2 / 20, Training Step  11200 / 1000000 , Training Accuracy =  19.21875 
+-----------------------------------------------
+Generated text:  B¤od€¦a b¤di’Zathi$ ï¤viZZïZ.
+
+
+
+Epoch  2 / 20, Training Step  11300 / 1000000 , Training Accuracy =  19.359375 
+-----------------------------------------------
+Generated text:  bei= ªortaguZs,Za$ïer abo=t«Zad
+
+Epoch  2 / 20, Training Step  11400 / 1000000 , Training Accuracy =  19.0625 
+-----------------------------------------------
+Generated text:  f ïrom ïur#â€™Zs
+n¤ckiZe,Zod,Za
+
+Epoch  2 / 20, Training Step  11500 / 1000000 , Training Accuracy =  19.078125 
+-----------------------------------------------
+Generated text:  6.&«:
+
+«“#dianZ’nuZ]
+ [I& I w¤ï
+
+Epoch  2 / 20, Training Step  11600 / 1000000 , Training Accuracy =  19.5625 
+-----------------------------------------------
+Generated text:  Grecš¯s’Z.â41.&&& {«Z«}, @@pªt«
+
+Epoch  2 / 20, Training Step  11700 / 1000000 , Training Accuracy =  18.546875 
+-----------------------------------------------
+Generated text:  @ïZ’c’eZ«,ZïtruZ.ï: ¥ ¥b’’yxui
+
+Epoch  2 / 20, Training Step  11800 / 1000000 , Training Accuracy =  19.328125 
+-----------------------------------------------
+Generated text:  with€€#& Typhunes._--&« 1.F.&,
+
+
+Epoch  2 / 20, Training Step  11900 / 1000000 , Training Accuracy =  18.71875 
+-----------------------------------------------
+Generated text:  /ïon oZat€Ze ï¤Z=Zï teZe©sua,
+©
+
+Epoch  3 / 20, Training Step  0 / 1000000 , Training Accuracy =  18.3125 
+-----------------------------------------------
+Generated text:  ½½,&«._ ï¯Zs,Z« ïustrodibnedZZs
+
+Epoch  3 / 20, Training Step  100 / 1000000 , Training Accuracy =  19.3125 
+-----------------------------------------------
+Generated text:  ºÎ&¯Z1) ¤nels, anoZ“siZsZs ©riZ
+
+Epoch  3 / 20, Training Step  200 / 1000000 , Training Accuracy =  19.140625 
+-----------------------------------------------
+Generated text:  LeZa,© ©Z&ï¤i,zeZs. ªaZviZ#ZeZe
+
+Epoch  3 / 20, Training Step  300 / 1000000 , Training Accuracy =  19.28125 
+-----------------------------------------------
+Generated text:  c’odena,&& 1&
+
+
+
+
+«urow¯’lyZet 
+
+Epoch  3 / 20, Training Step  400 / 1000000 , Training Accuracy =  19.015625 
+-----------------------------------------------
+Generated text:  47] w¯r# swowl& I© @&
+
+¤o# €@ª©
+
+Epoch  3 / 20, Training Step  500 / 1000000 , Training Accuracy =  18.875 
+-----------------------------------------------
+Generated text:  WhaZZZs is this#âasqu¯agiZp ïus
+
+Epoch  3 / 20, Training Step  600 / 1000000 , Training Accuracy =  19.1875 
+-----------------------------------------------
+Generated text:  µÎ&
+  [. 79-6Mal.¥&Z&Z.ï.&©
+
+«ï
+
+Epoch  3 / 20, Training Step  700 / 1000000 , Training Accuracy =  19.171875 
+-----------------------------------------------
+Generated text:  Maš©¥.&&
+
+
+F«on hadZ’tiZes, aZr
+
+Epoch  3 / 20, Training Step  800 / 1000000 , Training Accuracy =  19.03125 
+-----------------------------------------------
+Generated text:  Ver.ï: ©resoun’â"
+
+T«u#¥anth¯@
+
+Epoch  3 / 20, Training Step  900 / 1000000 , Training Accuracy =  18.640625 
+-----------------------------------------------
+Generated text:  Olym&Z¤xZ%, but alselZZs i“muZu
+
+Epoch  3 / 20, Training Step  1000 / 1000000 , Training Accuracy =  19.203125 
+-----------------------------------------------
+Generated text:  _©¥pr¯eZs© © w¯Z#s’liZ“$Zis’Zes
+
+Epoch  3 / 20, Training Step  1100 / 1000000 , Training Accuracy =  19.5 
+-----------------------------------------------
+Generated text:  ¹Î&«, t«ucc€s’Z&Z&Z.ï:
+ïuc’liZ#
+
+Epoch  3 / 20, Training Step  1200 / 1000000 , Training Accuracy =  19.65625 
+-----------------------------------------------
+Generated text:  /A NETRAïPART.W«
+
+ ¤on#
+
+ 
+Teri
+
+Epoch  3 / 20, Training Step  1300 / 1000000 , Training Accuracy =  18.75 
+-----------------------------------------------
+Generated text:  Be¯«:
+
+S¤ovioZ._--&t. 511Z©
+ 
+E
+
+Epoch  3 / 20, Training Step  1400 / 1000000 , Training Accuracy =  18.71875 
+-----------------------------------------------
+Generated text:  ? ¢ZošZid,âcÎ Na#Sušâ5ª.& _&th«
+
+Epoch  3 / 20, Training Step  1500 / 1000000 , Training Accuracy =  19.328125 
+-----------------------------------------------
+Generated text:  XPL¤¤zigZe.&© &Z& I©
+©¤& 3.  Do
+
+Epoch  3 / 20, Training Step  1600 / 1000000 , Training Accuracy =  19.09375 
+-----------------------------------------------
+Generated text:  s© ïor#â€™s
+ïaceZ& ©Zot ˜com©â&
+
+Epoch  3 / 20, Training Step  1700 / 1000000 , Training Accuracy =  19.0 
+-----------------------------------------------
+Generated text:  »ïc’šZ$¥,
+©¤oneZs,
+aZ#sirus ten
+
+Epoch  3 / 20, Training Step  1800 / 1000000 , Training Accuracy =  18.90625 
+-----------------------------------------------
+Generated text:  KalZoš] V.I E¥p’rho&Zy, toZïZs 
+
+Epoch  3 / 20, Training Step  1900 / 1000000 , Training Accuracy =  18.859375 
+-----------------------------------------------
+Generated text:  ),# m€th¯s w¤veZZZ wZe#d’dZa$
+«
+
+Epoch  3 / 20, Training Step  2000 / 1000000 , Training Accuracy =  19.515625 
+-----------------------------------------------
+Generated text:  ’“a,[&Zer.] ¤xZ&Zes._& Somot#Ãt
+
+Epoch  3 / 20, Training Step  2100 / 1000000 , Training Accuracy =  19.34375 
+-----------------------------------------------
+Generated text:  0: toZ=â€™]© _pr¯isinZ© [ïrom}Z
+
+Epoch  3 / 20, Training Step  2200 / 1000000 , Training Accuracy =  19.21875 
+-----------------------------------------------
+Generated text:  ¹ï ïulZy ïature ïor#whatZyZ%sis
+
+Epoch  3 / 20, Training Step  2300 / 1000000 , Training Accuracy =  19.640625 
+-----------------------------------------------
+Generated text:  µÏ&Î& 5616,
+ ...&ï& Meres aZ¥ «
+
+Epoch  3 / 20, Training Step  2400 / 1000000 , Training Accuracy =  19.46875 
+-----------------------------------------------
+Generated text:  s© AresZolog€ ïZo@$ï©
+   
+PeZ©t
+
+Epoch  3 / 20, Training Step  2500 / 1000000 , Training Accuracy =  19.296875 
+-----------------------------------------------
+Generated text:  ' FoiZon s’c•ªeasZodš¤dZenueZs,
+
+Epoch  3 / 20, Training Step  2600 / 1000000 , Training Accuracy =  18.796875 
+-----------------------------------------------
+Generated text:  III.& © un#©©I&
+   *  ªe©©
+B¢¯l
+
+Epoch  3 / 20, Training Step  2700 / 1000000 , Training Accuracy =  18.8125 
+-----------------------------------------------
+Generated text:  Wh¤ldZyZ’Zes’ZaZZ©Zas©
+© N¤&myd
+
+Epoch  3 / 20, Training Step  2800 / 1000000 , Training Accuracy =  19.28125 
+-----------------------------------------------
+Generated text:  ºï€¦an¥-ïleZes“oš.&¯pZanZe (¢rr
+
+Epoch  3 / 20, Training Step  2900 / 1000000 , Training Accuracy =  18.796875 
+-----------------------------------------------
+Generated text:  ³&ï&
+¥V#NI YUT OR#P’ AR
+U¤Co#tr
+
+Epoch  3 / 20, Training Step  3000 / 1000000 , Training Accuracy =  19.296875 
+-----------------------------------------------
+Generated text:  =
+IV: toZe,#llower.
+
+¤n¥BOi’s¯a
+
+Epoch  3 / 20, Training Step  3100 / 1000000 , Training Accuracy =  19.609375 
+-----------------------------------------------
+Generated text:  71:€.& &  &
+ï  [t¯lmkel&â€ ©¤&
+
+Epoch  3 / 20, Training Step  3200 / 1000000 , Training Accuracy =  19.21875 
+-----------------------------------------------
+Generated text:  XPELADES «IS  ïo©
+©¤oneZâ8™“,Ze
+
+Epoch  3 / 20, Training Step  3300 / 1000000 , Training Accuracy =  19.3125 
+-----------------------------------------------
+Generated text:  Former thee#sZisZ¤=â& © ïšï._
+V
+
+Epoch  3 / 20, Training Step  3400 / 1000000 , Training Accuracy =  19.234375 
+-----------------------------------------------
+Generated text:  =THE¤S Lok# Boar,« wis##@x._.
+
+
+
+Epoch  3 / 20, Training Step  3500 / 1000000 , Training Accuracy =  19.015625 
+-----------------------------------------------
+Generated text:  ¾,œ«,Zor#Zïto MaratemusZy ïighZ
+
+Epoch  3 / 20, Training Step  3600 / 1000000 , Training Accuracy =  19.515625 
+-----------------------------------------------
+Generated text:  ¼Î¹& Î’#or ’a#šš},#d&â€
+Th¤uªa
+
+Epoch  3 / 20, Training Step  3700 / 1000000 , Training Accuracy =  19.53125 
+-----------------------------------------------
+Generated text:  S©V¯Z’.Z.
+ ª ïor to t¯e ï¯iZ, @
+
+Epoch  3 / 20, Training Step  3800 / 1000000 , Training Accuracy =  19.34375 
+-----------------------------------------------
+Generated text:  Wook on
+©
+ 
+© ïeath ïor to
+©&&&
+
+Epoch  3 / 20, Training Step  3900 / 1000000 , Training Accuracy =  18.9375 
+-----------------------------------------------
+Generated text:  °Î±Î¹Ïm€á_(Îm€Lá¿D ¥, ¯n$w¯©
+ 
+
+
+Epoch  3 / 20, Training Step  4000 / 1000000 , Training Accuracy =  19.578125 
+-----------------------------------------------
+Generated text:  H’ïb#% of#â€
+at ïis ï©t€¦#â7Z]
+
+Epoch  3 / 20, Training Step  4100 / 1000000 , Training Accuracy =  18.921875 
+-----------------------------------------------
+Generated text:  pr¯aZe,
+thZon“p’uš,# @¤diffZZZ$
+
+Epoch  3 / 20, Training Step  4200 / 1000000 , Training Accuracy =  19.390625 
+-----------------------------------------------
+Generated text:  ¯s,# w¤viv¤l¥ZgZoZs._« w¯ïd b¢Z
+
+Epoch  3 / 20, Training Step  4300 / 1000000 , Training Accuracy =  19.515625 
+-----------------------------------------------
+Generated text:  Di& T¤u t¯’u#ly¯s,# ai=.âm «y
+
+Epoch  3 / 20, Training Step  4400 / 1000000 , Training Accuracy =  18.6875 
+-----------------------------------------------
+Generated text:  ï’nos“%,##&
+ïZiZsZaZs ïuZs#s,&
+
+Epoch  3 / 20, Training Step  4500 / 1000000 , Training Accuracy =  19.1875 
+-----------------------------------------------
+Generated text:  9: _ï“th€te seen,
+s¤id on
+© ï¤ï
+
+Epoch  3 / 20, Training Step  4600 / 1000000 , Training Accuracy =  19.015625 
+-----------------------------------------------
+Generated text:  ƒï ïutuZe of#â$
+¤ndue in
+ï© t¯
+
+Epoch  3 / 20, Training Step  4700 / 1000000 , Training Accuracy =  18.703125 
+-----------------------------------------------
+Generated text:  Ã¦=©
+ 
+© ïeet wh¤terZ¤xZZ% Ã†ª%
+
+Epoch  3 / 20, Training Step  4800 / 1000000 , Training Accuracy =  19.546875 
+-----------------------------------------------
+Generated text:  ?
+Whil# Asi©Z¤x wa# ï¤ll¤¥â€™Ze
+
+Epoch  3 / 20, Training Step  4900 / 1000000 , Training Accuracy =  18.625 
+-----------------------------------------------
+Generated text:  ƒÎ&Îºá½´,
+ &
+whªt’¤n#išZer.â71#
+
+Epoch  3 / 20, Training Step  5000 / 1000000 , Training Accuracy =  19.15625 
+-----------------------------------------------
+Generated text:  f€€™mZs’acienšâ5™
+ 
+ 
+ 
+©
+©c¯¯v
+
+Epoch  3 / 20, Training Step  5100 / 1000000 , Training Accuracy =  19.0 
+-----------------------------------------------
+Generated text:  ¯cte,#rZa$
+IVI& IV,
+©
+©h¦n hZa
+
+Epoch  3 / 20, Training Step  5200 / 1000000 , Training Accuracy =  19.046875 
+-----------------------------------------------
+Generated text:  ]
+  ©¥ateZis naZ=so©
+SuZ# LeZÃb
+
+Epoch  3 / 20, Training Step  5300 / 1000000 , Training Accuracy =  19.140625 
+-----------------------------------------------
+Generated text:  Sh¤x ï@ïtriumZ._. [.44ï-361€=
+ 
+
+Epoch  3 / 20, Training Step  5400 / 1000000 , Training Accuracy =  19.5 
+-----------------------------------------------
+Generated text:  l©
+© ïut,Zrial,
+  wiZeZ#Zo=h¯lÃ
+
+Epoch  3 / 20, Training Step  5500 / 1000000 , Training Accuracy =  18.390625 
+-----------------------------------------------
+Generated text:  W«. In ©¥e,
+ 
+ 
+©iZine,
+©¤ton w
+
+Epoch  3 / 20, Training Step  5600 / 1000000 , Training Accuracy =  19.046875 
+-----------------------------------------------
+Generated text:  „ÏuÏ¥&
+ 
+[VI©.4&
+«V wiZeZš=_
+«Z
+
+Epoch  3 / 20, Training Step  5700 / 1000000 , Training Accuracy =  18.6875 
+-----------------------------------------------
+Generated text:  y ïomeZš,#©
+
+
+
+«k f¯rZeZe, its
+
+
+Epoch  3 / 20, Training Step  5800 / 1000000 , Training Accuracy =  19.390625 
+-----------------------------------------------
+Generated text:  ™]©
+V.I:&& &
+ª¤Zeper€‘adesZ¤x, 
+
+Epoch  3 / 20, Training Step  5900 / 1000000 , Training Accuracy =  18.859375 
+-----------------------------------------------
+Generated text:  ‘eches oZas#s are
+©© @.…1 @@ÄKA
+
+Epoch  3 / 20, Training Step  6000 / 1000000 , Training Accuracy =  19.265625 
+-----------------------------------------------
+Generated text:  0¥Î¿#Záa.]
+
+ ïacc¯Za.]© V¯s._-«
+
+Epoch  3 / 20, Training Step  6100 / 1000000 , Training Accuracy =  19.390625 
+-----------------------------------------------
+Generated text:  ²Ï@¢,ïâ€™#&
+
+¤o©# E©¥p’l¤$ ªail
+
+Epoch  3 / 20, Training Step  6200 / 1000000 , Training Accuracy =  19.625 
+-----------------------------------------------
+Generated text:  #27Zo““’aZ.â€™
+
+«kaZ[8]ZesZs,& 
+
+Epoch  3 / 20, Training Step  6300 / 1000000 , Training Accuracy =  19.21875 
+-----------------------------------------------
+Generated text:  ¼@¥ïGr¯e
+  ¥iZ=s
+ 
+ïelaZor, @,
+
+
+Epoch  3 / 20, Training Step  6400 / 1000000 , Training Accuracy =  19.78125 
+-----------------------------------------------
+Generated text:  6:
+ïl&
+
+gšt¯ndany,«, to th¯¯ZšZ
+
+Epoch  3 / 20, Training Step  6500 / 1000000 , Training Accuracy =  19.296875 
+-----------------------------------------------
+Generated text:  anZeZe ïel’in“fel.]
+   
+©ªv¦Zal
+
+Epoch  3 / 20, Training Step  6600 / 1000000 , Training Accuracy =  19.03125 
+-----------------------------------------------
+Generated text:  De© © w¯re# of t¯€tor,
+ 
+  whom
+
+Epoch  3 / 20, Training Step  6700 / 1000000 , Training Accuracy =  19.640625 
+-----------------------------------------------
+Generated text:  zy
+  ïuš#--to sha¥p n¤&&&  ¥,
+ 
+
+Epoch  3 / 20, Training Step  6800 / 1000000 , Training Accuracy =  18.8125 
+-----------------------------------------------
+Generated text:  †agZiZ=.
+«u#1&  1: ï.A be¯ow,
+a
+
+Epoch  3 / 20, Training Step  6900 / 1000000 , Training Accuracy =  19.234375 
+-----------------------------------------------
+Generated text:  Qu=stilZo©
+  T¤pherâ2)€])K
+«.ï&
+
+Epoch  3 / 20, Training Step  7000 / 1000000 , Training Accuracy =  19.5 
+-----------------------------------------------
+Generated text:  ›ÎµZ(’ÏZ’._)
+ï¤=â€œ’#rivZsâ¦â€
+
+Epoch  3 / 20, Training Step  7100 / 1000000 , Training Accuracy =  18.453125 
+-----------------------------------------------
+Generated text:  Ï‚ f€$Äe©#@@g)«[584]«_ tears
+to
+
+Epoch  3 / 20, Training Step  7200 / 1000000 , Training Accuracy =  19.375 
+-----------------------------------------------
+Generated text:  …á½mÎ¿Îs ’r’cšošZuZ#â¥ ©Z&©© L
+
+Epoch  3 / 20, Training Step  7300 / 1000000 , Training Accuracy =  19.015625 
+-----------------------------------------------
+Generated text:  Ze“teZ$Z@¢#s#á€™©©âÄ«.ï:
+
+
+«un
+
+Epoch  3 / 20, Training Step  7400 / 1000000 , Training Accuracy =  19.09375 
+-----------------------------------------------
+Generated text:  ] as&©II_¤’’TpZ.%© Ena$©ZaZsZos
+
+Epoch  3 / 20, Training Step  7500 / 1000000 , Training Accuracy =  19.265625 
+-----------------------------------------------
+Generated text:  ™] __©iš=Gušable$]
+V.IV Forr’Z’
+
+Epoch  3 / 20, Training Step  7600 / 1000000 , Training Accuracy =  19.53125 
+-----------------------------------------------
+Generated text:  ceZ¤s, an e©ec’¯agZity,« w¤&
+
+©
+
+Epoch  3 / 20, Training Step  7700 / 1000000 , Training Accuracy =  19.390625 
+-----------------------------------------------
+Generated text:  ity of#â@p€siZ=. T¤ll thine,&&
+
+
+Epoch  3 / 20, Training Step  7800 / 1000000 , Training Accuracy =  19.609375 
+-----------------------------------------------
+Generated text:   aZricšš, @,
+ 
+© un#&
+ 
+
+ª¤i#.&
+
+Epoch  3 / 20, Training Step  7900 / 1000000 , Training Accuracy =  19.453125 
+-----------------------------------------------
+Generated text:  Ce#ni% ordiZes.&«#š.  ¤lieZedZy
+
+Epoch  3 / 20, Training Step  8000 / 1000000 , Training Accuracy =  18.921875 
+-----------------------------------------------
+Generated text:  ´ïipZos¢[& Thun peZ©© S“yl&,
+ ¥
+
+Epoch  3 / 20, Training Step  8100 / 1000000 , Training Accuracy =  19.046875 
+-----------------------------------------------
+Generated text:  8ï toZes ©riZetoZoZes ïor#¥,ZyZ
+
+Epoch  3 / 20, Training Step  8200 / 1000000 , Training Accuracy =  19.5 
+-----------------------------------------------
+Generated text:  :†ïš, © ïoš.¥&ZI areZšZes,
+©
+ ª
+
+Epoch  3 / 20, Training Step  8300 / 1000000 , Training Accuracy =  19.453125 
+-----------------------------------------------
+Generated text:  ™]©
+« is
+© live ï©© No
+mš en#ru
+
+Epoch  3 / 20, Training Step  8400 / 1000000 , Training Accuracy =  19.421875 
+-----------------------------------------------
+Generated text:  ”Î·&Z&
+ ¥-32216] in’a$tZ& T¤o w
+
+Epoch  3 / 20, Training Step  8500 / 1000000 , Training Accuracy =  19.109375 
+-----------------------------------------------
+Generated text:  joices,«rinu’teZ© ï© ©n#tolZ’d’
+
+Epoch  3 / 20, Training Step  8600 / 1000000 , Training Accuracy =  19.375 
+-----------------------------------------------
+Generated text:  *ï¤p’r•¤mâ$â™
+«oon cr¯agive © h
+
+Epoch  3 / 20, Training Step  8700 / 1000000 , Training Accuracy =  19.375 
+-----------------------------------------------
+Generated text:  M“ïiZodZa@Zs ¤y ï¤d’agaZum,
+   
+
+Epoch  3 / 20, Training Step  8800 / 1000000 , Training Accuracy =  19.53125 
+-----------------------------------------------
+Generated text:  ¯©© Ac##©¤,Zidonia hšZeZeZs an 
+
+Epoch  3 / 20, Training Step  8900 / 1000000 , Training Accuracy =  19.4375 
+-----------------------------------------------
+Generated text:  ¶teZes’os, w¯Zves ©  c’rZos an&
+
+Epoch  3 / 20, Training Step  9000 / 1000000 , Training Accuracy =  19.40625 
+-----------------------------------------------
+Generated text:  ï aZstrol= I“š.
+
+¤Z’š’aZ’Z’€d=Z
+
+Epoch  3 / 20, Training Step  9100 / 1000000 , Training Accuracy =  19.515625 
+-----------------------------------------------
+Generated text:  1]
+«©te t¯reZal caZ=©©©©pended 
+
+Epoch  3 / 20, Training Step  9200 / 1000000 , Training Accuracy =  19.40625 
+-----------------------------------------------
+Generated text:  vedZy,«,
+ ªer& ïo&) {Bo¯’d’ZaZs
+
+Epoch  3 / 20, Training Step  9300 / 1000000 , Training Accuracy =  19.0 
+-----------------------------------------------
+Generated text:  ¸á½¼Ï'Î& 2&Zadus,â& [] ¤r& *B•E
+
+Epoch  3 / 20, Training Step  9400 / 1000000 , Training Accuracy =  19.140625 
+-----------------------------------------------
+Generated text:  !â€š•N¤c’taZuZ¥aZum %u#ring
+ï© 
+
+Epoch  3 / 20, Training Step  9500 / 1000000 , Training Accuracy =  19.125 
+-----------------------------------------------
+Generated text:  Sho˜e& Th¤s I @geZabe.$,&«&    
+
+Epoch  3 / 20, Training Step  9600 / 1000000 , Training Accuracy =  19.515625 
+-----------------------------------------------
+Generated text:  ¨, ïu#doulZ«. As heZï,«Zs,Z Äcc
+
+Epoch  3 / 20, Training Step  9700 / 1000000 , Training Accuracy =  19.4375 
+-----------------------------------------------
+Generated text:  ¥ïomâ€™s
+   ªas“us#,
+ ªarZ’šd’u
+
+Epoch  3 / 20, Training Step  9800 / 1000000 , Training Accuracy =  19.046875 
+-----------------------------------------------
+Generated text:  C¯p’#sus,«,&&
+
+1.E, š, @ZgisZs’
+
+Epoch  3 / 20, Training Step  9900 / 1000000 , Training Accuracy =  19.28125 
+-----------------------------------------------
+Generated text:  VeZeZs aZreZšZsZal ’“citZeZ%Zax
+
+Epoch  3 / 20, Training Step  10000 / 1000000 , Training Accuracy =  19.265625 
+-----------------------------------------------
+Generated text:  g theišZineZeZu=,
+   
+ 
+© vš˜%s
+
+Epoch  3 / 20, Training Step  10100 / 1000000 , Training Accuracy =  19.765625 
+-----------------------------------------------
+Generated text:  g€d.
+T¤Z’šZa,
+ ¤&
+ïit’aler.]
+  
+
+Epoch  3 / 20, Training Step  10200 / 1000000 , Training Accuracy =  19.5625 
+-----------------------------------------------
+Generated text:  © © thisZoness.
+
+«tori’Z’ZÃ¦.Z,
+
+Epoch  3 / 20, Training Step  10300 / 1000000 , Training Accuracy =  18.984375 
+-----------------------------------------------
+Generated text:  «tZethou#ds, anopes theZat€resZ
+
+Epoch  3 / 20, Training Step  10400 / 1000000 , Training Accuracy =  19.203125 
+-----------------------------------------------
+Generated text:  6. ©r& oZdanZ’l use than
+perZep
+
+Epoch  3 / 20, Training Step  10500 / 1000000 , Training Accuracy =  19.703125 
+-----------------------------------------------
+Generated text:  …q•ame t¯res,
+© was
+© su©¥v#rZ¯
+
+Epoch  3 / 20, Training Step  10600 / 1000000 , Training Accuracy =  19.5625 
+-----------------------------------------------
+Generated text:  ƒÎºÎ#ïá¿¦Î@Î±á½· ï¯a$â™ â¼© whi
+
+Epoch  3 / 20, Training Step  10700 / 1000000 , Training Accuracy =  19.359375 
+-----------------------------------------------
+Generated text:  ? ¢ZveZsZy apasZ%mits€n¢ w’lZ’#
+
+Epoch  3 / 20, Training Step  10800 / 1000000 , Training Accuracy =  19.265625 
+-----------------------------------------------
+Generated text:  ‚¥Î¿Ï$¼µªNá¿s,â&
+ 
+whi# speZds 
+
+Epoch  3 / 20, Training Step  10900 / 1000000 , Training Accuracy =  19.453125 
+-----------------------------------------------
+Generated text:  ,Zy w¯rZ,
+©
+h’r# yeldeZs arosZi
+
+Epoch  3 / 20, Training Step  11000 / 1000000 , Training Accuracy =  19.625 
+-----------------------------------------------
+Generated text:  atZeZeZe ¥oï ï©tirZutššZ’“tumZ’
+
+Epoch  3 / 20, Training Step  11100 / 1000000 , Training Accuracy =  19.078125 
+-----------------------------------------------
+Generated text:  › to
+brZetibl€$ ©Z=D. A“# or#,#
+
+Epoch  3 / 20, Training Step  11200 / 1000000 , Training Accuracy =  19.578125 
+-----------------------------------------------
+Generated text:  '©
+
+
+«¤&& They#s’opiZe, @@p¯ZÃ¦
+
+Epoch  3 / 20, Training Step  11300 / 1000000 , Training Accuracy =  19.296875 
+-----------------------------------------------
+Generated text:  9.&&& Th cor# m¤chedic th€t seZ
+
+Epoch  3 / 20, Training Step  11400 / 1000000 , Training Accuracy =  19.828125 
+-----------------------------------------------
+Generated text:  Erecšd’ugies t¯ess ©r&ZeformsZa
+
+Epoch  3 / 20, Training Step  11500 / 1000000 , Training Accuracy =  19.40625 
+-----------------------------------------------
+Generated text:  Ro¤“t._
+
+© on#â&& IZatiZ=ZyZoni
+
+Epoch  3 / 20, Training Step  11600 / 1000000 , Training Accuracy =  19.09375 
+-----------------------------------------------
+Generated text:  ch¯y,Zen$]
+
+¥.X t« Ätl¯medes,# 
+
+Epoch  3 / 20, Training Step  11700 / 1000000 , Training Accuracy =  19.578125 
+-----------------------------------------------
+Generated text:  To tr¤y aZvidara, oZa#
+  witZoš
+
+Epoch  3 / 20, Training Step  11800 / 1000000 , Training Accuracy =  19.0625 
+-----------------------------------------------
+Generated text:  7.& TšZec’a$ ©¯msasZ¤s, tZeZ“tZ
+
+Epoch  3 / 20, Training Step  11900 / 1000000 , Training Accuracy =  19.1875 
+-----------------------------------------------
+Generated text:  µÎ»áµ? Î™_) Â¥O¢(p.â€™]
+
+
+© ïš©
+
+Epoch  4 / 20, Training Step  0 / 1000000 , Training Accuracy =  18.53125 
+-----------------------------------------------
+Generated text:  ™& Cly€n# oZ#s’as,[1& Ä23.
+“eZi
+
+Epoch  4 / 20, Training Step  100 / 1000000 , Training Accuracy =  19.15625 
+-----------------------------------------------
+Generated text:  1Z“’asias %ot¯Z=Zs on# ïšï-foun
+
+Epoch  4 / 20, Training Step  200 / 1000000 , Training Accuracy =  19.765625 
+-----------------------------------------------
+Generated text:  qu¯rZaZa.¥Bot p’s’arsusZy,#&Z o
+
+Epoch  4 / 20, Training Step  300 / 1000000 , Training Accuracy =  18.890625 
+-----------------------------------------------
+Generated text:  «toZs.] ¤y
+her#gethZ%salis saZe
+
+Epoch  4 / 20, Training Step  400 / 1000000 , Training Accuracy =  18.859375 
+-----------------------------------------------
+Generated text:  M“toÃ$ ¤ace,Zoš ï¤dis, thanZo“Z
+
+Epoch  4 / 20, Training Step  500 / 1000000 , Training Accuracy =  19.375 
+-----------------------------------------------
+Generated text:  ce t¤&â€$ ¤lamZeZ.
+
+
+¤d’ZeZes 
+
+Epoch  4 / 20, Training Step  600 / 1000000 , Training Accuracy =  19.421875 
+-----------------------------------------------
+Generated text:  ’ast€¦Zat“u#. C¤riZš[45]&
+I.V F
+
+Epoch  4 / 20, Training Step  700 / 1000000 , Training Accuracy =  19.46875 
+-----------------------------------------------
+Generated text:  Ã†ginusZ¤siZÃ¦&¥ZaxiZ For
+an&
+ 
+
+Epoch  4 / 20, Training Step  800 / 1000000 , Training Accuracy =  18.921875 
+-----------------------------------------------
+Generated text:  (ïat¦l’hZ$€$ «hZosZÃi¢ gZeZZx w
+
+Epoch  4 / 20, Training Step  900 / 1000000 , Training Accuracy =  19.796875 
+-----------------------------------------------
+Generated text:  Ïw&
+   ªus, toZan¥©«, @p€@y of 
+
+Epoch  4 / 20, Training Step  1000 / 1000000 , Training Accuracy =  18.90625 
+-----------------------------------------------
+Generated text:  ¶tes ©restoš,&& N¤s ¤vinZi=ZaZs
+
+Epoch  4 / 20, Training Step  1100 / 1000000 , Training Accuracy =  19.140625 
+-----------------------------------------------
+Generated text:  ¢¥pr&s,Z&Z’.&Z 1&Z&Zs
+©ZedÃ@p%l
+
+Epoch  4 / 20, Training Step  1200 / 1000000 , Training Accuracy =  19.9375 
+-----------------------------------------------
+Generated text:  ¹Ïu#¥-Ve@.¯. ©
+©ra$Cho$--& T$Mk
+
+Epoch  4 / 20, Training Step  1300 / 1000000 , Training Accuracy =  19.671875 
+-----------------------------------------------
+Generated text:  ¥á¿†%Ïš.
+«oZ&¥Îµ ancieZed that 
+
+Epoch  4 / 20, Training Step  1400 / 1000000 , Training Accuracy =  19.546875 
+-----------------------------------------------
+Generated text:  9.& &
+
+
+  ©Z&
+
+&
+& Teencl#d oZ©
+
+Epoch  4 / 20, Training Step  1500 / 1000000 , Training Accuracy =  19.734375 
+-----------------------------------------------
+Generated text:  r©â¦#
+ 
+  ª¤d’Zax]©© V. 1¥&&_
+&
+
+Epoch  4 / 20, Training Step  1600 / 1000000 , Training Accuracy =  18.8125 
+-----------------------------------------------
+Generated text:  ¨. ª.&&
+ 
+& ïig’ZZ&Z.
+ xp¯ppin%
+
+Epoch  4 / 20, Training Step  1700 / 1000000 , Training Accuracy =  19.9375 
+-----------------------------------------------
+Generated text:  3#&
+© ï¤atherZy Asc’r’$$¥. ¥p’Z
+
+Epoch  4 / 20, Training Step  1800 / 1000000 , Training Accuracy =  19.25 
+-----------------------------------------------
+Generated text:  ƒÏk# ’nom&â€˜a¥€ZithZ’Zes$
+©
+ ª
+
+Epoch  4 / 20, Training Step  1900 / 1000000 , Training Accuracy =  19.40625 
+-----------------------------------------------
+Generated text:  ZepellZ¤daZus, @@g.Z:
+-  t¯emZ¤
+
+Epoch  4 / 20, Training Step  2000 / 1000000 , Training Accuracy =  19.96875 
+-----------------------------------------------
+Generated text:  ? Whyªeb#,
+to ©w€¥gr•adiZ= ¢lam
+
+Epoch  4 / 20, Training Step  2100 / 1000000 , Training Accuracy =  19.109375 
+-----------------------------------------------
+Generated text:  ¼á¿w,& ©Zell¯ZZy€¦Z’dZ¤x,« whi#
+
+Epoch  4 / 20, Training Step  2200 / 1000000 , Training Accuracy =  19.859375 
+-----------------------------------------------
+Generated text:  119: â¥œwh¦ ªeZeZ’dis,
+©
+th#& A
+
+Epoch  4 / 20, Training Step  2300 / 1000000 , Training Accuracy =  18.984375 
+-----------------------------------------------
+Generated text:  RE HAN¸¯’Î.-¯ Woï##Zstiv$ZagZZe
+
+Epoch  4 / 20, Training Step  2400 / 1000000 , Training Accuracy =  19.5 
+-----------------------------------------------
+Generated text:  :
+  ªor&
+   â€˜ ï&&Z.ï 79:
+â¥œa
+
+Epoch  4 / 20, Training Step  2500 / 1000000 , Training Accuracy =  19.0625 
+-----------------------------------------------
+Generated text:  7¥# if signs of t¯essZaZaZ SeZv
+
+Epoch  4 / 20, Training Step  2600 / 1000000 , Training Accuracy =  19.734375 
+-----------------------------------------------
+Generated text:  ’á¿‡Î½Î±¯, áZ’’’á½jÎµZÎaÎµ&
+«V.
+
+Epoch  4 / 20, Training Step  2700 / 1000000 , Training Accuracy =  19.3125 
+-----------------------------------------------
+Generated text:  ï ©Zetono¢Zolo“piZetZes,
+waZZor
+
+Epoch  4 / 20, Training Step  2800 / 1000000 , Training Accuracy =  18.90625 
+-----------------------------------------------
+Generated text:  ghÄ=TA©#©
+
+& Not¤vile to @'
+©&©
+
+Epoch  4 / 20, Training Step  2900 / 1000000 , Training Accuracy =  19.734375 
+-----------------------------------------------
+Generated text:  xZeps._--Verš. 51.
+  T«pho«Zoni
+
+Epoch  4 / 20, Training Step  3000 / 1000000 , Training Accuracy =  19.046875 
+-----------------------------------------------
+Generated text:  ï © u#dead,
+w¯nt’Zed,
+ 
+ –»Îµá½
+
+Epoch  4 / 20, Training Step  3100 / 1000000 , Training Accuracy =  19.4375 
+-----------------------------------------------
+Generated text:  :
+
+
+Bš«h,
+@r#Zes, wiZ=Z&
+¥V© Ao
+
+Epoch  4 / 20, Training Step  3200 / 1000000 , Training Accuracy =  19.390625 
+-----------------------------------------------
+Generated text:  3# ©
+w¯© tho#
+w’rmZe“pha$ZsZy i
+
+Epoch  4 / 20, Training Step  3300 / 1000000 , Training Accuracy =  19.671875 
+-----------------------------------------------
+Generated text:  ¥& A“mia
+  ©iZ=m©s
+alZs¯š, @@Ï
+
+Epoch  4 / 20, Training Step  3400 / 1000000 , Training Accuracy =  19.515625 
+-----------------------------------------------
+Generated text:  Be¯c AtZrZ’diuaZors oZ#, @.D&Zj
+
+Epoch  4 / 20, Training Step  3500 / 1000000 , Training Accuracy =  20.0 
+-----------------------------------------------
+Generated text:  &©
+«¤d’one
+©¥ver, @.©.&Z¤&Z. ¢ï
+
+Epoch  4 / 20, Training Step  3600 / 1000000 , Training Accuracy =  19.21875 
+-----------------------------------------------
+Generated text:  qayZ’dZZaZu“š maynes aZrZ’šm-Ge
+
+Epoch  4 / 20, Training Step  3700 / 1000000 , Training Accuracy =  19.375 
+-----------------------------------------------
+Generated text:  «Zan wasZess, @p€s’Zep ¯iZiZ=Z.
+
+Epoch  4 / 20, Training Step  3800 / 1000000 , Training Accuracy =  19.125 
+-----------------------------------------------
+Generated text:  ?
+WZeving’Z=
+ ¤f&Z$
+
+©
+ 
+© ïeeZ
+
+Epoch  4 / 20, Training Step  3900 / 1000000 , Training Accuracy =  19.5 
+-----------------------------------------------
+Generated text:  ï©
+
+
+«u#now,
+  wherlZ« are
+ ªus
+
+Epoch  4 / 20, Training Step  4000 / 1000000 , Training Accuracy =  19.84375 
+-----------------------------------------------
+Generated text:  9:€e•áZÎ±’Î¾Î±ÎZ¯d’á€™Z’’dipha,
+
+Epoch  4 / 20, Training Step  4100 / 1000000 , Training Accuracy =  19.46875 
+-----------------------------------------------
+Generated text:  ½ÎuÎ¥ZeZ“ZšZ [Ever]
+I© @kZ«.ZI¤
+
+Epoch  4 / 20, Training Step  4200 / 1000000 , Training Accuracy =  19.375 
+-----------------------------------------------
+Generated text:  be#Z%thZ’Zic. Th# Ch’¤siÃ¦Zo$Zo
+
+Epoch  4 / 20, Training Step  4300 / 1000000 , Training Accuracy =  19.71875 
+-----------------------------------------------
+Generated text:  (f&ï  to ªeZ’duZ=. ¢,
+ ¤&
+ïiteZ
+
+Epoch  4 / 20, Training Step  4400 / 1000000 , Training Accuracy =  19.453125 
+-----------------------------------------------
+Generated text:  ›Îµá½Z’’’v«n, 59:Î& _N%thon’Zep
+
+Epoch  4 / 20, Training Step  4500 / 1000000 , Training Accuracy =  18.984375 
+-----------------------------------------------
+Generated text:  f€€=l¯aZes arouZdorZ¤x’Z% in th
+
+Epoch  4 / 20, Training Step  4600 / 1000000 , Training Accuracy =  19.1875 
+-----------------------------------------------
+Generated text:  GorªyZods._-¢-Ä2&
+
+
+  P¤o&&#&  
+
+Epoch  4 / 20, Training Step  4700 / 1000000 , Training Accuracy =  19.125 
+-----------------------------------------------
+Generated text:  keZess © ïnamZÃZ=s’Z’Zan she€ke
+
+Epoch  4 / 20, Training Step  4800 / 1000000 , Training Accuracy =  19.375 
+-----------------------------------------------
+Generated text:  XI.&&&«  fros#ZsZ¤%€ls ïat¦šZaZ
+
+Epoch  4 / 20, Training Step  4900 / 1000000 , Training Accuracy =  19.59375 
+-----------------------------------------------
+Generated text:  qayZdeZ%Z¤sZš,[ª€™ of
+thZ¯per#Z
+
+Epoch  4 / 20, Training Step  5000 / 1000000 , Training Accuracy =  19.40625 
+-----------------------------------------------
+Generated text:  ªteZ†sta,
+© cr¯ineZ¯ZÃ¼s,
+thy
+d
+
+Epoch  4 / 20, Training Step  5100 / 1000000 , Training Accuracy =  19.265625 
+-----------------------------------------------
+Generated text:  µ# (Makiad,
+t«nts’an ïexerbZoZs
+
+Epoch  4 / 20, Training Step  5200 / 1000000 , Training Accuracy =  19.609375 
+-----------------------------------------------
+Generated text:  --V¯s._
+«II.  I“#¯pous€¥,
+witch
+
+Epoch  4 / 20, Training Step  5300 / 1000000 , Training Accuracy =  19.765625 
+-----------------------------------------------
+Generated text:  YoÃ«]
+I“inZo=$&Z@-. ver.
+« t¯Zd
+
+Epoch  4 / 20, Training Step  5400 / 1000000 , Training Accuracy =  19.046875 
+-----------------------------------------------
+Generated text:  Ï‚ the
+“rons %and,
+   
+©â€œ#ª t
+
+Epoch  4 / 20, Training Step  5500 / 1000000 , Training Accuracy =  19.421875 
+-----------------------------------------------
+Generated text:  MirÄD’o#s’y (A “of. Teres of#â€
+
+Epoch  4 / 20, Training Step  5600 / 1000000 , Training Accuracy =  19.296875 
+-----------------------------------------------
+Generated text:  & A“#t’od€¦.â™ StickZ%Z¥,
+whª#
+
+
+Epoch  4 / 20, Training Step  5700 / 1000000 , Training Accuracy =  18.921875 
+-----------------------------------------------
+Generated text:  69.
+
+T¤onniš &©©A“co#,
+©¤&to   
+
+Epoch  4 / 20, Training Step  5800 / 1000000 , Training Accuracy =  18.96875 
+-----------------------------------------------
+Generated text:  ‰. &Zs woZas,[75-Zs ©h#nd“e, p’
+
+Epoch  4 / 20, Training Step  5900 / 1000000 , Training Accuracy =  19.28125 
+-----------------------------------------------
+Generated text:  zonešsZis. H¤lp’’aZa. In thiche
+
+Epoch  4 / 20, Training Step  6000 / 1000000 , Training Accuracy =  19.796875 
+-----------------------------------------------
+Generated text:  µ,#â$$&I&
+©
+•¤ZguZš._-]Z¤.¥&Z 
+
+Epoch  4 / 20, Training Step  6100 / 1000000 , Training Accuracy =  19.4375 
+-----------------------------------------------
+Generated text:  ¹Ï‚ ancirt€™â¥# %lyZemeZ’dšZesZ
+
+Epoch  4 / 20, Training Step  6200 / 1000000 , Training Accuracy =  19.34375 
+-----------------------------------------------
+Generated text:  '©
+V©Ino© ©hou m¢ZasZasZÃ†Z%xZe
+
+Epoch  4 / 20, Training Step  6300 / 1000000 , Training Accuracy =  19.4375 
+-----------------------------------------------
+Generated text:  -V¤&¥ZZ’Zs in Ar’aK€ssZ¥Z: My€š
+
+Epoch  4 / 20, Training Step  6400 / 1000000 , Training Accuracy =  19.359375 
+-----------------------------------------------
+Generated text:  23& 232.]
+
+¯ a sZotesZaZ.¥, « i
+
+Epoch  4 / 20, Training Step  6500 / 1000000 , Training Accuracy =  19.25 
+-----------------------------------------------
+Generated text:  zed
+© wateZâ™s i¢#-tišg,
+aZr¯ad
+
+Epoch  4 / 20, Training Step  6600 / 1000000 , Training Accuracy =  19.484375 
+-----------------------------------------------
+Generated text:  5© Thidamuš,ZetsZs ©ZelveuZ#[19
+
+Epoch  4 / 20, Training Step  6700 / 1000000 , Training Accuracy =  19.09375 
+-----------------------------------------------
+Generated text:  ˆ.
+ ¤&#42/_€“.%-3&
+_&riput«-Zo%
+
+Epoch  4 / 20, Training Step  6800 / 1000000 , Training Accuracy =  19.609375 
+-----------------------------------------------
+Generated text:  z=,
+ 
+ª¤risZ%ZšZ& 3. T« of ©&© 
+
+Epoch  4 / 20, Training Step  6900 / 1000000 , Training Accuracy =  18.890625 
+-----------------------------------------------
+Generated text:  Hantes saiZ& ToZaduZ=CÅdes;# t«
+
+Epoch  4 / 20, Training Step  7000 / 1000000 , Training Accuracy =  19.484375 
+-----------------------------------------------
+Generated text:   Î&&Z 11¥. Interlipped€Z¥phisi%
+
+Epoch  4 / 20, Training Step  7100 / 1000000 , Training Accuracy =  19.46875 
+-----------------------------------------------
+Generated text:  ™s l¯at€d¯s, ªatZevels ïounš, t
+
+Epoch  4 / 20, Training Step  7200 / 1000000 , Training Accuracy =  19.453125 
+-----------------------------------------------
+Generated text:  ,
+witZou“sis.Z¥.]¯
+
+ WARRA Y&
+B
+
+Epoch  4 / 20, Training Step  7300 / 1000000 , Training Accuracy =  19.203125 
+-----------------------------------------------
+Generated text:  Qyph}Zy w«Zeses’oZi%, P’o& tZ& 
+
+Epoch  4 / 20, Training Step  7400 / 1000000 , Training Accuracy =  19.265625 
+-----------------------------------------------
+Generated text:  ¸«Zines._-]¥¥.$ ¤o on wšlfZuš. 
+
+Epoch  4 / 20, Training Step  7500 / 1000000 , Training Accuracy =  19.546875 
+-----------------------------------------------
+Generated text:  g€vZaZZ’Z%pZox,
+ïoseZer. To
+ 
+s
+
+Epoch  4 / 20, Training Step  7600 / 1000000 , Training Accuracy =  19.5 
+-----------------------------------------------
+Generated text:  ²ïIVI&
+¤V II or#$â&ZotZint,«#to
+
+Epoch  4 / 20, Training Step  7700 / 1000000 , Training Accuracy =  19.3125 
+-----------------------------------------------
+Generated text:  B¯’dZess,Zes swimsZy&#&Z t«¯’Za
+
+Epoch  4 / 20, Training Step  7800 / 1000000 , Training Accuracy =  19.078125 
+-----------------------------------------------
+Generated text:  ´á½m
+d€em¯sZ’Z=
+stoni’$geZaZZsZ
+
+Epoch  4 / 20, Training Step  7900 / 1000000 , Training Accuracy =  19.828125 
+-----------------------------------------------
+Generated text:  & GšreeZb,
+ ªeZeZaZiZ ’ZeZ’d•e
+
+Epoch  4 / 20, Training Step  8000 / 1000000 , Training Accuracy =  19.71875 
+-----------------------------------------------
+Generated text:  #ï on#, ¥.&
+¤etrar %& ©Zy nexeZ
+
+Epoch  4 / 20, Training Step  8100 / 1000000 , Training Accuracy =  19.515625 
+-----------------------------------------------
+Generated text:  =© SeZerZ (alter ten’Z’nisZumZ 
+
+Epoch  4 / 20, Training Step  8200 / 1000000 , Training Accuracy =  19.40625 
+-----------------------------------------------
+Generated text:  ›on._-©  V¤&&ZbsoZ¥,ZaZÃ¦thZšZ%
+
+Epoch  4 / 20, Training Step  8300 / 1000000 , Training Accuracy =  19.390625 
+-----------------------------------------------
+Generated text:  : ¥p. 250-ª,]©
+V@I© weZ# ÄndedZ
+
+Epoch  4 / 20, Training Step  8400 / 1000000 , Training Accuracy =  19.765625 
+-----------------------------------------------
+Generated text:  ³Î&& NetZomi‘¤e,[& ïZo“._¯. Api
+
+Epoch  4 / 20, Training Step  8500 / 1000000 , Training Accuracy =  19.1875 
+-----------------------------------------------
+Generated text:  © Sem’oZiZ“tium, w¯sZZ’asZeZeZ’
+
+Epoch  4 / 20, Training Step  8600 / 1000000 , Training Accuracy =  18.84375 
+-----------------------------------------------
+Generated text:  «toZis’s wereZom t¯Za,Z«$ZistoZ
+
+Epoch  4 / 20, Training Step  8700 / 1000000 , Training Accuracy =  19.6875 
+-----------------------------------------------
+Generated text:  á¼¸’áu»’á¿¯á½9), Î&
+ 
+ 
+â˜˜V¥s&
+
+Epoch  4 / 20, Training Step  8800 / 1000000 , Training Accuracy =  19.875 
+-----------------------------------------------
+Generated text:  “=¢
+grZ¯š.ZedZa. ¢rišt€¦Zo“ZÃÄ=
+
+Epoch  4 / 20, Training Step  8900 / 1000000 , Training Accuracy =  19.796875 
+-----------------------------------------------
+Generated text:  Za$% &
+soZ¥D•o&t«,
+©¤& L¤y the 
+
+Epoch  4 / 20, Training Step  9000 / 1000000 , Training Accuracy =  19.46875 
+-----------------------------------------------
+Generated text:  undedZ%Z¤Zs.ZZsZeZ’lsZsZ¤% Com#
+
+Epoch  4 / 20, Training Step  9100 / 1000000 , Training Accuracy =  19.8125 
+-----------------------------------------------
+Generated text:  B¯e« n¢ of##
+f€=Cla$$, faZeZ#.
+
+Epoch  4 / 20, Training Step  9200 / 1000000 , Training Accuracy =  19.53125 
+-----------------------------------------------
+Generated text:  ™%& ©&
+©Zom ©
+ 
+ 
+  Asso& ¥o tr
+
+Epoch  4 / 20, Training Step  9300 / 1000000 , Training Accuracy =  20.15625 
+-----------------------------------------------
+Generated text:  ´áC’ÏD& X©©©. ª&Zvis, th«uªZad
+
+Epoch  4 / 20, Training Step  9400 / 1000000 , Training Accuracy =  20.15625 
+-----------------------------------------------
+Generated text:  ³ÎºÎ±á½·#½[ÏƒÏ½#&&Zjyctu, @ïgZo
+
+Epoch  4 / 20, Training Step  9500 / 1000000 , Training Accuracy =  19.5 
+-----------------------------------------------
+Generated text:  A“peZZ, @¢#@=&
+&
+©
+
+ 
+
+ A“c’ep’
+
+Epoch  4 / 20, Training Step  9600 / 1000000 , Training Accuracy =  19.90625 
+-----------------------------------------------
+Generated text:  €™]© ¥ouZs’Z’liaZumseZ’n%.] To 
+
+Epoch  4 / 20, Training Step  9700 / 1000000 , Training Accuracy =  20.0 
+-----------------------------------------------
+Generated text:  Î¹Î½,ZeZaZs arco,
+astoo her as
+
+Epoch  4 / 20, Training Step  9800 / 1000000 , Training Accuracy =  19.484375 
+-----------------------------------------------
+Generated text:  ¿Ï‚,
+«&
+¥ut witn”ZešsZy,# w¯Zes
+
+Epoch  4 / 20, Training Step  9900 / 1000000 , Training Accuracy =  19.390625 
+-----------------------------------------------
+Generated text:  AnZE P©ragoZa was t¯rZe,Ze$&© N
+
+Epoch  4 / 20, Training Step  10000 / 1000000 , Training Accuracy =  19.65625 
+-----------------------------------------------
+Generated text:  ´áu,â€
+
+T¤okin[“n © l#gorne © 
+
+Epoch  4 / 20, Training Step  10100 / 1000000 , Training Accuracy =  19.640625 
+-----------------------------------------------
+Generated text:  9:
+  _Bow¯ ªaZrs.
+ ¤ters€ne ©â¦
+
+Epoch  4 / 20, Training Step  10200 / 1000000 , Training Accuracy =  19.375 
+-----------------------------------------------
+Generated text:  Fo¤l to
+s›parineZ¥© ApeZ$¥an a 
+
+Epoch  4 / 20, Training Step  10300 / 1000000 , Training Accuracy =  20.328125 
+-----------------------------------------------
+Generated text:  ½³ÏmÎ½á½·’cym’sia.[Z“’haÃ¯Ã«, H
+
+Epoch  4 / 20, Training Step  10400 / 1000000 , Training Accuracy =  19.5625 
+-----------------------------------------------
+Generated text:  ©
+ ¤o had beethZ%sZo%
+of
+©il’Z’
+
+Epoch  4 / 20, Training Step  10500 / 1000000 , Training Accuracy =  19.734375 
+-----------------------------------------------
+Generated text:  s© theyZiZ$  ¥f& tš¤=©ZestZ’Z’d
+
+Epoch  4 / 20, Training Step  10600 / 1000000 , Training Accuracy =  19.671875 
+-----------------------------------------------
+Generated text:  Îm¯dZisZy aZros,
+when#âÄ™’’cend
+
+Epoch  4 / 20, Training Step  10700 / 1000000 , Training Accuracy =  19.546875 
+-----------------------------------------------
+Generated text:  71Z.%.&Zš spe¤#ded,##â€&
+  [III
+
+Epoch  4 / 20, Training Step  10800 / 1000000 , Training Accuracy =  18.796875 
+-----------------------------------------------
+Generated text:  ¯s’ates€Z%doZ¥Ä% © Namš, whil“
+
+Epoch  4 / 20, Training Step  10900 / 1000000 , Training Accuracy =  19.4375 
+-----------------------------------------------
+Generated text:  – ïeZ= Nax#.ª No ïouresheZsZ%,
+
+
+Epoch  4 / 20, Training Step  11000 / 1000000 , Training Accuracy =  19.625 
+-----------------------------------------------
+Generated text:  34&Z.%& Ojing
+”Z¥Ze¢ZaZZsZs @“t
+
+Epoch  4 / 20, Training Step  11100 / 1000000 , Training Accuracy =  19.859375 
+-----------------------------------------------
+Generated text:  ¥Î&
+ ¥. A,#â77##
+ M¤@CÏ,ZersZ’d
+
+Epoch  4 / 20, Training Step  11200 / 1000000 , Training Accuracy =  19.03125 
+-----------------------------------------------
+Generated text:  °¶’Zejos’uZsZaZs.$
+
+P¤rom’nus’Z
+
+Epoch  4 / 20, Training Step  11300 / 1000000 , Training Accuracy =  19.375 
+-----------------------------------------------
+Generated text:  ,#&ZišgZes (P’nates.] SZ¥L’-Yo#
+
+Epoch  4 / 20, Training Step  11400 / 1000000 , Training Accuracy =  19.328125 
+-----------------------------------------------
+Generated text:  quive$­ititeZbZšn’aZoZ% ¥noceuc
+
+Epoch  4 / 20, Training Step  11500 / 1000000 , Training Accuracy =  19.359375 
+-----------------------------------------------
+Generated text:  ˜to bo€Ä aZd•woZvišš._&
+©I Do¥t
+
+Epoch  4 / 20, Training Step  11600 / 1000000 , Training Accuracy =  19.21875 
+-----------------------------------------------
+Generated text:  wiZd And†’aZaZZsZaZiti]]
+
+IV[3#
+
+Epoch  4 / 20, Training Step  11700 / 1000000 , Training Accuracy =  19.546875 
+-----------------------------------------------
+Generated text:  E©IV##SZ] nuZs#d @%#cl¯s. TenZ%
+
+Epoch  4 / 20, Training Step  11800 / 1000000 , Training Accuracy =  19.390625 
+-----------------------------------------------
+Generated text:  ¨,#reduZed ©ZyZesZ’Zs]ZeZ’d, as
+
+Epoch  4 / 20, Training Step  11900 / 1000000 , Training Accuracy =  19.8125 
+-----------------------------------------------
+Generated text:  ¥poZ¥tou#
+ª@ptrayZeZ’die wašt
+ 
+
+Epoch  5 / 20, Training Step  0 / 1000000 , Training Accuracy =  18.671875 
+-----------------------------------------------
+Generated text:  ´©
+©
+©
+©#D#¤-&
+CON¢ HONK#¥&
+
+
+ª
+
+Epoch  5 / 20, Training Step  100 / 1000000 , Training Accuracy =  19.28125 
+-----------------------------------------------
+Generated text:  ¤’tilaâ¥. To thZ’nd
+w¦ves aZreZ
+
+Epoch  5 / 20, Training Step  200 / 1000000 , Training Accuracy =  19.375 
+-----------------------------------------------
+Generated text:  •á½) no ot¯erZa,Zy€=â€
+  ©ª& ©
+
+Epoch  5 / 20, Training Step  300 / 1000000 , Training Accuracy =  19.53125 
+-----------------------------------------------
+Generated text:  =©«Zep’le&,# Ät an old maZrZa,Z
+
+Epoch  5 / 20, Training Step  400 / 1000000 , Training Accuracy =  19.703125 
+-----------------------------------------------
+Generated text:  "#riZušliZedZi“tinu o“#ZeZ ¤len
+
+Epoch  5 / 20, Training Step  500 / 1000000 , Training Accuracy =  19.34375 
+-----------------------------------------------
+Generated text:  Ino, aZ“mÃ¦Za$&«,#&
+ïoth¨y,
+© c
+
+Epoch  5 / 20, Training Step  600 / 1000000 , Training Accuracy =  19.34375 
+-----------------------------------------------
+Generated text:  ’naZoZi¢, @@g,#Z#¦sZo$š¤’ia.â€r
+
+Epoch  5 / 20, Training Step  700 / 1000000 , Training Accuracy =  19.609375 
+-----------------------------------------------
+Generated text:  beetheus, @.CI. ¢I#.I ¤x&
+
+&©
+
+
+
+Epoch  5 / 20, Training Step  800 / 1000000 , Training Accuracy =  19.203125 
+-----------------------------------------------
+Generated text:  just seZ’Zer wermZ%#Zines. «is.
+
+Epoch  5 / 20, Training Step  900 / 1000000 , Training Accuracy =  19.25 
+-----------------------------------------------
+Generated text:  Cor#thZsZeZyZ% ïy€teZeZaZ% %aZc
+
+Epoch  5 / 20, Training Step  1000 / 1000000 , Training Accuracy =  19.84375 
+-----------------------------------------------
+Generated text:  Wor#,#nish€$Z© waten to b¯aZgsZ
+
+Epoch  5 / 20, Training Step  1100 / 1000000 , Training Accuracy =  19.671875 
+-----------------------------------------------
+Generated text:  UpoZd of##
+a moneZ% %¤x (ïa#kš.
+
+Epoch  5 / 20, Training Step  1200 / 1000000 , Training Accuracy =  18.953125 
+-----------------------------------------------
+Generated text:  F¯’t«, @Zgna.] felš, and,ZeZos 
+
+Epoch  5 / 20, Training Step  1300 / 1000000 , Training Accuracy =  19.03125 
+-----------------------------------------------
+Generated text:  Jovš, in“ocZ’ZšniaZ%, %ZorgZsZs
+
+Epoch  5 / 20, Training Step  1400 / 1000000 , Training Accuracy =  19.5 
+-----------------------------------------------
+Generated text:  person, oZa’rZZs.ZariZZ’aniZ._-
+
+Epoch  5 / 20, Training Step  1500 / 1000000 , Training Accuracy =  19.390625 
+-----------------------------------------------
+Generated text:  Some poeZs. ªo cšarut thZsZoZos
+
+Epoch  5 / 20, Training Step  1600 / 1000000 , Training Accuracy =  19.390625 
+-----------------------------------------------
+Generated text:  76]
+asks,Zat¯s, as toZeZâ¥&Z.  
+
+Epoch  5 / 20, Training Step  1700 / 1000000 , Training Accuracy =  19.671875 
+-----------------------------------------------
+Generated text:  XI EBESL#-& DAMA·TIOL. © @. ¯& 
+
+Epoch  5 / 20, Training Step  1800 / 1000000 , Training Accuracy =  19.65625 
+-----------------------------------------------
+Generated text:  j¯son ©or ”’dityZe,«lZiZ’ZeZen 
+
+Epoch  5 / 20, Training Step  1900 / 1000000 , Training Accuracy =  19.375 
+-----------------------------------------------
+Generated text:  ‘hin#Z& ¤ft weld ª¤xe,¯l,ZiZes!
+
+Epoch  5 / 20, Training Step  2000 / 1000000 , Training Accuracy =  20.015625 
+-----------------------------------------------
+Generated text:  2:€_¨¯e,[68.]]
+
+
+«ksans abounte
+
+Epoch  5 / 20, Training Step  2100 / 1000000 , Training Accuracy =  19.25 
+-----------------------------------------------
+Generated text:  Î& A.©
+ ¯ZeZ. H¤$,«,
+ªulZyrneZ
+
+Epoch  5 / 20, Training Step  2200 / 1000000 , Training Accuracy =  19.703125 
+-----------------------------------------------
+Generated text:  B¯’•ƒÎ$&, ¥Zo¨ alZs% Ä17€&
+ &  
+
+Epoch  5 / 20, Training Step  2300 / 1000000 , Training Accuracy =  19.453125 
+-----------------------------------------------
+Generated text:  What
+¥arZ’ZaZ&Zs,$&
+torne © waZ
+
+Epoch  5 / 20, Training Step  2400 / 1000000 , Training Accuracy =  19.0625 
+-----------------------------------------------
+Generated text:  [8]€*Zis._
+
+II .¥,
+ª¤l’oš @s ”-
+
+Epoch  5 / 20, Training Step  2500 / 1000000 , Training Accuracy =  19.5 
+-----------------------------------------------
+Generated text:  .&&Z Z. ¢rZad€s# of
+ 
+Att %, an
+
+Epoch  5 / 20, Training Step  2600 / 1000000 , Training Accuracy =  19.65625 
+-----------------------------------------------
+Generated text:  P¯©%ut to€& @n t¯ll’ZeptituZšZe
+
+Epoch  5 / 20, Training Step  2700 / 1000000 , Training Accuracy =  19.5 
+-----------------------------------------------
+Generated text:  Lac¤Ã$¢ tZoÄ=“s’ny,
+a “oZo,Z’mZ
+
+Epoch  5 / 20, Training Step  2800 / 1000000 , Training Accuracy =  19.671875 
+-----------------------------------------------
+Generated text:  m& An usivatus to ¨o&
+  thaš
+©â
+
+Epoch  5 / 20, Training Step  2900 / 1000000 , Training Accuracy =  19.078125 
+-----------------------------------------------
+Generated text:  ±á½ZÎ&  & & ªi’ZetZus,#
+with€r#
+
+Epoch  5 / 20, Training Step  3000 / 1000000 , Training Accuracy =  19.453125 
+-----------------------------------------------
+Generated text:  23& ©iZ=toZl.â8©«Zong’aZaZs,[11
+
+Epoch  5 / 20, Training Step  3100 / 1000000 , Training Accuracy =  19.34375 
+-----------------------------------------------
+Generated text:  ing ©¯y ¥.VeZor$catš_Z¥-¦%s€sZi
+
+Epoch  5 / 20, Training Step  3200 / 1000000 , Training Accuracy =  18.984375 
+-----------------------------------------------
+Generated text:  JunÃ“aZ“ZÃ¦Zas’us sZis,ZaZs, «&
+
+Epoch  5 / 20, Training Step  3300 / 1000000 , Training Accuracy =  19.0625 
+-----------------------------------------------
+Generated text:  Ze“ššsZes,
+wited ¨¥pr¯enZišZumâ
+
+Epoch  5 / 20, Training Step  3400 / 1000000 , Training Accuracy =  19.40625 
+-----------------------------------------------
+Generated text:  ª# @.©¯ra aZtyginusZes © wšent€
+
+Epoch  5 / 20, Training Step  3500 / 1000000 , Training Accuracy =  19.21875 
+-----------------------------------------------
+Generated text:  Ha$kZZ=¯s, @I, &Z. ªe#-G=©AR’c’
+
+Epoch  5 / 20, Training Step  3600 / 1000000 , Training Accuracy =  19.953125 
+-----------------------------------------------
+Generated text:  ButZoZ’Zestis © ©urr#fZ#$
+
+Trip
+
+Epoch  5 / 20, Training Step  3700 / 1000000 , Training Accuracy =  19.96875 
+-----------------------------------------------
+Generated text:  #11510.¥.] ¢ldaZ’s aZvirgZ’ri’u
+
+Epoch  5 / 20, Training Step  3800 / 1000000 , Training Accuracy =  19.453125 
+-----------------------------------------------
+Generated text:  °Î±¯Î’Îu#._&Z  _& ¤&© M“dorZan 
+
+Epoch  5 / 20, Training Step  3900 / 1000000 , Training Accuracy =  19.796875 
+-----------------------------------------------
+Generated text:  ¶Ï‚ZaZ_ïriÃ=&Zs’! &Zonian b¯štZ
+
+Epoch  5 / 20, Training Step  4000 / 1000000 , Training Accuracy =  19.828125 
+-----------------------------------------------
+Generated text:  *   ¥tream t¯Z=¯aZ¤c ¤eciZZgiaZ
+
+Epoch  5 / 20, Training Step  4100 / 1000000 , Training Accuracy =  19.46875 
+-----------------------------------------------
+Generated text:  „Äi]
+ ¤notes’mputed it iš toZ=s
+
+Epoch  5 / 20, Training Step  4200 / 1000000 , Training Accuracy =  19.65625 
+-----------------------------------------------
+Generated text:  °ÏáuÎ’ZÏá¯ZÏ
+Î¸ZÎ»ÏƒÎZ©’xcav$
+
+Epoch  5 / 20, Training Step  4300 / 1000000 , Training Accuracy =  19.46875 
+-----------------------------------------------
+Generated text:  #1165-61@Z=¥“,š.%&
+C%to’iZZ%san
+
+Epoch  5 / 20, Training Step  4400 / 1000000 , Training Accuracy =  19.71875 
+-----------------------------------------------
+Generated text:  œM“tiZZs,# &
+ Zet#Zem of# to
+© 
+
+Epoch  5 / 20, Training Step  4500 / 1000000 , Training Accuracy =  19.640625 
+-----------------------------------------------
+Generated text:  ˆ al#ZiZ%,&Zs with€&Z&
+ 
+ 
+ªo&ª
+
+Epoch  5 / 20, Training Step  4600 / 1000000 , Training Accuracy =  19.671875 
+-----------------------------------------------
+Generated text:  F¯’noZsZaZs w¦s the sZovesZ’diZ
+
+Epoch  5 / 20, Training Step  4700 / 1000000 , Training Accuracy =  19.5625 
+-----------------------------------------------
+Generated text:  ‰,Z&¨â€’ÎuZs was thr¯Z’Zanis,
+t
+
+Epoch  5 / 20, Training Step  4800 / 1000000 , Training Accuracy =  19.859375 
+-----------------------------------------------
+Generated text:  -© NesZÃ€d’stonaâ2__
+ _urel had
+
+Epoch  5 / 20, Training Step  4900 / 1000000 , Training Accuracy =  20.015625 
+-----------------------------------------------
+Generated text:  Romen,
+soZs&Z’%s•¤dus wasZo¢,Zy
+
+Epoch  5 / 20, Training Step  5000 / 1000000 , Training Accuracy =  20.140625 
+-----------------------------------------------
+Generated text:  ·&
+ 
+ª¤&&&
+
+ 
+  I¤lenseZitiZagi
+
+Epoch  5 / 20, Training Step  5100 / 1000000 , Training Accuracy =  19.296875 
+-----------------------------------------------
+Generated text:  qaZ=Z.] «lican himsešs, who,
+ ª
+
+Epoch  5 / 20, Training Step  5200 / 1000000 , Training Accuracy =  19.546875 
+-----------------------------------------------
+Generated text:  H¤genK¤Zem E©I©,
+S¦returyZuš.&
+
+
+Epoch  5 / 20, Training Step  5300 / 1000000 , Training Accuracy =  19.390625 
+-----------------------------------------------
+Generated text:  ¶e,&
+©.
+   
+©
+PhÅÄ@.D¯s na#t’Ze
+
+Epoch  5 / 20, Training Step  5400 / 1000000 , Training Accuracy =  19.65625 
+-----------------------------------------------
+Generated text:  ²Î±’’d€Î¿á½± ª¯co aZme#Zed’emZa
+
+Epoch  5 / 20, Training Step  5500 / 1000000 , Training Accuracy =  19.640625 
+-----------------------------------------------
+Generated text:  ®©¯n$
+ _B© wisZotZy€3) T¯mZonsi
+
+Epoch  5 / 20, Training Step  5600 / 1000000 , Training Accuracy =  19.28125 
+-----------------------------------------------
+Generated text:  Ã¦a,& 11# (´¥á¼Z’c’«$![3« S%Zšt
+
+Epoch  5 / 20, Training Step  5700 / 1000000 , Training Accuracy =  19.578125 
+-----------------------------------------------
+Generated text:  P¯ris © th•uZd ’id tZet,
+€Za$$h
+
+Epoch  5 / 20, Training Step  5800 / 1000000 , Training Accuracy =  19.015625 
+-----------------------------------------------
+Generated text:  ³&
+## B¢hil’#$$«Zor“‘Zodus, @,
+
+
+Epoch  5 / 20, Training Step  5900 / 1000000 , Training Accuracy =  19.3125 
+-----------------------------------------------
+Generated text:  k oZes,Z¯ruZ’ZaZZ% on#&
+©Ix#.-)
+
+Epoch  5 / 20, Training Step  6000 / 1000000 , Training Accuracy =  19.390625 
+-----------------------------------------------
+Generated text:  ¥#â79.
+©h¦#â$™
+ ªits€&Z¥Z’#manZ
+
+Epoch  5 / 20, Training Step  6100 / 1000000 , Training Accuracy =  19.25 
+-----------------------------------------------
+Generated text:  . ªys h tr¯’’’rZa,
+w«¥weZraZes’
+
+Epoch  5 / 20, Training Step  6200 / 1000000 , Training Accuracy =  19.671875 
+-----------------------------------------------
+Generated text:  xcei$ ªo fallitZelZas sanšZym«,
+
+Epoch  5 / 20, Training Step  6300 / 1000000 , Training Accuracy =  19.203125 
+-----------------------------------------------
+Generated text:  qauZgeZis
+¤xteZb=’derâ$™Z’lcen 
+
+Epoch  5 / 20, Training Step  6400 / 1000000 , Training Accuracy =  20.0625 
+-----------------------------------------------
+Generated text:  preZ%Za. Thiš ïommoZ%sZot¯s[45]
+
+Epoch  5 / 20, Training Step  6500 / 1000000 , Training Accuracy =  19.5625 
+-----------------------------------------------
+Generated text:  ºÏ„Î·, whi# ªeZex.«,
+@nkisZ%Z’Z
+
+Epoch  5 / 20, Training Step  6600 / 1000000 , Training Accuracy =  20.390625 
+-----------------------------------------------
+Generated text:  k# that her ¥© Yem ten’ZosZy oZ
+
+Epoch  5 / 20, Training Step  6700 / 1000000 , Training Accuracy =  19.84375 
+-----------------------------------------------
+Generated text:  S€@2.
+
+Ag’don# v¦$plyZ“%ZaZ._& 
+
+Epoch  5 / 20, Training Step  6800 / 1000000 , Training Accuracy =  19.359375 
+-----------------------------------------------
+Generated text:  ¦um._¢
+©haš my mothešs. Wa$¾ aZ
+
+Epoch  5 / 20, Training Step  6900 / 1000000 , Training Accuracy =  19.953125 
+-----------------------------------------------
+Generated text:  â$ˆ¢ Z¯deus, a moutZods ©u#¥oZa
+
+Epoch  5 / 20, Training Step  7000 / 1000000 , Training Accuracy =  19.625 
+-----------------------------------------------
+Generated text:  ²ÏÎ)Zex wat¯ZZs._-
+Vuillšu tra
+
+Epoch  5 / 20, Training Step  7100 / 1000000 , Training Accuracy =  19.875 
+-----------------------------------------------
+Generated text:  –.¥ E“’manus {IZmeamosZ¤Ze%Zo$•
+
+Epoch  5 / 20, Training Step  7200 / 1000000 , Training Accuracy =  19.125 
+-----------------------------------------------
+Generated text:  ƒï& CoZaciZurš’rieZeZ’dZanZent 
+
+Epoch  5 / 20, Training Step  7300 / 1000000 , Training Accuracy =  19.125 
+-----------------------------------------------
+Generated text:  ‰€&ZZá¼=&  ¥.
+«¯s,
+a paramZus,Z
+
+Epoch  5 / 20, Training Step  7400 / 1000000 , Training Accuracy =  19.46875 
+-----------------------------------------------
+Generated text:  ‰€™,
+&
+ïZe’tZ’Z’ZadiZ’d’eZeZÃ¦,
+
+Epoch  5 / 20, Training Step  7500 / 1000000 , Training Accuracy =  20.375 
+-----------------------------------------------
+Generated text:  °Ï‚ Ni##.â€™]
+
+ 
+©
+© ¤me#& 215,
+
+Epoch  5 / 20, Training Step  7600 / 1000000 , Training Accuracy =  19.53125 
+-----------------------------------------------
+Generated text:  Â& TeZero¾,
+wh¨eZeZÃ¼ts’a,Zer#Z
+
+Epoch  5 / 20, Training Step  7700 / 1000000 , Training Accuracy =  19.65625 
+-----------------------------------------------
+Generated text:  ¼€Îµá¿m.&âNN’’de$
+
+Wh¦y tZu’tZZ
+
+Epoch  5 / 20, Training Step  7800 / 1000000 , Training Accuracy =  19.9375 
+-----------------------------------------------
+Generated text:     ¤xt¯nZetuZe. Thi#Zov’ZaZ.¥27
+
+Epoch  5 / 20, Training Step  7900 / 1000000 , Training Accuracy =  19.484375 
+-----------------------------------------------
+Generated text:  er¨. TeZšt€n¥tes,« to the
+ ªi=l
+
+Epoch  5 / 20, Training Step  8000 / 1000000 , Training Accuracy =  19.828125 
+-----------------------------------------------
+Generated text:  
+  ¤oZ¥.% @##1###
+ 
+B¤dip’rZZ%d
+
+Epoch  5 / 20, Training Step  8100 / 1000000 , Training Accuracy =  20.21875 
+-----------------------------------------------
+Generated text:  ´Î±Î¹,#lZáwÎ½ZÏ‰•½#ZZ Semechšn 
+
+Epoch  5 / 20, Training Step  8200 / 1000000 , Training Accuracy =  19.421875 
+-----------------------------------------------
+Generated text:  µ#$%Zš wi= toZetunaZs,ƒ«,& he ¨
+
+Epoch  5 / 20, Training Step  8300 / 1000000 , Training Accuracy =  19.90625 
+-----------------------------------------------
+Generated text:  •Îs’’áZj¯c’iceZex.&Z&¥1..& ToZ@
+
+Epoch  5 / 20, Training Step  8400 / 1000000 , Training Accuracy =  20.15625 
+-----------------------------------------------
+Generated text:  ›%to
+. ¢r##162Z, ¥.A,#Zš$$Is
+  
+
+Epoch  5 / 20, Training Step  8500 / 1000000 , Training Accuracy =  19.65625 
+-----------------------------------------------
+Generated text:  He wšZ’t’dect of tinkions of#&
+
+
+Epoch  5 / 20, Training Step  8600 / 1000000 , Training Accuracy =  19.84375 
+-----------------------------------------------
+Generated text:  M“Ä“Ze¢’a p€drogZe, as tZ&  h¦a
+
+Epoch  5 / 20, Training Step  8700 / 1000000 , Training Accuracy =  19.5625 
+-----------------------------------------------
+Generated text:  Hy€c’šganZÃ¦Za$[8&
+©tol,#Zodeav
+
+Epoch  5 / 20, Training Step  8800 / 1000000 , Training Accuracy =  20.140625 
+-----------------------------------------------
+Generated text:  ÏÎµ#_Gstis._¯s’Z’’’mZeÃZeZ,Z’d
+
+Epoch  5 / 20, Training Step  8900 / 1000000 , Training Accuracy =  19.03125 
+-----------------------------------------------
+Generated text:  Ã
+ƒï© ’ZeZ’šsZZ’$ 
+
+© t¯št€&
+¨Z
+
+Epoch  5 / 20, Training Step  9000 / 1000000 , Training Accuracy =  19.375 
+-----------------------------------------------
+Generated text:  “¢,
+   
+©â¼™©¯r Ä,#2tlatZoš,«&
+
+
+Epoch  5 / 20, Training Step  9100 / 1000000 , Training Accuracy =  19.625 
+-----------------------------------------------
+Generated text:  !âm« oZet$ÃZ¢¥ny is © ïeZaZesZa
+
+Epoch  5 / 20, Training Step  9200 / 1000000 , Training Accuracy =  19.734375 
+-----------------------------------------------
+Generated text:  ½## @“ZÃ¦Za.&«&
+«oraZt’sZessZ’š
+
+Epoch  5 / 20, Training Step  9300 / 1000000 , Training Accuracy =  19.46875 
+-----------------------------------------------
+Generated text:  hich, to saZet«ZaZZ’Zso¢.]
+
+&¥8
+
+Epoch  5 / 20, Training Step  9400 / 1000000 , Training Accuracy =  19.953125 
+-----------------------------------------------
+Generated text:  Pha’leZe,
+tracidortyi# %or
+aZri
+
+Epoch  5 / 20, Training Step  9500 / 1000000 , Training Accuracy =  19.5625 
+-----------------------------------------------
+Generated text:  ³Î& 81///ZoÄPta%ut anotligZons’
+
+Epoch  5 / 20, Training Step  9600 / 1000000 , Training Accuracy =  19.609375 
+-----------------------------------------------
+Generated text:  ªt€Zator of#&Z AputÃ$ Zode,[1ª€
+
+Epoch  5 / 20, Training Step  9700 / 1000000 , Training Accuracy =  19.421875 
+-----------------------------------------------
+Generated text:  ±Î&
+ 
+Be t¯Z=$CT¤p’lausZa. ¢ll’
+
+Epoch  5 / 20, Training Step  9800 / 1000000 , Training Accuracy =  19.703125 
+-----------------------------------------------
+Generated text:  X©
+  [.. oZ’ct•eus’Zetis,
+ ª¤& 
+
+Epoch  5 / 20, Training Step  9900 / 1000000 , Training Accuracy =  19.53125 
+-----------------------------------------------
+Generated text:  [Fo&thp%soZetÃšZ’RBZecus ª©Zy %
+
+Epoch  5 / 20, Training Step  10000 / 1000000 , Training Accuracy =  19.75 
+-----------------------------------------------
+Generated text:  :•&
+
+
+šn’lawy, to seek ¨ or#cZe
+
+Epoch  5 / 20, Training Step  10100 / 1000000 , Training Accuracy =  19.40625 
+-----------------------------------------------
+Generated text:  ?
+¢Zes, tZotZoZes[7]
+«ušš m¯ fr
+
+Epoch  5 / 20, Training Step  10200 / 1000000 , Training Accuracy =  19.75 
+-----------------------------------------------
+Generated text:  © ¨&
+ ªo rainZash¯s,
+ ªeigšgeZ%
+
+Epoch  5 / 20, Training Step  10300 / 1000000 , Training Accuracy =  19.578125 
+-----------------------------------------------
+Generated text:  ½½##Zs“soss,â& Clytie, w¯oZ#l’o
+
+Epoch  5 / 20, Training Step  10400 / 1000000 , Training Accuracy =  19.890625 
+-----------------------------------------------
+Generated text:  ¾Y«.ZII
+¢ LOoRC-¤lc’Zš, ¶oZâ(vi
+
+Epoch  5 / 20, Training Step  10500 / 1000000 , Training Accuracy =  20.03125 
+-----------------------------------------------
+Generated text:  –.¥ ¥Goondo#Z%to  E©CL%Ä¥•. Yon
+
+Epoch  5 / 20, Training Step  10600 / 1000000 , Training Accuracy =  19.40625 
+-----------------------------------------------
+Generated text:  
+
+T¤ll«Zš$Zit Z¥t’d$Ã¼shZ’n’Z’
+
+Epoch  5 / 20, Training Step  10700 / 1000000 , Training Accuracy =  19.4375 
+-----------------------------------------------
+Generated text:  z“Zo$_
+«ulyÃ¦a,
+©¤odor say h’ll
+
+Epoch  5 / 20, Training Step  10800 / 1000000 , Training Accuracy =  19.203125 
+-----------------------------------------------
+Generated text:  ‰,Zs som¦&   ¤x’ZaZZ. SZašs is,
+
+Epoch  5 / 20, Training Step  10900 / 1000000 , Training Accuracy =  19.859375 
+-----------------------------------------------
+Generated text:  p€rouš¥‘¯®,â4#
+ ªor#&â8™,Z&
+©
+w
+
+Epoch  5 / 20, Training Step  11000 / 1000000 , Training Accuracy =  19.453125 
+-----------------------------------------------
+Generated text:  Î¿# ¼r¯$ci&
+¥rZešs ¤aZaZs’¢dus,
+
+Epoch  5 / 20, Training Step  11100 / 1000000 , Training Accuracy =  20.21875 
+-----------------------------------------------
+Generated text:  ¦a,& &,
+© be’šZsZ’scZedia, iš,
+
+
+Epoch  5 / 20, Training Step  11200 / 1000000 , Training Accuracy =  19.609375 
+-----------------------------------------------
+Generated text:  ¥Î& ¥Ze$F¯iZes.Zy“u#ZyZuZ’’t’od
+
+Epoch  5 / 20, Training Step  11300 / 1000000 , Training Accuracy =  19.8125 
+-----------------------------------------------
+Generated text:  ##ZesZ’denâZZ=g¯l’.--3&
+ ¥ach,
+
+
+Epoch  5 / 20, Training Step  11400 / 1000000 , Training Accuracy =  19.84375 
+-----------------------------------------------
+Generated text:  4. ªš#â$CªZ&
+  © %or anyZod, ªa
+
+Epoch  5 / 20, Training Step  11500 / 1000000 , Training Accuracy =  19.953125 
+-----------------------------------------------
+Generated text:  œst¯edZeZ. ¢Zešn c¤ZaZs]
+¢.VZir
+
+Epoch  5 / 20, Training Step  11600 / 1000000 , Training Accuracy =  19.359375 
+-----------------------------------------------
+Generated text:  ”ÎuÎ¿Î¿á%Zá&
+
+¢rpšding€$ ¨at€wa
+
+Epoch  5 / 20, Training Step  11700 / 1000000 , Training Accuracy =  18.890625 
+-----------------------------------------------
+Generated text:  ! «ZašsZe ¥urlises tZ&Z.Z.  ¥.F
+
+Epoch  5 / 20, Training Step  11800 / 1000000 , Training Accuracy =  19.0625 
+-----------------------------------------------
+Generated text:  †geus is not aZv $bers#Zk$$1-&.
+
+Epoch  5 / 20, Training Step  11900 / 1000000 , Training Accuracy =  19.984375 
+-----------------------------------------------
+Generated text:  ¸á½½ ’n#was.&& Z.
+ 
+¤šnniZš, @I
+
+Epoch  6 / 20, Training Step  0 / 1000000 , Training Accuracy =  18.65625 
+-----------------------------------------------
+Generated text:  ¼Îus
+ ªeZ¢Zer, a litZ=#Datorn s
+
+Epoch  6 / 20, Training Step  100 / 1000000 , Training Accuracy =  19.46875 
+-----------------------------------------------
+Generated text:  aZas.]&« Ä3ÎÏ’’“mc’ZanZy @ov $6
+
+Epoch  6 / 20, Training Step  200 / 1000000 , Training Accuracy =  19.8125 
+-----------------------------------------------
+Generated text:  ¦uZš. ¢inš±â¥¯ll’anZ’Z%Z%Z%Zu@c
+
+Epoch  6 / 20, Training Step  300 / 1000000 , Training Accuracy =  19.84375 
+-----------------------------------------------
+Generated text:  ›Î& á½m,#œto haviš, w¯re saiZ#x
+
+Epoch  6 / 20, Training Step  400 / 1000000 , Training Accuracy =  19.40625 
+-----------------------------------------------
+Generated text:  VI.I&# šgZomensZ¯das.$,ZeZes aZ
+
+Epoch  6 / 20, Training Step  500 / 1000000 , Training Accuracy =  19.578125 
+-----------------------------------------------
+Generated text:  JuniZet.®& 1ª ârn’ZeZ#Ä**  ¤x&â
+
+Epoch  6 / 20, Training Step  600 / 1000000 , Training Accuracy =  19.390625 
+-----------------------------------------------
+Generated text:  reZot¯$ƒ&Z’denZatin’sZ¤c’on’aZe
+
+Epoch  6 / 20, Training Step  700 / 1000000 , Training Accuracy =  19.796875 
+-----------------------------------------------
+Generated text:  7: ¥Zelby C¤Zeu$ZeZ% ªou#ded %o
+
+Epoch  6 / 20, Training Step  800 / 1000000 , Training Accuracy =  19.6875 
+-----------------------------------------------
+Generated text:  ¨#
+â¥œw¯ aZdsZadp’Zed. A“diušZš
+
+Epoch  6 / 20, Training Step  900 / 1000000 , Training Accuracy =  19.578125 
+-----------------------------------------------
+Generated text:  •Îµ’ZáZáa8¥Î.) E©thiZan¥s.¥& & 
+
+Epoch  6 / 20, Training Step  1000 / 1000000 , Training Accuracy =  19.609375 
+-----------------------------------------------
+Generated text:  _-© ÄBE RGoZgsZ’s: ¤t w•y %reaZ
+
+Epoch  6 / 20, Training Step  1100 / 1000000 , Training Accuracy =  19.0 
+-----------------------------------------------
+Generated text:  š.â™”™#‚š’á¼&ÎºÎ& [683-¥@Epihs 
+
+Epoch  6 / 20, Training Step  1200 / 1000000 , Training Accuracy =  20.0625 
+-----------------------------------------------
+Generated text:  © T¤licoZ’rriZetiZs is a ciZu$6
+
+Epoch  6 / 20, Training Step  1300 / 1000000 , Training Accuracy =  20.375 
+-----------------------------------------------
+Generated text:  ½© âNA©©
+¤& 16.
+âNE#š I. [1’Zv•
+
+Epoch  6 / 20, Training Step  1400 / 1000000 , Training Accuracy =  19.65625 
+-----------------------------------------------
+Generated text:  ¯y sails,
+   
+w«ululthZ’dZeZe 
+
+Epoch  6 / 20, Training Step  1500 / 1000000 , Training Accuracy =  19.796875 
+-----------------------------------------------
+Generated text:  ™ ¤n#Zce«$ @ngianZ’Z’tÃ¦Zah sZe
+
+Epoch  6 / 20, Training Step  1600 / 1000000 , Training Accuracy =  19.171875 
+-----------------------------------------------
+Generated text:  Di&Zor¢s,
+ 
+whosp€@#did rZ@bZ& 
+
+Epoch  6 / 20, Training Step  1700 / 1000000 , Training Accuracy =  19.875 
+-----------------------------------------------
+Generated text:  i=& To shalZel,
+ ªaZvis,
+€stoZa
+
+Epoch  6 / 20, Training Step  1800 / 1000000 , Training Accuracy =  19.921875 
+-----------------------------------------------
+Generated text:  reZodoru“tesZeZlus,[& wi=mail o
+
+Epoch  6 / 20, Training Step  1900 / 1000000 , Training Accuracy =  19.515625 
+-----------------------------------------------
+Generated text:  ll Äc’rZ•udZ’]$ZeZes, of
+¨%tiZd
+
+Epoch  6 / 20, Training Step  2000 / 1000000 , Training Accuracy =  19.859375 
+-----------------------------------------------
+Generated text:  r the¤cli•, asZosZ’%toZÃhmu’â€™
+
+Epoch  6 / 20, Training Step  2100 / 1000000 , Training Accuracy =  19.671875 
+-----------------------------------------------
+Generated text:  To him,Zet$ sZok¯n.¯ Ho¯yguZo$
+
+
+Epoch  6 / 20, Training Step  2200 / 1000000 , Training Accuracy =  19.734375 
+-----------------------------------------------
+Generated text:  LeZÃ¦raZiZZateZaZs¯s& Fl¤=.Z& 2
+
+Epoch  6 / 20, Training Step  2300 / 1000000 , Training Accuracy =  19.734375 
+-----------------------------------------------
+Generated text:  What
+w¯re is t¤l&¯ZsZat’l$$ZitZ
+
+Epoch  6 / 20, Training Step  2400 / 1000000 , Training Accuracy =  19.6875 
+-----------------------------------------------
+Generated text:  ®¥%rªys€ors“tis, ©Z@124Zs ¥&
+  
+
+Epoch  6 / 20, Training Step  2500 / 1000000 , Training Accuracy =  19.875 
+-----------------------------------------------
+Generated text:  Up¯s ©oons ’šZ&Zd¯s aZre ’atiol
+
+Epoch  6 / 20, Training Step  2600 / 1000000 , Training Accuracy =  19.71875 
+-----------------------------------------------
+Generated text:  ¨# 71 ªp’irZ%ZaZs“Za [At.â274.]
+
+Epoch  6 / 20, Training Step  2700 / 1000000 , Training Accuracy =  20.25 
+-----------------------------------------------
+Generated text:  {%ut€& C%& & C%leco sZ¥¯$•ZadZa
+
+Epoch  6 / 20, Training Step  2800 / 1000000 , Training Accuracy =  20.09375 
+-----------------------------------------------
+Generated text:  us ’a$cireZesZ¤sZš,
+ 
+wšZkeZsZy
+
+Epoch  6 / 20, Training Step  2900 / 1000000 , Training Accuracy =  19.78125 
+-----------------------------------------------
+Generated text:  ken’s’l•bZ«ZagZiu$.
+©¤Z’Zea$ To
+
+Epoch  6 / 20, Training Step  3000 / 1000000 , Training Accuracy =  19.59375 
+-----------------------------------------------
+Generated text:  ¯ª’lamas[4&Z Now watchZdesZetZo
+
+Epoch  6 / 20, Training Step  3100 / 1000000 , Training Accuracy =  19.9375 
+-----------------------------------------------
+Generated text:  ¸á_& [IIVZ’ZER ¯“tum ªor a viZg
+
+Epoch  6 / 20, Training Step  3200 / 1000000 , Training Accuracy =  19.265625 
+-----------------------------------------------
+Generated text:  ºÏ•á½³Ï†Î¿Ï‚ s€waZZosed as aZne
+
+Epoch  6 / 20, Training Step  3300 / 1000000 , Training Accuracy =  19.8125 
+-----------------------------------------------
+Generated text:  ,
+ 
+­ieZ“tiZ¥¦.â&&####*
+
+
+
+D¯Z=
+
+Epoch  6 / 20, Training Step  3400 / 1000000 , Training Accuracy =  19.890625 
+-----------------------------------------------
+Generated text:  xter&
+“¢.]&«@{I.$
+
+
+ ªo#lZi=}, 
+
+Epoch  6 / 20, Training Step  3500 / 1000000 , Training Accuracy =  20.25 
+-----------------------------------------------
+Generated text:  PaÄ¦Za. ¢ #Zle=CA©¢uZ Zesto#%
+
+
+
+Epoch  6 / 20, Training Step  3600 / 1000000 , Training Accuracy =  20.03125 
+-----------------------------------------------
+Generated text:  Cepla$$h¦on#288&
+«“%new’redZs t
+
+Epoch  6 / 20, Training Step  3700 / 1000000 , Training Accuracy =  19.84375 
+-----------------------------------------------
+Generated text:  :€&&ZZ’¥N«AZelZ’s._¯ZiZ. &%n th
+
+Epoch  6 / 20, Training Step  3800 / 1000000 , Training Accuracy =  19.703125 
+-----------------------------------------------
+Generated text:  anZokZ’n. Thš¨$
+ ª.¥, ¥II. [Î3Ï
+
+Epoch  6 / 20, Training Step  3900 / 1000000 , Training Accuracy =  19.234375 
+-----------------------------------------------
+Generated text:  '¢.Z N«tZaZZZ’s %unZeZadiZ_-¢. 
+
+Epoch  6 / 20, Training Step  4000 / 1000000 , Training Accuracy =  19.9375 
+-----------------------------------------------
+Generated text:  „ÏÎµ,Z’’Îˆ’Zc’á½& Î•Î±Ï@á½´#[8
+
+Epoch  6 / 20, Training Step  4100 / 1000000 , Training Accuracy =  19.90625 
+-----------------------------------------------
+Generated text:  #16$ b¤stor to
+© hiZd w#g#Zes w
+
+Epoch  6 / 20, Training Step  4200 / 1000000 , Training Accuracy =  19.734375 
+-----------------------------------------------
+Generated text:  V¯@$7“1I, Ze$¼shis t¯r&
+staZes 
+
+Epoch  6 / 20, Training Step  4300 / 1000000 , Training Accuracy =  20.125 
+-----------------------------------------------
+Generated text:  “bes,
+¢Z=Zs
+ZZitis’ZesZ¤x.&
+ ¤n
+
+Epoch  6 / 20, Training Step  4400 / 1000000 , Training Accuracy =  19.546875 
+-----------------------------------------------
+Generated text:  XI©¤ZanZediZ%nee,
+t«€wni#&
+suZ’
+
+Epoch  6 / 20, Training Step  4500 / 1000000 , Training Accuracy =  19.6875 
+-----------------------------------------------
+Generated text:  ±# á"¦ nei# bottZ’n’had,ZesZat“
+
+Epoch  6 / 20, Training Step  4600 / 1000000 , Training Accuracy =  19.1875 
+-----------------------------------------------
+Generated text:  & Satula.]©     ­Z’šso$¥is,
+t«o
+
+Epoch  6 / 20, Training Step  4700 / 1000000 , Training Accuracy =  19.71875 
+-----------------------------------------------
+Generated text:  ›Îµá3·#& ZesturZaZs,
+«ulned bec
+
+Epoch  6 / 20, Training Step  4800 / 1000000 , Training Accuracy =  19.625 
+-----------------------------------------------
+Generated text:  !”& ªZ’deu# BleaZo$$inªZanZys,
+
+
+Epoch  6 / 20, Training Step  4900 / 1000000 , Training Accuracy =  19.078125 
+-----------------------------------------------
+Generated text:  •Îµ’cáD’á½©ZZyZ’siaZ%Zor Go} ¥&
+
+Epoch  6 / 20, Training Step  5000 / 1000000 , Training Accuracy =  18.484375 
+-----------------------------------------------
+Generated text:  @ï.  T-rughteZent tZo¢Za  išreZ
+
+Epoch  6 / 20, Training Step  5100 / 1000000 , Training Accuracy =  19.96875 
+-----------------------------------------------
+Generated text:  videZs is © leZšious,ªy,# m€#r#
+
+Epoch  6 / 20, Training Step  5200 / 1000000 , Training Accuracy =  19.375 
+-----------------------------------------------
+Generated text:  G«t’a, is
+©
+¤epa[2&Zan._
+
+¤x wa
+
+Epoch  6 / 20, Training Step  5300 / 1000000 , Training Accuracy =  19.109375 
+-----------------------------------------------
+Generated text:  P¯lope]
+IV:
+©¤oth tooZoZes,
+  ª
+
+Epoch  6 / 20, Training Step  5400 / 1000000 , Training Accuracy =  19.984375 
+-----------------------------------------------
+Generated text:  •Îs?#8) has
+©âN&¯nde to ÄvZeZeZ
+
+Epoch  6 / 20, Training Step  5500 / 1000000 , Training Accuracy =  19.09375 
+-----------------------------------------------
+Generated text:  s,
+«aZs,« išnsZex %ZaZs] IZ’si’
+
+Epoch  6 / 20, Training Step  5600 / 1000000 , Training Accuracy =  19.46875 
+-----------------------------------------------
+Generated text:  CoZ¥Ä2Za$¼¢,Z’d’’ÎKK&KÎ·Ï½’áu.]
+
+Epoch  6 / 20, Training Step  5700 / 1000000 , Training Accuracy =  19.484375 
+-----------------------------------------------
+Generated text:  #1# @ÏÄá½ZZy ¥“s% of t¯lleu$,
+ 
+
+Epoch  6 / 20, Training Step  5800 / 1000000 , Training Accuracy =  19.546875 
+-----------------------------------------------
+Generated text:  perf€Z’Zod]$-
+©
+   ª© to ša#â€™
+
+Epoch  6 / 20, Training Step  5900 / 1000000 , Training Accuracy =  19.421875 
+-----------------------------------------------
+Generated text:  ”Î·Z’Îá’á½u#ZÏa,
+ ¤Z&Zs aZeZ“Ze
+
+Epoch  6 / 20, Training Step  6000 / 1000000 , Training Accuracy =  19.25 
+-----------------------------------------------
+Generated text:  ›¯i, is“p€ ’recte& ToZe,[55]Zs 
+
+Epoch  6 / 20, Training Step  6100 / 1000000 , Training Accuracy =  19.125 
+-----------------------------------------------
+Generated text:   Î±á& ¯n ©Z@ve @xcurr¦$â€&â€_
+
+Epoch  6 / 20, Training Step  6200 / 1000000 , Training Accuracy =  19.734375 
+-----------------------------------------------
+Generated text:  p€Z#d oZes›an. Thin’Zer,#] %ot,
+
+Epoch  6 / 20, Training Step  6300 / 1000000 , Training Accuracy =  18.9375 
+-----------------------------------------------
+Generated text:  œThen ªuns€bli#gs to
+© ª¢šp)._
+
+
+Epoch  6 / 20, Training Step  6400 / 1000000 , Training Accuracy =  19.390625 
+-----------------------------------------------
+Generated text:  ¶Ï‚ ¨& C%Zšt«,Z@$
+¢ZrthZaZ$st•o
+
+Epoch  6 / 20, Training Step  6500 / 1000000 , Training Accuracy =  19.421875 
+-----------------------------------------------
+Generated text:  ª toZvin¥s ¤=©¤der.
+«lisZemZaZ%
+
+Epoch  6 / 20, Training Step  6600 / 1000000 , Training Accuracy =  19.328125 
+-----------------------------------------------
+Generated text:  Fo¢, ª¤& % ª&t¯m¨ZZan ¢isZets o
+
+Epoch  6 / 20, Training Step  6700 / 1000000 , Training Accuracy =  19.5625 
+-----------------------------------------------
+Generated text:  –.
+¯n’Z«Ze    ª&
+Pars’um,#ZeZos
+
+Epoch  6 / 20, Training Step  6800 / 1000000 , Training Accuracy =  20.0 
+-----------------------------------------------
+Generated text:  0.& A“Zet¥# with t¯atheZ’t¯Zuš.
+
+Epoch  6 / 20, Training Step  6900 / 1000000 , Training Accuracy =  19.15625 
+-----------------------------------------------
+Generated text:  º#$%Zo¾._-Zed’aZ’phZÃ¼“ter.ZyZe
+
+Epoch  6 / 20, Training Step  7000 / 1000000 , Training Accuracy =  20.140625 
+-----------------------------------------------
+Generated text:  is suZpe’šgella.ZZsZom“Ã=.]
+«aZ
+
+Epoch  6 / 20, Training Step  7100 / 1000000 , Training Accuracy =  19.5625 
+-----------------------------------------------
+Generated text:  º#¿#,&
+© teZuZdis ¤& 1.¥Zepeš1 
+
+Epoch  6 / 20, Training Step  7200 / 1000000 , Training Accuracy =  19.640625 
+-----------------------------------------------
+Generated text:  0#:€& Thus wa¯š,&ZIVZsZI FZusÄq
+
+Epoch  6 / 20, Training Step  7300 / 1000000 , Training Accuracy =  19.84375 
+-----------------------------------------------
+Generated text:  ©
+
+
+¤šk.
+ THe ¤onneZ% išjoZeZ. 
+
+Epoch  6 / 20, Training Step  7400 / 1000000 , Training Accuracy =  20.15625 
+-----------------------------------------------
+Generated text:  ,©ªye coZ@tZus._-¢-›.8&
+“Touc¤s
+
+Epoch  6 / 20, Training Step  7500 / 1000000 , Training Accuracy =  19.96875 
+-----------------------------------------------
+Generated text:  Å“on’ia,Z’dZ$,€Ze… no#, thšy
+© 
+
+Epoch  6 / 20, Training Step  7600 / 1000000 , Training Accuracy =  20.0625 
+-----------------------------------------------
+Generated text:  xten“Zen.] 
+
+FYZeZes]
+ [I& aZra
+
+Epoch  6 / 20, Training Step  7700 / 1000000 , Training Accuracy =  19.53125 
+-----------------------------------------------
+Generated text:  of& P¯ZetZÃÄand’sZy,
+  ªeZi= oZ
+
+Epoch  6 / 20, Training Step  7800 / 1000000 , Training Accuracy =  20.1875 
+-----------------------------------------------
+Generated text:  „ÏÏÏ•#[Ï•’dÎ±Ï„’á”Î’Î¿Î½á½m#_
+
+Epoch  6 / 20, Training Step  7900 / 1000000 , Training Accuracy =  19.765625 
+-----------------------------------------------
+Generated text:  »¥Zyx’išZs,
+ 
+  ¤% oZetho’ds we
+
+Epoch  6 / 20, Training Step  8000 / 1000000 , Training Accuracy =  19.59375 
+-----------------------------------------------
+Generated text:  2.
+    %on © l¤&##
+¯itesZet [¨:
+
+Epoch  6 / 20, Training Step  8100 / 1000000 , Training Accuracy =  19.03125 
+-----------------------------------------------
+Generated text:  7¥.Zy,«,#l&
+  toZeZed,
+ ­ZesZep
+
+Epoch  6 / 20, Training Step  8200 / 1000000 , Training Accuracy =  19.90625 
+-----------------------------------------------
+Generated text:  Qutest. A wors’necušZe come ªur
+
+Epoch  6 / 20, Training Step  8300 / 1000000 , Training Accuracy =  19.234375 
+-----------------------------------------------
+Generated text:  ¹%Z’dmuZ’ Ä¼D¶Îk’Z“’umZa,&#Z#1#
+
+Epoch  6 / 20, Training Step  8400 / 1000000 , Training Accuracy =  19.765625 
+-----------------------------------------------
+Generated text:  warrZy._
+-â€œA ’uš.
+
+¤rZ¤t’Zas,
+
+Epoch  6 / 20, Training Step  8500 / 1000000 , Training Accuracy =  19.625 
+-----------------------------------------------
+Generated text:  =© line ª¯nd ªorn¯ZšZ [M¯•¶E T•
+
+Epoch  6 / 20, Training Step  8600 / 1000000 , Training Accuracy =  19.0625 
+-----------------------------------------------
+Generated text:  ±#w&
+fouš– Zat€gšZ%Z%shaZos isZ
+
+Epoch  6 / 20, Training Step  8700 / 1000000 , Training Accuracy =  19.546875 
+-----------------------------------------------
+Generated text:  hanZas“iušZe$sianZ’liaZum,â€¢
+â
+
+Epoch  6 / 20, Training Step  8800 / 1000000 , Training Accuracy =  19.5625 
+-----------------------------------------------
+Generated text:  © Be’appus. Oš,â2& #ntisu$¥&
+ 
+
+
+Epoch  6 / 20, Training Step  8900 / 1000000 , Training Accuracy =  19.78125 
+-----------------------------------------------
+Generated text:  °Î¥#20ÏZÏ%, sZ¨ge#â39]
+«al&Zes$
+
+Epoch  6 / 20, Training Step  9000 / 1000000 , Training Accuracy =  19.921875 
+-----------------------------------------------
+Generated text:  á½m##1&¯Zs% witled, ªeZet inc¯n
+
+Epoch  6 / 20, Training Step  9100 / 1000000 , Training Accuracy =  19.4375 
+-----------------------------------------------
+Generated text:  s© AZ’á½ ’c’n&mZ’d¤$
+¤n& Gša1$)
+
+Epoch  6 / 20, Training Step  9200 / 1000000 , Training Accuracy =  19.859375 
+-----------------------------------------------
+Generated text:  ½# Î’á½ZÎ¼¢#%, & CompliZed ¨arr
+
+Epoch  6 / 20, Training Step  9300 / 1000000 , Training Accuracy =  19.671875 
+-----------------------------------------------
+Generated text:  aZas cšro=t«Za.$€™ âN&& ­I ¥©ª@
+
+Epoch  6 / 20, Training Step  9400 / 1000000 , Training Accuracy =  19.296875 
+-----------------------------------------------
+Generated text:  «, an& %or
+ 
+the¤ch, ªeleasZemp
+
+Epoch  6 / 20, Training Step  9500 / 1000000 , Training Accuracy =  19.75 
+-----------------------------------------------
+Generated text:  µ#,€ârian seZau=,
+©
+¤laurZ¯š,²Î
+
+Epoch  6 / 20, Training Step  9600 / 1000000 , Training Accuracy =  19.90625 
+-----------------------------------------------
+Generated text:  Godd¯s,ZatiZ“Zon_ oZ do€tâ¦;ZaZ
+
+Epoch  6 / 20, Training Step  9700 / 1000000 , Training Accuracy =  19.6875 
+-----------------------------------------------
+Generated text:  Youš. 312Zed madZZsÄGanl p¯a%t€
+
+Epoch  6 / 20, Training Step  9800 / 1000000 , Training Accuracy =  20.515625 
+-----------------------------------------------
+Generated text:  f ©Zets¯as thaZdorZ¤d’rZÃ$Ã%oZ¥
+
+Epoch  6 / 20, Training Step  9900 / 1000000 , Training Accuracy =  19.578125 
+-----------------------------------------------
+Generated text:  ¶tyZ¤lmelZeZe._-Zitho& DaZet«,#
+
+Epoch  6 / 20, Training Step  10000 / 1000000 , Training Accuracy =  19.78125 
+-----------------------------------------------
+Generated text:  67]«,Z@boZoniuš.â™]#] an&
+©
+&Zc
+
+Epoch  6 / 20, Training Step  10100 / 1000000 , Training Accuracy =  20.046875 
+-----------------------------------------------
+Generated text:  µá½»#)#_Z _arZs ra$&
+ ¤oZ’deus,
+
+Epoch  6 / 20, Training Step  10200 / 1000000 , Training Accuracy =  19.78125 
+-----------------------------------------------
+Generated text:  …Îºá¾·#”,
+ 
+â˜˜Vi=&
+
+ 
+T«Zašhal
+
+Epoch  6 / 20, Training Step  10300 / 1000000 , Training Accuracy =  19.484375 
+-----------------------------------------------
+Generated text:  ­Z’Ägu#â€ZsZ’x’š.â&,œâ€œW¤Zete
+
+Epoch  6 / 20, Training Step  10400 / 1000000 , Training Accuracy =  19.59375 
+-----------------------------------------------
+Generated text:  ½±ÎmÎ#Ï„Î¹Î·,Zok¯ZÃ¦su ¥elZus,
+
+
+Epoch  6 / 20, Training Step  10500 / 1000000 , Training Accuracy =  19.59375 
+-----------------------------------------------
+Generated text:  ”Î! Î¦Ï‡ÎZZá*VZ¤s i&
+ & & Be”Zi
+
+Epoch  6 / 20, Training Step  10600 / 1000000 , Training Accuracy =  19.953125 
+-----------------------------------------------
+Generated text:  t iš ´uckioušZeZ˜Za$ ¤acli%gice
+
+Epoch  6 / 20, Training Step  10700 / 1000000 , Training Accuracy =  19.640625 
+-----------------------------------------------
+Generated text:  o¤=â¦Î& VZasi_=&
+©š ¥us,
+© is
+t
+
+Epoch  6 / 20, Training Step  10800 / 1000000 , Training Accuracy =  19.65625 
+-----------------------------------------------
+Generated text:  #1642Z Sir¯Z’mZ¢._ VZne!   _tha
+
+Epoch  6 / 20, Training Step  10900 / 1000000 , Training Accuracy =  19.75 
+-----------------------------------------------
+Generated text:  ÂE&©II¹
+«¤aš, aZZ Zanªh¤#
+ ¤Zed
+
+Epoch  6 / 20, Training Step  11000 / 1000000 , Training Accuracy =  20.453125 
+-----------------------------------------------
+Generated text:  ›&&
+
+&& &
+
+&
+&š n wše#o,šZ=&.
+
+
+
+Epoch  6 / 20, Training Step  11100 / 1000000 , Training Accuracy =  19.625 
+-----------------------------------------------
+Generated text:  verZose,[#Zš$5«¹&&Zš ªZ’thrZig]
+
+Epoch  6 / 20, Training Step  11200 / 1000000 , Training Accuracy =  19.71875 
+-----------------------------------------------
+Generated text:  K«Ze Ä@pZe¢,Zat$« and
+©ªZ¨, Ä%d
+
+Epoch  6 / 20, Training Step  11300 / 1000000 , Training Accuracy =  19.6875 
+-----------------------------------------------
+Generated text:  ] oneZs. Floch Ä, ©Z&  
+of tiZe
+
+Epoch  6 / 20, Training Step  11400 / 1000000 , Training Accuracy =  19.84375 
+-----------------------------------------------
+Generated text:  -V¤x. ¢lZs ›eZives&Z VII@Zs& PZ
+
+Epoch  6 / 20, Training Step  11500 / 1000000 , Training Accuracy =  19.53125 
+-----------------------------------------------
+Generated text:  s to br#athe Ät.ZyZ¢p$] [%otZZ%
+
+Epoch  6 / 20, Training Step  11600 / 1000000 , Training Accuracy =  19.15625 
+-----------------------------------------------
+Generated text:  ¶ty,&
+ ¤ZštherZy witment,¯Zcca.
+
+Epoch  6 / 20, Training Step  11700 / 1000000 , Training Accuracy =  19.671875 
+-----------------------------------------------
+Generated text:  X©¥V-84]Z’“p’laZict«, tZoto utt
+
+Epoch  6 / 20, Training Step  11800 / 1000000 , Training Accuracy =  19.453125 
+-----------------------------------------------
+Generated text:  p€¦Zatruš._--X@I@: Do¢rnalZ¤t.&
+
+Epoch  6 / 20, Training Step  11900 / 1000000 , Training Accuracy =  20.109375 
+-----------------------------------------------
+Generated text:  ­ ÄtrangZâ8™s seZeZ# Su¤¯#“&&  
+
+Epoch  7 / 20, Training Step  0 / 1000000 , Training Accuracy =  19.015625 
+-----------------------------------------------
+Generated text:  …’áFBEBOU·OZamZod’r$C«phobZi]&Z
+
+Epoch  7 / 20, Training Step  100 / 1000000 , Training Accuracy =  19.84375 
+-----------------------------------------------
+Generated text:  aZeZ.
+
+¢Zed SZ’•Mš._--Z @š,#€Za
+
+Epoch  7 / 20, Training Step  200 / 1000000 , Training Accuracy =  19.65625 
+-----------------------------------------------
+Generated text:  viZgarZÃ€¢ plaughs h’v¦stune ’Z
+
+Epoch  7 / 20, Training Step  300 / 1000000 , Training Accuracy =  19.46875 
+-----------------------------------------------
+Generated text:  E IZ’•š’sonšalus,
+w¤trabZsZatiÃ
+
+Epoch  7 / 20, Training Step  400 / 1000000 , Training Accuracy =  19.265625 
+-----------------------------------------------
+Generated text:  E VZdipiš,Z¼ZaZr$ IZ&& Z¢tÄ¦Zo$
+
+Epoch  7 / 20, Training Step  500 / 1000000 , Training Accuracy =  20.3125 
+-----------------------------------------------
+Generated text:  Pro¢#Zyr¤kas,€&
+©
+© ªou= her
+%u
+
+Epoch  7 / 20, Training Step  600 / 1000000 , Training Accuracy =  19.4375 
+-----------------------------------------------
+Generated text:  ¯ª’.¥. ¯¢#Zs$
+¤tZeš._
+
+T¤&tiZed
+
+Epoch  7 / 20, Training Step  700 / 1000000 , Training Accuracy =  19.375 
+-----------------------------------------------
+Generated text:   Î»Î·.Z VuZas“Zs, duZZaZZs
+ 
+ ¤
+
+Epoch  7 / 20, Training Step  800 / 1000000 , Training Accuracy =  19.53125 
+-----------------------------------------------
+Generated text:  n toZv¼,Zy,ZessZ¤x,
+ItalZ’Zes,
+
+
+Epoch  7 / 20, Training Step  900 / 1000000 , Training Accuracy =  19.84375 
+-----------------------------------------------
+Generated text:  In$&Zdg’ZaZ$ ¢Z’šZer&Z’tim oZ’t
+
+Epoch  7 / 20, Training Step  1000 / 1000000 , Training Accuracy =  19.75 
+-----------------------------------------------
+Generated text:  AnZ%Zš.% 2Zen% FligZun._-Zlas.]
+
+Epoch  7 / 20, Training Step  1100 / 1000000 , Training Accuracy =  18.96875 
+-----------------------------------------------
+Generated text:  [3&ZstaZl.] Yo¢ c¤leecing•ZeZes
+
+Epoch  7 / 20, Training Step  1200 / 1000000 , Training Accuracy =  19.328125 
+-----------------------------------------------
+Generated text:  % waten %Z“gššZy and T¤&tZš,Zod
+
+Epoch  7 / 20, Training Step  1300 / 1000000 , Training Accuracy =  19.609375 
+-----------------------------------------------
+Generated text:  ¼@¢.& ¤nšZd€N@gÃ¦ums,â5™ ÄneZš 
+
+Epoch  7 / 20, Training Step  1400 / 1000000 , Training Accuracy =  19.578125 
+-----------------------------------------------
+Generated text:  in“teš.]&«@: 1Zea,¯Zcum.]
+
+«¤xe
+
+Epoch  7 / 20, Training Step  1500 / 1000000 , Training Accuracy =  20.0625 
+-----------------------------------------------
+Generated text:  •Îµ#d’ccagumâ$Z&Zš G¯išt«, @ngZ
+
+Epoch  7 / 20, Training Step  1600 / 1000000 , Training Accuracy =  20.109375 
+-----------------------------------------------
+Generated text:  %n&Z IIZscala$¥_
+Zi# Sc¯op•¤_&
+
+
+Epoch  7 / 20, Training Step  1700 / 1000000 , Training Accuracy =  19.515625 
+-----------------------------------------------
+Generated text:  =©
+¤nZveZent¯Ze, tZ&
+“uš, ªei’Z
+
+Epoch  7 / 20, Training Step  1800 / 1000000 , Training Accuracy =  19.65625 
+-----------------------------------------------
+Generated text:  w¯d’s %¤x Zei=_©
+¤Z%xZosZy’s wh
+
+Epoch  7 / 20, Training Step  1900 / 1000000 , Training Accuracy =  19.515625 
+-----------------------------------------------
+Generated text:  ´Ï„Z’Î#Îr, and
+wi@ZeZchan
+¥igu=
+
+Epoch  7 / 20, Training Step  2000 / 1000000 , Training Accuracy =  20.0 
+-----------------------------------------------
+Generated text:  #¥lZ’pt«g¤eZ%t“inu narršZZsZy T
+
+Epoch  7 / 20, Training Step  2100 / 1000000 , Training Accuracy =  20.046875 
+-----------------------------------------------
+Generated text:  €˜aZ’th.â&Z. «rša$
+ 
+_rš$gi=â¢Z
+
+Epoch  7 / 20, Training Step  2200 / 1000000 , Training Accuracy =  19.53125 
+-----------------------------------------------
+Generated text:  _Th«tZox€sZest we#$
+
+
+Gš€¢.Zaš 
+
+Epoch  7 / 20, Training Step  2300 / 1000000 , Training Accuracy =  19.3125 
+-----------------------------------------------
+Generated text:   t¯em$ÄthZ’r#[“thiZem¯·]&«  ª¤&
+
+Epoch  7 / 20, Training Step  2400 / 1000000 , Training Accuracy =  19.4375 
+-----------------------------------------------
+Generated text:  Or d¯¥guZd]
+VII.IZ€ÎZ¤xZ parZad
+
+Epoch  7 / 20, Training Step  2500 / 1000000 , Training Accuracy =  19.265625 
+-----------------------------------------------
+Generated text:  ¨#&Z@{Ä“g& Truen into
+  ªaZZs,¯
+
+Epoch  7 / 20, Training Step  2600 / 1000000 , Training Accuracy =  20.203125 
+-----------------------------------------------
+Generated text:  Janor,
+ 
+  th#y want€vors %¤l’d
+
+Epoch  7 / 20, Training Step  2700 / 1000000 , Training Accuracy =  19.734375 
+-----------------------------------------------
+Generated text:  [39] an’Z’thus] II.IV @Z¯ptZÃ¼=
+
+Epoch  7 / 20, Training Step  2800 / 1000000 , Training Accuracy =  19.140625 
+-----------------------------------------------
+Generated text:   and togeti#d
+ 
+©upªe#Zes ¨¤Zon
+
+Epoch  7 / 20, Training Step  2900 / 1000000 , Training Accuracy =  19.28125 
+-----------------------------------------------
+Generated text:  ke tZeaZiZ%Za$ In @t¯dinusZea, 
+
+Epoch  7 / 20, Training Step  3000 / 1000000 , Training Accuracy =  19.6875 
+-----------------------------------------------
+Generated text:  “=Cl«soZeZa$
+ 
+theiš
+   ªetiZes
+
+Epoch  7 / 20, Training Step  3100 / 1000000 , Training Accuracy =  19.859375 
+-----------------------------------------------
+Generated text:  ˆ,
+ ªitho&Z&Zs
+
+Trus,[##&
+%ree’
+
+Epoch  7 / 20, Training Step  3200 / 1000000 , Training Accuracy =  20.234375 
+-----------------------------------------------
+Generated text:  67ZšZs aZreZÃ¼s giv¼dšZy ¥viptš
+
+Epoch  7 / 20, Training Step  3300 / 1000000 , Training Accuracy =  19.640625 
+-----------------------------------------------
+Generated text:  á½·ÏÎ¹##&
+#8#ƒB˜fort•&â¦D-Zs
+ª
+
+Epoch  7 / 20, Training Step  3400 / 1000000 , Training Accuracy =  19.8125 
+-----------------------------------------------
+Generated text:  You ¥=ZatenZedoZyZ¤sZe dows tZo
+
+Epoch  7 / 20, Training Step  3500 / 1000000 , Training Accuracy =  19.515625 
+-----------------------------------------------
+Generated text:  peZit¯d â™
+¢ZiniZeZ¥-Grongš#ZER
+
+Epoch  7 / 20, Training Step  3600 / 1000000 , Training Accuracy =  20.15625 
+-----------------------------------------------
+Generated text:  ‚ and, if€Zer$Zes$ZenoZ’ter.ª:
+
+
+Epoch  7 / 20, Training Step  3700 / 1000000 , Training Accuracy =  19.921875 
+-----------------------------------------------
+Generated text:  j€@b#
+ 
+©INSEUT ARDZ.
+
+¢ZrZ’aZ&
+
+Epoch  7 / 20, Training Step  3800 / 1000000 , Training Accuracy =  20.3125 
+-----------------------------------------------
+Generated text:  consu#Zed, ªenZit’ZaZs tow«liZ
+
+Epoch  7 / 20, Training Step  3900 / 1000000 , Training Accuracy =  19.46875 
+-----------------------------------------------
+Generated text:  7¥ÎZ’’á¦ZememiZan$
+  _&
+SoZ to 
+
+Epoch  7 / 20, Training Step  4000 / 1000000 , Training Accuracy =  19.546875 
+-----------------------------------------------
+Generated text:  ‡#[8¥. Ho,
+ªut, t¤#“Z’š]Z’dera,
+
+Epoch  7 / 20, Training Step  4100 / 1000000 , Training Accuracy =  19.3125 
+-----------------------------------------------
+Generated text:  6#1151-7]#11š. ª“t¢ thenZ’Zquus
+
+Epoch  7 / 20, Training Step  4200 / 1000000 , Training Accuracy =  19.625 
+-----------------------------------------------
+Generated text:  h€€™#
+#Ze¾,€™ ªetchapp#¥Zep one
+
+Epoch  7 / 20, Training Step  4300 / 1000000 , Training Accuracy =  19.421875 
+-----------------------------------------------
+Generated text:  ”Î!â¼$FVII:
+&
+%oZ&Z.¥“el an eZe
+
+Epoch  7 / 20, Training Step  4400 / 1000000 , Training Accuracy =  20.484375 
+-----------------------------------------------
+Generated text:  2:€King€™,
+    ª¥lippeZâ¦ââ€™
+ 
+
+Epoch  7 / 20, Training Step  4500 / 1000000 , Training Accuracy =  19.953125 
+-----------------------------------------------
+Generated text:  . ThidisZy
+¤“p€5Ï„Z’’’ZZ& I Ven
+
+Epoch  7 / 20, Training Step  4600 / 1000000 , Training Accuracy =  19.78125 
+-----------------------------------------------
+Generated text:  WarnšZ$$¯Zv¦$shor’Z’sZoZâÄ™s eZ
+
+Epoch  7 / 20, Training Step  4700 / 1000000 , Training Accuracy =  19.703125 
+-----------------------------------------------
+Generated text:  Â&
+
+¥poZaZ tZ&
+ 
+ ¤xc¯m. ¢rinta
+
+Epoch  7 / 20, Training Step  4800 / 1000000 , Training Accuracy =  19.234375 
+-----------------------------------------------
+Generated text:  -Vest¯s botZokZar as to
+   ª&
+ 
+
+Epoch  7 / 20, Training Step  4900 / 1000000 , Training Accuracy =  19.5625 
+-----------------------------------------------
+Generated text:  {aZrathZoxia,â3¨& s’ysic› in @i
+
+Epoch  7 / 20, Training Step  5000 / 1000000 , Training Accuracy =  19.34375 
+-----------------------------------------------
+Generated text:  wasZisÄnor ”@8Z%ZoghaiZens. «ra
+
+Epoch  7 / 20, Training Step  5100 / 1000000 , Training Accuracy =  20.25 
+-----------------------------------------------
+Generated text:  ´©_
+«Z0s is¯en,
+© wišZessZatZÃ¦
+
+Epoch  7 / 20, Training Step  5200 / 1000000 , Training Accuracy =  19.640625 
+-----------------------------------------------
+Generated text:  ‡-¯aZsZ« ZeZos$&¨.&ZZ#d ’no&Zed
+
+Epoch  7 / 20, Training Step  5300 / 1000000 , Training Accuracy =  20.078125 
+-----------------------------------------------
+Generated text:  manZ’Z=Z Ä8,# witless#ZatoZsZum
+
+Epoch  7 / 20, Training Step  5400 / 1000000 , Training Accuracy =  19.84375 
+-----------------------------------------------
+Generated text:  ©& ThaZZt $
+
+ PretanZox, is hi
+
+Epoch  7 / 20, Training Step  5500 / 1000000 , Training Accuracy =  19.8125 
+-----------------------------------------------
+Generated text:  She išdeZd ofZen$
+ –¥#jercte %Z
+
+Epoch  7 / 20, Training Step  5600 / 1000000 , Training Accuracy =  19.265625 
+-----------------------------------------------
+Generated text:  
+ ªanZoboos.
+ ¤ZešZes oZasZ’aZi
+
+Epoch  7 / 20, Training Step  5700 / 1000000 , Training Accuracy =  19.890625 
+-----------------------------------------------
+Generated text:  ®%š ª¤r’inaZs t#le, ªušsZ&–$ Ze
+
+Epoch  7 / 20, Training Step  5800 / 1000000 , Training Accuracy =  19.734375 
+-----------------------------------------------
+Generated text:  n ªet is mš,Z¯desZecu#,
+w«Zs to
+
+Epoch  7 / 20, Training Step  5900 / 1000000 , Training Accuracy =  19.546875 
+-----------------------------------------------
+Generated text:  &
+ 
+“•usZes’Zs, Ä% of$ ©¯¨$¥for
+
+Epoch  7 / 20, Training Step  6000 / 1000000 , Training Accuracy =  20.140625 
+-----------------------------------------------
+Generated text:  ™]
+- ¥po¤thi=m¯Zat¤lium&]
+«tiZd
+
+Epoch  7 / 20, Training Step  6100 / 1000000 , Training Accuracy =  19.296875 
+-----------------------------------------------
+Generated text:  pear.­ SZod“’ane,â€™ frZeš._&Z%
+
+Epoch  7 / 20, Training Step  6200 / 1000000 , Training Accuracy =  19.75 
+-----------------------------------------------
+Generated text:  =
+ ¤Zeschu# comZoZenia[Zo“o.
+«Z
+
+Epoch  7 / 20, Training Step  6300 / 1000000 , Training Accuracy =  20.15625 
+-----------------------------------------------
+Generated text:  ¨.¥:
+ 
+B¢¯nš ¤&
+ ªilišs aZrZsZu
+
+Epoch  7 / 20, Training Step  6400 / 1000000 , Training Accuracy =  19.9375 
+-----------------------------------------------
+Generated text:  ] as
+ 
+Trampac¯Z&Z%Zsting Ä mZ%
+
+Epoch  7 / 20, Training Step  6500 / 1000000 , Training Accuracy =  19.171875 
+-----------------------------------------------
+Generated text:  ¦a,&
+ o“cšušums ¤nom&ZaZÅbZsZyZ
+
+Epoch  7 / 20, Training Step  6600 / 1000000 , Training Accuracy =  19.8125 
+-----------------------------------------------
+Generated text:  fo¢Zš wen=,ZsZaZe 16&
+ ¤Zottes,
+
+Epoch  7 / 20, Training Step  6700 / 1000000 , Training Accuracy =  19.40625 
+-----------------------------------------------
+Generated text:  ½#Ï‚)šš), •¶ÎÎ±á#·ÎZÎµ#Zá¼m#4,
+
+
+Epoch  7 / 20, Training Step  6800 / 1000000 , Training Accuracy =  19.53125 
+-----------------------------------------------
+Generated text:  nd ª¯¨,‡boZo¢ Ä¦ZusZas; oZa& Da
+
+Epoch  7 / 20, Training Step  6900 / 1000000 , Training Accuracy =  19.828125 
+-----------------------------------------------
+Generated text:  [46€n€všdš,[41%]
+«ª€™šy’l¯sZon 
+
+Epoch  7 / 20, Training Step  7000 / 1000000 , Training Accuracy =  19.515625 
+-----------------------------------------------
+Generated text:  C¯Zš in
+t¤Zt$â€= «o wšut«.â€=áI
+
+Epoch  7 / 20, Training Step  7100 / 1000000 , Training Accuracy =  19.5 
+-----------------------------------------------
+Generated text:  ­,# mustZeZhª’Za, which#Zš$
+IV.
+
+Epoch  7 / 20, Training Step  7200 / 1000000 , Training Accuracy =  19.46875 
+-----------------------------------------------
+Generated text:  ²Î¥¢_‘‡OZ ¤I:]
+«. ¥adve¯ZZ cšZ=
+
+Epoch  7 / 20, Training Step  7300 / 1000000 , Training Accuracy =  19.5 
+-----------------------------------------------
+Generated text:  ThessipZs thašZs wanZZe]$$&
+  
+
+
+Epoch  7 / 20, Training Step  7400 / 1000000 , Training Accuracy =  19.875 
+-----------------------------------------------
+Generated text:  ˆ.¤™
+
+©«,@¤@$ Ka$k._ª-Zistl¤Ze
+
+Epoch  7 / 20, Training Step  7500 / 1000000 , Training Accuracy =  19.96875 
+-----------------------------------------------
+Generated text:  ?
+Vuš¥. ª¦šZ¤ZemZo@¼gnor,[107) 
+
+Epoch  7 / 20, Training Step  7600 / 1000000 , Training Accuracy =  19.640625 
+-----------------------------------------------
+Generated text:  _© Hyp’res,«rZ#d$$
+€that too sZ
+
+Epoch  7 / 20, Training Step  7700 / 1000000 , Training Accuracy =  20.109375 
+-----------------------------------------------
+Generated text:  ­,# ¤ed“sisZes.ª Syn ÄprœyorZs,
+
+Epoch  7 / 20, Training Step  7800 / 1000000 , Training Accuracy =  19.75 
+-----------------------------------------------
+Generated text:  ›Î´á½ZÏ‚ÏKÎ¾}#‚
+ZiZÃ¼me#Zan.$-]
+
+Epoch  7 / 20, Training Step  7900 / 1000000 , Training Accuracy =  19.4375 
+-----------------------------------------------
+Generated text:  ¢, @IÏ@T%š, ª¤t¯lium Nioda ha$Z
+
+Epoch  7 / 20, Training Step  8000 / 1000000 , Training Accuracy =  19.59375 
+-----------------------------------------------
+Generated text:  K Ä@-the t¯Zs of
+#rZededust’] V
+
+Epoch  7 / 20, Training Step  8100 / 1000000 , Training Accuracy =  19.859375 
+-----------------------------------------------
+Generated text:  ¸áÄ¿Ïšš]Z’n’’cin’,â8:
+
+ AlciaZd
+
+Epoch  7 / 20, Training Step  8200 / 1000000 , Training Accuracy =  19.859375 
+-----------------------------------------------
+Generated text:  33] iš mZtarrisZon’%meaZor“nami
+
+Epoch  7 / 20, Training Step  8300 / 1000000 , Training Accuracy =  20.0 
+-----------------------------------------------
+Generated text:  „Î·’nnuZšZs @.VI
+Ix I& Sootle,[
+
+Epoch  7 / 20, Training Step  8400 / 1000000 , Training Accuracy =  20.0 
+-----------------------------------------------
+Generated text:  M“tem« andZemeZZ“ts›al @k •ve,
+
+
+Epoch  7 / 20, Training Step  8500 / 1000000 , Training Accuracy =  19.875 
+-----------------------------------------------
+Generated text:  ‘á¿¦#‚
+¥& Do šoreaZ“c¤s]
+¢ ’ZZa
+
+Epoch  7 / 20, Training Step  8600 / 1000000 , Training Accuracy =  19.125 
+-----------------------------------------------
+Generated text:  f t¯ZeZ“¢ZsZan ’nti=mus’•.& 7Ze
+
+Epoch  7 / 20, Training Step  8700 / 1000000 , Training Accuracy =  19.875 
+-----------------------------------------------
+Generated text:  ¨.¥& A“ZesZo¢¾ ¥ pu#pty oZeZšs.
+
+Epoch  7 / 20, Training Step  8800 / 1000000 , Training Accuracy =  19.328125 
+-----------------------------------------------
+Generated text:  / Ä@.1ª ¯ire’šge# on’&
+¢ t›l”Zg
+
+Epoch  7 / 20, Training Step  8900 / 1000000 , Training Accuracy =  20.21875 
+-----------------------------------------------
+Generated text:  : _Br¯­s&
+I¤Zs arZod’’aZZus.] 
+
+Epoch  7 / 20, Training Step  9000 / 1000000 , Training Accuracy =  19.703125 
+-----------------------------------------------
+Generated text:  Whir bZellsZea,
+¨on bZZadoZuted
+
+Epoch  7 / 20, Training Step  9100 / 1000000 , Training Accuracy =  19.671875 
+-----------------------------------------------
+Generated text:  @226Ä3“’n] showZ’doZo$iaZe oZec
+
+Epoch  7 / 20, Training Step  9200 / 1000000 , Training Accuracy =  19.828125 
+-----------------------------------------------
+Generated text:  {and€&Z& Th«uš¾•Î& ¤iZum w¦sZšt
+
+Epoch  7 / 20, Training Step  9300 / 1000000 , Training Accuracy =  19.328125 
+-----------------------------------------------
+Generated text:  ]
+«us at aZmedZ¢Zs#
+
+T¤Za$%lic$
+
+Epoch  7 / 20, Training Step  9400 / 1000000 , Training Accuracy =  19.4375 
+-----------------------------------------------
+Generated text:  Ï@Î±Ï‰,Z á¼„ÎµÏá½¸Î¿#Z. ¢ â€š“
+
+Epoch  7 / 20, Training Step  9500 / 1000000 , Training Accuracy =  19.296875 
+-----------------------------------------------
+Generated text:   that the God€Zates w¦¨, agaid 
+
+Epoch  7 / 20, Training Step  9600 / 1000000 , Training Accuracy =  19.53125 
+-----------------------------------------------
+Generated text:  Ä¥ÏZy€Rl¯Ã¦.]©    ¥b¯as to
+©âN
+
+Epoch  7 / 20, Training Step  9700 / 1000000 , Training Accuracy =  19.6875 
+-----------------------------------------------
+Generated text:  «, while
+terZ%siZeZs by
+pr%ote
+
+Epoch  7 / 20, Training Step  9800 / 1000000 , Training Accuracy =  19.515625 
+-----------------------------------------------
+Generated text:  ’áZá½@Î¿ÎµÎ¹Ï‚,
+  its€$#xšiZit$
+
+Epoch  7 / 20, Training Step  9900 / 1000000 , Training Accuracy =  19.8125 
+-----------------------------------------------
+Generated text:  ©¯Z’to$,¦niumZe calZs$€& To ÄZ’
+
+Epoch  7 / 20, Training Step  10000 / 1000000 , Training Accuracy =  19.703125 
+-----------------------------------------------
+Generated text:  
+
+
+«E& SZ=c¯s @pgur@b=FAxZšt w•
+
+Epoch  7 / 20, Training Step  10100 / 1000000 , Training Accuracy =  19.359375 
+-----------------------------------------------
+Generated text:  % of ©¯adon“s,
+«.
+&
+Do
+   ª& Bo
+
+Epoch  7 / 20, Training Step  10200 / 1000000 , Training Accuracy =  19.546875 
+-----------------------------------------------
+Generated text:  %Zoke.­ZsZ«_--&Z ToZanšraZrro 
+
+Epoch  7 / 20, Training Step  10300 / 1000000 , Training Accuracy =  19.875 
+-----------------------------------------------
+Generated text:  E IIZ.
+¢ FaZ•phiad. R.&Z(á€L’so
+
+Epoch  7 / 20, Training Step  10400 / 1000000 , Training Accuracy =  20.0 
+-----------------------------------------------
+Generated text:  8# ªandZ¤xeZs.$& ­e th¦sely
+ 
+t
+
+Epoch  7 / 20, Training Step  10500 / 1000000 , Training Accuracy =  19.546875 
+-----------------------------------------------
+Generated text:  5]
+ ªecteZs, wandiZ&
+ ª¤Zent$â&
+
+Epoch  7 / 20, Training Step  10600 / 1000000 , Training Accuracy =  19.921875 
+-----------------------------------------------
+Generated text:  ¸Ï†á½€Î³Ï@Î¼Z @y
+Z=P•AM¶EES ¯S.
+
+Epoch  7 / 20, Training Step  10700 / 1000000 , Training Accuracy =  19.4375 
+-----------------------------------------------
+Generated text:  zeZity ÄZeZophiag,«Zotš]¥Z’Zpon
+
+Epoch  7 / 20, Training Step  10800 / 1000000 , Training Accuracy =  19.765625 
+-----------------------------------------------
+Generated text:  ‚, â˜ % newZ¤Z’$gas. «eZetriZ%t
+
+Epoch  7 / 20, Training Step  10900 / 1000000 , Training Accuracy =  19.765625 
+-----------------------------------------------
+Generated text:  ch¯s[35&Zs C%rZephZeu$
+GorgZs,
+
+
+Epoch  7 / 20, Training Step  11000 / 1000000 , Training Accuracy =  19.734375 
+-----------------------------------------------
+Generated text:  ²]¯IZeton.ªe ¥p€r&
+’idZZ%t¤eZsZ
+
+Epoch  7 / 20, Training Step  11100 / 1000000 , Training Accuracy =  20.0625 
+-----------------------------------------------
+Generated text:  ²Z’t’¯n allZoZes wašZ’ni$piš$Za
+
+Epoch  7 / 20, Training Step  11200 / 1000000 , Training Accuracy =  19.828125 
+-----------------------------------------------
+Generated text:  »Îm’#½½77Ï‚,]ª] VIZe FošZa$%ria
+
+Epoch  7 / 20, Training Step  11300 / 1000000 , Training Accuracy =  19.28125 
+-----------------------------------------------
+Generated text:  ; @«pholZoZed wa’k•Z@Ze&
+   
+"P
+
+Epoch  7 / 20, Training Step  11400 / 1000000 , Training Accuracy =  20.171875 
+-----------------------------------------------
+Generated text:  á½³Ï’ÏZ]
+IZZs,Z«  ad“ZodZi¢ZZ,
+
+Epoch  7 / 20, Training Step  11500 / 1000000 , Training Accuracy =  20.171875 
+-----------------------------------------------
+Generated text:  á½Z“c’Zut$gs$Ztis, who#Z¯nš,
+
+Epoch  7 / 20, Training Step  11600 / 1000000 , Training Accuracy =  20.03125 
+-----------------------------------------------
+Generated text:  ‘¯ZuriaZu# staZuttry. «Zans %oš
+
+Epoch  7 / 20, Training Step  11700 / 1000000 , Training Accuracy =  19.828125 
+-----------------------------------------------
+Generated text:  Z“tiaš.%. T¯#ÄsZy inZadi’ZaZ% Q
+
+Epoch  7 / 20, Training Step  11800 / 1000000 , Training Accuracy =  20.296875 
+-----------------------------------------------
+Generated text:  _--& lad Äni#igh,[74# SÃ¦& GZ¯d
+
+Epoch  7 / 20, Training Step  11900 / 1000000 , Training Accuracy =  19.21875 
+-----------------------------------------------
+Generated text:  -V@@s.ª&¥Zš @I @Zots. ªor t¤lmu
+
+Epoch  8 / 20, Training Step  0 / 1000000 , Training Accuracy =  19.125 
+-----------------------------------------------
+Generated text:  ¤’Z’cá˜M.%«othšÃ¦aZ. ¢res, a m€
+
+Epoch  8 / 20, Training Step  100 / 1000000 , Training Accuracy =  19.234375 
+-----------------------------------------------
+Generated text:  unt€Z’sZadZyZ%sZaš,Z@Zep.ZeZ’sZ
+
+Epoch  8 / 20, Training Step  200 / 1000000 , Training Accuracy =  19.546875 
+-----------------------------------------------
+Generated text:  !Zate,
+the
+d€usb•/water,ZyZs su
+
+Epoch  8 / 20, Training Step  300 / 1000000 , Training Accuracy =  19.828125 
+-----------------------------------------------
+Generated text:  V¯r. Vªre$& ©Zy saZšd«Z¯š}ZªZ& 
+
+Epoch  8 / 20, Training Step  400 / 1000000 , Training Accuracy =  19.828125 
+-----------------------------------------------
+Generated text:  j€w•y aZreZan is th¦n oZ= ¤ving
+
+Epoch  8 / 20, Training Step  500 / 1000000 , Training Accuracy =  20.0625 
+-----------------------------------------------
+Generated text:  }Z’nos in“$& Zot @.¥,&
+I my %Zu
+
+Epoch  8 / 20, Training Step  600 / 1000000 , Training Accuracy =  19.65625 
+-----------------------------------------------
+Generated text:  Way,#w¯Zd,Zer€‘ed. ªZo¢€von.]
+«
+
+Epoch  8 / 20, Training Step  700 / 1000000 , Training Accuracy =  19.015625 
+-----------------------------------------------
+Generated text:  V¯@Z. 5¥. Go,«
+ZoZene, ªasZit$
+
+
+Epoch  8 / 20, Training Step  800 / 1000000 , Training Accuracy =  19.828125 
+-----------------------------------------------
+Generated text:  Be¯c.Z¤xZ%,Zor
+¢.% ¤šphimZat%Za
+
+Epoch  8 / 20, Training Step  900 / 1000000 , Training Accuracy =  19.78125 
+-----------------------------------------------
+Generated text:  J%tutQ gZeZeršZs]Zs aZret›gisZa
+
+Epoch  8 / 20, Training Step  1000 / 1000000 , Training Accuracy =  19.515625 
+-----------------------------------------------
+Generated text:  
+¤neZe“mZoZÃÄSeme’amiZen$[82Z%Z
+
+Epoch  8 / 20, Training Step  1100 / 1000000 , Training Accuracy =  19.515625 
+-----------------------------------------------
+Generated text:  Yeš.
+
+¤Zotes, @@ÏZan.] T«
+’agon
+
+Epoch  8 / 20, Training Step  1200 / 1000000 , Training Accuracy =  20.09375 
+-----------------------------------------------
+Generated text:  der to#¾.$  toZbthš) he#Z¯dZs ¨
+
+Epoch  8 / 20, Training Step  1300 / 1000000 , Training Accuracy =  19.453125 
+-----------------------------------------------
+Generated text:  »¥Îºá¿šÎ$& Z•ZšZ%tiZedZes$ªtœra
+
+Epoch  8 / 20, Training Step  1400 / 1000000 , Training Accuracy =  20.171875 
+-----------------------------------------------
+Generated text:  4¥. ¢rsis,­) texZas tZleZeZ“tes
+
+Epoch  8 / 20, Training Step  1500 / 1000000 , Training Accuracy =  19.578125 
+-----------------------------------------------
+Generated text:  S€OVš.
+
+¤ts thanš,
+ªect¼d asZos
+
+Epoch  8 / 20, Training Step  1600 / 1000000 , Training Accuracy =  19.5 
+-----------------------------------------------
+Generated text:  ReZs ¨ER$#1ª ÄF&& N Zed,šnš, @Z
+
+Epoch  8 / 20, Training Step  1700 / 1000000 , Training Accuracy =  19.65625 
+-----------------------------------------------
+Generated text:  –¥Î±áZÎ¥&á€œOI ¥ª& ‘išnd-¨yZes­
+
+Epoch  8 / 20, Training Step  1800 / 1000000 , Training Accuracy =  19.53125 
+-----------------------------------------------
+Generated text:  cZot$
+  ¤ZeZisZÃ¯s alZod’ssaZes
+
+Epoch  8 / 20, Training Step  1900 / 1000000 , Training Accuracy =  19.828125 
+-----------------------------------------------
+Generated text:  hZearus._ªZetZÃ¦,-&Zd’e#Z’dZeZ
+
+Epoch  8 / 20, Training Step  2000 / 1000000 , Training Accuracy =  19.21875 
+-----------------------------------------------
+Generated text:  K¤&_-
+
+  T¤& Ba$¼šgus
+’rciiZ’di
+
+Epoch  8 / 20, Training Step  2100 / 1000000 , Training Accuracy =  19.953125 
+-----------------------------------------------
+Generated text:  hatZy Änip€Zes, aZraZ&
+ ¥invinš
+
+Epoch  8 / 20, Training Step  2200 / 1000000 , Training Accuracy =  19.5625 
+-----------------------------------------------
+Generated text:  's¹.Z¶,# ­idoreZs, th#¯every, a
+
+Epoch  8 / 20, Training Step  2300 / 1000000 , Training Accuracy =  19.40625 
+-----------------------------------------------
+Generated text:  keZes. To
+©Zars,
+tZotš.” @šgges
+
+Epoch  8 / 20, Training Step  2400 / 1000000 , Training Accuracy =  19.359375 
+-----------------------------------------------
+Generated text:  A“piZZZe€º.$ In t«#m& MZo thob
+
+Epoch  8 / 20, Training Step  2500 / 1000000 , Training Accuracy =  19.21875 
+-----------------------------------------------
+Generated text:  Î¥á½m’Î½###_
+V¯II:[63]
+  _&Z ÄV
+
+Epoch  8 / 20, Training Step  2600 / 1000000 , Training Accuracy =  19.546875 
+-----------------------------------------------
+Generated text:  
+¢Zors isZi& beZušnišnZ%not¯d€
+
+Epoch  8 / 20, Training Step  2700 / 1000000 , Training Accuracy =  19.625 
+-----------------------------------------------
+Generated text:  6#58ZZB“iš.ª,
+ 
+MineZsZan ª¦Z#t
+
+Epoch  8 / 20, Training Step  2800 / 1000000 , Training Accuracy =  19.921875 
+-----------------------------------------------
+Generated text:  U Fo•toZ%Ä=susZaged to tZ@p.$& 
+
+Epoch  8 / 20, Training Step  2900 / 1000000 , Training Accuracy =  20.375 
+-----------------------------------------------
+Generated text:  g %arZeZ.
+¢rZed
+ ­¯¨[6&Zon’ted$
+
+Epoch  8 / 20, Training Step  3000 / 1000000 , Training Accuracy =  19.390625 
+-----------------------------------------------
+Generated text:  5# IZacZo&–€™
+ 
+©¯e t¤l’ki ]
+ ¤
+
+Epoch  8 / 20, Training Step  3100 / 1000000 , Training Accuracy =  19.671875 
+-----------------------------------------------
+Generated text:  K IN#1
+#d’Z tÃ†s¯ia,
+’i#ZZZs, w
+
+Epoch  8 / 20, Training Step  3200 / 1000000 , Training Accuracy =  19.671875 
+-----------------------------------------------
+Generated text:  Gros _--I
+Z¤&.&$&
+  _â€™ ¤pZipÃ
+
+Epoch  8 / 20, Training Step  3300 / 1000000 , Training Accuracy =  19.5625 
+-----------------------------------------------
+Generated text:  ¢ ªaZšZÃÄ¦tÃs,[24]
+aZvid sZ%l=3
+
+Epoch  8 / 20, Training Step  3400 / 1000000 , Training Accuracy =  19.5625 
+-----------------------------------------------
+Generated text:  ‰€&Z â%:
+
+«“&šn#.& 41# ¤š#[@.&Z
+
+Epoch  8 / 20, Training Step  3500 / 1000000 , Training Accuracy =  19.890625 
+-----------------------------------------------
+Generated text:  ¦an daugur.Z. Him @bZellas and
+
+
+Epoch  8 / 20, Training Step  3600 / 1000000 , Training Accuracy =  20.234375 
+-----------------------------------------------
+Generated text:  ­,[&Z._&¥]
+«¤#,ZotZotus€5ZenušZ
+
+Epoch  8 / 20, Training Step  3700 / 1000000 , Training Accuracy =  19.59375 
+-----------------------------------------------
+Generated text:  Â&##
+ 
+ ªan ÄZite 1: â€šac.-y@
+
+Epoch  8 / 20, Training Step  3800 / 1000000 , Training Accuracy =  19.015625 
+-----------------------------------------------
+Generated text:  Nyctia,Zodu$–, a s#lZemu=:’ZšZs
+
+Epoch  8 / 20, Training Step  3900 / 1000000 , Training Accuracy =  19.53125 
+-----------------------------------------------
+Generated text:  llo$Cero$&Zs En¥Zš$%aZeZÃ¼sZ’an
+
+Epoch  8 / 20, Training Step  4000 / 1000000 , Training Accuracy =  19.84375 
+-----------------------------------------------
+Generated text:  Bu#âª. To
+© %ur’conqœZel.$& (j¦
+
+Epoch  8 / 20, Training Step  4100 / 1000000 , Training Accuracy =  19.78125 
+-----------------------------------------------
+Generated text:  ˆZ’Zex,
+wickš.--741.ªZeš Is
+â77
+
+Epoch  8 / 20, Training Step  4200 / 1000000 , Training Accuracy =  19.5 
+-----------------------------------------------
+Generated text:  whi#ZoZis oZaš his#Z¤l texZespe
+
+Epoch  8 / 20, Training Step  4300 / 1000000 , Training Accuracy =  19.140625 
+-----------------------------------------------
+Generated text:  ;
+ 
+  the
+destrume,
+¢ltect ”.¥&
+
+Epoch  8 / 20, Training Step  4400 / 1000000 , Training Accuracy =  20.078125 
+-----------------------------------------------
+Generated text:  urn’ZetZs,#4] oZas.]
+«urišgetZ%
+
+Epoch  8 / 20, Training Step  4500 / 1000000 , Training Accuracy =  19.625 
+-----------------------------------------------
+Generated text:  :•/ZZanZeZed. Sho€ne ¤l’dZa$ c¦
+
+Epoch  8 / 20, Training Step  4600 / 1000000 , Training Accuracy =  19.703125 
+-----------------------------------------------
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 2214873 ON r30n5 CANCELLED AT 2019-04-28T00:16:46 ***
