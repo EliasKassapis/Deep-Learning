@@ -35,11 +35,14 @@ class TextDataset(data.Dataset):
         self._char_to_ix = { ch:i for i,ch in enumerate(self._chars) }
         self._ix_to_char = { i:ch for i,ch in enumerate(self._chars) }
         self._offset = 0
+        # self._idx_data = np.array([self._char_to_ix[ch] for ch in self._data])
 
     def __getitem__(self, item):
         offset = np.random.randint(0, len(self._data)-self._seq_length-2)
         inputs =  [self._char_to_ix[ch] for ch in self._data[offset:offset+self._seq_length]]
         targets = [self._char_to_ix[ch] for ch in self._data[offset+1:offset+self._seq_length+1]]
+        # inputs = self._idx_data[offset:offset+self._seq_length]
+        # targets = self._idx_data[offset+1:offset+self._seq_length+1]
         return inputs, targets
 
     def convert_to_string(self, char_ix):

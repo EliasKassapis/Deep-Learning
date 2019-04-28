@@ -36,7 +36,7 @@ from model import TextGenerationModel
 torch.set_default_tensor_type('torch.FloatTensor')
 
 ################################################################################
-def get_accuracy(predictions, targets, batch_size):
+def get_accuracy(predictions, targets, batch_size, seq_len):
   """
   Computes the prediction accuracy, i.e. the average of correct predictions
   of the network.
@@ -53,8 +53,7 @@ def get_accuracy(predictions, targets, batch_size):
   TODO:
   Implement accuracy computation.
   """
-
-  acc = torch.sum(predictions.argmax(dim=1) == targets).to(torch.float) /batch_size # check if torch.float is necessary
+  acc = torch.mean((predictions.argmax(dim=1) == targets).to(torch.float))
 
   return acc
 
@@ -94,7 +93,7 @@ def get_next_char(char, model, hc, temperature, sampling="greedy"):  #input is (
             top_ch = idx[-np.random.choice(range(3))]
 
         elif sampling == 'random':
-            top_ch = torch.multinomial(pred.squeeze(),1).item()
+            top_ch = torch.multinomial(p,1).item()
 
     return top_ch.view(1,1), hc
 
@@ -126,7 +125,8 @@ def train(config):
     data_loader = DataLoader(dataset, config.batch_size, num_workers=1)
 
     # Initialize the model that we are going to use
-    model = TextGenerationModel(config.batch_size, config.seq_length, dataset.vocab_size, config.lstm_num_hidden, config.lstm_num_layers, device=device)
+    model = TextGenerationModel(config.batch_size, config.seq_length, dataset.vocab_size, config.dropout_prob, config.lstm_num_hidden,
+                                config.lstm_num_layers, device=device)
 
     # Setup the loss and optimizer
     criterion = torch.nn.CrossEntropyLoss() ############################################################################################################
@@ -135,6 +135,7 @@ def train(config):
     model.to(device)
 
     train_loss = []
+    train_acc = []
 
     #Convergence criterion
     eps = 1e-6
@@ -142,6 +143,12 @@ def train(config):
     for epoch in range(100):
 
         for step, (batch_inputs, batch_targets) in enumerate(data_loader):
+
+
+            # x = batch_inputs.to(device)
+            # y = batch_targets.to(device)
+
+            # print(x.shape)
 
             # Clear stored gradient
             model.zero_grad()
@@ -152,10 +159,11 @@ def train(config):
             #######################################################
             # Add more code here ...
 
-            #Convert list of tensors into one tensor for inputs and labels
+            # #Convert list of tensors into one tensor for inputs and labels
             x = torch.stack(batch_inputs).to(device)
             y = torch.stack(batch_targets).to(device)
 
+            # print(x.shape)
 
             #Convert input to one-hot vectors
             x = idx_2_onehot(x, dataset.vocab_size) #x = (sentence length, batch_size, one_hot vec(char))
@@ -171,7 +179,8 @@ def train(config):
             loss.backward()
             optimizer.step()
 
-            accuracy = get_accuracy(pred,y, config.batch_size)
+            accuracy = get_accuracy(pred,y, config.batch_size, config.seq_length)
+            train_acc.append(accuracy.item())
 
             # Just for time measurement
             t2 = time.time()
@@ -201,7 +210,7 @@ def train(config):
                 # https://github.com/pytorch/pytorch/pull/9655
                 break
 
-            if epoch != 0 and step % 500000 == 0:
+            if epoch != 0 and step % 150000 == 0:
                 if step != 0:
                     #save current model
                     torch.save(model, "final_model")
@@ -226,8 +235,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
     # Model params
-    parser.add_argument('--txt_file', type=str, default = './Iliad.txt', help="Path to a .txt file to train on") 
-    parser.add_argument('--output_file', type=str, default = './gIliad.txt', help="Path to a .txt file to train on") ##################################################
+    parser.add_argument('--txt_file', type=str, default = './Grim.txt', help="Path to a .txt file to train on")
+    parser.add_argument('--output_file', type=str, default = './gGrim.txt', help="Path to a .txt file to train on") ##################################################
     parser.add_argument('--seq_length', type=int, default=30, help='Length of an input sequence')
     parser.add_argument('--lstm_num_hidden', type=int, default=128, help='Number of hidden units in the LSTM')
     parser.add_argument('--lstm_num_layers', type=int, default=2, help='Number of LSTM layers in the model')
@@ -241,7 +250,7 @@ if __name__ == "__main__":
     # It is not necessary to implement the following three params, but it may help training.
     parser.add_argument('--learning_rate_decay', type=float, default=0.96, help='Learning rate decay fraction')
     parser.add_argument('--learning_rate_step', type=int, default=5000, help='Learning rate step')
-    parser.add_argument('--dropout_keep_prob', type=float, default=1.0, help='Dropout keep probability')
+    parser.add_argument('--dropout_prob', type=float, default=0.0, help='Dropout probability')
 
     parser.add_argument('--train_steps', type=int, default=1e6, help='Number of training steps')
     parser.add_argument('--max_norm', type=float, default=5.0, help='--')

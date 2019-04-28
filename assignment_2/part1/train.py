@@ -54,7 +54,7 @@ def get_accuracy(predictions, targets, batch_size):
   Implement accuracy computation.
   """
 
-  acc = torch.sum(predictions.argmax(dim=1) == targets).to(torch.float) /batch_size
+  acc = torch.mean((predictions.argmax(dim=1) == targets).to(torch.float))
 
   return acc
 

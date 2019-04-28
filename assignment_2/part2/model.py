@@ -23,7 +23,7 @@ import torch
 
 class TextGenerationModel(nn.Module):
 
-    def __init__(self, batch_size, seq_length, vocabulary_size,
+    def __init__(self, batch_size, seq_length, vocabulary_size, drop_prob,
                  lstm_num_hidden=256, lstm_num_layers=2, device='cuda:0'):
 
         super(TextGenerationModel, self).__init__()
@@ -36,9 +36,13 @@ class TextGenerationModel(nn.Module):
         self.lstm_num_hidden = lstm_num_hidden
         self.lstm_num_layers = lstm_num_layers
         self.device = device
+        self.dropout = drop_prob
 
         #Initialize LSTM layers
-        self.lstm = nn.LSTM(self.vocabulary_size, self.lstm_num_hidden, self.lstm_num_layers) # may need to add batch size
+        self.lstm = nn.LSTM(self.vocabulary_size, self.lstm_num_hidden, self.lstm_num_layers, dropout=drop_prob) # may need to add batch size
+
+        #Initialize a dropout layer
+        self.dropout = nn.Dropout(drop_prob)
 
         #Initialize linear output layer
         self.linear = nn.Linear(self.lstm_num_hidden, self.vocabulary_size)
@@ -49,6 +53,9 @@ class TextGenerationModel(nn.Module):
 
         #get the output of the LSTM cells
         lstm_out, hc = self.lstm(x, previous_states) # hc is a tuple of (h_final,c_final)
+
+        #pass output through dropout layer
+        lstm_out = self.dropout(lstm_out)
 
         #get output from linear layer
         out = self.linear(lstm_out)
