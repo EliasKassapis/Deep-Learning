@@ -226,8 +226,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
     # Model params
-    parser.add_argument('--txt_file', type=str, default = './Ovid.txt', help="Path to a .txt file to train on") ############ May need to change to False
-    parser.add_argument('--output_file', type=str, default = './gOvid.txt', help="Path to a .txt file to train on") ##################################################
+    parser.add_argument('--txt_file', type=str, default = './Iliad.txt', help="Path to a .txt file to train on") 
+    parser.add_argument('--output_file', type=str, default = './gIliad.txt', help="Path to a .txt file to train on") ##################################################
     parser.add_argument('--seq_length', type=int, default=30, help='Length of an input sequence')
     parser.add_argument('--lstm_num_hidden', type=int, default=128, help='Number of hidden units in the LSTM')
     parser.add_argument('--lstm_num_layers', type=int, default=2, help='Number of LSTM layers in the model')
