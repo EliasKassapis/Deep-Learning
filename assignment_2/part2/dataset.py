@@ -32,10 +32,11 @@ class TextDataset(data.Dataset):
         self._data_size, self._vocab_size = len(self._data), len(self._chars)
         print("Initialize dataset with {} characters, {} unique.".format(
             self._data_size, self._vocab_size))
+        self._chars = sorted(self._chars) #added this to ensure each time we load the book the library is the same!
         self._char_to_ix = { ch:i for i,ch in enumerate(self._chars) }
         self._ix_to_char = { i:ch for i,ch in enumerate(self._chars) }
         self._offset = 0
-        self._idx_data = np.array([self._char_to_ix[ch] for ch in self._data])
+        self._idx_data = np.array([self._char_to_ix[ch] for ch in self._data]) # added this to make loading faster
 
     def __getitem__(self, item):
         offset = np.random.randint(0, len(self._data)-self._seq_length-2)
