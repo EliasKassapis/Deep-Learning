@@ -78,19 +78,19 @@ def get_next_char(char, model, hc, temperature=None):
         #get model output
         pred, hc = model(char, hc)
 
-        #get char distributions
-        p = F.softmax(pred.squeeze().to(torch.float), dim=0)
 
         #sample one character
         if temperature == None:
-            #get top character
+            #get char distribution
+            p = F.softmax(pred.squeeze().to(torch.float), dim=0)
+            #get top character (greedy)
             top_ch = p.argmax()
 
         else:
-            p = p/temperature
-            #get top character
-            top_ch = p.argmax()
-            # top_ch = torch.multinomial(p,1) ###############################################
+            #get char distribution
+            p = F.softmax(pred.squeeze()/temperature, dim=0)
+            #sample character
+            top_ch = torch.multinomial(p,1)
 
     return top_ch.view(1,1), hc
 
@@ -135,9 +135,9 @@ def train(config):
     train_acc = []
 
     #Convergence criterion
-    eps = 1e-6
+    eps = 1e-3
 
-    for epoch in range(100):
+    for epoch in range(50):
 
         for step, (batch_inputs, batch_targets) in enumerate(data_loader):
 
@@ -196,7 +196,7 @@ def train(config):
             if step % config.sample_every == 0:
                 # Generate some sentences by sampling from the model
                 #get text in int format
-                text = text_gen(model, config.seq_length, dataset.vocab_size, temperature=0.5) ######################################
+                text = text_gen(model, config.seq_length, dataset.vocab_size, temperature=None) ######################################
                 #convert text to string
                 text = dataset.convert_to_string(text)
                 print('\nEpoch ',epoch+1,'/ 100, Training Step ',step,'/',int(config.train_steps),', Training Accuracy = ', accuracy.item(),
@@ -207,10 +207,10 @@ def train(config):
                 # https://github.com/pytorch/pytorch/pull/9655
                 break
 
-            if epoch != 0 and step % 150000 == 0:
-                if step != 0:
-                    #save current model
-                    torch.save(model, "final_model")
+            if epoch != 0:
+                if step == 0:
+                    #save current model at the start of every epoch
+                    torch.save(model, "epoch_" + str(epoch-1) +"_model")
 
         if step > 0 and abs(train_loss[step] - train_loss[step-1]) < eps:
             break
@@ -221,7 +221,7 @@ def train(config):
 
     #save final model
     torch.save(model, "step_" + str(step) +"_model")
-
+    torch.save(model, "final_model")
 
  ################################################################################
  ################################################################################
