@@ -240,6 +240,7 @@ def test(config, seq_size, n_examples):
 
     # Initialize the dataset and data loader
     dataset = PalindromeDataset(seq_size+1)
+    # dataset = PalindromeDataset(seq_size) ###################################
     data_loader = DataLoader(dataset, config.batch_size, num_workers=1)
 
     #Get one batch to test
@@ -250,21 +251,22 @@ def test(config, seq_size, n_examples):
 
     # Load the trained model
     model = torch.load('./Results/RNN/' + str(seq_size) + '_RNN_model', map_location=config.device)
+    # model = torch.load('./Results/RNN/Run 1/' + str(seq_size) + '_RNN_model_1', map_location=config.device) #############
     model.to(config.device)
 
     #get predictions for batch
     with torch.no_grad():
         pred = model.forward(x)
 
-    print('\n----------------------\nSequence length: ',str(seq_size),'\n----------------------')
+    print('\n----------------------\nSequence length: ',str(seq_size+1),'\n----------------------') #####
 
     for i in range(n_examples):
         print('\nTesting on palindrome',str(i+1),':\n---------------\n\nInput:',str(batch_inputs[i].tolist()),'\nPredicted last digit:',str(pred[i,:].argmax().item()),'\n')
 
 
-# #Get qualitative results for models of different sizes
-# for length in [5,10,15,20,25,30,35,40,45,50]:
-#     test(config, length, 3)
+#Get qualitative results for models of different sizes
+for length in [5,10,15,20,25,30,35,40,45,50]:
+    test(config, length, 3)
 
 
-test(config, 5, 3)
+# test(config, 5, 3)
