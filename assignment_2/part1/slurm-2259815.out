@@ -1,0 +1,339 @@
+/var/spool/slurm-llnl/slurmd/job2259815/slurm_script: line 20: cd: /home/lgpu0417/deep-learning/assignment_2/part1/: Permission denied
+ ------ Job mlp_pytorch is started ------- 
+ 
+
+---------------
+Training LSTM 
+---------------
+
+Sequence Length:  5 
+---------------------
+
+[2019-05-04 15:11] Train Step 0000/10000, Batch Size = 128, Examples/Sec = 245.22, Accuracy = 0.09, Loss = 6.152
+[2019-05-04 15:11] Train Step 1000/10000, Batch Size = 128, Examples/Sec = 7069.39, Accuracy = 0.71, Loss = 0.739
+[2019-05-04 15:11] Train Step 2000/10000, Batch Size = 128, Examples/Sec = 7500.40, Accuracy = 0.98, Loss = 0.150
+[2019-05-04 15:12] Train Step 3000/10000, Batch Size = 128, Examples/Sec = 7273.10, Accuracy = 1.00, Loss = 0.005
+[2019-05-04 15:12] Train Step 4000/10000, Batch Size = 128, Examples/Sec = 7193.86, Accuracy = 1.00, Loss = 0.001
+[2019-05-04 15:12] Train Step 5000/10000, Batch Size = 128, Examples/Sec = 6935.60, Accuracy = 1.00, Loss = 0.000
+[2019-05-04 15:13] Train Step 6000/10000, Batch Size = 128, Examples/Sec = 7375.21, Accuracy = 1.00, Loss = 0.000
+[2019-05-04 15:13] Train Step 7000/10000, Batch Size = 128, Examples/Sec = 7249.72, Accuracy = 1.00, Loss = 0.000
+Done training.
+Sequence Length:  10 
+---------------------
+
+train.py:109: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  x = torch.tensor(batch_inputs, device=device)
+train.py:110: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  y = torch.tensor(batch_targets,device=device)
+train.py:132: UserWarning: torch.nn.utils.clip_grad_norm is now deprecated in favor of torch.nn.utils.clip_grad_norm_.
+  torch.nn.utils.clip_grad_norm(model.parameters(), max_norm=config.max_norm)
+[2019-05-04 15:13] Train Step 0000/10000, Batch Size = 128, Examples/Sec = 3531.30, Accuracy = 0.10, Loss = 6.790
+[2019-05-04 15:14] Train Step 1000/10000, Batch Size = 128, Examples/Sec = 4115.59, Accuracy = 0.14, Loss = 2.476
+[2019-05-04 15:14] Train Step 2000/10000, Batch Size = 128, Examples/Sec = 4104.52, Accuracy = 0.41, Loss = 1.417
+[2019-05-04 15:15] Train Step 3000/10000, Batch Size = 128, Examples/Sec = 3906.62, Accuracy = 0.86, Loss = 0.545
+[2019-05-04 15:16] Train Step 4000/10000, Batch Size = 128, Examples/Sec = 4040.00, Accuracy = 0.98, Loss = 0.121
+[2019-05-04 15:16] Train Step 5000/10000, Batch Size = 128, Examples/Sec = 4275.23, Accuracy = 0.98, Loss = 0.045
+[2019-05-04 15:17] Train Step 6000/10000, Batch Size = 128, Examples/Sec = 4231.36, Accuracy = 1.00, Loss = 0.005
+[2019-05-04 15:17] Train Step 7000/10000, Batch Size = 128, Examples/Sec = 4064.62, Accuracy = 1.00, Loss = 0.004
+[2019-05-04 15:18] Train Step 8000/10000, Batch Size = 128, Examples/Sec = 4017.83, Accuracy = 0.99, Loss = 0.013
+[2019-05-04 15:18] Train Step 9000/10000, Batch Size = 128, Examples/Sec = 4227.60, Accuracy = 1.00, Loss = 0.013
+[2019-05-04 15:19] Train Step 10000/10000, Batch Size = 128, Examples/Sec = 3939.50, Accuracy = 1.00, Loss = 0.001
+Done training.
+Sequence Length:  15 
+---------------------
+
+[2019-05-04 15:19] Train Step 0000/10000, Batch Size = 128, Examples/Sec = 2739.31, Accuracy = 0.10, Loss = 8.361
+[2019-05-04 15:20] Train Step 1000/10000, Batch Size = 128, Examples/Sec = 2862.24, Accuracy = 0.14, Loss = 3.602
+[2019-05-04 15:20] Train Step 2000/10000, Batch Size = 128, Examples/Sec = 2972.11, Accuracy = 0.11, Loss = 2.718
+[2019-05-04 15:21] Train Step 3000/10000, Batch Size = 128, Examples/Sec = 3118.26, Accuracy = 0.12, Loss = 2.464
+[2019-05-04 15:22] Train Step 4000/10000, Batch Size = 128, Examples/Sec = 2982.24, Accuracy = 0.18, Loss = 2.057
+[2019-05-04 15:23] Train Step 5000/10000, Batch Size = 128, Examples/Sec = 2880.56, Accuracy = 0.28, Loss = 1.842
+[2019-05-04 15:23] Train Step 6000/10000, Batch Size = 128, Examples/Sec = 3046.18, Accuracy = 0.42, Loss = 1.452
+[2019-05-04 15:24] Train Step 7000/10000, Batch Size = 128, Examples/Sec = 3008.51, Accuracy = 0.59, Loss = 1.055
+[2019-05-04 15:25] Train Step 8000/10000, Batch Size = 128, Examples/Sec = 3114.70, Accuracy = 0.73, Loss = 0.665
+[2019-05-04 15:26] Train Step 9000/10000, Batch Size = 128, Examples/Sec = 2963.81, Accuracy = 0.93, Loss = 0.272
+[2019-05-04 15:26] Train Step 10000/10000, Batch Size = 128, Examples/Sec = 2985.30, Accuracy = 0.99, Loss = 0.089
+Done training.
+Sequence Length:  20 
+---------------------
+
+[2019-05-04 15:26] Train Step 0000/10000, Batch Size = 128, Examples/Sec = 2724.32, Accuracy = 0.09, Loss = 9.224
+[2019-05-04 15:27] Train Step 1000/10000, Batch Size = 128, Examples/Sec = 2425.60, Accuracy = 0.08, Loss = 4.203
+[2019-05-04 15:28] Train Step 2000/10000, Batch Size = 128, Examples/Sec = 2379.73, Accuracy = 0.07, Loss = 3.222
+[2019-05-04 15:29] Train Step 3000/10000, Batch Size = 128, Examples/Sec = 2246.09, Accuracy = 0.07, Loss = 2.737
+[2019-05-04 15:30] Train Step 4000/10000, Batch Size = 128, Examples/Sec = 2438.43, Accuracy = 0.16, Loss = 2.276
+[2019-05-04 15:31] Train Step 5000/10000, Batch Size = 128, Examples/Sec = 2453.87, Accuracy = 0.13, Loss = 2.319
+[2019-05-04 15:32] Train Step 6000/10000, Batch Size = 128, Examples/Sec = 2388.19, Accuracy = 0.11, Loss = 2.348
+[2019-05-04 15:33] Train Step 7000/10000, Batch Size = 128, Examples/Sec = 2461.42, Accuracy = 0.12, Loss = 2.339
+[2019-05-04 15:34] Train Step 8000/10000, Batch Size = 128, Examples/Sec = 2388.92, Accuracy = 0.12, Loss = 2.277
+[2019-05-04 15:35] Train Step 9000/10000, Batch Size = 128, Examples/Sec = 2415.43, Accuracy = 0.10, Loss = 2.269
+[2019-05-04 15:36] Train Step 10000/10000, Batch Size = 128, Examples/Sec = 2415.67, Accuracy = 0.14, Loss = 2.237
+Done training.
+Sequence Length:  25 
+---------------------
+
+[2019-05-04 15:36] Train Step 0000/10000, Batch Size = 128, Examples/Sec = 1938.86, Accuracy = 0.12, Loss = 7.706
+[2019-05-04 15:37] Train Step 1000/10000, Batch Size = 128, Examples/Sec = 2000.96, Accuracy = 0.09, Loss = 4.093
+[2019-05-04 15:38] Train Step 2000/10000, Batch Size = 128, Examples/Sec = 2005.31, Accuracy = 0.09, Loss = 3.145
+[2019-05-04 15:39] Train Step 3000/10000, Batch Size = 128, Examples/Sec = 2079.05, Accuracy = 0.12, Loss = 2.806
+[2019-05-04 15:40] Train Step 4000/10000, Batch Size = 128, Examples/Sec = 2009.45, Accuracy = 0.10, Loss = 2.504
+[2019-05-04 15:41] Train Step 5000/10000, Batch Size = 128, Examples/Sec = 2068.79, Accuracy = 0.16, Loss = 2.373
+[2019-05-04 15:42] Train Step 6000/10000, Batch Size = 128, Examples/Sec = 2010.87, Accuracy = 0.17, Loss = 2.323
+[2019-05-04 15:43] Train Step 7000/10000, Batch Size = 128, Examples/Sec = 2003.45, Accuracy = 0.16, Loss = 2.278
+[2019-05-04 15:44] Train Step 8000/10000, Batch Size = 128, Examples/Sec = 1996.95, Accuracy = 0.19, Loss = 2.273
+[2019-05-04 15:45] Train Step 9000/10000, Batch Size = 128, Examples/Sec = 2017.68, Accuracy = 0.12, Loss = 2.278
+[2019-05-04 15:47] Train Step 10000/10000, Batch Size = 128, Examples/Sec = 1897.61, Accuracy = 0.10, Loss = 2.261
+Done training.
+Sequence Length:  30 
+---------------------
+
+[2019-05-04 15:47] Train Step 0000/10000, Batch Size = 128, Examples/Sec = 1682.42, Accuracy = 0.13, Loss = 9.372
+[2019-05-04 15:48] Train Step 1000/10000, Batch Size = 128, Examples/Sec = 1771.07, Accuracy = 0.06, Loss = 4.391
+[2019-05-04 15:49] Train Step 2000/10000, Batch Size = 128, Examples/Sec = 1738.62, Accuracy = 0.12, Loss = 3.288
+[2019-05-04 15:50] Train Step 3000/10000, Batch Size = 128, Examples/Sec = 1734.94, Accuracy = 0.11, Loss = 2.927
+[2019-05-04 15:52] Train Step 4000/10000, Batch Size = 128, Examples/Sec = 1867.86, Accuracy = 0.15, Loss = 2.439
+[2019-05-04 15:53] Train Step 5000/10000, Batch Size = 128, Examples/Sec = 1733.46, Accuracy = 0.12, Loss = 2.382
+[2019-05-04 15:54] Train Step 6000/10000, Batch Size = 128, Examples/Sec = 1757.77, Accuracy = 0.15, Loss = 2.326
+[2019-05-04 15:55] Train Step 7000/10000, Batch Size = 128, Examples/Sec = 1765.36, Accuracy = 0.12, Loss = 2.353
+[2019-05-04 15:57] Train Step 8000/10000, Batch Size = 128, Examples/Sec = 1748.16, Accuracy = 0.16, Loss = 2.299
+[2019-05-04 15:58] Train Step 9000/10000, Batch Size = 128, Examples/Sec = 1786.66, Accuracy = 0.12, Loss = 2.294
+[2019-05-04 15:59] Train Step 10000/10000, Batch Size = 128, Examples/Sec = 1738.60, Accuracy = 0.13, Loss = 2.273
+Done training.
+Sequence Length:  35 
+---------------------
+
+[2019-05-04 15:59] Train Step 0000/10000, Batch Size = 128, Examples/Sec = 1447.48, Accuracy = 0.08, Loss = 7.849
+[2019-05-04 16:01] Train Step 1000/10000, Batch Size = 128, Examples/Sec = 1552.96, Accuracy = 0.06, Loss = 4.652
+[2019-05-04 16:02] Train Step 2000/10000, Batch Size = 128, Examples/Sec = 1509.38, Accuracy = 0.09, Loss = 3.484
+[2019-05-04 16:04] Train Step 3000/10000, Batch Size = 128, Examples/Sec = 1514.73, Accuracy = 0.08, Loss = 3.080
+[2019-05-04 16:05] Train Step 4000/10000, Batch Size = 128, Examples/Sec = 1554.77, Accuracy = 0.13, Loss = 2.592
+[2019-05-04 16:06] Train Step 5000/10000, Batch Size = 128, Examples/Sec = 1528.25, Accuracy = 0.13, Loss = 2.400
+[2019-05-04 16:08] Train Step 6000/10000, Batch Size = 128, Examples/Sec = 1525.72, Accuracy = 0.15, Loss = 2.369
+[2019-05-04 16:09] Train Step 7000/10000, Batch Size = 128, Examples/Sec = 1553.86, Accuracy = 0.10, Loss = 2.366
+[2019-05-04 16:11] Train Step 8000/10000, Batch Size = 128, Examples/Sec = 1536.91, Accuracy = 0.10, Loss = 2.321
+[2019-05-04 16:12] Train Step 9000/10000, Batch Size = 128, Examples/Sec = 1525.45, Accuracy = 0.12, Loss = 2.285
+[2019-05-04 16:14] Train Step 10000/10000, Batch Size = 128, Examples/Sec = 1560.58, Accuracy = 0.06, Loss = 2.348
+Done training.
+Sequence Length:  40 
+---------------------
+
+[2019-05-04 16:14] Train Step 0000/10000, Batch Size = 128, Examples/Sec = 1342.78, Accuracy = 0.12, Loss = 8.055
+[2019-05-04 16:15] Train Step 1000/10000, Batch Size = 128, Examples/Sec = 1363.83, Accuracy = 0.10, Loss = 4.644
+[2019-05-04 16:17] Train Step 2000/10000, Batch Size = 128, Examples/Sec = 1271.67, Accuracy = 0.07, Loss = 3.879
+[2019-05-04 16:18] Train Step 3000/10000, Batch Size = 128, Examples/Sec = 1380.13, Accuracy = 0.06, Loss = 3.401
+[2019-05-04 16:20] Train Step 4000/10000, Batch Size = 128, Examples/Sec = 1373.55, Accuracy = 0.12, Loss = 2.977
+[2019-05-04 16:22] Train Step 5000/10000, Batch Size = 128, Examples/Sec = 1271.81, Accuracy = 0.12, Loss = 2.608
+[2019-05-04 16:23] Train Step 6000/10000, Batch Size = 128, Examples/Sec = 1365.09, Accuracy = 0.11, Loss = 2.534
+[2019-05-04 16:25] Train Step 7000/10000, Batch Size = 128, Examples/Sec = 1366.03, Accuracy = 0.07, Loss = 2.466
+[2019-05-04 16:26] Train Step 8000/10000, Batch Size = 128, Examples/Sec = 1375.69, Accuracy = 0.09, Loss = 2.430
+[2019-05-04 16:28] Train Step 9000/10000, Batch Size = 128, Examples/Sec = 1367.13, Accuracy = 0.08, Loss = 2.379
+[2019-05-04 16:30] Train Step 10000/10000, Batch Size = 128, Examples/Sec = 1369.12, Accuracy = 0.13, Loss = 2.286
+Done training.
+Sequence Length:  45 
+---------------------
+
+[2019-05-04 16:30] Train Step 0000/10000, Batch Size = 128, Examples/Sec = 1202.48, Accuracy = 0.12, Loss = 7.434
+[2019-05-04 16:31] Train Step 1000/10000, Batch Size = 128, Examples/Sec = 1251.54, Accuracy = 0.08, Loss = 5.607
+[2019-05-04 16:33] Train Step 2000/10000, Batch Size = 128, Examples/Sec = 1234.78, Accuracy = 0.08, Loss = 4.768
+[2019-05-04 16:35] Train Step 3000/10000, Batch Size = 128, Examples/Sec = 1247.92, Accuracy = 0.07, Loss = 4.482
+[2019-05-04 16:37] Train Step 4000/10000, Batch Size = 128, Examples/Sec = 1230.84, Accuracy = 0.09, Loss = 3.785
+[2019-05-04 16:39] Train Step 5000/10000, Batch Size = 128, Examples/Sec = 1230.07, Accuracy = 0.07, Loss = 3.253
+[2019-05-04 16:40] Train Step 6000/10000, Batch Size = 128, Examples/Sec = 1235.57, Accuracy = 0.11, Loss = 3.066
+[2019-05-04 16:42] Train Step 7000/10000, Batch Size = 128, Examples/Sec = 1244.31, Accuracy = 0.13, Loss = 2.771
+[2019-05-04 16:44] Train Step 8000/10000, Batch Size = 128, Examples/Sec = 1248.10, Accuracy = 0.09, Loss = 2.525
+[2019-05-04 16:46] Train Step 9000/10000, Batch Size = 128, Examples/Sec = 1219.70, Accuracy = 0.09, Loss = 2.541
+[2019-05-04 16:48] Train Step 10000/10000, Batch Size = 128, Examples/Sec = 1229.68, Accuracy = 0.10, Loss = 2.343
+Done training.
+Sequence Length:  50 
+---------------------
+
+[2019-05-04 16:48] Train Step 0000/10000, Batch Size = 128, Examples/Sec = 1080.43, Accuracy = 0.16, Loss = 6.594
+[2019-05-04 16:49] Train Step 1000/10000, Batch Size = 128, Examples/Sec = 1114.28, Accuracy = 0.09, Loss = 5.141
+[2019-05-04 16:51] Train Step 2000/10000, Batch Size = 128, Examples/Sec = 1030.68, Accuracy = 0.07, Loss = 4.661
+[2019-05-04 16:53] Train Step 3000/10000, Batch Size = 128, Examples/Sec = 1127.64, Accuracy = 0.12, Loss = 4.321
+[2019-05-04 16:55] Train Step 4000/10000, Batch Size = 128, Examples/Sec = 1113.47, Accuracy = 0.16, Loss = 3.845
+[2019-05-04 16:57] Train Step 5000/10000, Batch Size = 128, Examples/Sec = 1126.73, Accuracy = 0.13, Loss = 3.887
+[2019-05-04 16:59] Train Step 6000/10000, Batch Size = 128, Examples/Sec = 1137.25, Accuracy = 0.07, Loss = 3.600
+[2019-05-04 17:01] Train Step 7000/10000, Batch Size = 128, Examples/Sec = 1123.86, Accuracy = 0.12, Loss = 3.008
+[2019-05-04 17:03] Train Step 8000/10000, Batch Size = 128, Examples/Sec = 1120.09, Accuracy = 0.04, Loss = 2.769
+[2019-05-04 17:05] Train Step 9000/10000, Batch Size = 128, Examples/Sec = 1116.24, Accuracy = 0.12, Loss = 2.579
+[2019-05-04 17:07] Train Step 10000/10000, Batch Size = 128, Examples/Sec = 1114.12, Accuracy = 0.13, Loss = 2.445
+Done training.
+
+---------------
+Training RNN 
+---------------
+
+Sequence Length:  5 
+---------------------
+
+[2019-05-04 17:07] Train Step 0000/10000, Batch Size = 128, Examples/Sec = 17809.62, Accuracy = 0.07, Loss = 16.907
+[2019-05-04 17:07] Train Step 1000/10000, Batch Size = 128, Examples/Sec = 21824.91, Accuracy = 0.50, Loss = 1.735
+[2019-05-04 17:07] Train Step 2000/10000, Batch Size = 128, Examples/Sec = 21666.37, Accuracy = 0.59, Loss = 1.083
+[2019-05-04 17:07] Train Step 3000/10000, Batch Size = 128, Examples/Sec = 21474.84, Accuracy = 0.58, Loss = 0.988
+[2019-05-04 17:08] Train Step 4000/10000, Batch Size = 128, Examples/Sec = 22535.82, Accuracy = 0.75, Loss = 0.568
+[2019-05-04 17:08] Train Step 5000/10000, Batch Size = 128, Examples/Sec = 21986.69, Accuracy = 0.78, Loss = 0.466
+[2019-05-04 17:08] Train Step 6000/10000, Batch Size = 128, Examples/Sec = 22200.34, Accuracy = 0.84, Loss = 0.364
+[2019-05-04 17:08] Train Step 7000/10000, Batch Size = 128, Examples/Sec = 21662.87, Accuracy = 0.90, Loss = 0.289
+[2019-05-04 17:08] Train Step 8000/10000, Batch Size = 128, Examples/Sec = 21766.51, Accuracy = 0.89, Loss = 0.270
+[2019-05-04 17:08] Train Step 9000/10000, Batch Size = 128, Examples/Sec = 21442.24, Accuracy = 0.93, Loss = 0.202
+[2019-05-04 17:08] Train Step 10000/10000, Batch Size = 128, Examples/Sec = 23067.41, Accuracy = 0.96, Loss = 0.156
+Done training.
+Sequence Length:  10 
+---------------------
+
+[2019-05-04 17:08] Train Step 0000/10000, Batch Size = 128, Examples/Sec = 12142.28, Accuracy = 0.07, Loss = 17.540
+[2019-05-04 17:09] Train Step 1000/10000, Batch Size = 128, Examples/Sec = 14004.72, Accuracy = 0.12, Loss = 8.737
+[2019-05-04 17:09] Train Step 2000/10000, Batch Size = 128, Examples/Sec = 13680.68, Accuracy = 0.10, Loss = 5.077
+[2019-05-04 17:09] Train Step 3000/10000, Batch Size = 128, Examples/Sec = 13471.28, Accuracy = 0.13, Loss = 3.368
+[2019-05-04 17:09] Train Step 4000/10000, Batch Size = 128, Examples/Sec = 13610.28, Accuracy = 0.16, Loss = 2.478
+[2019-05-04 17:09] Train Step 5000/10000, Batch Size = 128, Examples/Sec = 13594.77, Accuracy = 0.20, Loss = 2.237
+[2019-05-04 17:09] Train Step 6000/10000, Batch Size = 128, Examples/Sec = 13879.81, Accuracy = 0.17, Loss = 2.135
+[2019-05-04 17:10] Train Step 7000/10000, Batch Size = 128, Examples/Sec = 14132.27, Accuracy = 0.29, Loss = 2.007
+[2019-05-04 17:10] Train Step 8000/10000, Batch Size = 128, Examples/Sec = 13709.33, Accuracy = 0.22, Loss = 2.097
+[2019-05-04 17:10] Train Step 9000/10000, Batch Size = 128, Examples/Sec = 13951.95, Accuracy = 0.24, Loss = 1.993
+[2019-05-04 17:10] Train Step 10000/10000, Batch Size = 128, Examples/Sec = 13496.00, Accuracy = 0.16, Loss = 2.067
+Done training.
+Sequence Length:  15 
+---------------------
+
+[2019-05-04 17:10] Train Step 0000/10000, Batch Size = 128, Examples/Sec = 9040.06, Accuracy = 0.09, Loss = 17.177
+[2019-05-04 17:10] Train Step 1000/10000, Batch Size = 128, Examples/Sec = 10481.67, Accuracy = 0.09, Loss = 8.460
+[2019-05-04 17:11] Train Step 2000/10000, Batch Size = 128, Examples/Sec = 11294.94, Accuracy = 0.11, Loss = 5.842
+[2019-05-04 17:11] Train Step 3000/10000, Batch Size = 128, Examples/Sec = 10042.85, Accuracy = 0.09, Loss = 3.832
+[2019-05-04 17:11] Train Step 4000/10000, Batch Size = 128, Examples/Sec = 10824.45, Accuracy = 0.15, Loss = 2.556
+[2019-05-04 17:11] Train Step 5000/10000, Batch Size = 128, Examples/Sec = 10657.28, Accuracy = 0.11, Loss = 2.376
+[2019-05-04 17:12] Train Step 6000/10000, Batch Size = 128, Examples/Sec = 10059.98, Accuracy = 0.07, Loss = 2.402
+[2019-05-04 17:12] Train Step 7000/10000, Batch Size = 128, Examples/Sec = 10001.69, Accuracy = 0.13, Loss = 2.297
+[2019-05-04 17:12] Train Step 8000/10000, Batch Size = 128, Examples/Sec = 12040.97, Accuracy = 0.11, Loss = 2.316
+[2019-05-04 17:12] Train Step 9000/10000, Batch Size = 128, Examples/Sec = 10773.40, Accuracy = 0.10, Loss = 2.310
+[2019-05-04 17:13] Train Step 10000/10000, Batch Size = 128, Examples/Sec = 10672.32, Accuracy = 0.09, Loss = 2.323
+Done training.
+Sequence Length:  20 
+---------------------
+
+[2019-05-04 17:13] Train Step 0000/10000, Batch Size = 128, Examples/Sec = 7143.42, Accuracy = 0.11, Loss = 16.419
+[2019-05-04 17:13] Train Step 1000/10000, Batch Size = 128, Examples/Sec = 9792.98, Accuracy = 0.10, Loss = 10.048
+[2019-05-04 17:13] Train Step 2000/10000, Batch Size = 128, Examples/Sec = 8951.13, Accuracy = 0.11, Loss = 6.270
+[2019-05-04 17:13] Train Step 3000/10000, Batch Size = 128, Examples/Sec = 9837.85, Accuracy = 0.12, Loss = 4.085
+[2019-05-04 17:14] Train Step 4000/10000, Batch Size = 128, Examples/Sec = 9872.40, Accuracy = 0.07, Loss = 2.833
+[2019-05-04 17:14] Train Step 5000/10000, Batch Size = 128, Examples/Sec = 9809.98, Accuracy = 0.06, Loss = 2.375
+[2019-05-04 17:14] Train Step 6000/10000, Batch Size = 128, Examples/Sec = 10366.91, Accuracy = 0.13, Loss = 2.342
+[2019-05-04 17:14] Train Step 7000/10000, Batch Size = 128, Examples/Sec = 9036.10, Accuracy = 0.13, Loss = 2.301
+[2019-05-04 17:15] Train Step 8000/10000, Batch Size = 128, Examples/Sec = 9853.92, Accuracy = 0.10, Loss = 2.325
+[2019-05-04 17:15] Train Step 9000/10000, Batch Size = 128, Examples/Sec = 9893.50, Accuracy = 0.10, Loss = 2.323
+[2019-05-04 17:15] Train Step 10000/10000, Batch Size = 128, Examples/Sec = 9560.35, Accuracy = 0.16, Loss = 2.303
+Done training.
+Sequence Length:  25 
+---------------------
+
+[2019-05-04 17:15] Train Step 0000/10000, Batch Size = 128, Examples/Sec = 8522.84, Accuracy = 0.11, Loss = 17.025
+[2019-05-04 17:15] Train Step 1000/10000, Batch Size = 128, Examples/Sec = 8348.95, Accuracy = 0.09, Loss = 16.327
+[2019-05-04 17:16] Train Step 2000/10000, Batch Size = 128, Examples/Sec = 8110.81, Accuracy = 0.10, Loss = 13.837
+[2019-05-04 17:16] Train Step 3000/10000, Batch Size = 128, Examples/Sec = 8553.94, Accuracy = 0.09, Loss = 15.060
+[2019-05-04 17:16] Train Step 4000/10000, Batch Size = 128, Examples/Sec = 7913.20, Accuracy = 0.09, Loss = 13.083
+[2019-05-04 17:17] Train Step 5000/10000, Batch Size = 128, Examples/Sec = 8170.80, Accuracy = 0.09, Loss = 12.227
+[2019-05-04 17:17] Train Step 6000/10000, Batch Size = 128, Examples/Sec = 8297.59, Accuracy = 0.11, Loss = 10.179
+[2019-05-04 17:17] Train Step 7000/10000, Batch Size = 128, Examples/Sec = 9025.16, Accuracy = 0.04, Loss = 10.489
+[2019-05-04 17:17] Train Step 8000/10000, Batch Size = 128, Examples/Sec = 8492.91, Accuracy = 0.10, Loss = 9.137
+[2019-05-04 17:18] Train Step 9000/10000, Batch Size = 128, Examples/Sec = 8036.27, Accuracy = 0.09, Loss = 7.209
+[2019-05-04 17:18] Train Step 10000/10000, Batch Size = 128, Examples/Sec = 8155.54, Accuracy = 0.09, Loss = 8.132
+Done training.
+Sequence Length:  30 
+---------------------
+
+[2019-05-04 17:18] Train Step 0000/10000, Batch Size = 128, Examples/Sec = 7427.14, Accuracy = 0.09, Loss = 15.541
+[2019-05-04 17:18] Train Step 1000/10000, Batch Size = 128, Examples/Sec = 7484.71, Accuracy = 0.09, Loss = 16.561
+[2019-05-04 17:19] Train Step 2000/10000, Batch Size = 128, Examples/Sec = 7132.32, Accuracy = 0.10, Loss = 15.617
+[2019-05-04 17:19] Train Step 3000/10000, Batch Size = 128, Examples/Sec = 7304.96, Accuracy = 0.08, Loss = 16.013
+[2019-05-04 17:19] Train Step 4000/10000, Batch Size = 128, Examples/Sec = 7197.43, Accuracy = 0.06, Loss = 16.266
+[2019-05-04 17:20] Train Step 5000/10000, Batch Size = 128, Examples/Sec = 7057.13, Accuracy = 0.09, Loss = 17.423
+[2019-05-04 17:20] Train Step 6000/10000, Batch Size = 128, Examples/Sec = 7124.27, Accuracy = 0.09, Loss = 17.743
+[2019-05-04 17:20] Train Step 7000/10000, Batch Size = 128, Examples/Sec = 6953.84, Accuracy = 0.12, Loss = 14.620
+[2019-05-04 17:21] Train Step 8000/10000, Batch Size = 128, Examples/Sec = 7426.11, Accuracy = 0.12, Loss = 15.503
+[2019-05-04 17:21] Train Step 9000/10000, Batch Size = 128, Examples/Sec = 7359.34, Accuracy = 0.14, Loss = 13.715
+[2019-05-04 17:21] Train Step 10000/10000, Batch Size = 128, Examples/Sec = 7191.36, Accuracy = 0.11, Loss = 14.292
+Done training.
+Sequence Length:  35 
+---------------------
+
+[2019-05-04 17:21] Train Step 0000/10000, Batch Size = 128, Examples/Sec = 6609.43, Accuracy = 0.12, Loss = 15.767
+[2019-05-04 17:22] Train Step 1000/10000, Batch Size = 128, Examples/Sec = 6398.10, Accuracy = 0.12, Loss = 15.489
+[2019-05-04 17:22] Train Step 2000/10000, Batch Size = 128, Examples/Sec = 6163.56, Accuracy = 0.11, Loss = 15.942
+[2019-05-04 17:22] Train Step 3000/10000, Batch Size = 128, Examples/Sec = 6204.02, Accuracy = 0.09, Loss = 14.296
+[2019-05-04 17:23] Train Step 4000/10000, Batch Size = 128, Examples/Sec = 6375.91, Accuracy = 0.13, Loss = 14.434
+[2019-05-04 17:23] Train Step 5000/10000, Batch Size = 128, Examples/Sec = 6529.05, Accuracy = 0.10, Loss = 14.764
+[2019-05-04 17:23] Train Step 6000/10000, Batch Size = 128, Examples/Sec = 6423.98, Accuracy = 0.07, Loss = 16.975
+[2019-05-04 17:24] Train Step 7000/10000, Batch Size = 128, Examples/Sec = 6388.66, Accuracy = 0.09, Loss = 15.527
+[2019-05-04 17:24] Train Step 8000/10000, Batch Size = 128, Examples/Sec = 6355.91, Accuracy = 0.03, Loss = 17.860
+[2019-05-04 17:24] Train Step 9000/10000, Batch Size = 128, Examples/Sec = 6424.05, Accuracy = 0.09, Loss = 15.410
+[2019-05-04 17:25] Train Step 10000/10000, Batch Size = 128, Examples/Sec = 6502.01, Accuracy = 0.06, Loss = 18.854
+Done training.
+Sequence Length:  40 
+---------------------
+
+[2019-05-04 17:25] Train Step 0000/10000, Batch Size = 128, Examples/Sec = 5983.72, Accuracy = 0.11, Loss = 16.243
+[2019-05-04 17:25] Train Step 1000/10000, Batch Size = 128, Examples/Sec = 5981.92, Accuracy = 0.09, Loss = 17.758
+[2019-05-04 17:26] Train Step 2000/10000, Batch Size = 128, Examples/Sec = 5842.41, Accuracy = 0.12, Loss = 15.078
+[2019-05-04 17:26] Train Step 3000/10000, Batch Size = 128, Examples/Sec = 5908.97, Accuracy = 0.09, Loss = 17.971
+[2019-05-04 17:26] Train Step 4000/10000, Batch Size = 128, Examples/Sec = 5962.58, Accuracy = 0.05, Loss = 17.181
+[2019-05-04 17:27] Train Step 5000/10000, Batch Size = 128, Examples/Sec = 5729.68, Accuracy = 0.04, Loss = 18.072
+[2019-05-04 17:27] Train Step 6000/10000, Batch Size = 128, Examples/Sec = 5359.92, Accuracy = 0.11, Loss = 16.707
+[2019-05-04 17:28] Train Step 7000/10000, Batch Size = 128, Examples/Sec = 5354.41, Accuracy = 0.13, Loss = 14.859
+[2019-05-04 17:28] Train Step 8000/10000, Batch Size = 128, Examples/Sec = 5992.60, Accuracy = 0.09, Loss = 15.867
+[2019-05-04 17:29] Train Step 9000/10000, Batch Size = 128, Examples/Sec = 6029.07, Accuracy = 0.13, Loss = 14.418
+[2019-05-04 17:29] Train Step 10000/10000, Batch Size = 128, Examples/Sec = 5211.58, Accuracy = 0.06, Loss = 15.727
+Done training.
+Sequence Length:  45 
+---------------------
+
+[2019-05-04 17:29] Train Step 0000/10000, Batch Size = 128, Examples/Sec = 4007.37, Accuracy = 0.11, Loss = 18.413
+[2019-05-04 17:29] Train Step 1000/10000, Batch Size = 128, Examples/Sec = 5268.76, Accuracy = 0.10, Loss = 19.383
+[2019-05-04 17:30] Train Step 2000/10000, Batch Size = 128, Examples/Sec = 4773.12, Accuracy = 0.16, Loss = 16.772
+[2019-05-04 17:30] Train Step 3000/10000, Batch Size = 128, Examples/Sec = 5418.45, Accuracy = 0.07, Loss = 18.282
+[2019-05-04 17:31] Train Step 4000/10000, Batch Size = 128, Examples/Sec = 5319.08, Accuracy = 0.10, Loss = 17.411
+[2019-05-04 17:31] Train Step 5000/10000, Batch Size = 128, Examples/Sec = 4944.43, Accuracy = 0.13, Loss = 17.999
+[2019-05-04 17:32] Train Step 6000/10000, Batch Size = 128, Examples/Sec = 5020.49, Accuracy = 0.15, Loss = 17.579
+[2019-05-04 17:32] Train Step 7000/10000, Batch Size = 128, Examples/Sec = 5134.13, Accuracy = 0.12, Loss = 16.990
+[2019-05-04 17:33] Train Step 8000/10000, Batch Size = 128, Examples/Sec = 5329.11, Accuracy = 0.10, Loss = 18.087
+[2019-05-04 17:33] Train Step 9000/10000, Batch Size = 128, Examples/Sec = 5027.16, Accuracy = 0.09, Loss = 16.758
+[2019-05-04 17:33] Train Step 10000/10000, Batch Size = 128, Examples/Sec = 5139.24, Accuracy = 0.16, Loss = 17.653
+Done training.
+Sequence Length:  50 
+---------------------
+
+[2019-05-04 17:33] Train Step 0000/10000, Batch Size = 128, Examples/Sec = 3800.56, Accuracy = 0.14, Loss = 16.744
+[2019-05-04 17:34] Train Step 1000/10000, Batch Size = 128, Examples/Sec = 4527.39, Accuracy = 0.12, Loss = 17.727
+[2019-05-04 17:34] Train Step 2000/10000, Batch Size = 128, Examples/Sec = 4687.76, Accuracy = 0.05, Loss = 18.812
+[2019-05-04 17:35] Train Step 3000/10000, Batch Size = 128, Examples/Sec = 4561.35, Accuracy = 0.08, Loss = 18.235
+[2019-05-04 17:35] Train Step 4000/10000, Batch Size = 128, Examples/Sec = 4540.40, Accuracy = 0.09, Loss = 18.543
+[2019-05-04 17:36] Train Step 5000/10000, Batch Size = 128, Examples/Sec = 4572.93, Accuracy = 0.07, Loss = 18.649
+[2019-05-04 17:36] Train Step 6000/10000, Batch Size = 128, Examples/Sec = 4437.46, Accuracy = 0.11, Loss = 18.728
+[2019-05-04 17:37] Train Step 7000/10000, Batch Size = 128, Examples/Sec = 4565.11, Accuracy = 0.15, Loss = 18.683
+[2019-05-04 17:37] Train Step 8000/10000, Batch Size = 128, Examples/Sec = 4561.04, Accuracy = 0.12, Loss = 17.098
+[2019-05-04 17:38] Train Step 9000/10000, Batch Size = 128, Examples/Sec = 4519.80, Accuracy = 0.10, Loss = 16.524
+[2019-05-04 17:38] Train Step 10000/10000, Batch Size = 128, Examples/Sec = 4435.41, Accuracy = 0.11, Loss = 18.092
+Done training.
+
+---------------
+Training LSTM 
+---------------
+
+Sequence Length:  5 
+---------------------
+
+[2019-05-04 17:38] Train Step 0000/10000, Batch Size = 128, Examples/Sec = 6625.17, Accuracy = 0.07, Loss = 6.399
+[2019-05-04 17:39] Train Step 1000/10000, Batch Size = 128, Examples/Sec = 7263.65, Accuracy = 0.73, Loss = 0.712
+[2019-05-04 17:39] Train Step 2000/10000, Batch Size = 128, Examples/Sec = 7164.87, Accuracy = 0.97, Loss = 0.159
+[2019-05-04 17:39] Train Step 3000/10000, Batch Size = 128, Examples/Sec = 7508.89, Accuracy = 1.00, Loss = 0.021
+[2019-05-04 17:40] Train Step 4000/10000, Batch Size = 128, Examples/Sec = 7179.24, Accuracy = 1.00, Loss = 0.004
+[2019-05-04 17:40] Train Step 5000/10000, Batch Size = 128, Examples/Sec = 6938.65, Accuracy = 1.00, Loss = 0.003
+[2019-05-04 17:40] Train Step 6000/10000, Batch Size = 128, Examples/Sec = 7776.57, Accuracy = 1.00, Loss = 0.001
+[2019-05-04 17:41] Train Step 7000/10000, Batch Size = 128, Examples/Sec = 7101.28, Accuracy = 1.00, Loss = 0.001
+[2019-05-04 17:41] Train Step 8000/10000, Batch Size = 128, Examples/Sec = 7059.91, Accuracy = 1.00, Loss = 0.000
+[2019-05-04 17:41] Train Step 9000/10000, Batch Size = 128, Examples/Sec = 7056.66, Accuracy = 1.00, Loss = 0.000
+[2019-05-04 17:42] Train Step 10000/10000, Batch Size = 128, Examples/Sec = 7239.07, Accuracy = 1.00, Loss = 0.000
+Done training.
+Sequence Length:  10 
+---------------------
+
