@@ -337,3 +337,51 @@ Done training.
 Sequence Length:  10 
 ---------------------
 
+[2019-05-04 17:42] Train Step 0000/10000, Batch Size = 128, Examples/Sec = 3751.09, Accuracy = 0.09, Loss = 7.008
+[2019-05-04 17:42] Train Step 1000/10000, Batch Size = 128, Examples/Sec = 4102.95, Accuracy = 0.28, Loss = 2.136
+[2019-05-04 17:43] Train Step 2000/10000, Batch Size = 128, Examples/Sec = 4026.66, Accuracy = 0.54, Loss = 1.218
+[2019-05-04 17:43] Train Step 3000/10000, Batch Size = 128, Examples/Sec = 3948.57, Accuracy = 0.86, Loss = 0.442
+[2019-05-04 17:44] Train Step 4000/10000, Batch Size = 128, Examples/Sec = 3880.56, Accuracy = 0.98, Loss = 0.069
+[2019-05-04 17:45] Train Step 5000/10000, Batch Size = 128, Examples/Sec = 4105.21, Accuracy = 0.99, Loss = 0.062
+[2019-05-04 17:45] Train Step 6000/10000, Batch Size = 128, Examples/Sec = 3786.81, Accuracy = 1.00, Loss = 0.009
+[2019-05-04 17:46] Train Step 7000/10000, Batch Size = 128, Examples/Sec = 3822.86, Accuracy = 1.00, Loss = 0.001
+[2019-05-04 17:46] Train Step 8000/10000, Batch Size = 128, Examples/Sec = 3918.99, Accuracy = 1.00, Loss = 0.001
+[2019-05-04 17:47] Train Step 9000/10000, Batch Size = 128, Examples/Sec = 3929.81, Accuracy = 1.00, Loss = 0.001
+[2019-05-04 17:47] Train Step 10000/10000, Batch Size = 128, Examples/Sec = 3989.65, Accuracy = 1.00, Loss = 0.001
+Done training.
+Sequence Length:  15 
+---------------------
+
+[2019-05-04 17:47] Train Step 0000/10000, Batch Size = 128, Examples/Sec = 2740.20, Accuracy = 0.08, Loss = 7.391
+[2019-05-04 17:48] Train Step 1000/10000, Batch Size = 128, Examples/Sec = 2876.69, Accuracy = 0.09, Loss = 3.984
+[2019-05-04 17:49] Train Step 2000/10000, Batch Size = 128, Examples/Sec = 2845.16, Accuracy = 0.15, Loss = 2.811
+[2019-05-04 17:50] Train Step 3000/10000, Batch Size = 128, Examples/Sec = 3011.00, Accuracy = 0.23, Loss = 2.266
+[2019-05-04 17:50] Train Step 4000/10000, Batch Size = 128, Examples/Sec = 3061.33, Accuracy = 0.18, Loss = 2.103
+[2019-05-04 17:51] Train Step 5000/10000, Batch Size = 128, Examples/Sec = 3086.26, Accuracy = 0.24, Loss = 1.917
+[2019-05-04 17:52] Train Step 6000/10000, Batch Size = 128, Examples/Sec = 3093.09, Accuracy = 0.41, Loss = 1.485
+[2019-05-04 17:53] Train Step 7000/10000, Batch Size = 128, Examples/Sec = 2987.30, Accuracy = 0.71, Loss = 0.847
+[2019-05-04 17:53] Train Step 8000/10000, Batch Size = 128, Examples/Sec = 3086.48, Accuracy = 0.78, Loss = 0.535
+[2019-05-04 17:54] Train Step 9000/10000, Batch Size = 128, Examples/Sec = 2962.46, Accuracy = 0.95, Loss = 0.172
+[2019-05-04 17:55] Train Step 10000/10000, Batch Size = 128, Examples/Sec = 3019.74, Accuracy = 1.00, Loss = 0.022
+Done training.
+Sequence Length:  20 
+---------------------
+
+[2019-05-04 17:55] Train Step 0000/10000, Batch Size = 128, Examples/Sec = 2269.65, Accuracy = 0.16, Loss = 7.909
+[2019-05-04 17:56] Train Step 1000/10000, Batch Size = 128, Examples/Sec = 2329.17, Accuracy = 0.09, Loss = 3.793
+[2019-05-04 17:57] Train Step 2000/10000, Batch Size = 128, Examples/Sec = 2468.98, Accuracy = 0.14, Loss = 2.806
+[2019-05-04 17:58] Train Step 3000/10000, Batch Size = 128, Examples/Sec = 2445.39, Accuracy = 0.12, Loss = 2.651
+[2019-05-04 17:59] Train Step 4000/10000, Batch Size = 128, Examples/Sec = 2235.48, Accuracy = 0.10, Loss = 2.479
+[2019-05-04 17:59] Train Step 5000/10000, Batch Size = 128, Examples/Sec = 2478.09, Accuracy = 0.09, Loss = 2.394
+[2019-05-04 18:00] Train Step 6000/10000, Batch Size = 128, Examples/Sec = 2407.56, Accuracy = 0.08, Loss = 2.356
+[2019-05-04 18:01] Train Step 7000/10000, Batch Size = 128, Examples/Sec = 2344.94, Accuracy = 0.12, Loss = 2.316
+[2019-05-04 18:02] Train Step 8000/10000, Batch Size = 128, Examples/Sec = 2412.50, Accuracy = 0.16, Loss = 2.311
+[2019-05-04 18:03] Train Step 9000/10000, Batch Size = 128, Examples/Sec = 2444.34, Accuracy = 0.16, Loss = 2.261
+[2019-05-04 18:04] Train Step 10000/10000, Batch Size = 128, Examples/Sec = 2343.08, Accuracy = 0.17, Loss = 2.262
+Done training.
+Sequence Length:  25 
+---------------------
+
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 2259815.0 ON r30n6 CANCELLED AT 2019-05-04T18:11:09 DUE TO TIME LIMIT ***
+slurmstepd: error: *** JOB 2259815 ON r30n6 CANCELLED AT 2019-05-04T18:11:09 DUE TO TIME LIMIT ***
