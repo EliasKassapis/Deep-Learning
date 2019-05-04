@@ -60,12 +60,15 @@ def get_accuracy(predictions, targets, batch_size):
 
 
 
-def train(config):
+def train(config,n_run):
 
     assert config.model_type in ('RNN', 'LSTM')
 
     # Initialize the device which to run the model on
     device = torch.device(config.device)
+
+    # Train on T-1 first digits
+    config.input_length = config.input_length - 1
 
     # Initialize the model that we are going to use
     if config.model_type == 'RNN':
@@ -176,11 +179,11 @@ def train(config):
         # np.save("./Results/RNN/" + str(config.input_length) + "_RNN_accuracy", train_acc)
         # np.save("./Results/RNN/" + str(config.input_length) + "_RNN_loss", train_loss)
 
-        # #save model ####################################################################### For SURFsara
-        torch.save(model, str(config.input_length) + "_RNN_model")
+        #save model ####################################################################### For SURFsara
+        torch.save(model, str(config.input_length) + "_RNN_model_" + str(n_run))
         #save train accuracy and loss
-        np.save(str(config.input_length) + "_RNN_accuracy", train_acc)
-        np.save(str(config.input_length) + "_RNN_loss", train_loss)
+        np.save(str(config.input_length) + "_RNN_accuracy_" + str(n_run), train_acc)
+        np.save(str(config.input_length) + "_RNN_loss_" + str(n_run), train_loss)
 
     elif config.model_type == 'LSTM':
         # #save model
@@ -189,11 +192,11 @@ def train(config):
         # np.save("./Results/LSTM/" + str(config.input_length) + "_LSTM_accuracy", train_acc)
         # np.save("./Results/LSTM/" + str(config.input_length) + "_LSTM_loss", train_loss)
 
-        # #save model ####################################################################### For SURFsara
-        torch.save(model,str(config.input_length) + "_LSTM_model")
+        #save model ####################################################################### For SURFsara
+        torch.save(model,str(config.input_length) + "_LSTM_model_"  + str(n_run))
         #save train accuracy and loss
-        np.save(str(config.input_length) + "_LSTM_accuracy", train_acc)
-        np.save(str(config.input_length) + "_LSTM_loss", train_loss)
+        np.save(str(config.input_length) + "_LSTM_accuracy_" + str(n_run), train_acc)
+        np.save(str(config.input_length) + "_LSTM_loss_" + str(n_run), train_loss)
 
 
 
@@ -230,13 +233,13 @@ for i in range(3):
         config.model_type = model
         for length in [5,10,15,20,25,30,35,40,45,50]:
             config.input_length = length
-            train(config)
+            train(config, i+1)
 
 
-def test(config, seq_size):
+def test(config, seq_size, n_examples):
 
     # Initialize the dataset and data loader
-    dataset = PalindromeDataset(seq_size+1)
+    dataset = PalindromeDataset(seq_size)
     data_loader = DataLoader(dataset, config.batch_size, num_workers=1)
 
     #Get one batch to test
@@ -255,13 +258,13 @@ def test(config, seq_size):
 
     print('\n----------------------\nSequence length: ',str(seq_size),'\n----------------------')
 
-    for i in range(5):
-        print('\nTesting on palindrome',str(i+1),':\n---------------\n\nInput:',str(batch_inputs[i].tolist()),'\nPredicted last digit:',str(pred[i,:].argmax().item()))
+    for i in range(n_examples):
+        print('\nTesting on palindrome',str(i+1),':\n---------------\n\nInput:',str(batch_inputs[i].tolist()),'\nPredicted last digit:',str(pred[i,:].argmax().item()),'\n')
 
 
 # #Get qualitative results for models of different sizes
 # for length in [5,10,15,20,25,30,35,40,45,50]:
-#     test(config, length)
+#     test(config, length, 3)
 
 
 
