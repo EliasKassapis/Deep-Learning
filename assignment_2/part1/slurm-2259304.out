@@ -1,0 +1,10 @@
+/var/spool/slurm-llnl/slurmd/job2259304/slurm_script: line 20: cd: /home/lgpu0417/deep-learning/assignment_2/part1/: Permission denied
+ ------ Job mlp_pytorch is started ------- 
+ 
+  File "train.py", line 196
+    break
+    ^
+SyntaxError: 'break' outside loop
+srun: error: r30n4: task 0: Exited with exit code 1
+ 
+ ------ Job mlp_pytorch is finished -------

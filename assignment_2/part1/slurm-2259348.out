@@ -1,0 +1,10 @@
+/var/spool/slurm-llnl/slurmd/job2259348/slurm_script: line 20: cd: /home/lgpu0417/deep-learning/assignment_2/part1/: Permission denied
+ ------ Job mlp_pytorch is started ------- 
+ 
+Traceback (most recent call last):
+  File "train.py", line 29, in <module>
+    from part1.dataset import PalindromeDataset
+ModuleNotFoundError: No module named 'part1'
+srun: error: r30n1: task 0: Exited with exit code 1
+ 
+ ------ Job mlp_pytorch is finished -------
