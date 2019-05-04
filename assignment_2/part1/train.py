@@ -142,7 +142,7 @@ def train(config,n_run):
         t2 = time.time()
         examples_per_second = config.batch_size/float(t2-t1)
 
-        if step % 10 == 0:
+        if step % 1000 == 0:
 
             print("[{}] Train Step {:04d}/{:04d}, Batch Size = {}, Examples/Sec = {:.2f}, "
                   "Accuracy = {:.2f}, Loss = {:.3f}".format(
@@ -150,7 +150,6 @@ def train(config,n_run):
                     config.train_steps, config.batch_size, examples_per_second,
                     accuracy, loss
             ))
-            # print(f"x: {x[0,:]}, pred: {pred[0,:].argmax()}, y: {y[0]}") #######################################################################
 
         if step % 100 == 0:
             #Get loss and accuracy averages over 100 steps
@@ -180,10 +179,10 @@ def train(config,n_run):
         # np.save("./Results/RNN/" + str(config.input_length) + "_RNN_loss", train_loss)
 
         #save model ####################################################################### For SURFsara
-        torch.save(model, str(config.input_length) + "_RNN_model_" + str(n_run))
+        torch.save(model, str(config.input_length+1) + "_RNN_model_" + str(n_run))
         #save train accuracy and loss
-        np.save(str(config.input_length) + "_RNN_accuracy_" + str(n_run), train_acc)
-        np.save(str(config.input_length) + "_RNN_loss_" + str(n_run), train_loss)
+        np.save(str(config.input_length+1) + "_RNN_accuracy_" + str(n_run), train_acc)
+        np.save(str(config.input_length+1) + "_RNN_loss_" + str(n_run), train_loss)
 
     elif config.model_type == 'LSTM':
         # #save model
@@ -193,10 +192,10 @@ def train(config,n_run):
         # np.save("./Results/LSTM/" + str(config.input_length) + "_LSTM_loss", train_loss)
 
         #save model ####################################################################### For SURFsara
-        torch.save(model,str(config.input_length) + "_LSTM_model_"  + str(n_run))
+        torch.save(model,str(config.input_length+1) + "_LSTM_model_"  + str(n_run))
         #save train accuracy and loss
-        np.save(str(config.input_length) + "_LSTM_accuracy_" + str(n_run), train_acc)
-        np.save(str(config.input_length) + "_LSTM_loss_" + str(n_run), train_loss)
+        np.save(str(config.input_length+1) + "_LSTM_accuracy_" + str(n_run), train_acc)
+        np.save(str(config.input_length+1) + "_LSTM_loss_" + str(n_run), train_loss)
 
 
 
@@ -228,10 +227,11 @@ if __name__ == "__main__":
 
 #train models for different sequence lengths
 for i in range(3):
-    for model in ['RNN', 'LSTM']:
-        print('Training', model)
+    for model in ['LSTM','RNN']:
+        print('\n---------------\nTraining', model, '\n---------------\n')
         config.model_type = model
         for length in [5,10,15,20,25,30,35,40,45,50]:
+            print('Sequence Length: ', str(length),'\n---------------------\n')
             config.input_length = length
             train(config, i+1)
 

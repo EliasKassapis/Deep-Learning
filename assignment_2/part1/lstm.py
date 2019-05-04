@@ -66,8 +66,8 @@ class LSTM(nn.Module):
         # Implementation here ...
 
         #Initialize cell state and hidden state
-        c = nn.Parameter(torch.zeros(self.batch_size, self.num_hidden))
-        h = nn.Parameter(torch.zeros(self.batch_size, self.num_hidden))
+        c = nn.Parameter(torch.zeros(self.batch_size, self.num_hidden, device=self.device))
+        h = nn.Parameter(torch.zeros(self.batch_size, self.num_hidden, device=self.device))
 
         for t in range(self.seq_length):
             #get current input

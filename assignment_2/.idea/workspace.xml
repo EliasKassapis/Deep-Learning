@@ -2,6 +2,71 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94cce1d8-5104-4df1-83e7-6ca60e99eff8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/part1/10_RNN_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/10_RNN_loss.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/10_RNN_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/14_RNN_accuracy_1.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/14_RNN_loss_1.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/14_RNN_model_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/15_RNN_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/15_RNN_loss.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/15_RNN_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/19_RNN_accuracy_1.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/19_RNN_loss_1.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/19_RNN_model_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/20_RNN_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/20_RNN_loss.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/20_RNN_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/24_RNN_accuracy_1.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/24_RNN_loss_1.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/24_RNN_model_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/25_RNN_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/25_RNN_loss.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/25_RNN_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/29_RNN_accuracy_1.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/29_RNN_loss_1.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/29_RNN_model_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/30_RNN_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/30_RNN_loss.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/30_RNN_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/34_RNN_accuracy_1.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/34_RNN_loss_1.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/34_RNN_model_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/35_RNN_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/35_RNN_loss.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/35_RNN_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/39_RNN_accuracy_1.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/39_RNN_loss_1.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/39_RNN_model_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/40_RNN_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/40_RNN_loss.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/40_RNN_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/44_RNN_accuracy_1.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/44_RNN_loss_1.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/44_RNN_model_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/45_RNN_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/45_RNN_loss.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/45_RNN_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/49_RNN_accuracy_1.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/49_RNN_loss_1.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/49_RNN_model_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/4_RNN_accuracy_1.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/4_RNN_loss_1.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/4_RNN_model_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/50_RNN_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/50_RNN_loss.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/50_RNN_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/5_RNN_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/5_RNN_loss.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/5_RNN_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/9_RNN_accuracy_1.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/9_RNN_loss_1.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/9_RNN_model_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/lstm.py" beforeDir="false" afterPath="$PROJECT_DIR$/part1/lstm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/slurm-2259304.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/slurm-2259348.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/slurm-2259371.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/slurm-2259374.out" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/part1/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/part1/train.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,8 +80,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/part1/train.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="185" column="81" lean-forward="true" selection-start-line="185" selection-start-column="81" selection-end-line="185" selection-end-column="81" />
+            <state relative-caret-position="288">
+              <caret line="196" column="87" lean-forward="true" selection-start-line="196" selection-start-column="87" selection-end-line="196" selection-end-column="87" />
               <folding>
                 <element signature="e#707#745#0" expanded="true" />
               </folding>
@@ -27,11 +92,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/part2/train.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="574">
-              <caret line="140" selection-start-line="140" selection-end-line="141" selection-end-column="14" />
+            <state relative-caret-position="-1410">
+              <caret line="125" column="9" selection-start-line="125" selection-start-column="4" selection-end-line="125" selection-end-column="9" />
               <folding>
                 <element signature="e#634#672#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/part2/model.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="708">
+              <caret line="62" column="21" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
+              <folding>
+                <element signature="e#634#672#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/part1/lstm.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="69" column="71" selection-start-line="69" selection-start-column="71" selection-end-line="69" selection-end-column="71" />
             </state>
           </provider>
         </entry>
@@ -63,8 +149,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/part1/vanilla_rnn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="59" column="38" lean-forward="true" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="38" />
+            <state relative-caret-position="243">
+              <caret line="56" column="66" lean-forward="true" selection-start-line="56" selection-start-column="63" selection-end-line="56" selection-end-column="81" />
               <folding>
                 <element signature="e#705#743#0" expanded="true" />
               </folding>
@@ -80,15 +166,6 @@
               <folding>
                 <element signature="e#705#743#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/part1/lstm.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="930">
-              <caret line="67" selection-start-line="67" selection-end-line="69" selection-end-column="71" />
             </state>
           </provider>
         </entry>
@@ -119,13 +196,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/part1/lstm.py" />
         <option value="$PROJECT_DIR$/part2/model.py" />
         <option value="$PROJECT_DIR$/part2/dataset.py" />
         <option value="$PROJECT_DIR$/part2/graphs.py" />
         <option value="$PROJECT_DIR$/part1/graphs.py" />
         <option value="$PROJECT_DIR$/part2/train.py" />
         <option value="$PROJECT_DIR$/part1/vanilla_rnn.py" />
+        <option value="$PROJECT_DIR$/part1/lstm.py" />
         <option value="$PROJECT_DIR$/part1/train.py" />
       </list>
     </option>
@@ -361,16 +438,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/part2/model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="62" column="21" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
-          <folding>
-            <element signature="e#634#672#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/part1/graphs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1110">
@@ -401,17 +468,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/part1/lstm.py">
+    <entry file="file://$PROJECT_DIR$/part2/model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="67" selection-start-line="67" selection-end-line="69" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/part2/train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="140" selection-start-line="140" selection-end-line="141" selection-end-column="14" />
+        <state relative-caret-position="708">
+          <caret line="62" column="21" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
           <folding>
             <element signature="e#634#672#0" expanded="true" />
           </folding>
@@ -420,18 +480,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/part1/vanilla_rnn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="59" column="38" lean-forward="true" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="38" />
+        <state relative-caret-position="243">
+          <caret line="56" column="66" lean-forward="true" selection-start-line="56" selection-start-column="63" selection-end-line="56" selection-end-column="81" />
           <folding>
             <element signature="e#705#743#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/part1/lstm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="69" column="71" selection-start-line="69" selection-start-column="71" selection-end-line="69" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/part2/train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1410">
+          <caret line="125" column="9" selection-start-line="125" selection-start-column="4" selection-end-line="125" selection-end-column="9" />
+          <folding>
+            <element signature="e#634#672#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/part1/train.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="185" column="81" lean-forward="true" selection-start-line="185" selection-start-column="81" selection-end-line="185" selection-end-column="81" />
+        <state relative-caret-position="288">
+          <caret line="196" column="87" lean-forward="true" selection-start-line="196" selection-start-column="87" selection-end-line="196" selection-end-column="87" />
           <folding>
             <element signature="e#707#745#0" expanded="true" />
           </folding>
