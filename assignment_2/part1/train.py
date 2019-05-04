@@ -170,30 +170,30 @@ def train(config):
     #
     #Save trained model and results
     if config.model_type == 'RNN':
-        #save model
-        torch.save(model, "./Results/RNN/" + str(config.input_length) + "_RNN_model")
-        #save train accuracy and loss
-        np.save("./Results/RNN/" + str(config.input_length) + "_RNN_accuracy", train_acc)
-        np.save("./Results/RNN/" + str(config.input_length) + "_RNN_loss", train_loss)
+        # #save model
+        # torch.save(model, "./Results/RNN/" + str(config.input_length) + "_RNN_model")
+        # #save train accuracy and loss
+        # np.save("./Results/RNN/" + str(config.input_length) + "_RNN_accuracy", train_acc)
+        # np.save("./Results/RNN/" + str(config.input_length) + "_RNN_loss", train_loss)
 
         # #save model ####################################################################### For SURFsara
-        # torch.save(model, str(config.input_length) + "_RNN_model")
-        # #save train accuracy and loss
-        # np.save(str(config.input_length) + "_RNN_accuracy", train_acc)
-        # np.save(str(config.input_length) + "_RNN_loss", train_loss)
+        torch.save(model, str(config.input_length) + "_RNN_model")
+        #save train accuracy and loss
+        np.save(str(config.input_length) + "_RNN_accuracy", train_acc)
+        np.save(str(config.input_length) + "_RNN_loss", train_loss)
 
     elif config.model_type == 'LSTM':
-        #save model
-        torch.save(model, "./Results/LSTM/" + str(config.input_length) + "_LSTM_model")
-        #save train accuracy and loss
-        np.save("./Results/LSTM/" + str(config.input_length) + "_LSTM_accuracy", train_acc)
-        np.save("./Results/LSTM/" + str(config.input_length) + "_LSTM_loss", train_loss)
+        # #save model
+        # torch.save(model, "./Results/LSTM/" + str(config.input_length) + "_LSTM_model")
+        # #save train accuracy and loss
+        # np.save("./Results/LSTM/" + str(config.input_length) + "_LSTM_accuracy", train_acc)
+        # np.save("./Results/LSTM/" + str(config.input_length) + "_LSTM_loss", train_loss)
 
         # #save model ####################################################################### For SURFsara
-        # torch.save(model,str(config.input_length) + "_LSTM_model")
-        # #save train accuracy and loss
-        # np.save(str(config.input_length) + "_LSTM_accuracy", train_acc)
-        # np.save(str(config.input_length) + "_LSTM_loss", train_loss)
+        torch.save(model,str(config.input_length) + "_LSTM_model")
+        #save train accuracy and loss
+        np.save(str(config.input_length) + "_LSTM_accuracy", train_acc)
+        np.save(str(config.input_length) + "_LSTM_loss", train_loss)
 
 
 
@@ -223,14 +223,14 @@ if __name__ == "__main__":
     # train(config)
 
 
-##train models for different sequence lengths
-# for i in range(3):
-#     for model in ['RNN', 'LSTM']:
-#         print('Training', model)
-#         config.model_type = model
-#         for length in [5,10,15,20,25,30,35,40,45,50]:
-#             config.input_length = length
-#             train(config)
+#train models for different sequence lengths
+for i in range(3):
+    for model in ['RNN', 'LSTM']:
+        print('Training', model)
+        config.model_type = model
+        for length in [5,10,15,20,25,30,35,40,45,50]:
+            config.input_length = length
+            train(config)
 
 
 def test(config, seq_size):
@@ -259,9 +259,9 @@ def test(config, seq_size):
         print('\nTesting on palindrome',str(i+1),':\n---------------\n\nInput:',str(batch_inputs[i].tolist()),'\nPredicted last digit:',str(pred[i,:].argmax().item()))
 
 
-#Get qualitative results for models of different sizes
-for length in [5,10,15,20,25,30,35,40,45,50]:
-    test(config, length)
+# #Get qualitative results for models of different sizes
+# for length in [5,10,15,20,25,30,35,40,45,50]:
+#     test(config, length)
 
 
 
