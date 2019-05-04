@@ -172,30 +172,30 @@ def train(config,n_run):
     #
     #Save trained model and results
     if config.model_type == 'RNN':
-        # #save model
-        # torch.save(model, "./Results/RNN/" + str(config.input_length) + "_RNN_model")
-        # #save train accuracy and loss
-        # np.save("./Results/RNN/" + str(config.input_length) + "_RNN_accuracy", train_acc)
-        # np.save("./Results/RNN/" + str(config.input_length) + "_RNN_loss", train_loss)
-
-        #save model ####################################################################### For SURFsara
-        torch.save(model, str(config.input_length+1) + "_RNN_model_" + str(n_run))
+        #save model
+        torch.save(model, "./Results/RNN/" + str(config.input_length) + "_RNN_model")
         #save train accuracy and loss
-        np.save(str(config.input_length+1) + "_RNN_accuracy_" + str(n_run), train_acc)
-        np.save(str(config.input_length+1) + "_RNN_loss_" + str(n_run), train_loss)
+        np.save("./Results/RNN/" + str(config.input_length) + "_RNN_accuracy", train_acc)
+        np.save("./Results/RNN/" + str(config.input_length) + "_RNN_loss", train_loss)
+
+        # #save model ####################################################################### For SURFsara
+        # torch.save(model, str(config.input_length+1) + "_RNN_model_" + str(n_run))
+        # #save train accuracy and loss
+        # np.save(str(config.input_length+1) + "_RNN_accuracy_" + str(n_run), train_acc)
+        # np.save(str(config.input_length+1) + "_RNN_loss_" + str(n_run), train_loss)
 
     elif config.model_type == 'LSTM':
-        # #save model
-        # torch.save(model, "./Results/LSTM/" + str(config.input_length) + "_LSTM_model")
-        # #save train accuracy and loss
-        # np.save("./Results/LSTM/" + str(config.input_length) + "_LSTM_accuracy", train_acc)
-        # np.save("./Results/LSTM/" + str(config.input_length) + "_LSTM_loss", train_loss)
-
-        #save model ####################################################################### For SURFsara
-        torch.save(model,str(config.input_length+1) + "_LSTM_model_"  + str(n_run))
+        #save model
+        torch.save(model, "./Results/LSTM/" + str(config.input_length) + "_LSTM_model")
         #save train accuracy and loss
-        np.save(str(config.input_length+1) + "_LSTM_accuracy_" + str(n_run), train_acc)
-        np.save(str(config.input_length+1) + "_LSTM_loss_" + str(n_run), train_loss)
+        np.save("./Results/LSTM/" + str(config.input_length) + "_LSTM_accuracy", train_acc)
+        np.save("./Results/LSTM/" + str(config.input_length) + "_LSTM_loss", train_loss)
+
+        # #save model ####################################################################### For SURFsara
+        # torch.save(model,str(config.input_length+1) + "_LSTM_model_"  + str(n_run))
+        # #save train accuracy and loss
+        # np.save(str(config.input_length+1) + "_LSTM_accuracy_" + str(n_run), train_acc)
+        # np.save(str(config.input_length+1) + "_LSTM_loss_" + str(n_run), train_loss)
 
 
 

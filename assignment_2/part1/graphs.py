@@ -77,7 +77,7 @@ def get_graphs(model):
                 path=path
                 )
 
-get_graphs(2)
+get_graphs(1)
 
 
 #Initialize lists of loss and accuracies for length comparisons
