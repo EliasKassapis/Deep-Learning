@@ -168,7 +168,7 @@ def train(config,n_run):
             break
 
 
-    print('Done training.')
+    print('\nDone training.\n')
     #
     #Save trained model and results
     if config.model_type == 'RNN':
@@ -224,32 +224,32 @@ if __name__ == "__main__":
     # Train the model
     # train(config)
 
-
-#train models for different sequence lengths
-for i in range(3):
-    for model in ['LSTM','RNN']:
-        print('\n---------------\nTraining', model, '\n---------------\n')
-        config.model_type = model
-        for length in [5,10,15,20,25,30,35,40,45,50]:
-            print('Sequence Length: ', str(length),'\n---------------------\n')
-            config.input_length = length
-            train(config, i+1)
+    # #Train models for different sequence lengths
+    # for i in range(3):
+    #     for model in ['LSTM','RNN']:
+    #         print('\n---------------\nTraining', model, '\n---------------\n')
+    #         config.model_type = model
+    #         for length in [5,10,15,20,25,30,35,40,45,50]:
+    #             print('Sequence Length: ', str(length),'\n---------------------\n')
+    #             config.input_length = length
+    #             train(config, i+1)
 
 
 def test(config, seq_size, n_examples):
 
+
     # Initialize the dataset and data loader
-    dataset = PalindromeDataset(seq_size)
+    dataset = PalindromeDataset(seq_size+1)
     data_loader = DataLoader(dataset, config.batch_size, num_workers=1)
 
     #Get one batch to test
-    (batch_inputs, batch_targets)  = next(iter(data_loader))
+    (batch_inputs, batch_targets) = next(iter(data_loader))
 
     #Convert inputs and labels into tensors
     x = torch.tensor(batch_inputs, device=config.device)
 
     # Load the trained model
-    model = torch.load('./Results/RNN/' + str(seq_size) + '_RNN_model', map_location='cpu')
+    model = torch.load('./Results/RNN/' + str(seq_size) + '_RNN_model', map_location=config.device)
     model.to(config.device)
 
     #get predictions for batch
@@ -267,4 +267,4 @@ def test(config, seq_size, n_examples):
 #     test(config, length, 3)
 
 
-
+test(config, 5, 3)
