@@ -45,8 +45,9 @@ class VanillaRNN(nn.Module):
         self.Whh = nn.Parameter(torch.randn(num_hidden,num_hidden))
         self.Wph = nn.Parameter(torch.randn(num_classes,num_hidden))
         self.bh = nn.Parameter(torch.randn(num_hidden))
-        self.bh = nn.Parameter(torch.randn(num_hidden))
-        self.bp = nn.Parameter(torch.randn(num_hidden))
+        self.bp = nn.Parameter(torch.randn(num_classes))
+
+
 
 
     def forward(self, x):
@@ -59,15 +60,14 @@ class VanillaRNN(nn.Module):
         for t in range(self.seq_length):
             #get current input
             current_x = x[:,t].view(-1, self.input_dim)
+
             #get current h
             self.h = torch.tanh(self.Whx @ current_x.t() + self.Whh @ self.h + self.bh)
 
+
         #get output from final layer
-        out = self.Wph @ self.h + self.bp
+        out = (self.Wph @ self.h).t() + self.bp
 
-        return out.t()
+        return out
 
 
-# data = PalindromeDataset(3)
-#
-# palindrome = data.generate_palindrome()

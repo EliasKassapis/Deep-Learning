@@ -27,8 +27,9 @@ def plot_graphs(*args, title=None, ylabel=None, xlabel=None, step_size=None, m=N
     for i, current_y in enumerate(y):
         plt.plot(x, current_y, label=legends[i], color=colors[i])
 
-    plt.legend()
+    # plt.legend()
     fig1 = plt.gcf()
+    plt.grid(True, lw = 0.75, ls = '--', c = '.75')
     plt.show()
     plt.draw()
     fig1.savefig(path + m + ' - ' + ylabel + '.png')
@@ -47,15 +48,16 @@ def get_graphs(model):
         step_size = 100
 
 
-    train_loss = np.load(path + 'epoch_18_loss')
-    train_acc = np.load(path + 'epoch_18_accuracy')
+    train_loss = np.load(path + 'epoch_20_loss.npy')
+    train_acc = np.load(path + 'epoch_20_accuracy.npy')
 
 
     print(train_loss)
 
     print('Final train accuracy: ', max(list(train_acc)), '\nFinal train loss: ', train_loss[-1])
 
-    plot_graphs(train_loss, 'Train', 'darkorange',
+    plot_graphs(train_loss, 'Loss', 'darkblue',
+                # train_acc, 'Accuracy', 'darkblue',
                 title= m + ': Loss vs. training time elapsed',
                 ylabel='Loss',
                 xlabel='No. of steps',
@@ -64,7 +66,7 @@ def get_graphs(model):
                 path=path
                 )
 
-    plot_graphs(train_acc, 'Train', 'darkorange',
+    plot_graphs(train_acc, 'Train', 'darkblue',
                 title= m + ': Accuracy vs. training time elapsed',
                 ylabel='Accuracy',
                 xlabel='No. of steps',
@@ -73,4 +75,12 @@ def get_graphs(model):
                 path=path
                 )
 
-# get_graphs(2)
+get_graphs(2)
+
+
+texts = np.load('./Results/epoch_20_texts.npy')
+
+#Get text for every interval of 5*100 steps
+print('\nText generated\n---------------')
+for s in range(0,24,5):
+    print('Step ', str(s*100), ': ', texts[s])

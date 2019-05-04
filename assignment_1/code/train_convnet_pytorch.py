@@ -222,7 +222,7 @@ def train():
 
   plot_graphs(train_acc, 'Training Accuracy', 'darkorange',
                 test_acc, 'Test Accuracy', 'darkred',
-                title='Adamns optimization',
+                title='Adams optimization',
                 ylabel='Accuracy',
                 xlabel='Steps')
 

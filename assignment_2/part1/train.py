@@ -67,15 +67,6 @@ def train(config):
     # Initialize the device which to run the model on
     device = torch.device(config.device)
 
-    #########################################################################
-    torch.set_default_tensor_type('torch.FloatTensor')
-    # device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-
-
-    config.input_length = 10
-    config.model_type = 'LSTM'
-    #########################################################################
-
     # Initialize the model that we are going to use
     if config.model_type == 'RNN':
         model = VanillaRNN(config.input_length, config.input_dim, config.num_hidden, config.num_classes, config.batch_size, device=device)
@@ -93,10 +84,13 @@ def train(config):
 
     model.to(device)
 
-    train_loss = [] ##########################
-    test_loss = []
+    train_loss = []
     train_acc = []
-    test_acc = []
+    t_loss = []
+    t_acc = []
+
+    #Convergence condition
+    eps = 1e-6
 
     for step, (batch_inputs, batch_targets) in enumerate(data_loader):
 
@@ -116,6 +110,7 @@ def train(config):
         #Forward pass
         pred = model.forward(x)
         loss = criterion(pred, y)
+        t_loss.append(loss.item())
         optimizer.zero_grad()
 
         #Backward pass
@@ -138,6 +133,7 @@ def train(config):
 
         optimizer.step()
         accuracy = get_accuracy(pred,y, config.batch_size)
+        t_acc.append(accuracy.item())
 
         # Just for time measurement
         t2 = time.time()
@@ -153,13 +149,51 @@ def train(config):
             ))
             # print(f"x: {x[0,:]}, pred: {pred[0,:].argmax()}, y: {y[0]}") #######################################################################
 
+        if step % 100 == 0:
+            #Get loss and accuracy averages over 100 steps
+            train_loss.append(np.mean(t_loss))
+            train_acc.append(np.mean(t_acc))
+            t_loss = []
+            t_acc = []
+
+
         if step == config.train_steps:
             # If you receive a PyTorch data-loader error, check this bug report:
             # https://github.com/pytorch/pytorch/pull/9655
             break
 
     print('Done training.')
+    #
+    #Save trained model and results
+    if config.model_type == 'RNN':
+        #save model
+        # torch.save(model, "./Results/RNN/" + str(config.input_length) + "_RNN_model")
 
+        torch.save(model, str(config.input_length) + "_RNN_model") ################################
+
+
+        #save train accuracy and loss
+        # np.save("./Results/RNN/" + str(config.input_length) + "_RNN_accuracy", train_acc)
+        # np.save("./Results/RNN/" + str(config.input_length) + "_RNN_loss", train_loss)
+
+        np.save(str(config.input_length) + "_RNN_accuracy", train_acc)
+        np.save(str(config.input_length) + "_RNN_loss", train_loss)
+
+    elif config.model_type == 'LSTM':
+        # #save model
+        # torch.save(model, "./Results/LSTM/" + str(config.input_length) + "_LSTM_model")
+        # #save train accuracy and loss
+        # np.save("./Results/LSTM/" + str(config.input_length) + "_LSTM_accuracy", train_acc)
+        # np.save("./Results/LSTM/" + str(config.input_length) + "_LSTM_loss", train_loss)
+
+        #save model #######################################################################
+        torch.save(model,str(config.input_length) + "_LSTM_model")
+        #save train accuracy and loss
+        np.save(str(config.input_length) + "_LSTM_accuracy", train_acc)
+        np.save(str(config.input_length) + "_LSTM_loss", train_loss)
+
+    if step > 0 and abs(train_loss[-1] - train_loss[-2]) < eps:
+        break
 
  ################################################################################
  ################################################################################
@@ -171,7 +205,7 @@ if __name__ == "__main__":
 
     # Model params
     parser.add_argument('--model_type', type=str, default="RNN", help="Model type, should be 'RNN' or 'LSTM'")
-    parser.add_argument('--input_length', type=int, default=10, help='Length of an input sequence')
+    parser.add_argument('--input_length', type=int, default=5, help='Length of an input sequence')
     parser.add_argument('--input_dim', type=int, default=1, help='Dimensionality of input sequence')
     parser.add_argument('--num_classes', type=int, default=10, help='Dimensionality of output sequence')
     parser.add_argument('--num_hidden', type=int, default=128, help='Number of hidden units in the model')
@@ -184,4 +218,41 @@ if __name__ == "__main__":
     config = parser.parse_args()
 
     # Train the model
-    train(config)
+    # train(config)
+
+for i in range(3):
+    for model in ['RNN', 'LSTM']:
+        print('Training', model)
+        config.model_type = model
+        for length in [5,10,15,20,25,30,35,40,45,50]:
+            config.input_length = length
+            train(config)
+
+
+def test(config):
+
+    # Initialize the dataset and data loader
+    dataset = PalindromeDataset(config.input_length+1)
+    data_loader = DataLoader(dataset, config.batch_size, num_workers=1)
+
+    #Get one batch to test
+    (batch_inputs, batch_targets)  = next(iter(data_loader))
+
+    #Convert inputs and labels into tensors
+    x = torch.tensor(batch_inputs, device=config.device)
+
+    # Load the trained model
+    model = torch.load('./Results/RNN/5_RNN_model', map_location='cpu')
+    model.to(config.device)
+
+    #get predictions for batch
+    with torch.no_grad():
+        pred = model.forward(x)
+
+    for i in range(5):
+        print('\nTesting on palindrome',str(i+1),':\n---------------\n\nInput:',str(batch_inputs[i].tolist()),'\nPredicted last digit:',str(pred[i,:].argmax().item()))
+
+# test(config)
+
+
+

@@ -89,7 +89,7 @@ def get_next_char(char, model, hc, temperature=None):
 
         else:
             #get char distribution
-            p = F.softmax(pred.squeeze()*temperature, dim=0)
+            p = F.softmax(pred.squeeze()/temperature, dim=0)
             #sample character
             top_ch = torch.multinomial(p,1)
 
@@ -138,7 +138,7 @@ def train(config):
     t_acc = []
     texts = []
 
-    #Convergence criterion
+    #Convergence condition
     eps = 1e-6
 
     for epoch in range(20):
@@ -170,6 +170,9 @@ def train(config):
 
             #Forward pass
             pred, _ = model.forward(x) #pred = (sentence length, score of each char ,batch_size)
+
+            print(pred.shape)
+
             loss = criterion(pred, y)
             train_loss.append(loss.item())
             optimizer.zero_grad()
@@ -273,7 +276,7 @@ if __name__ == "__main__":
     config = parser.parse_args()
 
     # Train the model
-    train(config)
+    # train(config)
 
 
 def test(config):
@@ -281,7 +284,7 @@ def test(config):
     # Initialize the device which to run the model on
     device = torch.device(config.device)
 
-    # Initialize the dataset and data loader (note the +1)
+    # Initialize the dataset and data loader
     dataset = TextDataset(config.txt_file, config.seq_length)
 
     # Load the trained model
@@ -300,4 +303,4 @@ def test(config):
             print('\n(',str(s+1),') ',text)
 
 
-# test(config)
+test(config)
