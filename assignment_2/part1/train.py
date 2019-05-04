@@ -26,9 +26,9 @@ import numpy as np
 import torch
 from torch.utils.data import DataLoader
 
-from part1.dataset import PalindromeDataset
-from part1.vanilla_rnn import VanillaRNN
-from part1.lstm import LSTM
+from dataset import PalindromeDataset
+from vanilla_rnn import VanillaRNN
+from lstm import LSTM
 
 # You may want to look into tensorboardX for logging
 # from tensorboardX import SummaryWriter
@@ -171,30 +171,29 @@ def train(config):
     #Save trained model and results
     if config.model_type == 'RNN':
         #save model
-        # torch.save(model, "./Results/RNN/" + str(config.input_length) + "_RNN_model")
-
-        torch.save(model, str(config.input_length) + "_RNN_model") ################################
-
-
+        torch.save(model, "./Results/RNN/" + str(config.input_length) + "_RNN_model")
         #save train accuracy and loss
-        # np.save("./Results/RNN/" + str(config.input_length) + "_RNN_accuracy", train_acc)
-        # np.save("./Results/RNN/" + str(config.input_length) + "_RNN_loss", train_loss)
+        np.save("./Results/RNN/" + str(config.input_length) + "_RNN_accuracy", train_acc)
+        np.save("./Results/RNN/" + str(config.input_length) + "_RNN_loss", train_loss)
 
-        np.save(str(config.input_length) + "_RNN_accuracy", train_acc)
-        np.save(str(config.input_length) + "_RNN_loss", train_loss)
+        # #save model ####################################################################### For SURFsara
+        # torch.save(model, str(config.input_length) + "_RNN_model")
+        # #save train accuracy and loss
+        # np.save(str(config.input_length) + "_RNN_accuracy", train_acc)
+        # np.save(str(config.input_length) + "_RNN_loss", train_loss)
 
     elif config.model_type == 'LSTM':
-        # #save model
-        # torch.save(model, "./Results/LSTM/" + str(config.input_length) + "_LSTM_model")
-        # #save train accuracy and loss
-        # np.save("./Results/LSTM/" + str(config.input_length) + "_LSTM_accuracy", train_acc)
-        # np.save("./Results/LSTM/" + str(config.input_length) + "_LSTM_loss", train_loss)
-
-        #save model #######################################################################
-        torch.save(model,str(config.input_length) + "_LSTM_model")
+        #save model
+        torch.save(model, "./Results/LSTM/" + str(config.input_length) + "_LSTM_model")
         #save train accuracy and loss
-        np.save(str(config.input_length) + "_LSTM_accuracy", train_acc)
-        np.save(str(config.input_length) + "_LSTM_loss", train_loss)
+        np.save("./Results/LSTM/" + str(config.input_length) + "_LSTM_accuracy", train_acc)
+        np.save("./Results/LSTM/" + str(config.input_length) + "_LSTM_loss", train_loss)
+
+        # #save model ####################################################################### For SURFsara
+        # torch.save(model,str(config.input_length) + "_LSTM_model")
+        # #save train accuracy and loss
+        # np.save(str(config.input_length) + "_LSTM_accuracy", train_acc)
+        # np.save(str(config.input_length) + "_LSTM_loss", train_loss)
 
 
 
@@ -223,19 +222,21 @@ if __name__ == "__main__":
     # Train the model
     # train(config)
 
-for i in range(3):
-    for model in ['RNN', 'LSTM']:
-        print('Training', model)
-        config.model_type = model
-        for length in [5,10,15,20,25,30,35,40,45,50]:
-            config.input_length = length
-            train(config)
+
+##train models for different sequence lengths
+# for i in range(3):
+#     for model in ['RNN', 'LSTM']:
+#         print('Training', model)
+#         config.model_type = model
+#         for length in [5,10,15,20,25,30,35,40,45,50]:
+#             config.input_length = length
+#             train(config)
 
 
-def test(config):
+def test(config, seq_size):
 
     # Initialize the dataset and data loader
-    dataset = PalindromeDataset(config.input_length+1)
+    dataset = PalindromeDataset(seq_size+1)
     data_loader = DataLoader(dataset, config.batch_size, num_workers=1)
 
     #Get one batch to test
@@ -245,17 +246,22 @@ def test(config):
     x = torch.tensor(batch_inputs, device=config.device)
 
     # Load the trained model
-    model = torch.load('./Results/RNN/5_RNN_model', map_location='cpu')
+    model = torch.load('./Results/RNN/' + str(seq_size) + '_RNN_model', map_location='cpu')
     model.to(config.device)
 
     #get predictions for batch
     with torch.no_grad():
         pred = model.forward(x)
 
+    print('\n----------------------\nSequence length: ',str(seq_size),'\n----------------------')
+
     for i in range(5):
         print('\nTesting on palindrome',str(i+1),':\n---------------\n\nInput:',str(batch_inputs[i].tolist()),'\nPredicted last digit:',str(pred[i,:].argmax().item()))
 
-# test(config)
+
+#Get qualitative results for models of different sizes
+for length in [5,10,15,20,25,30,35,40,45,50]:
+    test(config, length)
 
 
 
