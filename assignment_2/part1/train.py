@@ -224,15 +224,15 @@ if __name__ == "__main__":
     # Train the model
     # train(config)
 
-    # #Train models for different sequence lengths
-    # for i in range(3):
-    #     for model in ['LSTM','RNN']:
-    #         print('\n---------------\nTraining', model, '\n---------------\n')
-    #         config.model_type = model
-    #         for length in [5,10,15,20,25,30,35,40,45,50]:
-    #             print('Sequence Length: ', str(length),'\n---------------------\n')
-    #             config.input_length = length
-    #             train(config, i+1)
+    #Train models for different sequence lengths
+    for i in range(3):
+        for model in ['LSTM','RNN']:
+            print('\n---------------\nTraining', model, '\n---------------\n')
+            config.model_type = model
+            for length in [5,10,15,20,25,30,35,40,45,50]:
+                print('Sequence Length: ', str(length),'\n---------------------\n')
+                config.input_length = length
+                train(config, i+1)
 
 
 def test(config, seq_size, n_examples):
@@ -264,9 +264,9 @@ def test(config, seq_size, n_examples):
         print('\nTesting on palindrome',str(i+1),':\n---------------\n\nInput:',str(batch_inputs[i].tolist()),'\nPredicted last digit:',str(pred[i,:].argmax().item()),'\n')
 
 
-#Get qualitative results for models of different sizes
-for length in [5,10,15,20,25,30,35,40,45,50]:
-    test(config, length, 3)
+# #Get qualitative results for models of different sizes
+# for length in [5,10,15,20,25,30,35,40,45,50]:
+#     test(config, length, 3)
 
 
 # test(config, 5, 3)
