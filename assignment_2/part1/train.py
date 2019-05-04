@@ -156,11 +156,15 @@ def train(config):
             t_loss = []
             t_acc = []
 
+            if step > 0 and abs(train_loss[-1] - train_loss[-2]) < eps:
+                break
+
 
         if step == config.train_steps:
             # If you receive a PyTorch data-loader error, check this bug report:
             # https://github.com/pytorch/pytorch/pull/9655
             break
+
 
     print('Done training.')
     #
@@ -192,8 +196,7 @@ def train(config):
         np.save(str(config.input_length) + "_LSTM_accuracy", train_acc)
         np.save(str(config.input_length) + "_LSTM_loss", train_loss)
 
-    if step > 0 and abs(train_loss[-1] - train_loss[-2]) < eps:
-        break
+
 
  ################################################################################
  ################################################################################
