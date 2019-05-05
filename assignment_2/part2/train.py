@@ -278,8 +278,24 @@ if __name__ == "__main__":
     # Train the model
     # train(config)
 
+def get_sentence_per_interval(interval, n_sentences):
 
-def test(config):
+    interval = interval//100
+
+    texts = np.load('./Results/epoch_20_texts.npy')
+    loss = np.load('./Results/epoch_20_loss.npy')
+    acc = np.load('./Results/epoch_20_accuracy.npy')
+
+    #Get text for every interval of 5*100 steps
+    print('\nText generated\n---------------')
+    for s in range(0,interval*n_sentences-1,interval):
+        print('\nStep ', str(s*100), ': "', texts[s],'" ,\nAccuracy = ', str(round(acc[s],3)))
+
+##### Question 2.1 (b)
+# get_sentence_per_interval(1000,5)
+
+
+def test(config, n_sentences, s_length, temperature=None):
 
     # Initialize the device which to run the model on
     device = torch.device(config.device)
@@ -291,16 +307,28 @@ def test(config):
     model = torch.load('./Results/final_model', map_location='cpu')
     model.to(device)
 
-    temperature = [0.5, 1.0, 2.0]
 
-    for t in temperature:
-        print('\n----------------\nTemperature = ',t,'\n----------------\n\nGenerated sentences:')
-        for s in range(5):
-            #get text in idx format
-            text = text_gen(model, config.seq_length, dataset.vocab_size, temperature=t)
-            #convert text to string
-            text = dataset.convert_to_string(text)
+    print('\n----------------\nTemperature = ',temperature,'\n----------------\n\nGenerated sentences:')
+    for s in range(n_sentences):
+        #get text in idx format
+        text = text_gen(model, s_length, dataset.vocab_size, temperature=temperature)
+        #convert text to string
+        text = dataset.convert_to_string(text)
+        if n_sentences == 1:
+            print('\n',text)
+        else:
             print('\n(',str(s+1),') ',text)
 
 
-test(config)
+### Question 2.1(c)
+# temperature = [0.5, 1.0, 2.0]
+# for t in temperature:
+#     test(config,5, config.seq_length, t)
+
+
+
+### Question 2.2
+test(config,1, 500, 0.5)
+
+
+

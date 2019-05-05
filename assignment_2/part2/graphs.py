@@ -78,9 +78,6 @@ def get_graphs(model):
 get_graphs(2)
 
 
-texts = np.load('./Results/epoch_20_texts.npy')
 
-#Get text for every interval of 5*100 steps
-print('\nText generated\n---------------')
-for s in range(0,24,5):
-    print('Step ', str(s*100), ': ', texts[s])
+
+
