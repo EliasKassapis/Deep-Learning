@@ -183,13 +183,10 @@ def train(dataloader, discriminator, generator, optimizer_G, optimizer_D):
 
         for i, (imgs, _) in enumerate(dataloader):
 
-            # imgs.cuda()
-            imgs.to(args.device)
-
             batch_size = imgs.shape[0]
 
             # strech out images into vectors
-            real_imgs = imgs.view(-1, 784)
+            real_imgs = imgs.view(-1, 784).to(args.device)
 
 
             # Train Generator
