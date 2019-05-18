@@ -3,105 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="6027092a-420e-446e-a227-f192bd48ee59" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/train_convnet_pytorch.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/train_convnet_pytorch.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../assignment_2/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment_2/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../assignment_2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment_2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part1/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment_2/part1/train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/Results/epoch_18_accuracy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/Results/epoch_18_loss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/Results/epoch_18_model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/Results/epoch_18_texts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/Results/final_model" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment_2/part2/Results/final_model" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_0_model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_10_accuracy.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_10_loss.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_10_model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_10_texts.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_11_accuracy.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_11_loss.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_11_model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_11_texts.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_12_accuracy.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_12_loss.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_12_model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_12_texts.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_13_accuracy.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_13_loss.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_13_model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_13_texts.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_14_accuracy.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_14_loss.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_14_model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_14_texts.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_15_accuracy.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_15_loss.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_15_model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_15_texts.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_16_accuracy.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_16_loss.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_16_model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_16_texts.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_17_accuracy.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_17_loss.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_17_model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_17_texts.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_18_accuracy.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_18_loss.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_18_model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_18_texts.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_19_accuracy.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_19_loss.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_19_texts.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_1_model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_20_accuracy.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_20_loss.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_20_texts.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_2_accuracy.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_2_loss.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_2_model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_2_texts.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_3_accuracy.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_3_loss.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_3_model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_3_texts.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_4_accuracy.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_4_loss.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_4_model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_4_texts.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_5_accuracy.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_5_loss.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_5_model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_5_texts.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_6_accuracy.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_6_loss.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_6_model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_6_texts.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_7_accuracy.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_7_loss.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_7_model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_7_texts.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_8_accuracy.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_8_loss.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_8_model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_8_texts.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_9_accuracy.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_9_loss.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_9_model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/epoch_9_texts.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/final_model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/graphs.py" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment_2/part2/graphs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/slurm-2215422.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/slurm-2215450.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/slurm-2215463.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/slurm-2215468.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/slurm-2215574.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/slurm-2215647.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/slurm-2215663.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/slurm-2215676.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/step_" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/step_8441_model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment_2/part2/step_8602_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment_3/code/a3_gan_template.py" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment_3/code/a3_gan_template.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment_3/code/a3_vae_template.py" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment_3/code/a3_vae_template.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -113,18 +18,22 @@
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code/mlp_pytorch.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/convnet_pytorch.py">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-270" />
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/code/convnet_pytorch.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-315" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code/train_mlp_pytorch.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
+            <state relative-caret-position="2145">
               <caret line="183" column="61" selection-start-line="183" selection-start-column="42" selection-end-line="183" selection-end-column="61" />
             </state>
           </provider>
@@ -144,7 +53,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code/graphs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="678">
+            <state relative-caret-position="915">
               <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="46" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
@@ -174,7 +83,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="67" />
     <option name="y" value="32" />
     <option name="width" value="1853" />
@@ -186,7 +95,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Course" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -203,9 +111,11 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Course" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -225,11 +135,12 @@
     <configuration />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <frame x="67" y="25" width="1853" height="1055" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24972677" />
       <window_info id="Structure" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -247,14 +158,21 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/code/mlp_pytorch.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/custom_batchnorm.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
             <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/graphs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="915">
+          <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -266,24 +184,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/graphs.py">
+    <entry file="file://$PROJECT_DIR$/code/train_mlp_pytorch.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="678">
-          <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="2145">
+          <caret line="183" column="61" selection-start-line="183" selection-start-column="42" selection-end-line="183" selection-end-column="61" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/convnet_pytorch.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/train_mlp_pytorch.py">
+    <entry file="file://$PROJECT_DIR$/code/mlp_pytorch.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="183" column="61" selection-start-line="183" selection-start-column="42" selection-end-line="183" selection-end-column="61" />
-        </state>
+        <state relative-caret-position="-270" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/convnet_pytorch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-315" />
       </provider>
     </entry>
   </component>

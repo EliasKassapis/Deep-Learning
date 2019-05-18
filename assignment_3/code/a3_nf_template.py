@@ -183,6 +183,11 @@ def epoch_iter(model, data, optimizer):
     log_2 likelihood per dimension) averaged over the complete epoch.
     """
 
+
+
+            # torch.nn.utils.clip_grad_norm(model.parameters(), max_norm=10) ##MAY NEED TO CLIP THE GRADIENT!!!!
+
+
     avg_bpd = None
 
     return avg_bpd

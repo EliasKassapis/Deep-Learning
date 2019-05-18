@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94cce1d8-5104-4df1-83e7-6ca60e99eff8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../assignment_1/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment_1/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment_1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment_1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part1/graphs.py" beforeDir="false" afterPath="$PROJECT_DIR$/part1/graphs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part1/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/part1/train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part2/graphs.py" beforeDir="false" afterPath="$PROJECT_DIR$/part2/graphs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part2/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/part2/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment_3/code/a3_gan_template.py" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment_3/code/a3_gan_template.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment_3/code/a3_nf_template.py" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment_3/code/a3_nf_template.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment_3/code/a3_vae_template.py" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment_3/code/a3_vae_template.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/part1/train.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2685">
-              <caret line="193" selection-start-line="193" selection-end-line="198" />
+            <state relative-caret-position="272">
+              <caret line="136" column="22" selection-start-line="136" selection-start-column="18" selection-end-line="136" selection-end-column="22" />
               <folding>
                 <element signature="e#707#745#0" expanded="true" />
               </folding>
@@ -29,11 +30,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/part2/train.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4695">
-              <caret line="330" column="16" selection-start-line="330" selection-start-column="16" selection-end-line="330" selection-end-column="16" />
+            <state relative-caret-position="1524">
+              <caret line="265" column="94" selection-start-line="265" selection-start-column="4" selection-end-line="265" selection-end-column="94" />
+              <folding>
+                <element signature="e#634#672#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/part2/model.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="44" column="44" selection-start-line="44" selection-start-column="44" selection-end-line="44" selection-end-column="44" />
               <folding>
                 <element signature="e#634#672#0" expanded="true" />
               </folding>
@@ -44,8 +57,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/part1/graphs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1095">
-              <caret line="79" column="12" selection-start-line="79" selection-start-column="12" selection-end-line="79" selection-end-column="12" />
+            <state relative-caret-position="810">
+              <caret line="60" column="48" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="48" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -57,7 +70,7 @@
         <entry file="file://$PROJECT_DIR$/part2/graphs.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1080">
-              <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+              <caret line="78" selection-start-line="78" selection-end-line="78" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -68,8 +81,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/part1/vanilla_rnn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="56" column="66" selection-start-line="56" selection-start-column="63" selection-end-line="56" selection-end-column="81" />
+            <state relative-caret-position="345">
+              <caret line="28" column="95" selection-start-line="28" selection-start-column="83" selection-end-line="28" selection-end-column="95" />
               <folding>
                 <element signature="e#705#743#0" expanded="true" />
               </folding>
@@ -126,11 +139,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="67" />
-    <option name="y" value="32" />
-    <option name="width" value="1853" />
-    <option name="height" value="1048" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="108" />
+    <option name="y" value="138" />
+    <option name="width" value="1657" />
+    <option name="height" value="942" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -138,6 +151,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Course" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -145,16 +159,20 @@
               <item name="assignment_2" type="b2602c69:ProjectViewProjectNode" />
               <item name="assignment_2" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="assignment_2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignment_2" type="462c0819:PsiDirectoryNode" />
+              <item name="part2" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Course" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../assignment_1" />
+    <property name="last_opened_file_path" value="$USER_HOME$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -289,9 +307,10 @@
     <configuration />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <frame x="108" y="632" width="1657" height="942" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24972677" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27968177" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32914045" />
@@ -353,40 +372,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/part2/model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="62" column="21" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
-          <folding>
-            <element signature="e#634#672#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/part1/train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2685">
-          <caret line="193" selection-start-line="193" selection-end-line="198" />
-          <folding>
-            <element signature="e#707#745#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/part2/train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4695">
-          <caret line="330" column="16" selection-start-line="330" selection-start-column="16" selection-end-line="330" selection-end-column="16" />
-          <folding>
-            <element signature="e#634#672#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/part1/graphs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1095">
-          <caret line="79" column="12" selection-start-line="79" selection-start-column="12" selection-end-line="79" selection-end-column="12" />
+        <state relative-caret-position="810">
+          <caret line="60" column="48" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="48" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
@@ -396,7 +385,7 @@
     <entry file="file://$PROJECT_DIR$/part2/graphs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1080">
-          <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
@@ -405,8 +394,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/part1/vanilla_rnn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="56" column="66" selection-start-line="56" selection-start-column="63" selection-end-line="56" selection-end-column="81" />
+        <state relative-caret-position="345">
+          <caret line="28" column="95" selection-start-line="28" selection-start-column="83" selection-end-line="28" selection-end-column="95" />
           <folding>
             <element signature="e#705#743#0" expanded="true" />
           </folding>
@@ -419,6 +408,36 @@
           <caret line="38" column="19" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="19" />
           <folding>
             <element signature="e#705#743#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/part2/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="44" column="44" selection-start-line="44" selection-start-column="44" selection-end-line="44" selection-end-column="44" />
+          <folding>
+            <element signature="e#634#672#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/part1/train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="136" column="22" selection-start-line="136" selection-start-column="18" selection-end-line="136" selection-end-column="22" />
+          <folding>
+            <element signature="e#707#745#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/part2/train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1524">
+          <caret line="265" column="94" selection-start-line="265" selection-start-column="4" selection-end-line="265" selection-end-column="94" />
+          <folding>
+            <element signature="e#634#672#0" expanded="true" />
           </folding>
         </state>
       </provider>
