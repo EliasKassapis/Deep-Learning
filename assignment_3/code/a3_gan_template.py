@@ -18,7 +18,7 @@ from torchvision import datasets
 FloatTensor = torch.cuda.FloatTensor if torch.cuda.is_available() else torch.FloatTensor
 
 class Generator(nn.Module):
-    def __init__(self, device='cpu'):
+    def __init__(self):
         super(Generator, self).__init__()
 
         # Construct generator. You are free to experiment with your model,
@@ -54,8 +54,6 @@ class Generator(nn.Module):
                                        nn.Linear(1024,784),
                                        nn.Tanh())
 
-        #save device
-        self.device=device
 
 
 
@@ -78,7 +76,7 @@ class Generator(nn.Module):
         gen_imgs = self.forward(sampled_z)
 
         # reshape images into correct dimensions
-        gen_imgs = gen_imgs.view(-1, 1, 28, 28).to(device=self.device)
+        gen_imgs = gen_imgs.view(-1, 1, 28, 28).to(device=args.device)
         # im_means = im_means.view(n_samples, 1, 28, 28).to(device=self.device)
 
         return gen_imgs
@@ -186,7 +184,7 @@ def train(dataloader, discriminator, generator, optimizer_G, optimizer_D):
         for i, (imgs, _) in enumerate(dataloader):
 
             # imgs.cuda()
-            imgs.type(FloatTensor)
+            imgs.to(args.device)
 
             batch_size = imgs.shape[0]
 
