@@ -262,12 +262,13 @@ def train(dataloader, discriminator, generator, optimizer_G, optimizer_D):
         G_avg_epoch_loss.append(np.mean(G_epoch_loss))
         D_avg_epoch_loss.append(np.mean(D_epoch_loss))
 
-        if epoch == 2: ##############################################################################################
-            save_loss_plot(G_avg_epoch_loss, D_avg_epoch_loss, 'GAN_loss.pdf')
+        # if epoch == 2: ##############################################################################################
+        #     save_loss_plot(G_avg_epoch_loss, D_avg_epoch_loss, 'GAN_loss.pdf')
 
-        # save model
-        torch.save(generator, "GAN_generator_epoch_" + str(epoch))
-        torch.save(discriminator, "GAN_discriminator_epoch_" + str(epoch))
+        # # save model
+        # if epoch % 20 == 0:
+        #     torch.save(generator, "GAN_generator_epoch_" + str(epoch))
+        #     torch.save(discriminator, "GAN_discriminator_epoch_" + str(epoch))
 
         # print(f"[Epoch {epoch}] D loss: {D_avg_epoch_loss[epoch]} G loss: {G_avg_epoch_loss[epoch]}")
 
@@ -275,7 +276,7 @@ def train(dataloader, discriminator, generator, optimizer_G, optimizer_D):
 
 def save_loss_plot(g_curve, d_curve, filename):
     plt.figure(figsize=(12, 6))
-    plt.plot(d_curve, label='G Loss', color='darkorange')  # changed colours
+    plt.plot(g_curve, label='G Loss', color='darkorange')  # changed colours
     plt.plot(d_curve, label='D Loss', color='darkblue')
     plt.legend()
     plt.grid(True, lw=0.75, ls='--', c='.75')  # added grid
@@ -288,16 +289,6 @@ def save_loss_plot(g_curve, d_curve, filename):
 def main():
     # Create output image directory
     os.makedirs('images', exist_ok=True)
-
-    # # load data
-    # dataloader = torch.utils.data.DataLoader(
-    #     datasets.MNIST('./data/mnist', train=True, download=True,
-    #                    transform=transforms.Compose([
-    #                        transforms.ToTensor(),
-    #                        transforms.Normalize((0.5, 0.5, 0.5),
-    #                                             (0.5, 0.5, 0.5))])),
-    #     batch_size=args.batch_size, shuffle=True)
-
 
     # load data
     dataloader = torch.utils.data.DataLoader(
@@ -329,11 +320,12 @@ def main():
     np.save("g_loss", g_loss)
     np.save("d_loss", d_loss)
 
-    save_loss_plot(g_loss, d_loss, 'GAN_loss.pdf')
+    #save model
+    torch.save(generator, "GAN_generator_final")
+    torch.save(discriminator, "GAN_discriminator_final")
 
-    # You can save your generator here to re-use it to generate images for your
-    # report, e.g.:
-    # torch.save(generator.state_dict(), "mnist_generator.pt")
+    #save losses
+    save_loss_plot(g_loss, d_loss, 'GAN_loss.pdf')
 
 
 if __name__ == "__main__":
@@ -361,3 +353,26 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     main()
+
+
+# For Q 2.6
+
+def get_samples_from_epoch(idx, n_samples):
+
+
+    path='./results/GAN/' # path for a 20-dimensional latent space
+
+
+
+    # Load the trained model
+    generator = torch.load(path + 'GAN_generator_epoch_' + str(idx), map_location='cpu')
+    # discriminator = torch.load(path + 'GAN_discriminator_epoch_' + str(idx), map_location='cpu')
+    generator.to(args.device)
+
+    generator.eval()
+    generator.plot_samples(n_samples)
+    generator.train()
+
+
+# plot 10 samples from epoch 99
+# get_samples_from_epoch(180, 5)
