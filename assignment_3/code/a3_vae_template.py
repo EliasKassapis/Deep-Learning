@@ -354,9 +354,9 @@ if __name__ == "__main__":
 def get_samples_from_epoch(idx, n_samples, z_dim):
 
     if z_dim == 2:
-        path = './Results/VAE/2_dim_log_BCE/' # path for a 2-dimensional latent space
+        path = './results/VAE/2_dim_log_BCE/' # path for a 2-dimensional latent space
     elif z_dim == 20:
-        path='./Results/VAE/20_dim_log_BCE/' # path for a 20-dimensional latent space
+        path='./results/VAE/20_dim_log_BCE/' # path for a 20-dimensional latent space
     else:
         print('Error!! Only have z_dim = 2 or z_dim = 20')
 
