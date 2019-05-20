@@ -8,6 +8,7 @@ import numpy as np
 from datasets.mnist import mnist
 import os
 from torchvision.utils import make_grid
+import numpy as np
 
 
 def log_prior(x):
@@ -15,18 +16,23 @@ def log_prior(x):
     Compute the elementwise log probability of a standard Gaussian, i.e.
     N(x | mu=0, sigma=1).
     """
-    raise NotImplementedError
+
+    logp = torch.log(1/torch.sqrt(2*torch.tensor(np.pi)) * -x.pow(2)/2) ###############################fix
+
+
+
     return logp
+
+
 
 
 def sample_prior(size):
     """
     Sample from a standard Gaussian.
     """
-    raise NotImplementedError
 
-    if torch.cuda.is_available():
-        sample = sample.cuda()
+    sample = torch.randn(size, device=ARGS.device)
+
 
     return sample
 
@@ -55,14 +61,29 @@ class Coupling(torch.nn.Module):
         # Create shared architecture to generate both the translation and
         # scale variables.
         # Suggestion: Linear ReLU Linear ReLU Linear.
-        self.nn = torch.nn.Sequential(
-            None
+        self.shared_net = torch.nn.Sequential(nn.Linear(c_in, n_hidden),   ######## May need to remove Dropout and BATCHNORM
+                                      nn.ReLU(),
+                                      nn.Dropout(0.2),
+                                      nn.BatchNorm1d(n_hidden),
+                                      nn.Linear(n_hidden, n_hidden),
+                                      nn.ReLU(),
+                                      nn.Dropout(0.2)
             )
+
+        # initialize last layers for scale and translation nets
+        self.scale_net = nn.Linear(n_hidden, c_in)
+        self.translate_net = nn.Linear(n_hidden, c_in)
+
+        # initialize tanh layer for scale_net
+        self.tanh = nn.Tanh()
 
         # The nn should be initialized such that the weights of the last layer
         # is zero, so that its initial transform is identity.
-        self.nn[-1].weight.data.zero_()
-        self.nn[-1].bias.data.zero_()
+
+        self.scale_net.weight.data.zero_()
+        self.translate_net.weight.data.zero_()
+        self.scale_net.bias.data.zero_()
+        self.translate_net.bias.data.zero_()
 
     def forward(self, z, ldj, reverse=False):
         # Implement the forward and inverse for an affine coupling layer. Split
@@ -74,10 +95,44 @@ class Coupling(torch.nn.Module):
         # log_scale = tanh(h), where h is the scale-output
         # from the NN.
 
+        mask = self.mask
+
+        # get masked z
+        masked_z = z * mask
+
+        # get scale and translation
+        log_s = self.tanh(self.scale_net(self.shared_net(masked_z)))
+        t = self.transalte_net(self.shared_net(masked_z))
+
         if not reverse:
-            raise NotImplementedError
+
+            # transform z using the affine coupling layer   ###########CHECK AGAIN
+            log_s = log_s * (1-mask)
+            s = torch.exp(log_s)
+            t = t * (1-mask)
+
+            z = masked_z + z*s + t
+
+            # z = masked_z + (1-mask)* (z * torch.exp(s) + t)
+
+
+            # compute determinant of transformation
+            ldj += torch.sum(log_s)
+
+
         else:
-            raise NotImplementedError
+
+            # comptute inverse transformation of z  ###########CHECK AGAIN
+            log_s = log_s * (1-mask)
+            s = torch.exp(log_s)
+            t = t * (1-mask)
+
+            z = masked_z + (z-t)*s
+
+            # compute determinant of transformation
+            ldj -= torch.sum(log_s)
+
+            # z = masked_z + (1-mask)*(z - t)*torch.exp(-s)
 
         return z, ldj
 
@@ -253,7 +308,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--epochs', default=40, type=int,
                         help='max number of epochs')
-
+    parser.add_argument('--device', type=str, default=('cuda' if torch.cuda.is_available() else 'cpu'),
+                        help='Device used to train model')
     ARGS = parser.parse_args()
 
     main()

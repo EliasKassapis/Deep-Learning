@@ -13,7 +13,6 @@ import matplotlib.pyplot as plt
 from torchvision.utils import save_image
 from torchvision import datasets
 
-
 # set default tensor types
 FloatTensor = torch.cuda.FloatTensor if torch.cuda.is_available() else torch.FloatTensor
 
@@ -37,25 +36,26 @@ class Generator(nn.Module):
         #   Linear 1024 -> 768
         #   Output non-linearity
 
-        #initialize generator network
+        # initialize generator network
 
-        #recommended
+        # recommended
         self.generator = nn.Sequential(nn.Linear(args.latent_dim, 128),
                                        nn.LeakyReLU(0.2),
-                                       nn.Linear(128,256),
+                                       nn.Dropout(0.2),
+                                       nn.Linear(128, 256),
                                        nn.BatchNorm1d(256),
                                        nn.LeakyReLU(0.2),
+                                       nn.Dropout(0.2),
                                        nn.Linear(256, 512),
                                        nn.BatchNorm1d(512),
                                        nn.LeakyReLU(0.2),
-                                       nn.Linear(512,1024),
+                                       nn.Dropout(0.2),
+                                       nn.Linear(512, 1024),
                                        nn.BatchNorm1d(1024),
                                        nn.LeakyReLU(0.2),
-                                       nn.Linear(1024,784),
+                                       nn.Dropout(0.2),
+                                       nn.Linear(1024, 784),
                                        nn.Tanh())
-
-
-
 
     def forward(self, z):
         # Generate images from z
@@ -64,14 +64,13 @@ class Generator(nn.Module):
 
         return output
 
-
     def generate_samples(self, n_samples):
         """
         Generate n_samples from the Generator.
         """
 
         # sample z
-        sampled_z = torch.randn(n_samples, args.latent_dim, device = args.device)  # random sample
+        sampled_z = torch.randn(n_samples, args.latent_dim, device=args.device)  # random sample
 
         gen_imgs = self.forward(sampled_z)
 
@@ -143,19 +142,16 @@ class Discriminator(nn.Module):
 
         # initialize discriminator network
 
-        self.discriminator = nn.Sequential(nn.Linear(784,512),
+        self.discriminator = nn.Sequential(nn.Linear(784, 512),
                                            nn.LeakyReLU(0.2),
                                            nn.Dropout(0.2),
-                                           nn.Linear(512,256),
+                                           nn.Linear(512, 256),
                                            nn.BatchNorm1d(256),
                                            nn.LeakyReLU(0.2),
                                            nn.Dropout(0.2),
-                                           nn.Linear(256,1),
+                                           nn.Linear(256, 1),
                                            nn.Sigmoid()
                                            )
-
-
-
 
     def forward(self, img):
         # return discriminator score for img
@@ -165,11 +161,7 @@ class Discriminator(nn.Module):
         return score
 
 
-
-
-
 def train(dataloader, discriminator, generator, optimizer_G, optimizer_D):
-
     G_losses = []
     D_losses = []
 
@@ -188,7 +180,6 @@ def train(dataloader, discriminator, generator, optimizer_G, optimizer_D):
             # strech out images into vectors
             real_imgs = imgs.view(-1, 784).to(args.device)
 
-
             # Train Generator
             # ---------------
 
@@ -196,15 +187,15 @@ def train(dataloader, discriminator, generator, optimizer_G, optimizer_D):
             generator.zero_grad()
 
             # forward pass
-            z = torch.randn(batch_size, args.latent_dim, device = args.device) # sample z
-            gen_imgs = generator(z) # generate images
-            gen_score = discriminator(gen_imgs) # get score
+            z = torch.randn(batch_size, args.latent_dim, device=args.device)  # sample z
+            gen_imgs = generator(z)  # generate images
+            gen_score = discriminator(gen_imgs)  # get score
 
             # free up memory
             gen_imgs.detach()
 
             # get expected loss over batch using non-saturating heuristic
-            G_loss = -1*torch.mean(torch.log(gen_score), dim=0)
+            G_loss = -1 * torch.mean(torch.log(gen_score), dim=0)
             G_losses.append(G_loss.item())
             G_epoch_loss.append(G_loss.item())
             optimizer_G.zero_grad()
@@ -231,16 +222,16 @@ def train(dataloader, discriminator, generator, optimizer_G, optimizer_D):
             epsilon = 1e-6
 
             # get expected loss over batch
-            D_loss = -1*torch.mean(torch.log(real_score + epsilon) + torch.log(1 - gen_score), dim=0)
+            D_loss = -1 * torch.mean(torch.log(real_score + epsilon) + torch.log(1 - gen_score), dim=0)
             D_losses.append(D_loss.item())
             D_epoch_loss.append(D_loss.item())
             optimizer_D.zero_grad()
 
-            #backward pass
+            # backward pass
             D_loss.backward()
             optimizer_D.step()
 
-            if i % 200==0:
+            if i % 200 == 0:
                 print(f"[Epoch {epoch}, Batch {i}] D loss: {D_epoch_loss[i]} G loss: {G_epoch_loss[i]}")
 
                 # # generate sample images
@@ -252,12 +243,12 @@ def train(dataloader, discriminator, generator, optimizer_G, optimizer_D):
             # -----------
             batches_done = epoch * len(dataloader) + i
             # if batches_done % args.save_interval == 0:
-                # You can use the function save_image(Tensor (shape Bx1x28x28),
-                # filename, number of rows, normalize) to save the generated
-                # images, e.g.:
-                # save_image(gen_imgs[:25],
-                #            'images/{}.png'.format(batches_done),
-                #            nrow=5, normalize=True)
+            # You can use the function save_image(Tensor (shape Bx1x28x28),
+            # filename, number of rows, normalize) to save the generated
+            # images, e.g.:
+            # save_image(gen_imgs[:25],
+            #            'images/{}.png'.format(batches_done),
+            #            nrow=5, normalize=True)
 
         G_avg_epoch_loss.append(np.mean(G_epoch_loss))
         D_avg_epoch_loss.append(np.mean(D_epoch_loss))
@@ -265,14 +256,15 @@ def train(dataloader, discriminator, generator, optimizer_G, optimizer_D):
         # if epoch == 2: ##############################################################################################
         #     save_loss_plot(G_avg_epoch_loss, D_avg_epoch_loss, 'GAN_loss.pdf')
 
-        # # save model
-        # if epoch % 20 == 0:
-        #     torch.save(generator, "GAN_generator_epoch_" + str(epoch))
-        #     torch.save(discriminator, "GAN_discriminator_epoch_" + str(epoch))
+        # save model
+        if epoch % 50 == 0:
+            torch.save(generator, "GAN_generator_epoch_" + str(epoch))
+            torch.save(discriminator, "GAN_discriminator_epoch_" + str(epoch))
 
         # print(f"[Epoch {epoch}] D loss: {D_avg_epoch_loss[epoch]} G loss: {G_avg_epoch_loss[epoch]}")
 
     return G_avg_epoch_loss, D_avg_epoch_loss
+
 
 def save_loss_plot(g_curve, d_curve, filename):
     plt.figure(figsize=(12, 6))
@@ -286,6 +278,7 @@ def save_loss_plot(g_curve, d_curve, filename):
     plt.savefig(filename)
     plt.show()
 
+
 def main():
     # Create output image directory
     os.makedirs('images', exist_ok=True)
@@ -296,11 +289,8 @@ def main():
                        transform=transforms.Compose([
                            transforms.ToTensor(),
                            transforms.Normalize((0.5,),
-                                                (0.5,))])),
+                                                (0.55,))])),
         batch_size=args.batch_size, shuffle=True)
-
-
-
 
     # Initialize models
     generator = Generator()
@@ -316,15 +306,15 @@ def main():
     # Start training
     g_loss, d_loss = train(dataloader, discriminator, generator, optimizer_G, optimizer_D)
 
-    #save g_loss and d_loss
+    # save g_loss and d_loss
     np.save("g_loss", g_loss)
     np.save("d_loss", d_loss)
 
-    #save model
+    # save model
     torch.save(generator, "GAN_generator_final")
     torch.save(discriminator, "GAN_discriminator_final")
 
-    #save losses
+    # save losses
     save_loss_plot(g_loss, d_loss, 'GAN_loss.pdf')
 
 
@@ -342,30 +332,27 @@ if __name__ == "__main__":
                         help='save every SAVE_INTERVAL iterations')
     parser.add_argument('--dropout_prob', type=float, default=0.2,
                         help='Dropout probability')
-    parser.add_argument("--b1", type=float, default=0.5,                                 #from InfoGAN
+    parser.add_argument("--b1", type=float, default=0.5,  # from InfoGAN
                         help="adam: decay of first order momentum of gradient")
     parser.add_argument("--b2", type=float, default=0.999,
                         help="adam: decay of first order momentum of gradient")
     parser.add_argument('--device', type=str, default=('cuda' if torch.cuda.is_available() else 'cpu'),
                         help='Device used to train model')
 
-
     args = parser.parse_args()
 
-    main()
+    # main()
 
 
 # For Q 2.6
 
 def get_samples_from_epoch(idx, n_samples):
-
-
-    path='./results/GAN/' # path for a 20-dimensional latent space
-
-
+    path = './results/GAN/'  # path for a 20-dimensional latent space
 
     # Load the trained model
     generator = torch.load(path + 'GAN_generator_epoch_' + str(idx), map_location='cpu')
+    generator = torch.load(path + 'GAN_generator_final', map_location='cpu')
+
     # discriminator = torch.load(path + 'GAN_discriminator_epoch_' + str(idx), map_location='cpu')
     generator.to(args.device)
 
@@ -375,4 +362,4 @@ def get_samples_from_epoch(idx, n_samples):
 
 
 # plot 10 samples from epoch 99
-# get_samples_from_epoch(180, 5)
+get_samples_from_epoch(180, 5)
