@@ -17,7 +17,7 @@ def log_prior(x):
     N(x | mu=0, sigma=1).
     """
 
-    logp = (-0.5 * x.pow(2) - 0.5 * torch.log(2 * torch.tensor(np.pi))).sum(dim=1)
+    logp = (-0.5 * x.pow(2) - 0.5*torch.log(2 * torch.tensor(np.pi))).sum(dim=1)
 
     return logp
 
@@ -59,11 +59,8 @@ class Coupling(torch.nn.Module):
         self.shared_net = torch.nn.Sequential(nn.Linear(c_in, n_hidden),
                                               ######## May need to remove Dropout and BATCHNORM
                                               nn.ReLU(),
-                                              nn.Dropout(0.2),
-                                              nn.BatchNorm1d(n_hidden),
                                               nn.Linear(n_hidden, n_hidden),
                                               nn.ReLU(),
-                                              nn.Dropout(0.2)
                                               )
 
         # initialize last layers for scale and translation nets
@@ -98,36 +95,25 @@ class Coupling(torch.nn.Module):
 
         # get scale and translation
         log_s = self.tanh(self.scale_net(self.shared_net(masked_z)))
+        s = torch.exp(log_s)
         t = self.translate_net(self.shared_net(masked_z))
 
         if not reverse:
 
-            # transform z using the affine coupling layer   ###########CHECK AGAIN
-            log_s = log_s * (1 - mask)
-            s = torch.exp(log_s)
-            t = t * (1 - mask)
-
-            z = masked_z + z * s + t
-
-            # z = masked_z + (1-mask)* (z * torch.exp(s) + t)
+            # transform z using the affine coupling layer
+            z = masked_z + (1-mask)* (z * torch.exp(s) + t)
 
             # compute determinant of transformation
-            ldj += torch.sum(log_s)
+            ldj += torch.sum((1 - self.mask) * log_s)
 
 
         else:
 
-            # comptute inverse transformation of z  ###########CHECK AGAIN
-            log_s = log_s * (1 - mask)
-            s = torch.exp(log_s)
-            t = t * (1 - mask)
+            # comptute inverse transformation of z
+            z = masked_z + (1-mask)*(z - t)*torch.exp(-s)
 
-            z = masked_z + (z - t) * s
-
-            # compute determinant of transformation
-            ldj -= torch.sum(log_s)
-
-            # z = masked_z + (1-mask)*(z - t)*torch.exp(-s)
+            # set determinant to 0
+            ldj = torch.zeros(ldj.shape)
 
         return z, ldj
 
@@ -225,7 +211,22 @@ class Model(nn.Module):
         z, ldj = self.flow(z, ldj, reverse=True)
         z, _ = self.logit_normalize(z, ldj, reverse=True)
 
-        return z
+        return z.reshape(n_samples,1,28,28)
+
+    def plot_samples(self, n_samples):
+        """
+        Plot a grid of size n_samples * n_samples with sampled images
+        """
+        with torch.no_grad():
+
+            gen_imgs = self.sample(n_samples ** 2)
+
+            # plot all sampled images
+            gen_imgs = make_grid(gen_imgs, nrow=n_samples).numpy().transpose(1, 2, 0)
+            plt.figure(1)
+            plt.imshow(gen_imgs)
+            plt.show()
+            plt.imsave("gen.png", gen_imgs)
 
 
 def epoch_iter(model, data, optimizer):
@@ -237,7 +238,8 @@ def epoch_iter(model, data, optimizer):
     log_2 likelihood per dimension) averaged over the complete epoch.
     """
 
-    sum_loss = 0
+    losses = []
+
     for idx, (batch, _) in enumerate(data):
 
         # send data to device
@@ -248,13 +250,17 @@ def epoch_iter(model, data, optimizer):
 
         # forward pass
         log_px = model.forward(batch)
-        optimizer.zero_grad()
+
+
+        # free up memory
+        batch.detach()
 
         # get loss
         loss = -log_px.mean(dim=0)
 
         if model.training:
             # backward pass
+            optimizer.zero_grad()
             loss.backward()
 
             # clip gradient
@@ -262,13 +268,20 @@ def epoch_iter(model, data, optimizer):
 
             optimizer.step()
 
-        sum_loss += loss.item()
+        losses.append(loss.item())
+
+        # if idx % 200 == 0:
+        #     bpd = loss/(28 * 28 * np.log(2))
+        #     print(f"[Batch {idx}] bpd: {bpd.item()} ")
+        #     model.eval()
+        #     model.plot_samples(5)
+        #     model.train()
 
     # get average epoch loss
-    epoch_loss = sum_loss / len(data[0])
+    epoch_loss = np.mean(losses)
 
     # get average bpd
-    avg_bpd = epoch_loss / (28 * 28) / torch.log(2)
+    avg_bpd = epoch_loss / (28 * 28 * np.log(2))
 
     return avg_bpd
 
@@ -320,11 +333,9 @@ def main():
         print("[Epoch {epoch}] train bpd: {train_bpd} val_bpd: {val_bpd}".format(
             epoch=epoch, train_bpd=train_bpd, val_bpd=val_bpd))
 
-        # --------------------------------------------------------------------
-        #  Add functionality to plot samples from model during training.
-        #  You can use the make_grid functionality that is already imported.
-        #  Save grid to images_nfs/
-        # --------------------------------------------------------------------
+        model.eval()
+        model.plot_samples(5)
+        model.train()
 
     save_bpd_plot(train_curve, val_curve, 'nfs_bpd.pdf')
 

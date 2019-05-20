@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1193e017-877c-479e-8960-013cda54934a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../assignment_2/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment_2/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../assignment_2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment_2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/a3_gan_template.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/a3_gan_template.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/a3_nf_template.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/a3_nf_template.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/gen.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/gen.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,8 +30,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code/a3_gan_template.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="591">
-              <caret line="200" column="12" lean-forward="true" selection-start-line="200" selection-start-column="12" selection-end-line="200" selection-end-column="35" />
+            <state relative-caret-position="-3702">
+              <caret line="87" column="29" selection-start-line="87" selection-start-column="8" selection-end-line="87" selection-end-column="29" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -41,8 +42,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/code/a3_nf_template.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1197">
-              <caret line="229" selection-start-line="229" selection-end-line="229" />
+            <state relative-caret-position="-2400">
+              <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/unittests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -137,7 +150,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.a3_nf_template">
+  <component name="RunManager" selected="Python tests.Unittests in unittests.py">
     <configuration name="a3_gan_template" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="assignment_3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -201,8 +214,23 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests in unittests.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="assignment_3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/code/unittests.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests in unittests.py" />
         <item itemvalue="Python.a3_nf_template" />
         <item itemvalue="Python.a3_gan_template" />
         <item itemvalue="Python.a3_vae_template" />
@@ -211,6 +239,35 @@
   </component>
   <component name="SvnConfiguration">
     <configuration />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="Unittests_in_unittests_py - 2019.05.20 at 20h 06m 18s.xml">
+      <configuration name="Unittests in unittests.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_unittests_py - 2019.05.20 at 20h 07m 18s.xml">
+      <configuration name="Unittests in unittests.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_unittests_py - 2019.05.20 at 20h 18m 56s.xml">
+      <configuration name="Unittests in unittests.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_unittests_py - 2019.05.20 at 20h 19m 06s.xml">
+      <configuration name="Unittests in unittests.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_unittests_py - 2019.05.20 at 20h 27m 43s.xml">
+      <configuration name="Unittests in unittests.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_unittests_py - 2019.05.20 at 20h 28m 10s.xml">
+      <configuration name="Unittests in unittests.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_unittests_py - 2019.05.20 at 20h 28m 43s.xml">
+      <configuration name="Unittests in unittests.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_unittests_py - 2019.05.20 at 20h 30m 19s.xml">
+      <configuration name="Unittests in unittests.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_unittests_py - 2019.05.20 at 21h 14m 47s.xml">
+      <configuration name="Unittests in unittests.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
@@ -243,16 +300,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/a3_gan_template.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="591">
-          <caret line="200" column="12" lean-forward="true" selection-start-line="200" selection-start-column="12" selection-end-line="200" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/a3_vae_template.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1098">
@@ -263,10 +310,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/code/a3_gan_template.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3702">
+          <caret line="87" column="29" selection-start-line="87" selection-start-column="8" selection-end-line="87" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/unittests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/code/a3_nf_template.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1197">
-          <caret line="229" selection-start-line="229" selection-end-line="229" />
+        <state relative-caret-position="-2400">
+          <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>

@@ -341,7 +341,7 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    # main()
+    main()
 
 
 # For Q 2.6
@@ -362,4 +362,4 @@ def get_samples_from_epoch(idx, n_samples):
 
 
 # plot 10 samples from epoch 99
-get_samples_from_epoch(180, 5)
+# get_samples_from_epoch(180, 5)
