@@ -17,13 +17,9 @@ def log_prior(x):
     N(x | mu=0, sigma=1).
     """
 
-    logp = torch.log(1/torch.sqrt(2*torch.tensor(np.pi)) * -x.pow(2)/2) ###############################fix
-
-
+    logp = (-0.5 * x.pow(2) - 0.5 * torch.log(2 * torch.tensor(np.pi))).sum(dim=1)
 
     return logp
-
-
 
 
 def sample_prior(size):
@@ -32,7 +28,6 @@ def sample_prior(size):
     """
 
     sample = torch.randn(size, device=ARGS.device)
-
 
     return sample
 
@@ -44,7 +39,7 @@ def get_mask():
             if (i + j) % 2 == 0:
                 mask[i, j] = 1
 
-    mask = mask.reshape(1, 28*28)
+    mask = mask.reshape(1, 28 * 28)
     mask = torch.from_numpy(mask)
 
     return mask
@@ -61,14 +56,15 @@ class Coupling(torch.nn.Module):
         # Create shared architecture to generate both the translation and
         # scale variables.
         # Suggestion: Linear ReLU Linear ReLU Linear.
-        self.shared_net = torch.nn.Sequential(nn.Linear(c_in, n_hidden),   ######## May need to remove Dropout and BATCHNORM
-                                      nn.ReLU(),
-                                      nn.Dropout(0.2),
-                                      nn.BatchNorm1d(n_hidden),
-                                      nn.Linear(n_hidden, n_hidden),
-                                      nn.ReLU(),
-                                      nn.Dropout(0.2)
-            )
+        self.shared_net = torch.nn.Sequential(nn.Linear(c_in, n_hidden),
+                                              ######## May need to remove Dropout and BATCHNORM
+                                              nn.ReLU(),
+                                              nn.Dropout(0.2),
+                                              nn.BatchNorm1d(n_hidden),
+                                              nn.Linear(n_hidden, n_hidden),
+                                              nn.ReLU(),
+                                              nn.Dropout(0.2)
+                                              )
 
         # initialize last layers for scale and translation nets
         self.scale_net = nn.Linear(n_hidden, c_in)
@@ -102,19 +98,18 @@ class Coupling(torch.nn.Module):
 
         # get scale and translation
         log_s = self.tanh(self.scale_net(self.shared_net(masked_z)))
-        t = self.transalte_net(self.shared_net(masked_z))
+        t = self.translate_net(self.shared_net(masked_z))
 
         if not reverse:
 
             # transform z using the affine coupling layer   ###########CHECK AGAIN
-            log_s = log_s * (1-mask)
+            log_s = log_s * (1 - mask)
             s = torch.exp(log_s)
-            t = t * (1-mask)
+            t = t * (1 - mask)
 
-            z = masked_z + z*s + t
+            z = masked_z + z * s + t
 
             # z = masked_z + (1-mask)* (z * torch.exp(s) + t)
-
 
             # compute determinant of transformation
             ldj += torch.sum(log_s)
@@ -123,11 +118,11 @@ class Coupling(torch.nn.Module):
         else:
 
             # comptute inverse transformation of z  ###########CHECK AGAIN
-            log_s = log_s * (1-mask)
+            log_s = log_s * (1 - mask)
             s = torch.exp(log_s)
-            t = t * (1-mask)
+            t = t * (1 - mask)
 
-            z = masked_z + (z-t)*s
+            z = masked_z + (z - t) * s
 
             # compute determinant of transformation
             ldj -= torch.sum(log_s)
@@ -148,7 +143,7 @@ class Flow(nn.Module):
 
         for i in range(n_flows):
             self.layers.append(Coupling(c_in=channels, mask=mask))
-            self.layers.append(Coupling(c_in=channels, mask=1-mask))
+            self.layers.append(Coupling(c_in=channels, mask=1 - mask))
 
         self.z_shape = (channels,)
 
@@ -183,13 +178,13 @@ class Model(nn.Module):
             logdet -= np.log(256) * np.prod(z.size()[1:])
 
             # Logit normalize
-            z = z*(1-alpha) + alpha*0.5
-            logdet += torch.sum(-torch.log(z) - torch.log(1-z), dim=1)
-            z = torch.log(z) - torch.log(1-z)
+            z = z * (1 - alpha) + alpha * 0.5
+            logdet += torch.sum(-torch.log(z) - torch.log(1 - z), dim=1)
+            z = torch.log(z) - torch.log(1 - z)
 
         else:
             # Inverse normalize
-            logdet += torch.sum(torch.log(z) + torch.log(1-z), dim=1)
+            logdet += torch.sum(torch.log(z) + torch.log(1 - z), dim=1)
             z = torch.sigmoid(z)
 
             # Multiply by 256.
@@ -210,9 +205,11 @@ class Model(nn.Module):
 
         z, ldj = self.flow(z, ldj)
 
-        # Compute log_pz and log_px per example
+        # get log probability distribution over z
+        log_pz = log_prior(z)
 
-        raise NotImplementedError
+        # transform log probability distribution to that of x
+        log_px = log_pz + ldj
 
         return log_px
 
@@ -224,7 +221,9 @@ class Model(nn.Module):
         z = sample_prior((n_samples,) + self.flow.z_shape)
         ldj = torch.zeros(z.size(0), device=z.device)
 
-        raise NotImplementedError
+        # invert the flow and logit normalize
+        z, ldj = self.flow(z, ldj, reverse=True)
+        z, _ = self.logit_normalize(z, ldj, reverse=True)
 
         return z
 
@@ -238,12 +237,38 @@ def epoch_iter(model, data, optimizer):
     log_2 likelihood per dimension) averaged over the complete epoch.
     """
 
+    sum_loss = 0
+    for idx, (batch, _) in enumerate(data):
 
+        # send data to device
+        batch.to(ARGS.device)
 
-            # torch.nn.utils.clip_grad_norm(model.parameters(), max_norm=10) ##MAY NEED TO CLIP THE GRADIENT!!!!
+        # clear stored gradient
+        model.zero_grad()
 
+        # forward pass
+        log_px = model.forward(batch)
+        optimizer.zero_grad()
 
-    avg_bpd = None
+        # get loss
+        loss = -log_px.mean(dim=0)
+
+        if model.training:
+            # backward pass
+            loss.backward()
+
+            # clip gradient
+            torch.nn.utils.clip_grad_norm(model.parameters(), max_norm=10)
+
+            optimizer.step()
+
+        sum_loss += loss.item()
+
+    # get average epoch loss
+    epoch_loss = sum_loss / len(data[0])
+
+    # get average bpd
+    avg_bpd = epoch_loss / (28 * 28) / torch.log(2)
 
     return avg_bpd
 
