@@ -15,20 +15,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code/a3_vae_template.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1098">
-              <caret line="371" column="8" selection-start-line="371" selection-start-column="8" selection-end-line="371" selection-end-column="37" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/a3_gan_template.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="258" selection-start-line="258" selection-end-line="261" selection-end-column="78" />
+            <state relative-caret-position="214">
+              <caret line="285" column="64" lean-forward="true" selection-start-line="285" selection-start-column="44" selection-end-line="285" selection-end-column="64" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -37,10 +25,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/code/a3_gan_template.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="186">
+              <caret line="72" column="78" selection-start-line="72" selection-start-column="72" selection-end-line="72" selection-end-column="78" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code/a3_nf_template.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3507">
-              <caret line="89" column="24" selection-start-line="89" selection-start-column="24" selection-end-line="89" selection-end-column="24" />
+            <state relative-caret-position="285">
+              <caret line="289" column="36" lean-forward="true" selection-start-line="289" selection-start-column="36" selection-end-line="289" selection-end-column="36" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -58,11 +58,12 @@
       <find>deta</find>
       <find>sample</find>
       <find>torch.save</find>
-      <find>device</find>
       <find>.eval</find>
       <find>mask</find>
-      <find>save</find>
       <find>clip</find>
+      <find>save</find>
+      <find>train()</find>
+      <find>device</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -136,7 +137,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in unittests.py">
+  <component name="RunManager" selected="Python.a3_nf_template">
     <configuration name="a3_gan_template" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="assignment_3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -216,8 +217,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests in unittests.py" />
         <item itemvalue="Python.a3_nf_template" />
+        <item itemvalue="Python tests.Unittests in unittests.py" />
         <item itemvalue="Python.a3_gan_template" />
         <item itemvalue="Python.a3_vae_template" />
       </list>
@@ -289,26 +290,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/a3_vae_template.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1098">
-          <caret line="371" column="8" selection-start-line="371" selection-start-column="8" selection-end-line="371" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/a3_gan_template.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="258" selection-start-line="258" selection-end-line="261" selection-end-column="78" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/unittests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -319,10 +300,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/code/a3_vae_template.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="285" column="64" lean-forward="true" selection-start-line="285" selection-start-column="44" selection-end-line="285" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/code/a3_nf_template.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3507">
-          <caret line="89" column="24" selection-start-line="89" selection-start-column="24" selection-end-line="89" selection-end-column="24" />
+        <state relative-caret-position="285">
+          <caret line="289" column="36" lean-forward="true" selection-start-line="289" selection-start-column="36" selection-end-line="289" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/a3_gan_template.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="72" column="78" selection-start-line="72" selection-start-column="72" selection-end-line="72" selection-end-column="78" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>

@@ -46,9 +46,10 @@ def get_mask():
 
 
 class Coupling(torch.nn.Module):
-    def __init__(self, c_in, mask, n_hidden=1024):
+    def __init__(self, c_in, mask, n_hidden=1024, device='cpu'):
         super().__init__()
         self.n_hidden = n_hidden
+        self.device=device
 
         # Assigns mask to self.mask and creates reference for pytorch.
         self.register_buffer('mask', mask)
@@ -117,7 +118,7 @@ class Coupling(torch.nn.Module):
 
 
 class Flow(nn.Module):
-    def __init__(self, shape, n_flows=4):
+    def __init__(self, shape, n_flows=4, device='cpu'):
         super().__init__()
         channels, = shape
 
@@ -126,10 +127,11 @@ class Flow(nn.Module):
         self.layers = torch.nn.ModuleList()
 
         for i in range(n_flows):
-            self.layers.append(Coupling(c_in=channels, mask=mask))
-            self.layers.append(Coupling(c_in=channels, mask=1 - mask))
+            self.layers.append(Coupling(c_in=channels, mask=mask, device=device))
+            self.layers.append(Coupling(c_in=channels, mask=1 - mask, device=device))
 
         self.z_shape = (channels,)
+
 
     def forward(self, z, logdet, reverse=False):
         if not reverse:
@@ -143,9 +145,10 @@ class Flow(nn.Module):
 
 
 class Model(nn.Module):
-    def __init__(self, shape):
+    def __init__(self, shape, device='cpu'):
         super().__init__()
-        self.flow = Flow(shape)
+        self.flow = Flow(shape, device=device)
+        self.device = device
 
     def dequantize(self, z):
         return z + torch.rand_like(z)
@@ -202,7 +205,7 @@ class Model(nn.Module):
         Sample n_samples from the model. Sample from prior and create ldj.
         Then invert the flow and invert the logit_normalize.
         """
-        z = sample_prior((n_samples,) + self.flow.z_shape)
+        z = sample_prior((n_samples,) + self.flow.z_shape, device=self.device)
         ldj = torch.zeros(z.size(0), device=z.device)
 
         # invert the flow and logit normalize
@@ -301,9 +304,10 @@ def run_epoch(model, data, optimizer):
 
 def save_bpd_plot(train_curve, val_curve, filename):
     plt.figure(figsize=(12, 6))
-    plt.plot(train_curve, label='train bpd')
-    plt.plot(val_curve, label='validation bpd')
+    plt.plot(train_curve, label='train bpd', color='darkorange')
+    plt.plot(val_curve, label='validation bpd', color='darkblue')
     plt.legend()
+    plt.grid(True, lw=0.75, ls='--', c='.75')  # added grid
     plt.xlabel('epochs')
     plt.ylabel('bpd')
     plt.tight_layout()
@@ -313,9 +317,7 @@ def save_bpd_plot(train_curve, val_curve, filename):
 def main():
     data = mnist()[:2]  # ignore test split
 
-    model = Model(shape=[784])
-
-    model.to(device=ARGS.device)
+    model = Model(shape=[784], device=ARGS.device)
 
     optimizer = torch.optim.Adam(model.parameters(), lr=1e-3)
 
