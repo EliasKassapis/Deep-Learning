@@ -335,8 +335,14 @@ def main():
         model.plot_samples(5)
         model.train()
 
+        # save model
+        if epoch % 50 == 0:
+            torch.save(model, "NF_epoch_" + str(epoch))
+
     save_bpd_plot(train_curve, val_curve, 'nfs_bpd.pdf')
 
+    # save final model
+    torch.save(model, "NF_final")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
