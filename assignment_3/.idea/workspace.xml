@@ -39,8 +39,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/code/a3_nf_template.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="345" lean-forward="true" selection-start-line="345" selection-end-line="345" />
+            <state relative-caret-position="-3507">
+              <caret line="89" column="24" selection-start-line="89" selection-start-column="24" selection-end-line="89" selection-end-column="24" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -61,8 +61,8 @@
       <find>device</find>
       <find>.eval</find>
       <find>mask</find>
-      <find>clip</find>
       <find>save</find>
+      <find>clip</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -227,21 +227,6 @@
     <configuration />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_unittests_py - 2019.05.20 at 20h 19m 06s.xml">
-      <configuration name="Unittests in unittests.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_unittests_py - 2019.05.20 at 20h 27m 43s.xml">
-      <configuration name="Unittests in unittests.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_unittests_py - 2019.05.20 at 20h 28m 10s.xml">
-      <configuration name="Unittests in unittests.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_unittests_py - 2019.05.20 at 20h 28m 43s.xml">
-      <configuration name="Unittests in unittests.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_unittests_py - 2019.05.20 at 20h 30m 19s.xml">
-      <configuration name="Unittests in unittests.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_unittests_py - 2019.05.20 at 21h 14m 47s.xml">
       <configuration name="Unittests in unittests.py" configurationId="tests" />
     </history-entry>
@@ -255,6 +240,21 @@
       <configuration name="Unittests in unittests.py" configurationId="tests" />
     </history-entry>
     <history-entry file="Unittests_in_unittests_py - 2019.05.21 at 10h 42m 34s.xml">
+      <configuration name="Unittests in unittests.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_unittests_py - 2019.05.21 at 10h 51m 50s.xml">
+      <configuration name="Unittests in unittests.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_unittests_py - 2019.05.21 at 11h 00m 13s.xml">
+      <configuration name="Unittests in unittests.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_unittests_py - 2019.05.21 at 11h 02m 05s.xml">
+      <configuration name="Unittests in unittests.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_unittests_py - 2019.05.21 at 11h 02m 29s.xml">
+      <configuration name="Unittests in unittests.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_unittests_py - 2019.05.21 at 11h 02m 41s.xml">
       <configuration name="Unittests in unittests.py" configurationId="tests" />
     </history-entry>
   </component>
@@ -299,16 +299,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/unittests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/a3_gan_template.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
@@ -319,10 +309,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/code/unittests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/code/a3_nf_template.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="345" lean-forward="true" selection-start-line="345" selection-end-line="345" />
+        <state relative-caret-position="-3507">
+          <caret line="89" column="24" selection-start-line="89" selection-start-column="24" selection-end-line="89" selection-end-column="24" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>

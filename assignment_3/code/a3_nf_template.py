@@ -209,7 +209,7 @@ class Model(nn.Module):
         z, ldj = self.flow(z, ldj, reverse=True)
         z, _ = self.logit_normalize(z, ldj, reverse=True)
 
-        return z.reshape(n_samples,1,28,28).long()
+        return z.reshape(n_samples,1,28,28).long().to(device=ARGS.device)
 
     def plot_samples(self, n_samples):
         """
@@ -268,12 +268,12 @@ def epoch_iter(model, data, optimizer):
 
         losses.append(loss.item())
 
-        if idx % 200 == 0:
-            bpd = loss/(28 * 28 * np.log(2))
-            print(f"[Batch {idx}] bpd: {bpd.item()} ")
-            model.eval()
-            model.plot_samples(5)
-            model.train()
+        # if idx % 200 == 0:
+        #     bpd = loss/(28 * 28 * np.log(2))
+        #     print(f"[Batch {idx}] bpd: {bpd.item()} ")
+        #     model.eval()
+        #     model.plot_samples(5)
+        #     model.train()
 
     # get average epoch loss
     epoch_loss = np.mean(losses)
@@ -315,8 +315,7 @@ def main():
 
     model = Model(shape=[784])
 
-    if torch.cuda.is_available():
-        model = model.cuda()
+    model.to(device=ARGS.device)
 
     optimizer = torch.optim.Adam(model.parameters(), lr=1e-3)
 
