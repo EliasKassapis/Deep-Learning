@@ -337,7 +337,7 @@ def main():
         # model.train()
 
         # save model
-        if epoch % 19 == 0:
+        if epoch % 10 == 0:
             torch.save(model, "NF_epoch_" + str(epoch))
 
     save_bpd_plot(train_curve, val_curve, 'nfs_bpd.pdf')
