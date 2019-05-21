@@ -1,6 +1,6 @@
 #!/bin/bash
 #Set job requirements
-#SBATCH --job-name=NFs
+#SBATCH --job-name=NFs2
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=4
 #SBATCH --ntasks-per-node=1
@@ -10,9 +10,9 @@
 #SBATCH --gres=gpu:1
 
 #Loading modules
-module load Python/3.6.3-foss-2017b
-module load cuDNN/7.0.5-CUDA-9.0.176
-module load NCCL/2.0.5-CUDA-9.0.176
+module load Miniconda3/4.3.27
+module load CUDA/9.0.176
+module load cuDNN/7.3.1-CUDA-9.0.176
 
 export LD_LIBRARY_PATH=/hpc/eb/Debian9/cuDNN/7.1-CUDA-8.0.44-GCCcore-5.4.0/lib6$
 export PYTHONIOENCODING=utf8
