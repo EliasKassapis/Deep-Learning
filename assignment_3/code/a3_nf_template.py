@@ -57,7 +57,6 @@ class Coupling(torch.nn.Module):
         # scale variables.
         # Suggestion: Linear ReLU Linear ReLU Linear.
         self.shared_net = torch.nn.Sequential(nn.Linear(c_in, n_hidden),
-                                              ######## May need to remove Dropout and BATCHNORM
                                               nn.ReLU(),
                                               nn.Linear(n_hidden, n_hidden),
                                               nn.ReLU(),
@@ -95,22 +94,21 @@ class Coupling(torch.nn.Module):
 
         # get scale and translation
         log_s = self.tanh(self.scale_net(self.shared_net(masked_z)))
-        s = torch.exp(log_s)
         t = self.translate_net(self.shared_net(masked_z))
 
         if not reverse:
 
             # transform z using the affine coupling layer
-            z = masked_z + (1-mask)* (z * torch.exp(s) + t)
+            z = masked_z + (1 - mask) * (z * torch.exp(log_s) + t)
 
             # compute determinant of transformation
-            ldj += torch.sum((1 - self.mask) * log_s)
+            ldj += ((1 - self.mask) * log_s).sum(dim=1)
 
 
         else:
 
             # comptute inverse transformation of z
-            z = masked_z + (1-mask)*(z - t)*torch.exp(-s)
+            z = masked_z + (1 - mask) * ((z - t) * torch.exp(-log_s))
 
             # set determinant to 0
             ldj = torch.zeros(ldj.shape)
@@ -211,7 +209,7 @@ class Model(nn.Module):
         z, ldj = self.flow(z, ldj, reverse=True)
         z, _ = self.logit_normalize(z, ldj, reverse=True)
 
-        return z.reshape(n_samples,1,28,28)
+        return z.reshape(n_samples,1,28,28).long()
 
     def plot_samples(self, n_samples):
         """
@@ -270,12 +268,12 @@ def epoch_iter(model, data, optimizer):
 
         losses.append(loss.item())
 
-        # if idx % 200 == 0:
-        #     bpd = loss/(28 * 28 * np.log(2))
-        #     print(f"[Batch {idx}] bpd: {bpd.item()} ")
-        #     model.eval()
-        #     model.plot_samples(5)
-        #     model.train()
+        if idx % 200 == 0:
+            bpd = loss/(28 * 28 * np.log(2))
+            print(f"[Batch {idx}] bpd: {bpd.item()} ")
+            model.eval()
+            model.plot_samples(5)
+            model.train()
 
     # get average epoch loss
     epoch_loss = np.mean(losses)

@@ -341,16 +341,16 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    main()
+    # main()
 
 
 # For Q 2.6
 
 def get_samples_from_epoch(idx, n_samples):
-    path = './results/GAN/'  # path for a 20-dimensional latent space
+    path = './results/GAN/run 3/'  # path for a 20-dimensional latent space
 
     # Load the trained model
-    generator = torch.load(path + 'GAN_generator_epoch_' + str(idx), map_location='cpu')
+    # generator = torch.load(path + 'GAN_generator_epoch_' + str(idx), map_location='cpu')
     generator = torch.load(path + 'GAN_generator_final', map_location='cpu')
 
     # discriminator = torch.load(path + 'GAN_discriminator_epoch_' + str(idx), map_location='cpu')
@@ -362,4 +362,4 @@ def get_samples_from_epoch(idx, n_samples):
 
 
 # plot 10 samples from epoch 99
-# get_samples_from_epoch(180, 5)
+get_samples_from_epoch(180, 5)
