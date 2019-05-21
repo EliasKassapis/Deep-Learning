@@ -19,10 +19,10 @@ export PYTHONIOENCODING=utf8
 
 echo "copy directory"
 mkdir $TMPDIR/lgpu0293
-cp -r $HOME/Deep_Learning $TMPDIR/lgpu0293
+cp -r $HOME/Deep-Learning $TMPDIR/lgpu0293
 
 echo "cd inwards"
-cd $TMPDIR/lgpu0293/Deep_Learning/assignment_3/code/
+cd $TMPDIR/lgpu0293/Deep-Learning/assignment_3/code/
 
 echo "activate env"
 source activate dl
@@ -32,7 +32,7 @@ echo " "
 
 srun python3 a3_nf_template.py
 
-cp -r $TMPDIR/lgpu0293/Deep_Learning/assignment_3/code/ $HOME/Deep_Learning/
+cp -r $TMPDIR/lgpu0293/Deep-Learning/assignment_3/code/ $HOME/Deep-Learning/
 
 echo " "
 echo " ------ Job is finished -------"
