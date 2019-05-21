@@ -205,7 +205,7 @@ class Model(nn.Module):
         Sample n_samples from the model. Sample from prior and create ldj.
         Then invert the flow and invert the logit_normalize.
         """
-        z = sample_prior((n_samples,) + self.flow.z_shape, device=self.device)
+        z = sample_prior((n_samples,) + self.flow.z_shape)
         ldj = torch.zeros(z.size(0), device=z.device)
 
         # invert the flow and logit normalize
@@ -271,9 +271,9 @@ def epoch_iter(model, data, optimizer):
 
         losses.append(loss.item())
 
-        # if idx % 200 == 0:
-        #     bpd = loss/(28 * 28 * np.log(2))
-        #     print(f"[Batch {idx}] bpd: {bpd.item()} ")
+        if idx % 200 == 0:
+            bpd = loss/(28 * 28 * np.log(2))
+            print(f"[Batch {idx}] bpd: {bpd.item()} ")
         #     model.eval()
         #     model.plot_samples(5)
         #     model.train()
