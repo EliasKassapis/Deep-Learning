@@ -332,9 +332,9 @@ def main():
         print("[Epoch {epoch}] train bpd: {train_bpd} val_bpd: {val_bpd}".format(
             epoch=epoch, train_bpd=train_bpd, val_bpd=val_bpd))
 
-        model.eval()
-        model.plot_samples(5)
-        model.train()
+        # model.eval()
+        # model.plot_samples(5)
+        # model.train()
 
         # save model
         if epoch % 50 == 0:
