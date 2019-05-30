@@ -29,7 +29,7 @@ def sample_prior(size):
 
     sample = torch.randn(size)
 
-    if torch.cuda.is_available():    ###################################
+    if torch.cuda.is_available():
         sample = sample.cuda()
 
     return sample
@@ -122,7 +122,7 @@ class Flow(nn.Module):
         super().__init__()
         channels, = shape
 
-        self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu') ################################################################
+        self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
         mask = get_mask()
 
@@ -141,7 +141,7 @@ class Flow(nn.Module):
                 z, logdet = layer(z, logdet)
         else:
             for layer in reversed(self.layers):
-                z, logdet = layer(z, logdet, reverse=True) #################################################################################################################
+                z, logdet = layer(z, logdet, reverse=True)
 
         return z, logdet
 
@@ -207,17 +207,14 @@ class Model(nn.Module):
         Then invert the flow and invert the logit_normalize.
         """
 
-        device = torch.device('cuda' if torch.cuda.is_available() else 'cpu') ####################################################
+        device = ARGS.device
 
 
         z = sample_prior((n_samples,) + self.flow.z_shape).to(device)
         ldj = torch.zeros(z.size(0)).to(device)
 
         # invert the flow and logit normalize
-        z, ldj = self.flow(z, ldj, reverse=True)
-
-        z = z.to(device) ###########################################################################################################
-        ldj = ldj.to(device) #######################################################################################################
+        z, ldj = self.flow(z, ldj, reverse=True).to(device)
 
 
         z, _ = self.logit_normalize(z, ldj, reverse=True)
@@ -249,15 +246,14 @@ def epoch_iter(model, data, optimizer):
     log_2 likelihood per dimension) averaged over the complete epoch.
     """
 
-    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu') ################################################################
+    device = ARGS.device
 
     losses = []
 
     for idx, (batch, _) in enumerate(data):
 
         # send data to device
-        batch = batch.to(device) ########################################################################################################
-
+        batch = batch.to(device)
         # clear stored gradient
         model.zero_grad()
 
@@ -365,9 +361,12 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--epochs', default=40, type=int,
                         help='max number of epochs')
+    parser.add_argument('--device', type=str, default=('cuda' if torch.cuda.is_available() else 'cpu'),
+                        help='Device used to train model')
     ARGS = parser.parse_args()
 
-    # main()
+
+    main()
 
 
 def get_samples_from_epoch(idx, n_samples):
@@ -377,16 +376,16 @@ def get_samples_from_epoch(idx, n_samples):
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
     # Load the trained model
-    generator = torch.load(path + 'NF_epoch_' + str(idx), map_location='cpu')
-    # generator = torch.load(path + 'NF_final', map_location='cuda')
+    model = torch.load(path + 'NF_epoch_' + str(idx), map_location='cpu')
+    # model = torch.load(path + 'NF_final', map_location='cuda')
 
     # discriminator = torch.load(path + 'GAN_discriminator_epoch_' + str(idx), map_location='cpu')
-    generator.to(device)
+    model.to(device)
 
-    generator.eval()
-    generator.plot_samples(n_samples)
-    generator.train()
+    model.eval()
+    model.plot_samples(n_samples)
+    model.train()
 
 
 # plot 10 samples from epoch 99
-get_samples_from_epoch(30, 5)
+# get_samples_from_epoch(20, 5)

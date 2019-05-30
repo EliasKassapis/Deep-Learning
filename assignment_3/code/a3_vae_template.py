@@ -7,6 +7,7 @@ from torchvision.utils import make_grid
 
 import numpy as np
 from scipy.stats import norm
+from torch import autograd
 
 from datasets.bmnist import bmnist
 
@@ -91,18 +92,21 @@ class VAE(nn.Module):
         # to prevent log of 0
         epsilon = 1e-6
 
-        # L_recon = -1*torch.sum(input * torch.log(output + epsilon) + (1-input) * torch.log(1 - output), dim=1) #check if we can use binary CE instead!!!! may need to change mean to sum
+        with autograd.detect_anomaly():
 
-        # L_reg = -0.5 * torch.sum(1 + std - mean.pow(2) - std.exp())
+            L_recon = -1*torch.sum(input * torch.log(output + epsilon) + (1-input) * torch.log(1 - output), dim=1)
+            # L_reg = -0.5 * torch.sum(1 + std - mean.pow(2) - std.exp())
 
-        L_recon = torch.nn.functional.binary_cross_entropy(output, input)
+            # L_recon = torch.nn.functional.binary_cross_entropy(output, input)
 
-        L_reg = -0.5 * torch.sum(1 + logvar - mean.pow(2) - logvar.exp())
+            L_reg = -0.5 * torch.sum(1 + logvar - mean.pow(2) - logvar.exp())
 
-        # L_reg = torch.sum(torch.sum(-1*torch.log(std) + ((std.pow(2) + mean.pow(2))-1)*0.5, dim=1, dim=0)
+            # L_reg = torch.sum(torch.sum(-1*torch.log(std) + ((std.pow(2) + mean.pow(2))-1)*0.5, dim=1, dim=0)
 
-        # Normalise by same number of elements as in reconstruction if we average recon
-        L_reg /= input.size(dim=0) * self.image_dim  #####CHECK IF THIS IS NEEDED AGAIN!!!!!!
+            # Normalise by same number of elements as in reconstruction if we average recon
+            L_reg /= input.size(dim=0)
+
+                     # * self.image_dim  #####CHECK IF THIS IS NEEDED AGAIN!!!!!!
 
         # get total loss
         total_loss = torch.mean(L_recon + L_reg,
@@ -213,7 +217,7 @@ class VAE(nn.Module):
         Plot manifold using a point grid of size n_samples * n_samples
         """
 
-        ppf = norm.ppf(torch.linspace(0.001, 0.999, steps=n_samples))
+        ppf = norm.ppf(torch.linspace(0.08, 0.88, steps=n_samples))
 
         # create grid
         x, y = np.meshgrid(ppf, ppf)
@@ -318,7 +322,7 @@ def main():
         print(f"[Epoch {epoch}] train elbo: {train_elbo} val_elbo: {val_elbo}")
 
         # save model
-        # torch.save(model, "VAE_model_epoch_" + str(epoch))
+        torch.save(model, "VAE_model_epoch_" + str(epoch))
 
         # plot samples at each epoch
         # model.eval()
@@ -337,9 +341,11 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--epochs', default=100, type=int,
                         help='max number of epochs')
-    parser.add_argument('--zdim', default=20, type=int,
+    parser.add_argument('--zdim', default=2, type=int,
                         help='dimensionality of latent space')
-    parser.add_argument('--device', type=str, default=('cuda' if torch.cuda.is_available() else 'cpu'),
+    # parser.add_argument('--device', type=str, default=('cuda' if torch.cuda.is_available() else 'cpu'),
+    #                     help='Device used to train model')  # added this
+    parser.add_argument('--device', type=str, default=('cpu'),
                         help='Device used to train model')  # added this
     parser.add_argument('--dropout', type=float, default=0.2,  # and this
                         help='Dropout probability')
@@ -354,11 +360,12 @@ if __name__ == "__main__":
 def get_samples_from_epoch(idx, n_samples, z_dim):
 
     if z_dim == 2:
-        path = './results/VAE/2_dim_log_BCE/' # path for a 2-dimensional latent space
+        path = './results/VAE/run 2/2_dim/' # path for a 2-dimensional latent space
     elif z_dim == 20:
-        path='./results/VAE/20_dim_log_BCE/' # path for a 20-dimensional latent space
+        path = './results/VAE/run 2/20_dim/' # path for a 20-dimensional latent space
     else:
         print('Error!! Only have z_dim = 2 or z_dim = 20')
+
 
     if idx > 99:
         print('Error!! Only have models until epoch 99')
@@ -375,4 +382,4 @@ def get_samples_from_epoch(idx, n_samples, z_dim):
 
 
 # plot 10 samples from epoch 99
-# get_samples_from_epoch(99, 10, 2)
+# get_samples_from_epoch(40, 5, 2)
